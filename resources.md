@@ -1,7 +1,7 @@
-### Relevant Resources  
+# Relevant Resources  
 ## ICD Codes  
 Version: ICD-9  
-# Bleeding Disorders
+### Bleeding Disorders
 * Sickle Cell Anemia ICD = 282.60
 * Thalassemia ICD = 282.46
 * Hemophilia ICD = 286.0
