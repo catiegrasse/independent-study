@@ -18,4 +18,11 @@ Version: ICD-9
 * Pulmonary Embolism: 415.1
 * Seizure: 780.39
 * Nerve injury: 957.9
+## CPT Codes
+### Procedures
+* Polypectomoy/biopsy: 31237
+* Maxillary antrostomy: 31256, 31267
+* Ethmoidectomy: 31254, 31255
+* Spehnoidotomy: 31287, 31288
+
 
