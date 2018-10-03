@@ -13,3 +13,9 @@ Version: ICD-9
 * Wound dehiscence: 998.32
 * Pneuomonia: 997.32
 * Reintubation: 960.4
+* Blood tranfusion: V58.2
+* Deep venuous thrombosis: 453.4
+* Pulmonary Embolism: 415.1
+* Seizure: 780.39
+* Nerve injury: 957.9
+
