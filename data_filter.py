@@ -71,7 +71,8 @@ with open(FILE_NAME, mode='w') as filter_file:
                     
                     #write to file
                     csv_writer.writerow(line)
-    
+
+    csv_writer.writerow(headers15)
     for line in f15:
         line = line.split("\t")
         age = line[ageIndex15]
@@ -87,7 +88,8 @@ with open(FILE_NAME, mode='w') as filter_file:
                     
                     #write to file
                     csv_writer.writerow(line)
-                                   
+
+    csv_writer.writerow(headers16)
     for line in f16:
         line = line.split("\t")
         age = line[ageIndex16]
