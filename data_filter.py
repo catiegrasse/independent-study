@@ -160,7 +160,7 @@ with open(FILE_NAME, mode='w') as filter_file:
                 # filter by CPT code
                 if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                    if FILTER_BY_READMISSION == True:
+                    if FILTER_BY_READMISSION is True:
 
                         # filter by readmission
                         readmissionResponses15 = [line[ind] for ind in readmissionIndices15]
@@ -171,7 +171,7 @@ with open(FILE_NAME, mode='w') as filter_file:
                             recordCount += 1
                             csv_writer.writerow(line)
 
-                    elif FILTER_BY_REOPERATION == True:
+                    elif FILTER_BY_REOPERATION is True:
 
                         #filter by reoperation
                         reoperationResponses15 = [line[ind] for ind in reoperationIndices15]
