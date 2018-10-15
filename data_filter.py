@@ -142,7 +142,7 @@ with open(FILE_NAME, mode='w') as filter_file:
                 # filter by CPT code
                 if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                    IF FILTER_BY_READMISSION == True:
+                    if FILTER_BY_READMISSION == True:
 
                         # filter by readmission
                         readmissionResponses16 = [line[ind] for ind in readmissionIndices16]
