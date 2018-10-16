@@ -24,5 +24,8 @@ Version: ICD-9
 * Maxillary antrostomy: 31256, 31267
 * Ethmoidectomy: 31254, 31255
 * Spehnoidotomy: 31287, 31288
+## Tutorials
+Logistic regression tutorial: https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8  
+Logistic regression tutorial: https://www.datacamp.com/community/tutorials/understanding-logistic-regression-python
 
 
