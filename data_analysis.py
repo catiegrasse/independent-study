@@ -15,7 +15,7 @@ y = dataset.Readmission
 print sum([1 for num in y if num == 1])
 
 # split into training and testing sets
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.10, random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.90, random_state=0)
 
 # train the classifier
 classifier = LogisticRegression(random_state=0)
