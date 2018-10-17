@@ -17,21 +17,21 @@ NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 FILE_NAME= "testingProcessor.csv"
 
 # open files and remove headers
-f14 = open("filtered_csv14.csv", "rb")
-f15 = open("filtered_csv15.csv", "rb")
-f16 = open("filtered_csv16.csv", "rb")
+csv_reader14 = csv.reader(open("filtered_csv14.csv"))
+csv_reader15 = csv.reader(open("filtered_csv15.csv"))
+csv_reader16 = csv.reader(open("filtered_csv16.csv"))
 
 
-for line in f14:
-    headers14 = line.split("\t")
+for row in csv_reader14:
+    headers14 = row
     break
 
-for line in f15:
-    headers15 = line.split("\t")
+for row in csv_reader15:
+    headers15 = row
     break
 
-for line in f16:
-    headers16 = line.split("\t")
+for row in csv_reader16:
+    headers16 = row
     break
 
 readmissionRegex = re.compile(READMISSION_REGEX)
@@ -56,7 +56,6 @@ with open(FILE_NAME, mode='w') as filter_file:
     csv_writer = csv.writer(filter_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     
     # write headers to file
-    
     ageIndex14 = headers14.index("Age")
     sexIndex14 = headers14.index("SEX")
 
@@ -68,10 +67,9 @@ with open(FILE_NAME, mode='w') as filter_file:
 
     intRegex = re.compile(INT_REGEX)
 
-    for line in f14:
-        line = line.split("\t")
-        age = line[ageIndex14]
-        sex = line[sexIndex14].strip()
+    for row in csv_reader14:
+        age = row[ageIndex14]
+        sex = row[sexIndex14].strip()
         if sex == "male":
             maleBinary = 1
             femaleBinary = 0
@@ -79,15 +77,14 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses14 = [line[ind] for ind in readmissionIndices14 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses14) > 0:
             csv_writer.writerow([maleBinary, femaleBinary, 1])
         else:
             csv_writer.writerow([maleBinary, femaleBinary, 0])
 
-    for line in f15:
-        line = line.split("\t")
-        age = line[ageIndex15]
+    for row in csv_reader15:
+        age = row[ageIndex15]
         if sex == "male":
             maleBinary = 1
             femaleBinary = 0
@@ -95,7 +92,7 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses15 = [line[ind] for ind in readmissionIndices15 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses15) > 0:
             csv_writer.writerow([maleBinary, femaleBinary, 1])
 
@@ -103,10 +100,9 @@ with open(FILE_NAME, mode='w') as filter_file:
             csv_writer.writerow([maleBinary, femaleBinary, 0])
 
 
-    for line in f16:
-        line = line.split("\t")
-        age = line[ageIndex16]
-        sex = line[sexIndex16].strip()
+    for row in csv_reader16:
+        age = row[ageIndex16]
+        sex = row[sexIndex16].strip()
         if sex == "male":
             maleBinary = 1
             femaleBinary = 0
@@ -114,7 +110,7 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses16 = [line[ind] for ind in readmissionIndices16 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
             csv_writer.writerow([maleBinary, femaleBinary, 1])
         else:

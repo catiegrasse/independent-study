@@ -12,20 +12,20 @@ INT_REGEX = "^[0-9]*$"
 KEYS = ["male", "female"]
 
 #open files and remove headers
-f14 = open("acs_nsqip_puf14.txt", "rb")
-f15 = open("acs_nsqip_puf15_v2.txt", "rb")
-f16 = open("acs_nsqip_puf16.txt", "rb")
+f14 = open("filtered_csv14.csv", "rb")
+f15 = open("filtered_csv15.csv", "rb")
+f16 = open("filtered_csv16.csv", "rb")
 
 for line in f14:
-    headers14 = line.split("\t")
+    headers14 = line.split(",")
     break
 
 for line in f15:
-    headers15 = line.split("\t")
+    headers15 = line.split(",")
     break
 
 for line in f16:
-    headers16 = line.split("\t")
+    headers16 = line.split(",")
     break
 # 
 #count number of records
@@ -57,8 +57,8 @@ intRegex = re.compile(INT_REGEX)
 ageArray14 = []
 sexDictionary14 = {key: 0 for key in KEYS}
 for line in f14:
-    age = line.split("\t")[ageIndex14]
-    sex = line.split("\t")[sexIndex14].strip()
+    age = line.split(",")[ageIndex14]
+    sex = line.split(",")[sexIndex14].strip()
     if intRegex.match(age):
         ageArray14.append(int(age))
     if sex != "NULL":
@@ -71,8 +71,8 @@ print "% Females: ", sexDictionary14["female"]/(sexDictionary14["male"] + sexDic
 ageArray15 = []
 sexDictionary15 = {key: 0 for key in KEYS}
 for line in f15:
-    age = line.split("\t")[ageIndex15]
-    sex = line.split("\t")[sexIndex15].strip()
+    age = line.split(",")[ageIndex15]
+    sex = line.split(",")[sexIndex15].strip()
     if intRegex.match(age):
         ageArray15.append(int(age))
     if sex != "NULL":
@@ -85,8 +85,8 @@ print "% Females: ", sexDictionary15["female"]/(sexDictionary15["male"] + sexDic
 ageArray16 = []
 sexDictionary16 = {key: 0 for key in KEYS}
 for line in f16:
-    age = line.split("\t")[ageIndex16]
-    sex = line.split("\t")[sexIndex16].strip()
+    age = line.split(",")[ageIndex16]
+    sex = line.split(",")[sexIndex16].strip()
     if intRegex.match(age):
         ageArray16.append(int(age))
     if sex != "NULL":
