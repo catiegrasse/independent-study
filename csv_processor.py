@@ -13,7 +13,7 @@ INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
-FEATURE_COLUMNS = ["male", "female"]
+FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Other"]
 
 FILE_NAME= "testingProcessor.csv"
 
@@ -119,6 +119,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         age = row[ageIndex16]
         sex = row[sexIndex16].strip()
         race = row[raceIndex16].strip()
+        print race
         if sex == "male":
             maleBinary = 1
             femaleBinary = 0
@@ -129,8 +130,8 @@ with open(FILE_NAME, mode='w') as filter_file:
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
             newRow = [1 if val in features else 0 for val in FEATURE_COLUMNS] + [1]
-            csv_writer.writerow([maleBinary, femaleBinary, 1])
+            csv_writer.writerow(newRow)
         else:
             newRow = [1 if val in features else 0 for val in FEATURE_COLUMNS] + [0]
-            csv_writer.writerow([maleBinary, femaleBinary, 0])
+            csv_writer.writerow(newRow)
 

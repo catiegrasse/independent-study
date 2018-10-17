@@ -3,11 +3,11 @@ from sklearn.cross_validation import train_test_split
 import pandas as pd
 import numpy as np 
 
-col_names = ["Male", "Female", "Readmission"]
+col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
 
 dataset = pd.read_csv("testingProcessor.csv", header=None, names=col_names)
 
-feature_cols = ["Male", "Female"]
+feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
 
 X = dataset[feature_cols]
 y = dataset.Readmission
