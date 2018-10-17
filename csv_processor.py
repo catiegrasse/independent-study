@@ -12,16 +12,8 @@ import csv
 INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
+NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 
-# ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] CPT codes for Polypectomoy/biopsy, Maxillary antrostomy,
-# Ethmoidectomy, and Spehnoidotomy
-
-# possible filters
-AGE_START = 18 # int
-AGE_END = 89 # int
-CPT_CODES = ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] # lst
-ICD_CODES = [] # lst
-SEX = ["male", "female"] # lst
 FILE_NAME= "testingProcessor.csv"
 
 # open files and remove headers
@@ -60,24 +52,6 @@ for i in range(len(headers16)):
     if readmissionRegex.match(headers16[i]):
         readmissionIndices16.append(i)
 
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices14 = []
-for i in range(len(headers14)):
-    if reoperationRegex.match(headers14[i]):
-        reoperationIndices14.append(i)
-
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices15 = []
-for i in range(len(headers15)):
-    if reoperationRegex.match(headers15[i]):
-        reoperationIndices15.append(i)
-
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices16 = []
-for i in range(len(headers16)):
-    if reoperationRegex.match(headers16[i]):
-        readmissionIndices16.append(i)
-
 with open(FILE_NAME, mode='w') as filter_file:
     csv_writer = csv.writer(filter_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     
@@ -94,11 +68,6 @@ with open(FILE_NAME, mode='w') as filter_file:
 
     intRegex = re.compile(INT_REGEX)
 
-    ageList = range(AGE_START, AGE_END + 1)
-    ageArray14 = []
-    sexDictionary14 = {key: 0 for key in SEX}
-    recordCount = 0
-    totalCount = 0
     for line in f14:
         line = line.split("\t")
         age = line[ageIndex14]
@@ -110,13 +79,11 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses14 = [line[ind] for ind in readmissionIndices14]
-        if "Yes" in readmissionResponses14:
-            readmissionBinary = 1
+        readmissionResponses14 = [line[ind] for ind in readmissionIndices14 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        if len(readmissionResponses14) > 0:
+            csv_writer.writerow([maleBinary, femaleBinary, 1])
         else:
-            readmissionBinary = 0
-
-            csv_writer.writerow([maleBinary, femaleBinary, readmissionBinary])
+            csv_writer.writerow([maleBinary, femaleBinary, 0])
 
     for line in f15:
         line = line.split("\t")
@@ -128,13 +95,12 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses15 = [line[ind] for ind in readmissionIndices15]
-        if "Yes" in readmissionResponses15:
-            readmissionBinary = 1
-        else:
-            readmissionBinary = 0
+        readmissionResponses15 = [line[ind] for ind in readmissionIndices15 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        if len(readmissionResponses15) > 0:
+            csv_writer.writerow([maleBinary, femaleBinary, 1])
 
-            csv_writer.writerow([maleBinary, femaleBinary, readmissionBinary])
+        else:
+            csv_writer.writerow([maleBinary, femaleBinary, 0])
 
 
     for line in f16:
@@ -148,10 +114,9 @@ with open(FILE_NAME, mode='w') as filter_file:
             femaleBinary = 1
             maleBinary = 0
         
-        readmissionResponses16 = [line[ind] for ind in readmissionIndices16]
-        if "Yes" in readmissionResponses16:
-            readmissionBinary = 1
+        readmissionResponses16 = [line[ind] for ind in readmissionIndices16 if line[ind] not in NEGATIVE_REOPERATION_VALUES]
+        if len(readmissionResponses16) > 0:
+            csv_writer.writerow([maleBinary, femaleBinary, 1])
         else:
-            readmissionBinary = 0
+            csv_writer.writerow([maleBinary, femaleBinary, 0])
 
-            csv_writer.writerow([maleBinary, femaleBinary, readmissionBinary])
