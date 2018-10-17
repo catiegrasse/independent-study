@@ -1,6 +1,7 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
 import pandas as pd
+import numpy as np 
 
 col_names = ["Male", "Female", "Readmission"]
 
@@ -23,6 +24,10 @@ classifier.fit(X_train, y_train)
 # predict on the testing data
 y_pred = classifier.predict(X_test)
 
+# odds ratio 
+oddsRatio = np.exp(classifier.coef_)
+
 print "Prediction: \n", y_pred
 print "Test input: \n", X_test
 print "Expected output: \n", y_test
+print "Odds Ratio: \n", oddsRatio
