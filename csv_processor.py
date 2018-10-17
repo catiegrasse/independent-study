@@ -17,9 +17,9 @@ NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 FILE_NAME= "testingProcessor.csv"
 
 # open files and remove headers
-f14 = open("acs_nsqip_puf14.txt", "rb")
-f15 = open("acs_nsqip_puf15_v2.txt", "rb")
-f16 = open("acs_nsqip_puf16.txt", "rb")
+f14 = open("filtered_csv14.csv", "rb")
+f15 = open("filtered_csv15.csv", "rb")
+f16 = open("filtered_csv16.csv", "rb")
 
 
 for line in f14:
