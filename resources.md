@@ -1,6 +1,9 @@
 # Relevant Resources  
 ## ICD Codes  
 Version: ICD-9  
+### Comorbidities
+* Cystic Fibrosis: 277.0
+* Asthma: 493.90  
 ### Bleeding Disorders
 * Sickle Cell Anemia: 282.60
 * Thalassemia: 282.46
