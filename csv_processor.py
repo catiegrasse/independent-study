@@ -13,7 +13,9 @@ INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
-FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Asian", "Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Unknown/Not Reported", "Other"]
+FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Asian", 
+"Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Unknown/Not Reported", "Other",
+"Bleeding Disorder"]
 
 FILE_NAME= "testingProcessor.csv"
 
@@ -55,15 +57,6 @@ for i in range(len(headers16)):
 
 with open(FILE_NAME, mode='w') as filter_file:
     csv_writer = csv.writer(filter_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    
-    # write headers to file
-    ageIndex14 = headers14.index("Age")
-    sexIndex14 = headers14.index("SEX")
-    raceIndex14 = headers14.index("RACE_NEW")
-
-    ageIndex15 = headers15.index("Age")
-    sexIndex15 = headers15.index("SEX")
-    raceIndex15 = headers15.index("RACE_NEW")
 
     ageIndex16 = headers16.index("Age")
     sexIndex16 = headers16.index("SEX")
@@ -73,46 +66,58 @@ with open(FILE_NAME, mode='w') as filter_file:
 
     for row in csv_reader14:
         features = []
-        age = row[ageIndex14]
-        sex = row[sexIndex14].strip()
-        race = row[raceIndex14]
+        age = row[headers14.index("Age")]
+        sex = row[headers14.index("SEX")]
+        race = row[headers14.index("RACE_NEW")]
+        if row[headers14.index("BLEEDDIS")] == "Yes":
+            bleedingDisorder = 1
+        else:
+            bleedingDisorder = 0
         features = [sex, race]
         
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses14) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 
     for row in csv_reader15:
-        age = row[ageIndex15]
-        sex = row[sexIndex15]
-        race = row[raceIndex15]
+        age = row[headers15.index("Age")]
+        sex = row[headers15.index("SEX")]
+        race = row[headers15.index("RACE_NEW")]
+        if row[headers15.index("BLEEDDIS")] == "Yes":
+            bleedingDisorder = 1
+        else:
+            bleedingDisorder = 0
         features = [sex, race]
-        print features
+
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses15) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
             csv_writer.writerow(newRow)
 
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 
 
     for row in csv_reader16:
-        age = row[ageIndex16]
-        sex = row[sexIndex16].strip()
-        race = row[raceIndex16].strip()    
+        age = row[headers16.index("Age")]
+        sex = row[headers16.index("SEX")]
+        race = row[headers16.index("RACE_NEW")]
+        if row[headers15.index("BLEEDDIS")] == "Yes":
+            bleedingDisorder = 1
+        else:
+            bleedingDisorder = 0
         features = [sex, race]
 
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 

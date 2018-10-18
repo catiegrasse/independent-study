@@ -4,11 +4,11 @@ import pandas as pd
 import numpy as np 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Readmission"]
+col_names = ["Age", "Sex", "Race", "Bleeding Disorder", "Readmission"]
 dataset = pd.read_csv("testingProcessor.csv", header=None, names=col_names)
 
 #feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
-feature_cols = ["Age", "Sex", "Race"]
+feature_cols = ["Age", "Sex", "Race", "Bleeding Disorder"]
 
 X = dataset[feature_cols]
 y = dataset.Readmission
@@ -16,7 +16,7 @@ y = dataset.Readmission
 print sum([1 for num in y if num == 1])
 
 # split into training and testing sets
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.90, random_state=0)
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
 
 # train the classifier
 classifier = LogisticRegression(random_state=0)
