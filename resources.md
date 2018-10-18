@@ -28,6 +28,8 @@ Version: ICD-9
 Logistic regression tutorial: https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8  
 Logistic regression tutorial: https://www.datacamp.com/community/tutorials/understanding-logistic-regression-python
 Basic info on logistic regression: https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html
+Processing data for logistic regression: http://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features
+
 
 
 
