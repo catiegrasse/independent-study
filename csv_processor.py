@@ -9,13 +9,18 @@ import csv
 
 # Code to convert NSQIP data to binary signals 
 
+# ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] CPT codes for Polypectomoy/biopsy, Maxillary antrostomy,
+# Ethmoidectomy, and Spehnoidotomy
+
 INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
+POLYPECTOMY_BIOPSY_CPT = ["31237"]
+OTHER_ESS_CPT = ["31256", "31267", "31254", "31255", "31287", "31288"]
 FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Asian", 
 "Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Unknown/Not Reported", "Other",
-"Bleeding Disorder"]
+"Bleeding Disorder", "Polypectomy/biopsy", "All other ESS"]
 
 FILE_NAME= "testingProcessor.csv"
 
@@ -75,12 +80,17 @@ with open(FILE_NAME, mode='w') as filter_file:
             bleedingDisorder = 0
         features = [sex, race]
         
+        if "31237" in row: 
+            polypectomyBiopsy = 1
+        else:
+            polypectomyBiopsy = 0
+     
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses14) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -93,13 +103,18 @@ with open(FILE_NAME, mode='w') as filter_file:
             bleedingDisorder = 0
         features = [sex, race]
 
+        if "31237" in row: 
+            polypectomyBiopsy = 1
+        else:
+            polypectomyBiopsy = 0
+
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses15) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
             csv_writer.writerow(newRow)
 
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 
 
@@ -113,11 +128,16 @@ with open(FILE_NAME, mode='w') as filter_file:
             bleedingDisorder = 0
         features = [sex, race]
 
+        if "31237" in row: 
+            polypectomyBiopsy = 1
+        else:
+            polypectomyBiopsy = 0
+
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 1]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [bleedingDisorder, 0]
+            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
             csv_writer.writerow(newRow)
 

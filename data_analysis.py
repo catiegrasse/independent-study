@@ -4,11 +4,11 @@ import pandas as pd
 import numpy as np 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Bleeding Disorder", "Readmission"]
+col_names = ["Age", "Sex", "Race", "Bleeding Disorder", "Type of Procedure", "Readmission"]
 dataset = pd.read_csv("testingProcessor.csv", header=None, names=col_names)
 
 #feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
-feature_cols = ["Age", "Sex", "Race", "Bleeding Disorder"]
+feature_cols = ["Age", "Sex", "Race", "Bleeding Disorder", "Type of Procedure"]
 
 X = dataset[feature_cols]
 y = dataset.Readmission
