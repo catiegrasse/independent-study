@@ -6,13 +6,13 @@ Created on Oct 9, 2018
 
 import re
 import csv
+import math
 
 # Code to convert NSQIP data to binary signals 
 
 # ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] CPT codes for Polypectomoy/biopsy, Maxillary antrostomy,
 # Ethmoidectomy, and Spehnoidotomy
 
-INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
@@ -71,57 +71,50 @@ with open(FILE_NAME, mode='w') as filter_file:
     sexIndex16 = headers16.index("SEX")
     raceIndex16 = headers16.index("RACE_NEW")
 
-    intRegex = re.compile(INT_REGEX)
-
     for row in csv_reader14:
         features = []
         age = row[headers14.index("Age")]
         sex = FEATURE_COLUMNS.index(row[headers14.index("SEX")])
         race = FEATURE_COLUMNS.index(row[headers14.index("RACE_NEW")])
         diabetes = 0
+        readmission = 0
         if row[headers14.index("DIABETES")] != "NO":
             icdCount += 1
             diabetes = 1
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses14) > 0:
-            newRow = [age, sex, race, diabetes, 1] 
-            csv_writer.writerow(newRow)
-        else:
-            newRow = [age, sex, race, diabetes, 0]
-            csv_writer.writerow(newRow)
+            readmission = 1
+        newRow = [age, sex, race, diabetes, readmission] 
+        csv_writer.writerow(newRow)
 
     for row in csv_reader15:
         age = row[headers15.index("Age")]
         sex = FEATURE_COLUMNS.index(row[headers15.index("SEX")])
         race = FEATURE_COLUMNS.index(row[headers15.index("RACE_NEW")])
         diabetes = 0
+        readmission = 0
         if row[headers15.index("DIABETES")] != "NO":
             icdCount += 1
             diabetes = 1
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses15) > 0:
-            newRow = [age, sex, race, diabetes, 1] 
-            csv_writer.writerow(newRow)
-
-        else:
-            newRow = [age, sex, race, diabetes, 0] 
-            csv_writer.writerow(newRow)
-
+            readmission = 1
+        newRow = [age, sex, race, diabetes, 1] 
+        csv_writer.writerow(newRow)
 
     for row in csv_reader16:
         age = row[headers16.index("Age")]
         sex = FEATURE_COLUMNS.index(row[headers16.index("SEX")])
         race = FEATURE_COLUMNS.index(row[headers16.index("RACE_NEW")])
         diabetes = 0
+        readmission = 0
         if row[headers16.index("DIABETES")] != "NO":
             icdCount += 1
             diabetes = 1
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
-            newRow = [age, sex, race, diabetes, 1] 
-            csv_writer.writerow(newRow)
-        else:
-            newRow = [age, sex, race, diabetes, 0] 
-            csv_writer.writerow(newRow)
+            readmission = 1
+        newRow = [age, sex, race, diabetes, 1] 
+        csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount
