@@ -18,9 +18,9 @@ REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 POLYPECTOMY_BIOPSY_CPT = ["31237"]
 OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", "31255", "31287", "31288"]
-FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Asian", 
-"Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Unknown/Not Reported", "Other",
-"Diabetes"]
+SEX_COLUMNS = ["male", "female"]
+RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported"]
+COMORBIDITY_COLUMNS = []
 
 
 FILE_NAME= "testingProcessor.csv"
@@ -74,8 +74,14 @@ with open(FILE_NAME, mode='w') as filter_file:
     for row in csv_reader14:
         features = []
         age = row[headers14.index("Age")]
-        sex = FEATURE_COLUMNS.index(row[headers14.index("SEX")])
-        race = FEATURE_COLUMNS.index(row[headers14.index("RACE_NEW")])
+        sex = SEX_COLUMNS.index(row[headers14.index("SEX")])
+
+        #create an other category
+        if row[headers14.index("RACE_NEW")] not in RACE_COLUMNS:
+            race = len(RACE_COLUMNS)
+        else:
+            race = RACE_COLUMNS.index(row[headers14.index("RACE_NEW")])
+
         diabetes = 0
         readmission = 0
         if row[headers14.index("DIABETES")] != "NO":
@@ -89,8 +95,14 @@ with open(FILE_NAME, mode='w') as filter_file:
 
     for row in csv_reader15:
         age = row[headers15.index("Age")]
-        sex = FEATURE_COLUMNS.index(row[headers15.index("SEX")])
-        race = FEATURE_COLUMNS.index(row[headers15.index("RACE_NEW")])
+        sex = SEX_COLUMNS.index(row[headers15.index("SEX")])
+
+        #create an other category
+        if row[headers15.index("RACE_NEW")] not in RACE_COLUMNS:
+            race = len(RACE_COLUMNS)
+        else:
+            race = RACE_COLUMNS.index(row[headers15.index("RACE_NEW")])
+
         diabetes = 0
         readmission = 0
         if row[headers15.index("DIABETES")] != "NO":
@@ -104,8 +116,14 @@ with open(FILE_NAME, mode='w') as filter_file:
 
     for row in csv_reader16:
         age = row[headers16.index("Age")]
-        sex = FEATURE_COLUMNS.index(row[headers16.index("SEX")])
-        race = FEATURE_COLUMNS.index(row[headers16.index("RACE_NEW")])
+        sex = SEX_COLUMNS.index(row[headers16.index("SEX")])
+
+        #create an other category
+        if row[headers16.index("RACE_NEW")] not in RACE_COLUMNS:
+            race = len(RACE_COLUMNS)
+        else:
+            race = RACE_COLUMNS.index(row[headers16.index("RACE_NEW")])
+
         diabetes = 0
         readmission = 0
         if row[headers16.index("DIABETES")] != "NO":
