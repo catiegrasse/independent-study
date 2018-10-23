@@ -14,11 +14,12 @@ REOPERATION_REGEX = "^.*REOP.*$"
 
 # ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] CPT codes for Polypectomoy/biopsy, Maxillary antrostomy,
 # Ethmoidectomy, and Spehnoidotomy
+# Comprehensive ESS codes: ["31237", "31239", "31240", "31256", "31267", "31276", "31254", "31255", "31287", "31288"]
 
 # possible filters
 AGE_START = 0 # int
 AGE_END = 100 # int
-CPT_CODES = ["31237", "31256", "31267", "31254", "31255", "31287", "31288"] # lst
+CPT_CODES = ["31237", "31239", "31240", "31256", "31267", "31276", "31254", "31255", "31287", "31288"] # lst
 ICD_CODES = [] # lst
 SEX = ["male", "female"] # lst
 FILTER_BY_READMISSION = False
@@ -121,7 +122,7 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in readmissionResponses14:
 
                             # write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
@@ -132,14 +133,14 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in reoperationResponses14:
 
                             #write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
                     # if not filtering by reoperation or readmission
                     else:
                         # write to file
-                        print "WRITING TO FILE" 
+                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                         recordCount += 1
                         csv_writer.writerow(line)
 
@@ -167,7 +168,7 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in readmissionResponses14:
 
                             # write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
@@ -178,14 +179,14 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in reoperationResponses15:
 
                             #write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
                     else:
 
                         # write to file
-                        print "WRITING TO FILE"
+                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                         recordCount += 1
                         csv_writer.writerow(line)
 
@@ -214,7 +215,7 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in readmissionResponses16:
 
                             # write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
@@ -225,15 +226,17 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
                         if "Yes" in reoperationResponses16:
 
                             # write to file
-                            print "WRITING TO FILE"
+                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                             recordCount += 1
                             csv_writer.writerow(line)
 
                     else:
 
                         # write to file
-                        print "WRITING TO FILE"
+                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
                         recordCount += 1
                         csv_writer.writerow(line)
 
-print "NUMBER OF RECORDS ADDED: ",recordCount
+print "TOTAL NUMBER OF RECORDS PROCESSED: ", totalCount
+print "NUMBER OF RECORDS ADDED: ", recordCount
+

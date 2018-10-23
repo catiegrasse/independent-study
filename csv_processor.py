@@ -15,12 +15,14 @@ import csv
 INT_REGEX = "^[0-9]*$"
 READMISSION_REGEX = "^.*READM.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
+DIABETES_REGEX = "(^250)|(^E11)"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 POLYPECTOMY_BIOPSY_CPT = ["31237"]
-OTHER_ESS_CPT = ["31256", "31267", "31254", "31255", "31287", "31288"]
+OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", "31255", "31287", "31288"]
 FEATURE_COLUMNS = ["male", "female", "White", "Black or African American", "Asian", 
 "Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Unknown/Not Reported", "Other",
-"Bleeding Disorder", "Polypectomy/biopsy", "All other ESS"]
+"Diabetes"]
+
 
 FILE_NAME= "testingProcessor.csv"
 
@@ -60,6 +62,9 @@ for i in range(len(headers16)):
     if readmissionRegex.match(headers16[i]):
         readmissionIndices16.append(i)
 
+# count number of patients with specified icd 
+icdCount = 0
+
 with open(FILE_NAME, mode='w') as filter_file:
     csv_writer = csv.writer(filter_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
@@ -72,72 +77,58 @@ with open(FILE_NAME, mode='w') as filter_file:
     for row in csv_reader14:
         features = []
         age = row[headers14.index("Age")]
-        sex = row[headers14.index("SEX")]
-        race = row[headers14.index("RACE_NEW")]
-        if row[headers14.index("BLEEDDIS")] == "Yes":
-            bleedingDisorder = 1
-        else:
-            bleedingDisorder = 0
-        features = [sex, race]
-        
-        if "31237" in row: 
-            polypectomyBiopsy = 1
-        else:
-            polypectomyBiopsy = 0
-     
+        sex = FEATURE_COLUMNS.index(row[headers14.index("SEX")])
+        race = FEATURE_COLUMNS.index(row[headers14.index("RACE_NEW")])
+        diabetes = 0
+        for item in row:
+            if re.compile(DIABETES_REGEX).match(item):
+                print row
+                icdCount += 1
+                diabetes = 1
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses14) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
+            newRow = [age, sex, race, diabetes, 1] 
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
+            newRow = [age, sex, race, diabetes, 0]
             csv_writer.writerow(newRow)
 
     for row in csv_reader15:
         age = row[headers15.index("Age")]
-        sex = row[headers15.index("SEX")]
-        race = row[headers15.index("RACE_NEW")]
-        if row[headers15.index("BLEEDDIS")] == "Yes":
-            bleedingDisorder = 1
-        else:
-            bleedingDisorder = 0
-        features = [sex, race]
-
-        if "31237" in row: 
-            polypectomyBiopsy = 1
-        else:
-            polypectomyBiopsy = 0
-
+        sex = FEATURE_COLUMNS.index(row[headers15.index("SEX")])
+        race = FEATURE_COLUMNS.index(row[headers15.index("RACE_NEW")])
+        diabetes = 0
+        for item in row:
+            if re.compile(DIABETES_REGEX).match(item):
+                print row
+                icdCount += 1
+                diabetes = 1
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses15) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
+            newRow = [age, sex, race, diabetes, 1] 
             csv_writer.writerow(newRow)
 
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
+            newRow = [age, sex, race, diabetes, 0] 
             csv_writer.writerow(newRow)
 
 
     for row in csv_reader16:
         age = row[headers16.index("Age")]
-        sex = row[headers16.index("SEX")]
-        race = row[headers16.index("RACE_NEW")]
-        if row[headers15.index("BLEEDDIS")] == "Yes":
-            bleedingDisorder = 1
-        else:
-            bleedingDisorder = 0
-        features = [sex, race]
-
-        if "31237" in row: 
-            polypectomyBiopsy = 1
-        else:
-            polypectomyBiopsy = 0
-
+        sex = FEATURE_COLUMNS.index(row[headers16.index("SEX")])
+        race = FEATURE_COLUMNS.index(row[headers16.index("RACE_NEW")])
+        diabetes = 0
+        for item in row:
+            if re.compile(DIABETES_REGEX).match(item):
+                print row
+                icdCount += 1
+                diabetes = 1
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
         if len(readmissionResponses16) > 0:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 1]
+            newRow = [age, sex, race, diabetes, 1] 
             csv_writer.writerow(newRow)
         else:
-            newRow = [age] + [FEATURE_COLUMNS.index(val) for val in features] + [polypectomyBiopsy, bleedingDisorder, 0]
+            newRow = [age, sex, race, diabetes, 0] 
             csv_writer.writerow(newRow)
 
+print "Total number of records with diabetes ICD code: ", icdCount
