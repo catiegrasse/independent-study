@@ -14,13 +14,14 @@ import math
 # Ethmoidectomy, and Spehnoidotomy
 
 READMISSION_REGEX = "^.*READM.*$"
+UNPLANNED_READMISSION_REGEX = "^.*UNPLANNEDREADMISSION.*$"
 REOPERATION_REGEX = "^.*REOP.*$"
 NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
 POLYPECTOMY_BIOPSY_CPT = ["31237"]
 OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", "31255", "31287", "31288"]
 SEX_COLUMNS = ["male", "female"]
 RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported"]
-COMORBIDITY_COLUMNS = []
+COMORBIDITY_COLUMNS = ["SMOKE", "DYSPNEA", "HYPERMED"]
 
 
 FILE_NAME= "testingProcessor.csv"
@@ -61,6 +62,24 @@ for i in range(len(headers16)):
     if readmissionRegex.match(headers16[i]):
         readmissionIndices16.append(i)
 
+unplannedReadmissionRegex = re.compile(UNPLANNED_READMISSION_REGEX)
+unplannedReadmissionIndices14 = []
+for i in range(len(headers14)):
+    if unplannedReadmissionRegex.match(headers14[i]):
+        unplannedReadmissionIndices14.append(i)
+
+unplannedReadmissionRegex = re.compile(UNPLANNED_READMISSION_REGEX)
+unplannedReadmissionIndices15 = []
+for i in range(len(headers15)):
+    if unplannedReadmissionRegex.match(headers15[i]):
+        unplannedReadmissionIndices15.append(i)
+
+unplannedReadmissionRegex = re.compile(UNPLANNED_READMISSION_REGEX)
+unplannedReadmissionIndices16 = []
+for i in range(len(headers16)):
+    if unplannedReadmissionRegex.match(headers16[i]):
+        unplannedReadmissionIndices16.append(i)
+
 # count number of patients with specified icd 
 icdCount = 0
 
@@ -83,14 +102,33 @@ with open(FILE_NAME, mode='w') as filter_file:
             race = RACE_COLUMNS.index(row[headers14.index("RACE_NEW")])
 
         diabetes = 0
-        readmission = 0
-        if row[headers14.index("DIABETES")] != "NO":
+        if row[headers14.index("DIABETES")] != "NO" and row[headers14.index("DIABETES")] != "NULL":
             icdCount += 1
             diabetes = 1
-        readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
+
+        smoke = 0
+        if row[headers14.index("SMOKE")] == "Yes":
+            smoke = 1
+
+        dyspnea = 0
+        if row[headers14.index("DYSPNEA")] != "No" and row[headers14.index("DYSPNEA") != "NULL"]:
+            dyspnea = 1
+
+        hypertension = 0
+        if row[headers14.index("HYPERMED")] == "Yes":
+            hypertension = 1
+
+        readmission = 0
+        readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] == "Yes"]
         if len(readmissionResponses14) > 0:
             readmission = 1
-        newRow = [age, sex, race, diabetes, readmission] 
+
+        unplannedReadmission = 0
+        unplannedReadmissionResponses14 = [row[ind] for ind in unplannedReadmissionIndices14 if row[ind] == "Yes"]
+        if len(unplannedReadmissionResponses14) > 0:
+            unplannedReadmission = 1
+        
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -104,14 +142,33 @@ with open(FILE_NAME, mode='w') as filter_file:
             race = RACE_COLUMNS.index(row[headers15.index("RACE_NEW")])
 
         diabetes = 0
-        readmission = 0
-        if row[headers15.index("DIABETES")] != "NO":
+        if row[headers15.index("DIABETES")] != "NO" and row[headers15.index("DIABETES")] != "NULL":
             icdCount += 1
             diabetes = 1
-        readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
+
+        smoke = 0
+        if row[headers15.index("SMOKE")] == "Yes":
+            smoke = 1
+
+        dyspnea = 0
+        if row[headers15.index("DYSPNEA")] != "No" and row[headers15.index("DYSPNEA") != "NULL"]:
+            dyspnea = 1
+
+        hypertension = 0
+        if row[headers15.index("HYPERMED")] == "Yes":
+            hypertension = 1
+
+        readmission = 0
+        readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] == "Yes"]
         if len(readmissionResponses15) > 0:
             readmission = 1
-        newRow = [age, sex, race, diabetes, 1] 
+
+        unplannedReadmission = 0
+        unplannedReadmissionResponses15 = [row[ind] for ind in unplannedReadmissionIndices15 if row[ind] == "Yes"]
+        if len(unplannedReadmissionResponses15) > 0:
+            unplannedReadmission = 1
+
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -125,14 +182,33 @@ with open(FILE_NAME, mode='w') as filter_file:
             race = RACE_COLUMNS.index(row[headers16.index("RACE_NEW")])
 
         diabetes = 0
-        readmission = 0
-        if row[headers16.index("DIABETES")] != "NO":
+        if row[headers16.index("DIABETES")] != "NO" and row[headers16.index("DIABETES")] != "NULL":
             icdCount += 1
             diabetes = 1
-        readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] not in NEGATIVE_REOPERATION_VALUES]
+
+        smoke = 0
+        if row[headers16.index("SMOKE")] == "Yes":
+            smoke = 1
+
+        dyspnea = 0
+        if row[headers16.index("DYSPNEA")] != "No" and row[headers16.index("DYSPNEA") != "NULL"]:
+            dyspnea = 1
+
+        hypertension = 0
+        if row[headers16.index("HYPERMED")] == "Yes":
+            hypertension = 1
+
+        readmission = 0
+        readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] == "Yes"]
         if len(readmissionResponses16) > 0:
             readmission = 1
-        newRow = [age, sex, race, diabetes, 1] 
+
+        unplannedReadmission = 0
+        unplannedReadmissionResponses16 = [row[ind] for ind in unplannedReadmissionIndices16 if row[ind] == "Yes"]
+        if len(unplannedReadmissionResponses16) > 0:
+            unplannedReadmission = 1
+
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount

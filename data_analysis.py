@@ -9,13 +9,13 @@ FILE_NAME = "testingProcessor.csv"
 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Diabetes", "Readmission"]
+col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Unplanned Readmission", "Readmission"]
 
 #columns produced from csv_processor.py
 SEX_COLUMNS = ["male", "female"]
 RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported", "Asian", 
 "Native Hawaiian or Pacific Islander", "American Indian or Alaska Native", "Other"]
-COMORBIDITY_COLUMNS = []
+COMORBIDITY_COLUMNS = ["SMOKE", "DYSPNEA", "HYPERMED"]
 
 
 #preliminary data analysis
@@ -25,6 +25,14 @@ diabetesPatientGenders = []
 nonDiabetesPatientGenders = []
 diabetesPatientRaces = []
 nonDiabetesPatientRaces = []
+diabetesPatientSmoke = []
+nonDiabetesPatientSmoke = []
+diabetesPatientDyspnea = []
+nonDiabetesPatientDyspnea = []
+diabetesPatientHypertension = []
+nonDiabetesPatientHypertension = []
+diabetesPatientUnplannedReadmission = []
+nonDiabetesPatientUnplannedReadmission = []
 
 #group diabetes and non-diabetes patients together
 numDiabetes = 0.0
@@ -36,12 +44,23 @@ with open(FILE_NAME, mode='r') as csv_file:
 			diabetesPatientAges.append(line[0])
 			diabetesPatientGenders.append(line[1])
 			diabetesPatientRaces.append(line[2])
+			diabetesPatientSmoke.append(line[4])
+			diabetesPatientDyspnea.append(line[5])
+			diabetesPatientHypertension.append(line[6])
+			diabetesPatientUnplannedReadmission.append(line[7])
 			numDiabetes += 1
 		else:
 			nonDiabetesPatientAges.append(line[0])
 			nonDiabetesPatientGenders.append(line[1])
 			nonDiabetesPatientRaces.append(line[2])
+			nonDiabetesPatientSmoke.append(line[4])
+			nonDiabetesPatientDyspnea.append(line[5])
+			nonDiabetesPatientHypertension.append(line[6])
+			nonDiabetesPatientUnplannedReadmission.append(line[7])
 			numNonDiabetes += 1
+
+print "DM", diabetesPatientSmoke
+print "Non-DM", nonDiabetesPatientSmoke
 
 under40 = 0
 above41less61 = 0
@@ -94,6 +113,13 @@ print "Percent White Non-DM: ", sum([1 for item in nonDiabetesPatientRaces if it
 print "Percent Black Non-DM: ", sum([1 for item in nonDiabetesPatientRaces if item == "1"])/numNonDiabetes
 print "Percent Other Non-DM: ", sum([1 for item in nonDiabetesPatientRaces if item == "3"])/numNonDiabetes
 print "Percent Unknown Non-DM: ", sum([1 for item in nonDiabetesPatientRaces if item == "2"])/numNonDiabetes
-
+print "Percent Smoke DM", sum([1 for item in diabetesPatientSmoke if item == "1"])/numDiabetes
+print "Percent Smoke Non-DM ", sum([1 for item in nonDiabetesPatientSmoke if item == "1"])/numNonDiabetes
+print "Percent Dyspnea DM", sum([1 for item in diabetesPatientDyspnea if item == "1"])/numDiabetes
+print "Percent Dyspnea Non-DM ", sum([1 for item in nonDiabetesPatientDyspnea if item == "1"])/numNonDiabetes
+print "Percent Hypertension DM", sum([1 for item in diabetesPatientHypertension if item == "1"])/numDiabetes
+print "Percent Hypertension Non-DM ", sum([1 for item in nonDiabetesPatientHypertension if item == "1"])/numNonDiabetes
+print "Percent Unplanned Readmission DM", sum([1 for item in diabetesPatientUnplannedReadmission if item == "1"])/numDiabetes
+print "Percent Unplanned Readmission Non-DM ", sum([1 for item in nonDiabetesPatientUnplannedReadmission if item == "1"])/numNonDiabetes
 
 
