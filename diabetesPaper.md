@@ -20,4 +20,6 @@ From this group in the database, found 644 patients identified as having undergo
 | Smoking | 20.16% | 20.28% |
 | Dyspnea | 3.63% | 7.24% |
 | Hypertension | 29.03% | 76.81% |
-| Unplanned Readmission | 3.83% | 5.79% |
+| Unplanned Readmission | 3.83% | 5.79% |  
+
+- Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
