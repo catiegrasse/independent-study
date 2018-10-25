@@ -22,6 +22,7 @@ OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", 
 SEX_COLUMNS = ["male", "female"]
 RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported"]
 COMORBIDITY_COLUMNS = ["SMOKE", "DYSPNEA", "HYPERMED"]
+OUTCOME_COLUMNS = ["OUPNEUMO", "REINTUB"]
 
 
 FILE_NAME= "testingProcessor.csv"
@@ -118,6 +119,14 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("HYPERMED")] == "Yes":
             hypertension = 1
 
+        pneumonia = 0
+        if row[headers14.index("OUPNEUMO")] == "Pneumonia":
+            pneumonia = 1
+
+        reintubation = 0
+        if row[headers14.index("REINTUB")] == "Reintubation":
+            reintubation = 1
+
         readmission = 0
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] == "Yes"]
         if len(readmissionResponses14) > 0:
@@ -128,7 +137,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses14) > 0:
             unplannedReadmission = 1
         
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -158,6 +167,13 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers15.index("HYPERMED")] == "Yes":
             hypertension = 1
 
+        pneumonia = 0
+        if row[headers15.index("OUPNEUMO")] == "Pneumonia":
+            pneumonia = 1
+
+        reintubation = 0
+        if row[headers15.index("REINTUB")]
+
         readmission = 0
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] == "Yes"]
         if len(readmissionResponses15) > 0:
@@ -168,7 +184,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses15) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -198,6 +214,10 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("HYPERMED")] == "Yes":
             hypertension = 1
 
+        pneumonia = 0
+        if row[headers16.index("OUPNEUMO")] == "Pneumonia":
+            pneumonia = 1
+
         readmission = 0
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] == "Yes"]
         if len(readmissionResponses16) > 0:
@@ -208,7 +228,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses16) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount
