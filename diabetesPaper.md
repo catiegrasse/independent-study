@@ -26,7 +26,7 @@ From this group in the database, found 644 patients identified as having undergo
 - In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
 
 ## Logistic Regression
-
+Example Logistic Regression Output  
 Outcome: Pneumonia
 
 |   | coef | std err | z | P > abs(z) | 0.025 | 0.975 |
