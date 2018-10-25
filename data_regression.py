@@ -16,11 +16,8 @@ dataset = pd.read_csv(FILE_NAME, header=None, names=col_names)
 #feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
 feature_cols = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
 
-
 X = dataset[feature_cols]
 y = dataset.Pneumonia
-
-#print sum([1 for num in y if num == 1])
 
 # split into training and testing sets
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
@@ -31,7 +28,7 @@ classifier.fit(X_train, y_train)
 
 # testing out statsmodels library
 logit_model=sm.Logit(y_train,X_train)
-result=logit_model.fit()
+result=logit_model.fit(maxiter=200, method = 'nm')
 print(result.summary())
 
 # predict on the testing data
