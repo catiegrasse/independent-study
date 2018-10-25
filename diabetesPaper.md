@@ -23,6 +23,7 @@ From this group in the database, found 644 patients identified as having undergo
 | Unplanned Readmission | 3.83% | 5.79% | 0.440 | 0.252 |
 
 - Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
+- In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
 
 ## Odds Ratio
 Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
