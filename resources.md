@@ -35,7 +35,7 @@ Basic info on logistic regression: https://ml-cheatsheet.readthedocs.io/en/lates
 Processing data for logistic regression: http://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features  
 Chi-Squared Info: http://math.hws.edu/javamath/ryan/ChiSquare.html  
 Python Logistic Regression: https://pythonfordatascience.org/logistic-regression-python/  
-Multiple Logistic Regression in Python" https://statinfer.com/204-2-3-multiple-logistic-regression/  
+Multiple Logistic Regression in Python https://statinfer.com/204-2-3-multiple-logistic-regression/  
 
 
 
