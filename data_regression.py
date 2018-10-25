@@ -10,14 +10,15 @@ FILE_NAME = "testingProcessor.csv"
 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Pneumonia", "Unplanned_Readmission", "Readmission"]
+col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Pneumonia", "Unplanned_Reintubation", 
+"Urinary_Tract_Infection", "Ventilator", "Unplanned_Readmission", "Readmission"]
 dataset = pd.read_csv(FILE_NAME, header=None, names=col_names)
 
 #feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
 feature_cols = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
 
 X = dataset[feature_cols]
-y = dataset.Pneumonia
+y = dataset.Ventilator
 
 # split into training and testing sets
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)

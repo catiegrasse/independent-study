@@ -22,7 +22,7 @@ OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", 
 SEX_COLUMNS = ["male", "female"]
 RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported"]
 COMORBIDITY_COLUMNS = ["SMOKE", "DYSPNEA", "HYPERMED"]
-OUTCOME_COLUMNS = ["OUPNEUMO", "REINTUB"]
+OUTCOME_COLUMNS = ["OUPNEUMO", "REINTUB", "URNINFEC", "FAILWEAN"]
 
 
 FILE_NAME= "testingProcessor.csv"
@@ -124,8 +124,16 @@ with open(FILE_NAME, mode='w') as filter_file:
             pneumonia = 1
 
         reintubation = 0
-        if row[headers14.index("REINTUB")] == "Reintubation":
+        if row[headers14.index("REINTUB")] == "Unplanned Intubation":
             reintubation = 1
+
+        urinaryInfection = 0
+        if row[headers14.index("URNINFEC")] == "Urinary Tract Infection":
+            urinaryInfection = 1
+
+        ventilator = 0
+        if row[headers14.index("FAILWEAN")] == "On Ventilator greater than 48 Hours":
+            ventilator = 1
 
         readmission = 0
         readmissionResponses14 = [row[ind] for ind in readmissionIndices14 if row[ind] == "Yes"]
@@ -137,7 +145,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses14) > 0:
             unplannedReadmission = 1
         
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -172,7 +180,16 @@ with open(FILE_NAME, mode='w') as filter_file:
             pneumonia = 1
 
         reintubation = 0
-        if row[headers15.index("REINTUB")]
+        if row[headers15.index("REINTUB")] == "Unplanned Intubation":
+            reintubation = 1
+
+        urinaryInfection = 0
+        if row[headers15.index("URNINFEC")] == "Urinary Tract Infection":
+            urinaryInfection = 1
+
+        ventilator = 0
+        if row[headers15.index("FAILWEAN")] == "On Ventilator greater than 48 Hours":
+            ventilator = 1
 
         readmission = 0
         readmissionResponses15 = [row[ind] for ind in readmissionIndices15 if row[ind] == "Yes"]
@@ -184,7 +201,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses15) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -218,6 +235,18 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("OUPNEUMO")] == "Pneumonia":
             pneumonia = 1
 
+        reintubation = 0
+        if row[headers16.index("REINTUB")] == "Unplanned Intubation":
+            reintubation = 1
+
+        urinaryInfection = 0
+        if row[headers16.index("URNINFEC")] == "Urinary Tract Infection":
+            urinaryInfection = 1
+
+        ventilator = 0
+        if row[headers16.index("FAILWEAN")] == "On Ventilator greater than 48 Hours":
+            ventilator = 1
+
         readmission = 0
         readmissionResponses16 = [row[ind] for ind in readmissionIndices16 if row[ind] == "Yes"]
         if len(readmissionResponses16) > 0:
@@ -228,7 +257,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses16) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, unplannedReadmission, readmission] 
+        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount
