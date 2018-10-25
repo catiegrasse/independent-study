@@ -2,6 +2,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
 import pandas as pd
 import numpy as np 
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
 
 #input file should be a csv composed of feature and outcome columns with integer values
 FILE_NAME = "testingProcessor.csv"
@@ -26,6 +28,11 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=
 # train the classifier
 classifier = LogisticRegression(random_state=0)
 classifier.fit(X_train, y_train)
+
+# testing out statsmodels library
+logit_model=sm.Logit(y_train,X_train)
+result=logit_model.fit()
+print(result.summary())
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
