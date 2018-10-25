@@ -12,7 +12,7 @@ From this group in the database, found 644 patients identified as having undergo
 | 61-80 years  | 16.73%  | 46.38% |
 | > 80 years   | 2.22%   | 2.90%  |
 | Male | 47.18% | 44.93% | 0.726 | 0.920 |
-| Female | 52.82% | 55.07% |
+| Female | 52.82% | 55.07% | ~ | ~ | 
 | White | 73.79% | 68.11% | 0.320 | 0.217 |
 | Black | 11.90% | 18.84% | 0.105 | 0.009 | 
 | Other | 5.44% | 7.25% | 0.542 | 0.740 |
@@ -20,7 +20,7 @@ From this group in the database, found 644 patients identified as having undergo
 | Smoking | 20.16% | 20.28% | 0.982 | 0.687 |
 | Dyspnea | 3.63% | 7.24% | 0.155 | 0.004 |
 | Hypertension | 29.03% | 76.81% | < .001 | < .001 |
-| Unplanned Readmission | 3.83% | 5.79% |  
+| Unplanned Readmission | 3.83% | 5.79% | 0.440 | 0.252 |
 
 - Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
 
