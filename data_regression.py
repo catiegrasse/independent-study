@@ -3,6 +3,7 @@ from sklearn.cross_validation import train_test_split
 import pandas as pd
 import numpy as np 
 import statsmodels as sm
+from statsmodels import Logit
 
 
 #input file should be a csv composed of feature and outcome columns with integer values
@@ -30,7 +31,7 @@ classifier = LogisticRegression(random_state=0)
 classifier.fit(X_train, y_train)
 
 # using stats models
-logit = sm.logit(y_train, X_train)
+logit = Logit(y_train, X_train)
 results = logit.fit()
 
 print results.summary()
