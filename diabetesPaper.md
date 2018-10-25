@@ -7,10 +7,10 @@ From this group in the database, found 644 patients identified as having undergo
 ## Findings
 |   | Non - Diabetics (N = 496) | Diabetics (N = 69) | p-Value from data | p-Value in paper |
 | ------------- | ------------- | ------------- | -------------|------------- |
-| <= 40 years  | 43.15%  | 17.39 % |
-| 41-60 years  | 37.90%  | 33.33% |
-| 61-80 years  | 16.73%  | 46.38% |
-| > 80 years   | 2.22%   | 2.90%  |
+| <= 40 years  | 43.15%  | 17.39 % | < .001 | < .001 |
+| 41-60 years  | 37.90%  | 33.33% | 0.541 | 0.038 |
+| 61-80 years  | 16.73%  | 46.38% | < .001 | < .001 | 
+| > 80 years   | 2.22%   | 2.90%  | 0.725 | 0.032 |
 | Male | 47.18% | 44.93% | 0.726 | 0.920 |
 | Female | 52.82% | 55.07% | ~ | ~ | 
 | White | 73.79% | 68.11% | 0.320 | 0.217 |
