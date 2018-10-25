@@ -11,7 +11,7 @@ From this group in the database, found 644 patients identified as having undergo
 | 41-60 years  | 37.90%  | 33.33% |
 | 61-80 years  | 16.73%  | 46.38% |
 | > 80 years   | 2.22%   | 2.90%  |
-| Male | 47.18% | 44.93% | .865 | 0.920 |
+| Male | 47.18% | 44.93% | 0.865 | 0.920 |
 | Female | 52.82% | 55.07% |
 | White | 73.79% | 68.11% |
 | Black | 11.90% | 18.84% |
