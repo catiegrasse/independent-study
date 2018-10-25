@@ -39,7 +39,9 @@ From this group in the database, found 644 patients identified as having undergo
 | Dyspnea  | -0.2727   | 3.343  | -0.082 | 0.935 | -6.825 | 6.280 |
 | Hypertension   | 0.6321   | 0.964  | 0.656 | 0.512 | -1.258 | 2.522 |
 
-Odds Ratio: exp(0.1697) = 1.185
+- Odds Ratio Calculation: exp(diabetes coef) = exp(0.1697) = 1.185
+
+## Odds Ratio
 
 |   | Odds ratio (data) | Odds ratio (paper) | 
 | ------------- | ------------- | ------------- | 
