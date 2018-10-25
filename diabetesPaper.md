@@ -26,8 +26,8 @@ From this group in the database, found 644 patients identified as having undergo
 - In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
 
 ## Logistic Regression
-Example Logistic Regression Output using Python statsmodels library 
-Outcome: Pneumonia
+- Example logistic regression output using python statsmodels.py  
+#### Outcome: Pneumonia
 
 |   | coef | std err | z | P > abs(z) | 0.025 | 0.975 |
 | ------------- | ------------- | ------------- | -------------|------------- | ------------- | ------------- |
@@ -39,10 +39,16 @@ Outcome: Pneumonia
 | Dyspnea  | -0.2727   | 3.343  | -0.082 | 0.935 | -6.825 | 6.280 |
 | Hypertension   | 0.6321   | 0.964  | 0.656 | 0.512 | -1.258 | 2.522 |
 
-Odds Ratio for Pneumonia Complication given the patient has Diabetes: 1.185
+Odds Ratio: exp(0.1697) = 1.185
 
-## Odds Ratio
-Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
+|   | Odds ratio (data) | Odds ratio (paper) | 
+| ------------- | ------------- | ------------- | 
+| Pneumonia  | 1.185  | 13.283 | 
+| Unplanned Readmission  | 1.005  | 3.413 | 
+| Unplanned Reintubation | 1.123 | 7.783 |
+| Urinary Tract Infection | 0.798 | 6.205 |
+| Ventilator | 1.005 | 12.276 |
+
 
 
 
