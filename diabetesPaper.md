@@ -25,31 +25,24 @@ From this group in the database, found 644 patients identified as having undergo
 - Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
 - In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
 
+## Logistic Regression
+
+Outcome: Pneumonia
+
+|   | coef | std err | z | P > abs(z) | 0.025 | 0.975 |
+| ------------- | ------------- | ------------- | -------------|------------- | ------------- | ------------- |
+| Age  | -0.1045  | 0.018 | -5.745 | 0.000 | -0.140 | -0.069 |
+| Sex  | -0.0860  | 0.643 | -0.134 | 0.894 | -1.347 | 1.175 |
+| Race  | -0.7400  | 0.605 | -1.164 | 0.245 | -1.890 | 0.482 |
+| Diabetes   | 0.1697  | 1.364  | 0.124 | 0.901 | -2.504 | 2.843 |
+| Smoking   | 0.3132   | 0.894  | 0.350 | 0.726 | -1.439 | 2.065 |
+| Dyspnea  | -0.2727   | 3.343  | -0.082 | 0.935 | -6.825 | 6.280 |
+| Hypertension   | 0.6321   | 0.964  | 0.656 | 0.512 | -1.258 | 2.522 |
+
+
+
 ## Odds Ratio
 Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
-
-#### Dependent Variable: Unplanned Readmission
-Odds Ratio: 
-[[ 1.00548339  0.85197126  1.0763642   0.89472254  1.01183143  0.59995999
-   1.12781509]]  
-*Not sure how to get a single odds ratio from this analysis*
-
-#### Dependent Variable: Overall Medical Complications
-
-#### Dependent Variable: Pneumonia
-Odds Ratio: 
-[[ 0.96861464  0.40725441  0.92997854  3.33129583  0.4656167   0.87391582
-   1.50309373]]
-
-#### Dependent Variable: Unplanned Reintubation
-
-#### Dependent Variable: Urinary Tract Infection
-
-#### Dependent Variable: Ventilator > 48 hours
-
-#### Dependent Variable: Overall Complications
-
-#### Dependent Variable: Mortality
 
 
 
