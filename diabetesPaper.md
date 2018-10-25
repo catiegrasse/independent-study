@@ -26,8 +26,29 @@ From this group in the database, found 644 patients identified as having undergo
 
 ## Odds Ratio
 Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
-Dependent Variable: Unplanned Readmission
+
+##### Dependent Variable: Unplanned Readmission
 Odds Ratio: 
 [[ 1.00548339  0.85197126  1.0763642   0.89472254  1.01183143  0.59995999
    1.12781509]]
 *Not sure how to get a single odds ratio from this analysis*
+
+##### Dependent Variable: Overall Medical Complications
+
+##### Dependent Variable: Pneumonia
+
+##### Dependent Variable: Unplanned Reintubation
+
+#### Dependent Variable: Urinary Tract Infection
+
+#### Dependent Variable: Ventilator > 48 hours
+
+##### Dependent Variable: Overall Complications
+
+##### Dependent Variable: Mortality
+
+
+
+
+
+
