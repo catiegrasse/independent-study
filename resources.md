@@ -34,6 +34,7 @@ Logistic regression tutorial: https://www.datacamp.com/community/tutorials/under
 Basic info on logistic regression: https://ml-cheatsheet.readthedocs.io/en/latest/logistic_regression.html  
 Processing data for logistic regression: http://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features  
 Chi-Squared Info: http://math.hws.edu/javamath/ryan/ChiSquare.html  
+Python Logistic Regression: https://pythonfordatascience.org/logistic-regression-python/
 
 
 
