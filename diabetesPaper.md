@@ -39,7 +39,7 @@ Outcome: Pneumonia
 | Dyspnea  | -0.2727   | 3.343  | -0.082 | 0.935 | -6.825 | 6.280 |
 | Hypertension   | 0.6321   | 0.964  | 0.656 | 0.512 | -1.258 | 2.522 |
 
-
+Odds Ratio for Pneumonia Complication given the patient has Diabetes: 1.185
 
 ## Odds Ratio
 Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
