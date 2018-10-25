@@ -23,3 +23,11 @@ From this group in the database, found 644 patients identified as having undergo
 | Unplanned Readmission | 3.83% | 5.79% |  
 
 - Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
+
+## Odds Ratio
+Feature Columns = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
+Dependent Variable: Unplanned Readmission
+Odds Ratio: 
+[[ 1.00548339  0.85197126  1.0763642   0.89472254  1.01183143  0.59995999
+   1.12781509]]
+*Not sure how to get a single odds ratio from this analysis*
