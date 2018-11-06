@@ -43,13 +43,13 @@ From this group in the database, found 644 patients identified as having undergo
 
 ## Odds Ratio
 
-|   | Odds ratio (data) | Odds ratio (paper) | 
-| ------------- | ------------- | ------------- | 
-| Pneumonia  | 1.185  | 13.283 | 
-| Unplanned Readmission  | 1.005  | 3.413 | 
-| Unplanned Reintubation | 1.123 | 7.783 |
-| Urinary Tract Infection | 0.798 | 6.205 |
-| Ventilator | 1.005 | 12.276 |
+|   | Odds ratio (data) | 0.025 | 0.975 | Odds ratio (paper) | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | 
+| Pneumonia  | 1.185  | 0.869 | 0.933 | 13.283 | 
+| Unplanned Readmission  | 1.005 | 0.191 | 5.296 | 3.413 | 
+| Unplanned Reintubation | 1.123 | 0.088 | 16.980 | 7.783 |
+| Urinary Tract Infection | 0.798 | 0.001 | 502.21 | 6.205 |
+| Ventilator | 1.005 | 0.184 | 5.490 | 12.276 |
 
 
 
