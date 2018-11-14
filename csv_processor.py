@@ -129,7 +129,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("HXCOPD")] == "Yes":
             copd = 1
 
-        chf = 0
+        cgf = 0
         if row[headers14.index("HXCHF")] == "Yes":
             chf = 1
 
@@ -183,9 +183,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses14) > 0:
             unplannedReadmission = 1
         
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
-        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
-        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -280,9 +278,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses15) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
-        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
-        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -377,9 +373,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses16) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
-        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
-        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount

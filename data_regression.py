@@ -13,10 +13,14 @@ FILE_NAME = "testingProcessor.csv"
 col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Ventilator Dependent", 
 "Ascites", "COPD", "Congestive Heart Failure", "Hypertension", "Acute Renal Failure", "Disseminated Cancer" ,
 "Steroid", "Bleeding Disorder", "Functional Health Status", "Pneumonia", "Unplanned_Reintubation", 
-"Urinary_Tract_Infection", "Ventilator", "Unplanned_Readmission", "Readmission"]
+"Urinary_Tract_Infection", "Ventilator", "Unplanned_Readmission"]
 dataset = pd.read_csv(FILE_NAME, header=None, names=col_names)
 
-feature_cols = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
+outcome_cols = ["Pneumonia", "Unplanned_Reintubation", "Urinary_Tract_Infection", "Ventilator", "Unplanned_Readmission"]
+
+feature_cols = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Ventilator Dependent",
+"Ascites", "COPD", "Congestive Heart Failure", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", 
+"Steroid", "Bleeding Disorder"]
 
 X = dataset[feature_cols]
 y = dataset.Pneumonia
@@ -31,9 +35,85 @@ classifier.fit(X_train, y_train)
 # testing out statsmodels library
 logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
+
+print(result.summary())	
+
+# predict on the testing data
+y_pred = classifier.predict(X_test)
+
+X = dataset[feature_cols]
+y = dataset.Unplanned_Reintubation
+
+# split into training and testing sets
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
+
+# train the classifier
+classifier = LogisticRegression(random_state=0)
+classifier.fit(X_train, y_train)
+
+# testing out statsmodels library
+logit_model=sm.Logit(y_train,X_train)
+result=logit_model.fit(maxiter=200, method = 'nm')
+
 print(result.summary())
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
 
+X = dataset[feature_cols]
+y = dataset.Urinary_Tract_Infection
+
+# split into training and testing sets
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
+
+# train the classifier
+classifier = LogisticRegression(random_state=0)
+classifier.fit(X_train, y_train)
+
+# testing out statsmodels library
+logit_model=sm.Logit(y_train,X_train)
+result=logit_model.fit(maxiter=200, method = 'nm')
+
+print(result.summary())
+
+# predict on the testing data
+y_pred = classifier.predict(X_test)
+
+X = dataset[feature_cols]
+y = dataset.Ventilator
+
+# split into training and testing sets
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
+
+# train the classifier
+classifier = LogisticRegression(random_state=0)
+classifier.fit(X_train, y_train)
+
+# testing out statsmodels library
+logit_model=sm.Logit(y_train,X_train)
+result=logit_model.fit(maxiter=200, method = 'nm')
+
+print(result.summary())
+
+# predict on the testing data
+y_pred = classifier.predict(X_test)
+
+X = dataset[feature_cols]
+y = dataset.Unplanned_Readmission
+
+# split into training and testing sets
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
+
+# train the classifier
+classifier = LogisticRegression(random_state=0)
+classifier.fit(X_train, y_train)
+
+# testing out statsmodels library
+logit_model=sm.Logit(y_train,X_train)
+result=logit_model.fit(maxiter=200, method = 'nm')
+
+print(result.summary())
+
+# predict on the testing data
+y_pred = classifier.predict(X_test)
 
