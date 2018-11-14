@@ -95,6 +95,8 @@ with open(FILE_NAME, mode='w') as filter_file:
         features = []
         age = row[headers14.index("Age")]
         sex = SEX_COLUMNS.index(row[headers14.index("SEX")])
+        height = row[headers14.index("HEIGHT")]
+        weight = row[headers14.index("WEIGHT")]
 
         #create an other category
         if row[headers14.index("RACE_NEW")] not in RACE_COLUMNS:
@@ -115,9 +117,45 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("DYSPNEA")] != "No" and row[headers14.index("DYSPNEA") != "NULL"]:
             dyspnea = 1
 
+        ventilator_dependent = 0
+        if row[headers14.index("VENTILAT")] == "Yes":
+            ventilator_dependent = 1
+
+        ascites = 0
+        if row[headers14.index("ASCITES")] == "Yes":
+            ascites = 1
+
+        copd = 0
+        if row[headers14.index("HXCOPD")] == "Yes":
+            copd = 1
+
+        chf = 0
+        if row[headers14.index("HXCHF")] == "Yes":
+            chf = 1
+
         hypertension = 0
         if row[headers14.index("HYPERMED")] == "Yes":
             hypertension = 1
+
+        acute_renal_failure = 0
+        if row[headers14.index("RENAFAIL")] == "Yes":
+            acute_renal_failure = 1
+
+        disseminated_cancer = 0
+        if row[headers14.index("DISCANCR")] == "Yes":
+            disseminated_cancer = 1
+
+        steroid = 0
+        if row[headers14.index("STEROID")] == "Yes":
+            steroid = 1
+
+        bleeding_disorder = 0
+        if row[headers14.index("BLEEDDIS")] == "Yes":
+            bleeding_disorder = 1
+
+        functional_health_status = 0
+        if row[headers14.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
+            functional_health_status = 1
 
         pneumonia = 0
         if row[headers14.index("OUPNEUMO")] == "Pneumonia":
@@ -145,12 +183,17 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses14) > 0:
             unplannedReadmission = 1
         
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
+        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
+        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
         age = row[headers15.index("Age")]
         sex = SEX_COLUMNS.index(row[headers15.index("SEX")])
+        height = row[headers15.index("HEIGHT")]
+        weight = row[headers15.index("WEIGHT")]
+
 
         #create an other category
         if row[headers15.index("RACE_NEW")] not in RACE_COLUMNS:
@@ -171,9 +214,45 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers15.index("DYSPNEA")] != "No" and row[headers15.index("DYSPNEA") != "NULL"]:
             dyspnea = 1
 
+        ventilator_dependent = 0
+        if row[headers15.index("VENTILAT")] == "Yes":
+            ventilator_dependent = 1
+
+        ascites = 0
+        if row[headers15.index("ASCITES")] == "Yes":
+            ascites = 1
+
+        copd = 0
+        if row[headers15.index("HXCOPD")] == "Yes":
+            copd = 1
+
+        cgf = 0
+        if row[headers15.index("HXCHF")] == "Yes":
+            cgf = 1
+
         hypertension = 0
         if row[headers15.index("HYPERMED")] == "Yes":
             hypertension = 1
+
+        acute_renal_failure = 0
+        if row[headers15.index("RENAFAIL")] == "Yes":
+            acute_renal_failure = 1
+
+        disseminated_cancer = 0
+        if row[headers15.index("DISCANCR")] == "Yes":
+            disseminated_cancer = 1
+
+        steroid = 0
+        if row[headers15.index("STEROID")] == "Yes":
+            steroid = 1
+
+        bleeding_disorder = 0
+        if row[headers15.index("BLEEDDIS")] == "Yes":
+            bleeding_disorder = 1
+
+        functional_health_status = 0
+        if row[headers15.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
+            functional_health_status = 1
 
         pneumonia = 0
         if row[headers15.index("OUPNEUMO")] == "Pneumonia":
@@ -201,12 +280,17 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses15) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
+        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
+        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
         age = row[headers16.index("Age")]
         sex = SEX_COLUMNS.index(row[headers16.index("SEX")])
+        height = row[headers16.index("HEIGHT")]
+        weight = row[headers16.index("WEIGHT")]
+
 
         #create an other category
         if row[headers16.index("RACE_NEW")] not in RACE_COLUMNS:
@@ -227,9 +311,45 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("DYSPNEA")] != "No" and row[headers16.index("DYSPNEA") != "NULL"]:
             dyspnea = 1
 
+        ventilator_dependent = 0
+        if row[headers16.index("VENTILAT")] == "Yes":
+            ventilator_dependent = 1
+
+        ascites = 0
+        if row[headers16.index("ASCITES")] == "Yes":
+            ascites = 1
+
+        copd = 0
+        if row[headers16.index("HXCOPD")] == "Yes":
+            copd = 1
+
+        cgf = 0
+        if row[headers16.index("HXCHF")] == "Yes":
+            cgf = 1
+
         hypertension = 0
         if row[headers16.index("HYPERMED")] == "Yes":
             hypertension = 1
+
+        acute_renal_failure = 0
+        if row[headers16.index("RENAFAIL")] == "Yes":
+            acute_renal_failure = 1
+
+        disseminated_cancer = 0
+        if row[headers16.index("DISCANCR")] == "Yes":
+            disseminated_cancer = 1
+
+        steroid = 0
+        if row[headers16.index("STEROID")] == "Yes":
+            steroid = 1
+
+        bleeding_disorder = 0
+        if row[headers16.index("BLEEDDIS")] == "Yes":
+            bleeding_disorder = 1
+
+        functional_health_status = 0
+        if row[headers16.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
+            functional_health_status = 1
 
         pneumonia = 0
         if row[headers16.index("OUPNEUMO")] == "Pneumonia":
@@ -257,7 +377,9 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses16) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, race, diabetes, smoke, dyspnea, hypertension, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, 
+        disseminated_cancer, steroid, bleeding_disorder, functional_health_status,
+        pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount

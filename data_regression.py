@@ -10,15 +10,16 @@ FILE_NAME = "testingProcessor.csv"
 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Pneumonia", "Unplanned_Reintubation", 
+col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Ventilator Dependent", 
+"Ascites", "COPD", "Congestive Heart Failure", "Hypertension", "Acute Renal Failure", "Disseminated Cancer" ,
+"Steroid", "Bleeding Disorder", "Functional Health Status", "Pneumonia", "Unplanned_Reintubation", 
 "Urinary_Tract_Infection", "Ventilator", "Unplanned_Readmission", "Readmission"]
 dataset = pd.read_csv(FILE_NAME, header=None, names=col_names)
 
-#feature_cols = ["Male", "Female", "White", "Black or African American", "Other",]
-feature_cols = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
+feature_cols = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension"]
 
 X = dataset[feature_cols]
-y = dataset.Ventilator
+y = dataset.Pneumonia
 
 # split into training and testing sets
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.25, random_state=0)
@@ -35,7 +36,4 @@ print(result.summary())
 # predict on the testing data
 y_pred = classifier.predict(X_test)
 
-# odds ratio 
-oddsRatio = np.exp(classifier.coef_)
 
-print "Odds Ratio: \n", oddsRatio
