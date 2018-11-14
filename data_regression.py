@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np 
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
+import math
 
 #input file should be a csv composed of feature and outcome columns with integer values
 FILE_NAME = "testingProcessor.csv"
@@ -36,7 +37,10 @@ classifier.fit(X_train, y_train)
 logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
-print(result.summary())	
+print(result.summary())
+coefficients = result.params.values
+for i in range(len(coefficients)):
+	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -56,6 +60,9 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
 print(result.summary())
+coefficients = result.params.values
+for i in range(len(coefficients)):
+	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -75,6 +82,9 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
 print(result.summary())
+coefficients = result.params.values
+for i in range(len(coefficients)):
+	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -91,9 +101,12 @@ classifier.fit(X_train, y_train)
 
 # testing out statsmodels library
 logit_model=sm.Logit(y_train,X_train)
-result=logit_model.fit(maxiter=200, method = 'nm')
+result=logit_model.fit(maxiter=400, method = 'nm')
 
 print(result.summary())
+coefficients = result.params.values
+for i in range(len(coefficients)):
+	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -110,9 +123,12 @@ classifier.fit(X_train, y_train)
 
 # testing out statsmodels library
 logit_model=sm.Logit(y_train,X_train)
-result=logit_model.fit(maxiter=200, method = 'nm')
+result=logit_model.fit(maxiter=400, method = 'nm')
 
 print(result.summary())
+coefficients = result.params.values
+for i in range(len(coefficients)):
+	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
