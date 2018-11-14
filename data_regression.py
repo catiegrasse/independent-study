@@ -9,8 +9,11 @@ import math
 #input file should be a csv composed of feature and outcome columns with integer values
 FILE_NAME = "testingProcessor.csv"
 
+OUTPUT_FILE_NAME = "output.csv"
 
-#col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
+f = open(OUTPUT_FILE_NAME, "w")
+
+
 col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoking", "Dyspnea", "Ventilator Dependent", 
 "Ascites", "COPD", "Congestive Heart Failure", "Hypertension", "Acute Renal Failure", "Disseminated Cancer" ,
 "Steroid", "Bleeding Disorder", "Functional Health Status", "Pneumonia", "Unplanned_Reintubation", 
@@ -38,9 +41,12 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
 print(result.summary())
+f.write(result.summary().as_csv())
+f.write("\n")
 coefficients = result.params.values
 for i in range(len(coefficients)):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
+	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i])) + "\n")
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -60,9 +66,12 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
 print(result.summary())
+f.write(result.summary().as_csv())
+f.write("\n")
 coefficients = result.params.values
 for i in range(len(coefficients)):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
+	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i])) + "\n")
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -82,9 +91,12 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=200, method = 'nm')
 
 print(result.summary())
+f.write(result.summary().as_csv())
+f.write("\n")
 coefficients = result.params.values
 for i in range(len(coefficients)):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
+	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i])) + "\n")
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -104,9 +116,12 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=400, method = 'nm')
 
 print(result.summary())
+f.write(result.summary().as_csv())
+f.write("\n")
 coefficients = result.params.values
 for i in range(len(coefficients)):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
+	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i])) + "\n")
 
 # predict on the testing data
 y_pred = classifier.predict(X_test)
@@ -126,10 +141,10 @@ logit_model=sm.Logit(y_train,X_train)
 result=logit_model.fit(maxiter=400, method = 'nm')
 
 print(result.summary())
+f.write(result.summary().as_csv())
+f.write("\n")
 coefficients = result.params.values
 for i in range(len(coefficients)):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i]))
-
-# predict on the testing data
-y_pred = classifier.predict(X_test)
+	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i])) + "\n")
 
