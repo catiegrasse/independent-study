@@ -9,7 +9,7 @@ FILE_NAME = "testingProcessor.csv"
 
 
 #col_names = ["Male", "Female", "White", "Black or African American", "Other", "Readmission"]
-col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Unplanned Readmission", "Readmission"]
+col_names = ["Age", "Sex", "Race", "Diabetes", "Smoking", "Dyspnea", "Hypertension", "Unplanned Readmission", "Pneumonia"]
 
 #columns produced from csv_processor.py
 SEX_COLUMNS = ["male", "female"]
@@ -26,6 +26,7 @@ nonDiabetesPatientGenders = []
 diabetesPatientRaces = []
 nonDiabetesPatientRaces = []
 diabetesPatientSmoke = []
+diabetesPatientPneumonia = []
 nonDiabetesPatientSmoke = []
 diabetesPatientDyspnea = []
 nonDiabetesPatientDyspnea = []
@@ -33,6 +34,7 @@ diabetesPatientHypertension = []
 nonDiabetesPatientHypertension = []
 diabetesPatientUnplannedReadmission = []
 nonDiabetesPatientUnplannedReadmission = []
+nonDiabetesPatientPneumonia = []
 
 #group diabetes and non-diabetes patients together
 numDiabetes = 0.0
@@ -40,23 +42,25 @@ numNonDiabetes = 0.0
 with open(FILE_NAME, mode='r') as csv_file:
 	for line in csv_file:
 		line = line.split(",")
-		if line[3] == "1":
+		if line[5] == "1":
 			diabetesPatientAges.append(line[0])
 			diabetesPatientGenders.append(line[1])
-			diabetesPatientRaces.append(line[2])
-			diabetesPatientSmoke.append(line[4])
-			diabetesPatientDyspnea.append(line[5])
-			diabetesPatientHypertension.append(line[6])
-			diabetesPatientUnplannedReadmission.append(line[7])
+			diabetesPatientRaces.append(line[4])
+			diabetesPatientSmoke.append(line[6])
+			diabetesPatientDyspnea.append(line[7])
+			diabetesPatientHypertension.append(line[12])
+			diabetesPatientUnplannedReadmission.append(line[-2])
+			diabetesPatientPneumonia.append(line[-6])
 			numDiabetes += 1
 		else:
 			nonDiabetesPatientAges.append(line[0])
 			nonDiabetesPatientGenders.append(line[1])
-			nonDiabetesPatientRaces.append(line[2])
-			nonDiabetesPatientSmoke.append(line[4])
-			nonDiabetesPatientDyspnea.append(line[5])
-			nonDiabetesPatientHypertension.append(line[6])
-			nonDiabetesPatientUnplannedReadmission.append(line[7])
+			nonDiabetesPatientRaces.append(line[4])
+			nonDiabetesPatientSmoke.append(line[6])
+			nonDiabetesPatientDyspnea.append(line[7])
+			nonDiabetesPatientHypertension.append(line[12])
+			nonDiabetesPatientUnplannedReadmission.append(line[-2])
+			nonDiabetesPatientPneumonia.append(line[-6])
 			numNonDiabetes += 1
 
 print "DM", diabetesPatientSmoke
@@ -121,5 +125,6 @@ print "Percent Hypertension DM", sum([1 for item in diabetesPatientHypertension 
 print "Percent Hypertension Non-DM ", sum([1 for item in nonDiabetesPatientHypertension if item == "1"])/numNonDiabetes
 print "Percent Unplanned Readmission DM", sum([1 for item in diabetesPatientUnplannedReadmission if item == "1"])/numDiabetes
 print "Percent Unplanned Readmission Non-DM ", sum([1 for item in nonDiabetesPatientUnplannedReadmission if item == "1"])/numNonDiabetes
-
+print "Percent Pneumonia DM ", sum([1 for item in diabetesPatientPneumonia if item == "1"])/numDiabetes
+print "Percent Pneumonia Non-DM ", sum([1 for item in nonDiabetesPatientPneumonia if item == "1"])/numNonDiabetes
 
