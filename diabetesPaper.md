@@ -66,6 +66,28 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | Urinary Tract Infection | 3.686 | 6.205 |
 | Ventilator | 4.906 | 12.276 |
 
+## Recreating Table 3 from the Paper
+|  | Non-Diabetics (N = 496) | Non-Diabetics (paper)| Diabetics (N = 69) | Diabetics (paper) | p-value | p-value (paper) |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
+| Superficial SSI | 0.2% | 0.4% | 0.0% | 0.0% | | 1.000 |
+| Deep SSI | 0.0% | 0.4% | 0.0% | 0.0% | | 1.000 |
+| Organ/Space SSI | 3.9% | 0.0% | 1.4% | 0.0% | | - |
+| Wound Disruption | 0.0% | 0.5% | 0.0% | 0.0% | | 1.000 |
+| Pneumonia | 0.81% | 0.5% | 5.8% | 3.5% | | 0.033 |
+| Unplanned Reintubation | 0.4% | 0.7% | 4.3% | 5.9% | | 0.033 |
+| Urinary Tract Infection | 0.2% | 0.5% | 0.0% | 3.5% | | 0.033 |
+| Deep Vein Thrombosis | 0.2% | 0.2% | 1.4% | 1.2% | | 0.247 |
+| Renal Insufficiency | 0.2% | 0.0% | 0.0% | 1.2% | | 0.132 |
+| Pulmonary Embolism | 0.4% | 0.5% | 0.0% | 0.0% |  | 1.000 |
+| Ventilator > 48 Hours | 0.6% | 0.7% | 2.9% | 7.1% | | 0.001 |
+| Acute Renal Failure | 0.2% | 0.0% | 0.0% | 0.0% | | - |
+| CVA with Neurologic Deficit | 0.0% | 0.2% | 0.0% | 0.0% | | 1.000|
+| Cardiac Arrest Requiring CPR | 0.0% | 0.0% | 0.0% | 0.0% | - | - |
+| Myorcardial Infarction | 0.0% | 0.0% | 0.0% | 1.2% | - | 0.132 |
+| Sepsis | 1.0% | 0.2% | 0.0% | 1.2% | | 0.247 |
+
+
+
 
 
 
