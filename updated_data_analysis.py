@@ -13,7 +13,7 @@ col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoke", "Dys
 "COPD", "CGF", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", "Steroid", "Bleeding Disorder", "Functional Health Status",
 "Pneumonia", "Reintubation", "Urinary Infection", "Ventilator", "Unplanned Readmission", "Readmission", "Superficial SSI", "Deep SSI",
 "Organ/Space SSI", "Wound Disruption", "Deep Vein Thrombosis", "Renal Insufficiency", "Pulmonary Embolism", "CVA with Neurologic Deficit",
-"Cardiac Arrest", "Myocardial Infarction", "Sepsis"]
+"Cardiac Arrest", "Myocardial Infarction", "Sepsis", "Inpatient"]
 
 #Set the feature you are interested in studying
 feature = "Diabetes"
@@ -39,8 +39,21 @@ with open(FILE_NAME, mode='r') as csv_file:
 print "Number of Patients with " + feature, numFeature
 print "Number of Patients without " + feature, numNonFeature
 
-for i in range(5, len(col_names)):
+for i in range(5, len(col_names) - 1):
 	print "Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1"])*1.0/numFeature
 	print "Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1")*1.0/numNonFeature
+	print "\n"
 
+print "DIVIDING BY INPATIENT AND OUTPATIENT"
+
+for i in range(5, len(col_names) - 1):
+	print "INPATIENT: Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "1\r\n"])*1.0/numFeature
+	print "OUTPATIENT: Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "0\r\n"])*1.0/numFeature
+	print("\n")
+	print "INPATIENT: Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "1\r\n")*1.0/numNonFeature
+	print "OUTPATIENT: Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "0\r\n")*1.0/numNonFeature
+	print("\n")
+
+print "TESTING"
+print listFeature[1]
 

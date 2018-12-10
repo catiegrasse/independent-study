@@ -227,8 +227,12 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("OTHSYSEP")] == "Sepsis":
             sepsis = 1
 
+        inpatient = 0
+        if row[headers14.index("INOUT")] == "Inpatient":
+            inpatient = 1
+
         newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
-        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -367,8 +371,12 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers15.index("OTHSYSEP")] == "Sepsis":
             sepsis = 1
 
+        inpatient = 0
+        if row[headers15.index("INOUT")] == "Inpatient":
+            inpatient = 1
+
         newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
-        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -507,8 +515,12 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("OTHSYSEP")] == "Sepsis":
             sepsis = 1
 
+        inpatient = 0
+        if row[headers16.index("INOUT")] == "Inpatient":
+            inpatient = 1
+
         newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
-        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount
