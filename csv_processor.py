@@ -182,8 +182,53 @@ with open(FILE_NAME, mode='w') as filter_file:
         unplannedReadmissionResponses14 = [row[ind] for ind in unplannedReadmissionIndices14 if row[ind] == "Yes"]
         if len(unplannedReadmissionResponses14) > 0:
             unplannedReadmission = 1
+
+        supInfec = 0
+        if row[headers14.index("SUPINFEC")] == "Superficial Incisional SSI":
+            supInfec = 1
+
+        deepSSI = 0
+        if row[headers14.index("WNDINFD")] == "Deep Incisional SSI":
+            deepSSI = 1
+
+        orgSpaceSSI = 0
+        if row[headers14.index("ORGSPCSSI")] == "Organ/Space SSI":
+            orgSpaceSSI = 1
+
+        woundDisruption = 0
+        if row[headers14.index("DEHIS")] == "Wound Disruption":
+            woundDisruption = 1
+
+        deepVeinThrombosis = 0
+        if row[headers14.index("OTHDVT")] == "DVT Requiring Therapy":
+            deepVeinThrombosis = 1
+
+        renalInsufficiency = 0
+        if row[headers14.index("RENAINSF")] == "Progressive Renal Insufficiency":
+            renalInsufficiency = 1
+
+        pulmonaryEmbolism = 0
+        if row[headers14.index("PULEMBOL")] == "Pulmonary Embolism":
+            pulmonaryEmbolism = 1
         
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        cva = 0
+        if row[headers14.index("CNSCVA")] == "Stroke/CVA":
+            cva = 1
+
+        cardiacArrest = 0
+        if row[headers14.index("CDARREST")] == "Cardiac Arrest Requiring CPR":
+            cardiacArrest = 1
+
+        myocardialInfarction = 0
+        if row[headers14.index("CDMI")] == "Myocardial Infarction":
+            myocardialInfarction = 1
+
+        sepsis = 0
+        if row[headers14.index("OTHSYSEP")] == "Sepsis":
+            sepsis = 1
+
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader15:
@@ -278,7 +323,52 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses15) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        supInfec = 0
+        if row[headers15.index("SUPINFEC")] == "Superficial Incisional SSI":
+            supInfec = 1
+
+        deepSSI = 0
+        if row[headers15.index("WNDINFD")] == "Deep Incisional SSI":
+            deepSSI = 1
+
+        orgSpaceSSI = 0
+        if row[headers15.index("ORGSPCSSI")] == "Organ/Space SSI":
+            orgSpaceSSI = 1
+
+        woundDisruption = 0
+        if row[headers15.index("DEHIS")] == "Wound Disruption":
+            woundDisruption = 1
+
+        deepVeinThrombosis = 0
+        if row[headers15.index("OTHDVT")] == "DVT Requiring Therapy":
+            deepVeinThrombosis = 1
+
+        renalInsufficiency = 0
+        if row[headers15.index("RENAINSF")] == "Progressive Renal Insufficiency":
+            renalInsufficiency = 1
+
+        pulmonaryEmbolism = 0
+        if row[headers15.index("PULEMBOL")] == "Pulmonary Embolism":
+            pulmonaryEmbolism = 1
+
+        cva = 0
+        if row[headers15.index("CNSCVA")] == "Stroke/CVA":
+            cva = 1
+
+        cardiacArrest = 0
+        if row[headers15.index("CDARREST")] == "Cardiac Arrest Requiring CPR":
+            cardiacArrest = 1
+
+        myocardialInfarction = 0
+        if row[headers15.index("CDMI")] == "Myocardial Infarction":
+            myocardialInfarction = 1
+
+        sepsis = 0
+        if row[headers15.index("OTHSYSEP")] == "Sepsis":
+            sepsis = 1
+
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
         csv_writer.writerow(newRow)
 
     for row in csv_reader16:
@@ -373,7 +463,52 @@ with open(FILE_NAME, mode='w') as filter_file:
         if len(unplannedReadmissionResponses16) > 0:
             unplannedReadmission = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission] 
+        supInfec = 0
+        if row[headers16.index("SUPINFEC")] == "Superficial Incisional SSI":
+            supInfec = 1
+
+        deepSSI = 0
+        if row[headers16.index("WNDINFD")] == "Deep Incisional SSI":
+            deepSSI = 1
+
+        orgSpaceSSI = 0
+        if row[headers16.index("ORGSPCSSI")] == "Organ/Space SSI":
+            orgSpaceSSI = 1
+
+        woundDisruption = 0
+        if row[headers16.index("DEHIS")] == "Wound Disruption":
+            woundDisruption = 1
+
+        deepVeinThrombosis = 0
+        if row[headers16.index("OTHDVT")] == "DVT Requiring Therapy":
+            deepVeinThrombosis = 1
+
+        renalInsufficiency = 0
+        if row[headers16.index("RENAINSF")] == "Progressive Renal Insufficiency":
+            renalInsufficiency = 1
+
+        pulmonaryEmbolism = 0
+        if row[headers16.index("PULEMBOL")] == "Pulmonary Embolism":
+            pulmonaryEmbolism = 1
+
+        cva = 0
+        if row[headers16.index("CNSCVA")] == "Stroke/CVA":
+            cva = 1
+
+        cardiacArrest = 0
+        if row[headers16.index("CDARREST")] == "Cardiac Arrest Requiring CPR":
+            cardiacArrest = 1
+
+        myocardialInfarction = 0
+        if row[headers16.index("CDMI")] == "Myocardial Infarction":
+            myocardialInfarction = 1
+
+        sepsis = 0
+        if row[headers16.index("OTHSYSEP")] == "Sepsis":
+            sepsis = 1
+
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis] 
         csv_writer.writerow(newRow)
 
 print "Total number of records with diabetes ICD code: ", icdCount

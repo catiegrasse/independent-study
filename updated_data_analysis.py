@@ -11,7 +11,9 @@ FILE_NAME = "testingProcessor.csv"
 #columns of testingProcessor.csv
 col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoke", "Dyspnea", "Ventilator Dependent", "Ascites",
 "COPD", "CGF", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", "Steroid", "Bleeding Disorder", "Functional Health Status",
-"Pneumonia", "Reintubation", "Urinary Infection", "Ventilator", "Unplanned Readmission", "Readmission"]
+"Pneumonia", "Reintubation", "Urinary Infection", "Ventilator", "Unplanned Readmission", "Readmission", "Superficial SSI", "Deep SSI",
+"Organ/Space SSI", "Wound Disruption", "Deep Vein Thrombosis", "Renal Insufficiency", "Pulmonary Embolism", "CVA with Neurologic Deficit",
+"Cardiac Arrest", "Myocardial Infarction", "Sepsis"]
 
 #Set the feature you are interested in studying
 feature = "Diabetes"
