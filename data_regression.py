@@ -28,11 +28,11 @@ outcome_cols = ["Pneumonia", "Unplanned_Reintubation", "Urinary_Tract_Infection"
 #"Ascites", "COPD", "Congestive Heart Failure", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", 
 #"Steroid", "Bleeding Disorder"]
 
-feature_cols = ["Age", "Sex", "Race", "Smoking", "Dyspnea", "Hypertension", "Diabetes"]
+feature_cols = ["Diabetes"]
 
 X = dataset[feature_cols]
 X = sm.add_constant(X)
-y = dataset.Pneumonia
+y = dataset.Ventilator
 
 #print (X.values)
 print(X)
@@ -51,7 +51,7 @@ print(result.summary())
 f.write(result.summary().as_csv())
 f.write("\n")
 coefficients = result.params.values
-for i in range(len(coefficients)):
+for i in range(len(coefficients) - 1):
 	print("Odds ratio for " + feature_cols[i] + " = ", math.exp(coefficients[i + 1]))
 	f.write("Odds ratio for " + feature_cols[i] + " = " + str(math.exp(coefficients[i + 1])) + "\n")
 
