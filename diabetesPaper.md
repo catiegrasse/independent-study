@@ -21,6 +21,8 @@ From this group in the database, found 644 patients identified as having undergo
 | Dyspnea | 3.63% | 7.24% | 0.155 | 0.004 |
 | Hypertension | 29.03% | 76.81% | < .001 | < .001 |
 | Unplanned Readmission | 3.83% | 5.79% | 0.440 | 0.252 |
+| Pneumonia | 0.81% | 5.80% | | |
+
 
 - Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
 - In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
