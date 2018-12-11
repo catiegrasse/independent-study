@@ -16,7 +16,7 @@ col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoke", "Dys
 "Cardiac Arrest", "Myocardial Infarction", "Sepsis", "Inpatient"]
 
 #Set the feature you are interested in studying
-feature = "Diabetes"
+feature = "Functional Health Status"
 
 #Count 
 numFeature = 0.0
@@ -38,22 +38,34 @@ with open(FILE_NAME, mode='r') as csv_file:
 
 print "Number of Patients with " + feature, numFeature
 print "Number of Patients without " + feature, numNonFeature
+print "\n"
+
+numFeatureIP = sum([1 for x in listFeature if x[-1] == "1\r\n"])
+numFeatureOP = sum([1 for x in listFeature if x[-1] != "1\r\n"])
+numNonFeatureIP = sum([1 for x in listNonFeature if x[-1] == "1\r\n"])
+numNonFeatureOP = sum([1 for x in listNonFeature if x[-1] != "1\r\n"])
+
+print "Number of Inpatient Patients with " + feature, numFeatureIP
+print "Number of Inpatient Patients without " + feature, numNonFeatureIP
+print "Number of Outpatient Patients with " + feature, numFeatureOP
+print "Number of Outpatient Patients without " + feature, numNonFeatureOP
 
 for i in range(5, len(col_names) - 1):
 	print "Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1"])*1.0/numFeature
 	print "Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1")*1.0/numNonFeature
 	print "\n"
 
-print "DIVIDING BY INPATIENT AND OUTPATIENT"
-
+print("| | Non-" + feature + " (N = " + str(numNonFeature) + ") | " + feature + " (N = " + str(numFeature) + ") |")
+print ("| ------------- | ------------- | ------------- |")
 for i in range(5, len(col_names) - 1):
-	print "INPATIENT: Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "1\r\n"])*1.0/numFeature
-	print "OUTPATIENT: Number of " + feature + " Patients with " + col_names[i] + " ", sum([1 for x in listFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "0\r\n"])*1.0/numFeature
-	print("\n")
-	print "INPATIENT: Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "1\r\n")*1.0/numNonFeature
-	print "OUTPATIENT: Number of non-" + feature + " Patients with " + col_names[i] + " ", sum(1 for x in listNonFeature if x[i] == "1" and x[col_names.index("Inpatient")] == "0\r\n")*1.0/numNonFeature
-	print("\n")
+	print(" | " + col_names[i] + " | " + str((sum([1 for x in listNonFeature if x[i] == "1"])*1.0/numFeature)*100.0) + "% | " + str((sum([1 for x in listFeature if x[i] == "1"])*1.0/numFeature)*100.0) + "% | ")
 
-print "TESTING"
-print listFeature[1]
+print("\n")
 
+
+print("| | Outpatient Non-" + feature + " (N = " + str(numNonFeatureOP) + ") | Outpatient " + feature + " (N = " + str(numFeatureOP) + ") | " +
+	" Inpatient Non-" + feature + " (N = " + str(numNonFeatureIP) + ") | Inpatient " + feature + " (N = " + str(numFeatureIP)) + ") |"
+print("| ------------- | ------------- | ------------- | ------------- | ------------- |")
+for i in range(5, len(col_names) - 1):
+	print(" | " + col_names[i] + " | " + str((sum([1 for x in listNonFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0/numNonFeatureOP)*100.0) + "% | " + str((sum([1 for x in listFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0/numFeatureOP)*100.0) + "% | " +
+		str((sum([1 for x in listNonFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0/numNonFeatureIP)*100.0) + "% | " + str((sum([1 for x in listFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0/numFeatureIP)*100.0) + "% | ")
