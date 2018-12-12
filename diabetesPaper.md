@@ -679,6 +679,7 @@ The following analysis checks for significant differences between populations wi
  | Sepsis | 0.282485875706% | 0.0% | 0.926549732471|1.9801980198% | 0.0% | 0.727799695429|
  
  Functional Health Status refers to a patient having either a Partially Dependent or Totally Dependent Functional Health Status. Non-Functional Health Status refers to a patient having an Independent or Unknown Functional Health Status.  
+ 
 | | Non-Functional Health Status (N = 559.0) | Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.8067978533% | 50.0% | **0.00448293131856** | 
