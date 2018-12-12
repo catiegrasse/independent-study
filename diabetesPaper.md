@@ -349,7 +349,7 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|2.03045685279% | 0.0% | 0.633212377263|
+ | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|2.03045685279% | 0.0% | 0.633212377263|  
  
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -414,7 +414,7 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.0% | 11.1111111111% | **4.7551155606e-10**|1.5306122449% | 8.33333333333% | 0.0957799642934|
+ | Sepsis | 0.0% | 11.1111111111% | **4.7551155606e-10**|1.5306122449% | 8.33333333333% | 0.0957799642934|  
  
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -479,7 +479,7 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.281690140845% | 0.0% | 0.940084220734|1.93236714976% | 0.0% | 0.888370952029|
+ | Sepsis | 0.281690140845% | 0.0% | 0.940084220734|1.93236714976% | 0.0% | 0.888370952029|  
 
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -544,9 +544,8 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.280898876404% | 0.0% | 0.957672724265|2.05128205128% | 0.0% | 0.602063130129|
+ | Sepsis | 0.280898876404% | 0.0% | 0.957672724265|2.05128205128% | 0.0% | 0.602063130129|  
  
- ## Steroid Analysis
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.5939849624% | 6.06060606061% | 0.266022905914 | 
@@ -610,7 +609,7 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|1.06951871658% | 9.52380952381% | **0.00747698502665**|
+ | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|1.06951871658% | 9.52380952381% | **0.00747698502665**|  
  
  
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
@@ -676,9 +675,9 @@ The following analysis checks for significant differences between populations wi
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Cardiac Arrest | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Sepsis | 0.282485875706% | 0.0% | 0.926549732471|1.9801980198% | 0.0% | 0.727799695429|
+ | Sepsis | 0.282485875706% | 0.0% | 0.926549732471|1.9801980198% | 0.0% | 0.727799695429|  
  
- Functional Health Status refers to a patient having either a Partially Dependent or Totally Dependent Functional Health Status. Non-Functional Health Status refers to a patient having an Independent or Unknown Functional Health Status.  
+For the following tables, Functional Health Status refers to a patient having either a Partially Dependent or Totally Dependent Functional Health Status. Non-Functional Health Status refers to a patient having an Independent or Unknown Functional Health Status.  
  
 | | Non-Functional Health Status (N = 559.0) | Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
