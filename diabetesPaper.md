@@ -90,36 +90,37 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) |
 | ------------- | ------------- | ------------- |
  | Diabetes | 0.0% | 100.0% | 
- | Smoke | 144.927536232% | 20.2898550725% | 
- | Dyspnea | 26.0869565217% | 7.24637681159% | 
- | Ventilator Dependent | 1.44927536232% | 0.0% | 
+ | Smoke | 20.1612903226% | 20.2898550725% | 
+ | Dyspnea | 3.62903225806% | 7.24637681159% | 
+ | Ventilator Dependent | 0.201612903226% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 20.2898550725% | 10.1449275362% | 
- | CGF | 2.89855072464% | 1.44927536232% | 
- | Hypertension | 208.695652174% | 76.8115942029% | 
- | Acute Renal Failure | 1.44927536232% | 0.0% | 
- | Disseminated Cancer | 18.8405797101% | 1.44927536232% | 
- | Steroid | 44.9275362319% | 2.89855072464% | 
- | Bleeding Disorder | 10.1449275362% | 2.89855072464% | 
- | Functional Health Status | 4.34782608696% | 4.34782608696% | 
- | Pneumonia | 5.79710144928% | 5.79710144928% | 
- | Reintubation | 2.89855072464% | 4.34782608696% | 
- | Urinary Infection | 1.44927536232% | 0.0% | 
- | Ventilator | 4.34782608696% | 2.89855072464% | 
- | Unplanned Readmission | 27.5362318841% | 5.79710144928% | 
- | Readmission | 30.4347826087% | 5.79710144928% | 
- | Superficial SSI | 1.44927536232% | 0.0% | 
+ | COPD | 2.82258064516% | 10.1449275362% | 
+ | CGF | 0.403225806452% | 1.44927536232% | 
+ | Hypertension | 29.0322580645% | 76.8115942029% | 
+ | Acute Renal Failure | 0.201612903226% | 0.0% | 
+ | Disseminated Cancer | 2.62096774194% | 1.44927536232% | 
+ | Steroid | 6.25% | 2.89855072464% | 
+ | Bleeding Disorder | 1.41129032258% | 2.89855072464% | 
+ | Functional Health Status | 0.604838709677% | 4.34782608696% | 
+ | Pneumonia | 0.806451612903% | 5.79710144928% | 
+ | Reintubation | 0.403225806452% | 4.34782608696% | 
+ | Urinary Infection | 0.201612903226% | 0.0% | 
+ | Ventilator | 0.604838709677% | 2.89855072464% | 
+ | Unplanned Readmission | 3.83064516129% | 5.79710144928% | 
+ | Readmission | 4.23387096774% | 5.79710144928% | 
+ | Superficial SSI | 0.201612903226% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 10.1449275362% | 2.89855072464% | 
+ | Organ/Space SSI | 1.41129032258% | 2.89855072464% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 1.44927536232% | 1.44927536232% | 
- | Renal Insufficiency | 1.44927536232% | 0.0% | 
- | Pulmonary Embolism | 2.89855072464% | 0.0% | 
+ | Deep Vein Thrombosis | 0.201612903226% | 1.44927536232% | 
+ | Renal Insufficiency | 0.201612903226% | 0.0% | 
+ | Pulmonary Embolism | 0.403225806452% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 7.24637681159% | 0.0% | 
- 
+ | Sepsis | 1.00806451613% | 0.0% | 
+
+
 | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) |  Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 0.0% | 100.0% | 0.0% | 100.0% | 
@@ -156,36 +157,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  ## Smoking Analysis
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 48.2456140351% | 12.2807017544% | 
+ | Diabetes | 12.1951219512% | 12.2807017544% | 
  | Smoke | 0.0% | 100.0% | 
- | Dyspnea | 10.5263157895% | 9.64912280702% | 
+ | Dyspnea | 2.66075388027% | 9.64912280702% | 
  | Ventilator Dependent | 0.0% | 0.877192982456% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 11.4035087719% | 7.01754385965% | 
- | CGF | 1.75438596491% | 0.877192982456% | 
- | Hypertension | 122.807017544% | 50.0% | 
- | Acute Renal Failure | 0.877192982456% | 0.0% | 
- | Disseminated Cancer | 10.5263157895% | 1.75438596491% | 
- | Steroid | 25.4385964912% | 3.50877192982% | 
- | Bleeding Disorder | 7.89473684211% | 0.0% | 
- | Functional Health Status | 3.50877192982% | 1.75438596491% | 
- | Pneumonia | 6.14035087719% | 0.877192982456% | 
- | Reintubation | 3.50877192982% | 0.877192982456% | 
- | Urinary Infection | 0.877192982456% | 0.0% | 
- | Ventilator | 2.63157894737% | 1.75438596491% | 
- | Unplanned Readmission | 14.0350877193% | 6.14035087719% | 
- | Readmission | 14.9122807018% | 7.01754385965% | 
- | Superficial SSI | 0.877192982456% | 0.0% | 
+ | COPD | 2.88248337029% | 7.01754385965% | 
+ | CGF | 0.443458980044% | 0.877192982456% | 
+ | Hypertension | 31.0421286031% | 50.0% | 
+ | Acute Renal Failure | 0.221729490022% | 0.0% | 
+ | Disseminated Cancer | 2.66075388027% | 1.75438596491% | 
+ | Steroid | 6.43015521064% | 3.50877192982% | 
+ | Bleeding Disorder | 1.9955654102% | 0.0% | 
+ | Functional Health Status | 0.886917960089% | 1.75438596491% | 
+ | Pneumonia | 1.55210643016% | 0.877192982456% | 
+ | Reintubation | 0.886917960089% | 0.877192982456% | 
+ | Urinary Infection | 0.221729490022% | 0.0% | 
+ | Ventilator | 0.665188470067% | 1.75438596491% | 
+ | Unplanned Readmission | 3.54767184035% | 6.14035087719% | 
+ | Readmission | 3.76940133038% | 7.01754385965% | 
+ | Superficial SSI | 0.221729490022% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 3.50877192982% | 4.38596491228% | 
+ | Organ/Space SSI | 0.886917960089% | 4.38596491228% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 0.877192982456% | 0.877192982456% | 
- | Renal Insufficiency | 0.877192982456% | 0.0% | 
+ | Deep Vein Thrombosis | 0.221729490022% | 0.877192982456% | 
+ | Renal Insufficiency | 0.221729490022% | 0.0% | 
  | Pulmonary Embolism | 0.0% | 1.75438596491% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 2.63157894737% | 1.75438596491% | 
+ | Sepsis | 0.665188470067% | 1.75438596491% | 
 
 
 | | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) |  Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) |
@@ -224,36 +225,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  ## Hypertension Analysis
  | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 8.12182741117% | 26.9035532995% | 
- | Smoke | 28.9340101523% | 28.9340101523% | 
- | Dyspnea | 4.06091370558% | 7.61421319797% | 
+ | Diabetes | 4.34782608696% | 26.9035532995% | 
+ | Smoke | 15.4891304348% | 28.9340101523% | 
+ | Dyspnea | 2.17391304348% | 7.61421319797% | 
  | Ventilator Dependent | 0.0% | 0.507614213198% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 2.53807106599% | 8.12182741117% | 
+ | COPD | 1.35869565217% | 8.12182741117% | 
  | CGF | 0.0% | 1.52284263959% | 
  | Hypertension | 0.0% | 100.0% | 
  | Acute Renal Failure | 0.0% | 0.507614213198% | 
- | Disseminated Cancer | 5.07614213198% | 2.03045685279% | 
- | Steroid | 9.64467005076% | 7.10659898477% | 
- | Bleeding Disorder | 2.53807106599% | 2.03045685279% | 
- | Functional Health Status | 1.0152284264% | 2.03045685279% | 
- | Pneumonia | 1.52284263959% | 2.53807106599% | 
- | Reintubation | 1.0152284264% | 1.52284263959% | 
- | Urinary Infection | 0.507614213198% | 0.0% | 
- | Ventilator | 2.03045685279% | 0.507614213198% | 
- | Unplanned Readmission | 5.07614213198% | 6.59898477157% | 
- | Readmission | 5.07614213198% | 7.61421319797% | 
+ | Disseminated Cancer | 2.71739130435% | 2.03045685279% | 
+ | Steroid | 5.16304347826% | 7.10659898477% | 
+ | Bleeding Disorder | 1.35869565217% | 2.03045685279% | 
+ | Functional Health Status | 0.54347826087% | 2.03045685279% | 
+ | Pneumonia | 0.815217391304% | 2.53807106599% | 
+ | Reintubation | 0.54347826087% | 1.52284263959% | 
+ | Urinary Infection | 0.271739130435% | 0.0% | 
+ | Ventilator | 1.08695652174% | 0.507614213198% | 
+ | Unplanned Readmission | 2.71739130435% | 6.59898477157% | 
+ | Readmission | 2.71739130435% | 7.61421319797% | 
  | Superficial SSI | 0.0% | 0.507614213198% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 2.03045685279% | 2.53807106599% | 
+ | Organ/Space SSI | 1.08695652174% | 2.53807106599% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 0.507614213198% | 0.507614213198% | 
+ | Deep Vein Thrombosis | 0.271739130435% | 0.507614213198% | 
  | Renal Insufficiency | 0.0% | 0.507614213198% | 
- | Pulmonary Embolism | 0.507614213198% | 0.507614213198% | 
+ | Pulmonary Embolism | 0.271739130435% | 0.507614213198% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 0.507614213198% | 2.03045685279% | 
+ | Sepsis | 0.271739130435% | 2.03045685279% | 
 
 
 | | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) |  Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) |
@@ -293,36 +294,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 278.260869565% | 21.7391304348% | 
- | Smoke | 447.826086957% | 47.8260869565% | 
+ | Diabetes | 11.8081180812% | 21.7391304348% | 
+ | Smoke | 19.0036900369% | 47.8260869565% | 
  | Dyspnea | 0.0% | 100.0% | 
- | Ventilator Dependent | 4.34782608696% | 0.0% | 
+ | Ventilator Dependent | 0.184501845018% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 60.8695652174% | 30.4347826087% | 
- | CGF | 13.0434782609% | 0.0% | 
- | Hypertension | 791.304347826% | 65.2173913043% | 
+ | COPD | 2.58302583026% | 30.4347826087% | 
+ | CGF | 0.553505535055% | 0.0% | 
+ | Hypertension | 33.5793357934% | 65.2173913043% | 
  | Acute Renal Failure | 0.0% | 4.34782608696% | 
- | Disseminated Cancer | 52.1739130435% | 8.69565217391% | 
- | Steroid | 134.782608696% | 8.69565217391% | 
- | Bleeding Disorder | 30.4347826087% | 8.69565217391% | 
- | Functional Health Status | 26.0869565217% | 0.0% | 
- | Pneumonia | 34.7826086957% | 0.0% | 
- | Reintubation | 21.7391304348% | 0.0% | 
- | Urinary Infection | 4.34782608696% | 0.0% | 
- | Ventilator | 21.7391304348% | 0.0% | 
- | Unplanned Readmission | 95.652173913% | 4.34782608696% | 
- | Readmission | 104.347826087% | 4.34782608696% | 
- | Superficial SSI | 4.34782608696% | 0.0% | 
+ | Disseminated Cancer | 2.21402214022% | 8.69565217391% | 
+ | Steroid | 5.71955719557% | 8.69565217391% | 
+ | Bleeding Disorder | 1.29151291513% | 8.69565217391% | 
+ | Functional Health Status | 1.10701107011% | 0.0% | 
+ | Pneumonia | 1.47601476015% | 0.0% | 
+ | Reintubation | 0.922509225092% | 0.0% | 
+ | Urinary Infection | 0.184501845018% | 0.0% | 
+ | Ventilator | 0.922509225092% | 0.0% | 
+ | Unplanned Readmission | 4.05904059041% | 4.34782608696% | 
+ | Readmission | 4.42804428044% | 4.34782608696% | 
+ | Superficial SSI | 0.184501845018% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 39.1304347826% | 0.0% | 
+ | Organ/Space SSI | 1.66051660517% | 0.0% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 8.69565217391% | 0.0% | 
- | Renal Insufficiency | 4.34782608696% | 0.0% | 
- | Pulmonary Embolism | 8.69565217391% | 0.0% | 
+ | Deep Vein Thrombosis | 0.369003690037% | 0.0% | 
+ | Renal Insufficiency | 0.184501845018% | 0.0% | 
+ | Pulmonary Embolism | 0.369003690037% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 21.7391304348% | 0.0% | 
+ | Sepsis | 0.922509225092% | 0.0% | 
 
 
 | | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) |  Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) |
@@ -356,41 +357,41 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 0.0% | 0.0% | 
- | Sepsis | 0.289855072464% | 0.0% | 2.03045685279% | 0.0% | 
+ | Sepsis | 0.289855072464% | 0.0% | 2.03045685279% | 0.0% |
  
  ## COPD Analysis
  | | Non-COPD (N = 544.0) | COPD (N = 21.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 295.238095238% | 33.3333333333% | 
- | Smoke | 504.761904762% | 38.0952380952% | 
- | Dyspnea | 76.1904761905% | 33.3333333333% | 
- | Ventilator Dependent | 4.7619047619% | 0.0% | 
+ | Diabetes | 11.3970588235% | 33.3333333333% | 
+ | Smoke | 19.4852941176% | 38.0952380952% | 
+ | Dyspnea | 2.94117647059% | 33.3333333333% | 
+ | Ventilator Dependent | 0.183823529412% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
  | COPD | 0.0% | 100.0% | 
- | CGF | 4.7619047619% | 9.52380952381% | 
- | Hypertension | 861.904761905% | 76.1904761905% | 
+ | CGF | 0.183823529412% | 9.52380952381% | 
+ | Hypertension | 33.2720588235% | 76.1904761905% | 
  | Acute Renal Failure | 0.0% | 4.7619047619% | 
- | Disseminated Cancer | 61.9047619048% | 4.7619047619% | 
- | Steroid | 142.857142857% | 14.2857142857% | 
- | Bleeding Disorder | 33.3333333333% | 9.52380952381% | 
- | Functional Health Status | 28.5714285714% | 0.0% | 
- | Pneumonia | 33.3333333333% | 4.7619047619% | 
- | Reintubation | 19.0476190476% | 4.7619047619% | 
- | Urinary Infection | 4.7619047619% | 0.0% | 
- | Ventilator | 19.0476190476% | 4.7619047619% | 
- | Unplanned Readmission | 95.2380952381% | 14.2857142857% | 
- | Readmission | 104.761904762% | 14.2857142857% | 
- | Superficial SSI | 4.7619047619% | 0.0% | 
+ | Disseminated Cancer | 2.38970588235% | 4.7619047619% | 
+ | Steroid | 5.51470588235% | 14.2857142857% | 
+ | Bleeding Disorder | 1.28676470588% | 9.52380952381% | 
+ | Functional Health Status | 1.10294117647% | 0.0% | 
+ | Pneumonia | 1.28676470588% | 4.7619047619% | 
+ | Reintubation | 0.735294117647% | 4.7619047619% | 
+ | Urinary Infection | 0.183823529412% | 0.0% | 
+ | Ventilator | 0.735294117647% | 4.7619047619% | 
+ | Unplanned Readmission | 3.67647058824% | 14.2857142857% | 
+ | Readmission | 4.04411764706% | 14.2857142857% | 
+ | Superficial SSI | 0.183823529412% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 38.0952380952% | 4.7619047619% | 
+ | Organ/Space SSI | 1.47058823529% | 4.7619047619% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 4.7619047619% | 4.7619047619% | 
+ | Deep Vein Thrombosis | 0.183823529412% | 4.7619047619% | 
  | Renal Insufficiency | 0.0% | 4.7619047619% | 
- | Pulmonary Embolism | 9.52380952381% | 0.0% | 
+ | Pulmonary Embolism | 0.367647058824% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 14.2857142857% | 9.52380952381% | 
+ | Sepsis | 0.551470588235% | 9.52380952381% | 
 
 
 | | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) |  Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) |
@@ -429,36 +430,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  ## Congestive Heart Failure Analysis
  | | Non-CGF (N = 562.0) | CGF (N = 3.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 2266.66666667% | 33.3333333333% | 
- | Smoke | 3766.66666667% | 33.3333333333% | 
- | Dyspnea | 766.666666667% | 0.0% | 
- | Ventilator Dependent | 33.3333333333% | 0.0% | 
+ | Diabetes | 12.0996441281% | 33.3333333333% | 
+ | Smoke | 20.1067615658% | 33.3333333333% | 
+ | Dyspnea | 4.09252669039% | 0.0% | 
+ | Ventilator Dependent | 0.17793594306% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 633.333333333% | 66.6666666667% | 
+ | COPD | 3.38078291815% | 66.6666666667% | 
  | CGF | 0.0% | 100.0% | 
- | Hypertension | 6466.66666667% | 100.0% | 
- | Acute Renal Failure | 33.3333333333% | 0.0% | 
- | Disseminated Cancer | 466.666666667% | 0.0% | 
- | Steroid | 1100.0% | 0.0% | 
- | Bleeding Disorder | 300.0% | 0.0% | 
- | Functional Health Status | 166.666666667% | 33.3333333333% | 
- | Pneumonia | 233.333333333% | 33.3333333333% | 
- | Reintubation | 133.333333333% | 33.3333333333% | 
- | Urinary Infection | 33.3333333333% | 0.0% | 
- | Ventilator | 166.666666667% | 0.0% | 
- | Unplanned Readmission | 766.666666667% | 0.0% | 
- | Readmission | 833.333333333% | 0.0% | 
- | Superficial SSI | 33.3333333333% | 0.0% | 
+ | Hypertension | 34.5195729537% | 100.0% | 
+ | Acute Renal Failure | 0.17793594306% | 0.0% | 
+ | Disseminated Cancer | 2.49110320285% | 0.0% | 
+ | Steroid | 5.871886121% | 0.0% | 
+ | Bleeding Disorder | 1.60142348754% | 0.0% | 
+ | Functional Health Status | 0.889679715302% | 33.3333333333% | 
+ | Pneumonia | 1.24555160142% | 33.3333333333% | 
+ | Reintubation | 0.711743772242% | 33.3333333333% | 
+ | Urinary Infection | 0.17793594306% | 0.0% | 
+ | Ventilator | 0.889679715302% | 0.0% | 
+ | Unplanned Readmission | 4.09252669039% | 0.0% | 
+ | Readmission | 4.44839857651% | 0.0% | 
+ | Superficial SSI | 0.17793594306% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 300.0% | 0.0% | 
+ | Organ/Space SSI | 1.60142348754% | 0.0% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 66.6666666667% | 0.0% | 
- | Renal Insufficiency | 33.3333333333% | 0.0% | 
- | Pulmonary Embolism | 66.6666666667% | 0.0% | 
+ | Deep Vein Thrombosis | 0.355871886121% | 0.0% | 
+ | Renal Insufficiency | 0.17793594306% | 0.0% | 
+ | Pulmonary Embolism | 0.355871886121% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 166.666666667% | 0.0% | 
+ | Sepsis | 0.889679715302% | 0.0% | 
 
 
 | | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) |  Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) |
@@ -497,36 +498,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  ## Disseminated Cancer Analysis
  | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 485.714285714% | 7.14285714286% | 
- | Smoke | 800.0% | 14.2857142857% | 
- | Dyspnea | 150.0% | 14.2857142857% | 
- | Ventilator Dependent | 7.14285714286% | 0.0% | 
+ | Diabetes | 12.3411978221% | 7.14285714286% | 
+ | Smoke | 20.3266787659% | 14.2857142857% | 
+ | Dyspnea | 3.8112522686% | 14.2857142857% | 
+ | Ventilator Dependent | 0.181488203267% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 142.857142857% | 7.14285714286% | 
- | CGF | 21.4285714286% | 0.0% | 
- | Hypertension | 1378.57142857% | 28.5714285714% | 
+ | COPD | 3.62976406534% | 7.14285714286% | 
+ | CGF | 0.5444646098% | 0.0% | 
+ | Hypertension | 35.0272232305% | 28.5714285714% | 
  | Acute Renal Failure | 0.0% | 7.14285714286% | 
  | Disseminated Cancer | 0.0% | 100.0% | 
- | Steroid | 214.285714286% | 21.4285714286% | 
- | Bleeding Disorder | 42.8571428571% | 21.4285714286% | 
- | Functional Health Status | 42.8571428571% | 0.0% | 
- | Pneumonia | 50.0% | 7.14285714286% | 
- | Reintubation | 35.7142857143% | 0.0% | 
- | Urinary Infection | 7.14285714286% | 0.0% | 
- | Ventilator | 28.5714285714% | 7.14285714286% | 
- | Unplanned Readmission | 157.142857143% | 7.14285714286% | 
- | Readmission | 171.428571429% | 7.14285714286% | 
- | Superficial SSI | 7.14285714286% | 0.0% | 
+ | Steroid | 5.444646098% | 21.4285714286% | 
+ | Bleeding Disorder | 1.0889292196% | 21.4285714286% | 
+ | Functional Health Status | 1.0889292196% | 0.0% | 
+ | Pneumonia | 1.27041742287% | 7.14285714286% | 
+ | Reintubation | 0.907441016334% | 0.0% | 
+ | Urinary Infection | 0.181488203267% | 0.0% | 
+ | Ventilator | 0.725952813067% | 7.14285714286% | 
+ | Unplanned Readmission | 3.99274047187% | 7.14285714286% | 
+ | Readmission | 4.3557168784% | 7.14285714286% | 
+ | Superficial SSI | 0.181488203267% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 64.2857142857% | 0.0% | 
+ | Organ/Space SSI | 1.6333938294% | 0.0% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 14.2857142857% | 0.0% | 
- | Renal Insufficiency | 7.14285714286% | 0.0% | 
- | Pulmonary Embolism | 14.2857142857% | 0.0% | 
+ | Deep Vein Thrombosis | 0.362976406534% | 0.0% | 
+ | Renal Insufficiency | 0.181488203267% | 0.0% | 
+ | Pulmonary Embolism | 0.362976406534% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 35.7142857143% | 0.0% | 
+ | Sepsis | 0.907441016334% | 0.0% | 
 
 
 | | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) |  Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) |
@@ -563,38 +564,38 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.280898876404% | 0.0% | 2.05128205128% | 0.0% | 
  
  ## Steroid Analysis
- | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) |
+| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 203.03030303% | 6.06060606061% | 
- | Smoke | 333.333333333% | 12.1212121212% | 
- | Dyspnea | 63.6363636364% | 6.06060606061% | 
- | Ventilator Dependent | 3.0303030303% | 0.0% | 
+ | Diabetes | 12.5939849624% | 6.06060606061% | 
+ | Smoke | 20.6766917293% | 12.1212121212% | 
+ | Dyspnea | 3.94736842105% | 6.06060606061% | 
+ | Ventilator Dependent | 0.187969924812% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 54.5454545455% | 9.09090909091% | 
- | CGF | 9.09090909091% | 0.0% | 
- | Hypertension | 554.545454545% | 42.4242424242% | 
+ | COPD | 3.38345864662% | 9.09090909091% | 
+ | CGF | 0.563909774436% | 0.0% | 
+ | Hypertension | 34.3984962406% | 42.4242424242% | 
  | Acute Renal Failure | 0.0% | 3.0303030303% | 
- | Disseminated Cancer | 33.3333333333% | 9.09090909091% | 
+ | Disseminated Cancer | 2.06766917293% | 9.09090909091% | 
  | Steroid | 0.0% | 100.0% | 
- | Bleeding Disorder | 18.1818181818% | 9.09090909091% | 
- | Functional Health Status | 15.1515151515% | 3.0303030303% | 
- | Pneumonia | 21.2121212121% | 3.0303030303% | 
- | Reintubation | 12.1212121212% | 3.0303030303% | 
- | Urinary Infection | 3.0303030303% | 0.0% | 
- | Ventilator | 9.09090909091% | 6.06060606061% | 
- | Unplanned Readmission | 69.696969697% | 0.0% | 
- | Readmission | 75.7575757576% | 0.0% | 
- | Superficial SSI | 3.0303030303% | 0.0% | 
+ | Bleeding Disorder | 1.12781954887% | 9.09090909091% | 
+ | Functional Health Status | 0.93984962406% | 3.0303030303% | 
+ | Pneumonia | 1.31578947368% | 3.0303030303% | 
+ | Reintubation | 0.751879699248% | 3.0303030303% | 
+ | Urinary Infection | 0.187969924812% | 0.0% | 
+ | Ventilator | 0.563909774436% | 6.06060606061% | 
+ | Unplanned Readmission | 4.32330827068% | 0.0% | 
+ | Readmission | 4.6992481203% | 0.0% | 
+ | Superficial SSI | 0.187969924812% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 21.2121212121% | 6.06060606061% | 
+ | Organ/Space SSI | 1.31578947368% | 6.06060606061% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 6.06060606061% | 0.0% | 
- | Renal Insufficiency | 3.0303030303% | 0.0% | 
- | Pulmonary Embolism | 3.0303030303% | 3.0303030303% | 
+ | Deep Vein Thrombosis | 0.375939849624% | 0.0% | 
+ | Renal Insufficiency | 0.187969924812% | 0.0% | 
+ | Pulmonary Embolism | 0.187969924812% | 3.0303030303% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 9.09090909091% | 6.06060606061% | 
+ | Sepsis | 0.563909774436% | 6.06060606061% | 
 
 
 | | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) |  Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) |
@@ -634,36 +635,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 744.444444444% | 22.2222222222% | 
- | Smoke | 1266.66666667% | 0.0% | 
- | Dyspnea | 233.333333333% | 22.2222222222% | 
- | Ventilator Dependent | 11.1111111111% | 0.0% | 
+ | Diabetes | 12.0503597122% | 22.2222222222% | 
+ | Smoke | 20.5035971223% | 0.0% | 
+ | Dyspnea | 3.77697841727% | 22.2222222222% | 
+ | Ventilator Dependent | 0.179856115108% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 211.111111111% | 22.2222222222% | 
- | CGF | 33.3333333333% | 0.0% | 
- | Hypertension | 2144.44444444% | 44.4444444444% | 
+ | COPD | 3.41726618705% | 22.2222222222% | 
+ | CGF | 0.539568345324% | 0.0% | 
+ | Hypertension | 34.7122302158% | 44.4444444444% | 
  | Acute Renal Failure | 0.0% | 11.1111111111% | 
- | Disseminated Cancer | 122.222222222% | 33.3333333333% | 
- | Steroid | 333.333333333% | 33.3333333333% | 
+ | Disseminated Cancer | 1.97841726619% | 33.3333333333% | 
+ | Steroid | 5.39568345324% | 33.3333333333% | 
  | Bleeding Disorder | 0.0% | 100.0% | 
- | Functional Health Status | 66.6666666667% | 0.0% | 
- | Pneumonia | 88.8888888889% | 0.0% | 
- | Reintubation | 55.5555555556% | 0.0% | 
- | Urinary Infection | 11.1111111111% | 0.0% | 
- | Ventilator | 44.4444444444% | 11.1111111111% | 
- | Unplanned Readmission | 255.555555556% | 0.0% | 
- | Readmission | 277.777777778% | 0.0% | 
- | Superficial SSI | 11.1111111111% | 0.0% | 
+ | Functional Health Status | 1.07913669065% | 0.0% | 
+ | Pneumonia | 1.43884892086% | 0.0% | 
+ | Reintubation | 0.89928057554% | 0.0% | 
+ | Urinary Infection | 0.179856115108% | 0.0% | 
+ | Ventilator | 0.719424460432% | 11.1111111111% | 
+ | Unplanned Readmission | 4.13669064748% | 0.0% | 
+ | Readmission | 4.4964028777% | 0.0% | 
+ | Superficial SSI | 0.179856115108% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 100.0% | 0.0% | 
+ | Organ/Space SSI | 1.61870503597% | 0.0% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 22.2222222222% | 0.0% | 
- | Renal Insufficiency | 11.1111111111% | 0.0% | 
- | Pulmonary Embolism | 22.2222222222% | 0.0% | 
+ | Deep Vein Thrombosis | 0.359712230216% | 0.0% | 
+ | Renal Insufficiency | 0.179856115108% | 0.0% | 
+ | Pulmonary Embolism | 0.359712230216% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 55.5555555556% | 0.0% | 
+ | Sepsis | 0.89928057554% | 0.0% | 
 
 
 | | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) |  Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) |
@@ -702,36 +703,36 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  ## Functional Health Status Analysis
 | | Non-Functional Health Status (N = 559.0) | Functional Health Status (N = 6.0) |
 | ------------- | ------------- | ------------- |
- | Diabetes | 1100.0% | 50.0% | 
- | Smoke | 1866.66666667% | 33.3333333333% | 
- | Dyspnea | 383.333333333% | 0.0% | 
- | Ventilator Dependent | 16.6666666667% | 0.0% | 
+ | Diabetes | 11.8067978533% | 50.0% | 
+ | Smoke | 20.0357781753% | 33.3333333333% | 
+ | Dyspnea | 4.114490161% | 0.0% | 
+ | Ventilator Dependent | 0.178890876565% | 0.0% | 
  | Ascites | 0.0% | 0.0% | 
- | COPD | 350.0% | 0.0% | 
- | CGF | 33.3333333333% | 16.6666666667% | 
- | Hypertension | 3216.66666667% | 66.6666666667% | 
- | Acute Renal Failure | 16.6666666667% | 0.0% | 
- | Disseminated Cancer | 233.333333333% | 0.0% | 
- | Steroid | 533.333333333% | 16.6666666667% | 
- | Bleeding Disorder | 150.0% | 0.0% | 
+ | COPD | 3.75670840787% | 0.0% | 
+ | CGF | 0.357781753131% | 16.6666666667% | 
+ | Hypertension | 34.5259391771% | 66.6666666667% | 
+ | Acute Renal Failure | 0.178890876565% | 0.0% | 
+ | Disseminated Cancer | 2.50447227191% | 0.0% | 
+ | Steroid | 5.72450805009% | 16.6666666667% | 
+ | Bleeding Disorder | 1.61001788909% | 0.0% | 
  | Functional Health Status | 0.0% | 100.0% | 
- | Pneumonia | 116.666666667% | 16.6666666667% | 
- | Reintubation | 66.6666666667% | 16.6666666667% | 
- | Urinary Infection | 16.6666666667% | 0.0% | 
- | Ventilator | 66.6666666667% | 16.6666666667% | 
- | Unplanned Readmission | 383.333333333% | 0.0% | 
- | Readmission | 416.666666667% | 0.0% | 
- | Superficial SSI | 16.6666666667% | 0.0% | 
+ | Pneumonia | 1.25223613596% | 16.6666666667% | 
+ | Reintubation | 0.715563506261% | 16.6666666667% | 
+ | Urinary Infection | 0.178890876565% | 0.0% | 
+ | Ventilator | 0.715563506261% | 16.6666666667% | 
+ | Unplanned Readmission | 4.114490161% | 0.0% | 
+ | Readmission | 4.47227191413% | 0.0% | 
+ | Superficial SSI | 0.178890876565% | 0.0% | 
  | Deep SSI | 0.0% | 0.0% | 
- | Organ/Space SSI | 133.333333333% | 16.6666666667% | 
+ | Organ/Space SSI | 1.43112701252% | 16.6666666667% | 
  | Wound Disruption | 0.0% | 0.0% | 
- | Deep Vein Thrombosis | 33.3333333333% | 0.0% | 
- | Renal Insufficiency | 16.6666666667% | 0.0% | 
- | Pulmonary Embolism | 33.3333333333% | 0.0% | 
+ | Deep Vein Thrombosis | 0.357781753131% | 0.0% | 
+ | Renal Insufficiency | 0.178890876565% | 0.0% | 
+ | Pulmonary Embolism | 0.357781753131% | 0.0% | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | 
  | Cardiac Arrest | 0.0% | 0.0% | 
  | Myocardial Infarction | 0.0% | 0.0% | 
- | Sepsis | 83.3333333333% | 0.0% | 
+ | Sepsis | 0.894454382826% | 0.0% | 
 
 
 | | Outpatient Non-Functional Health Status (N = 355) | Outpatient Functional Health Status (N = 2) |  Inpatient Non-Functional Health Status (N = 204) | Inpatient Functional Health Status (N = 4) |
