@@ -678,6 +678,7 @@ The following analysis checks for significant differences between populations wi
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.282485875706% | 0.0% | 0.926549732471|1.9801980198% | 0.0% | 0.727799695429|
  
+ Functional Health Status refers to a patient having either a Partially Dependent or Totally Dependent Functional Health Status. Non-Functional Health Status refers to a patient having an Independent or Unknown Functional Health Status.  
 | | Non-Functional Health Status (N = 559.0) | Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.8067978533% | 50.0% | **0.00448293131856** | 
@@ -709,7 +710,6 @@ The following analysis checks for significant differences between populations wi
  | Cardiac Arrest | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
  | Sepsis | 0.894454382826% | 0.0% | 0.815999133233 | 
-
 
 | | Outpatient Non-Functional Health Status (N = 355) | Outpatient Functional Health Status (N = 2) | p-value | Inpatient Non-Functional Health Status (N = 204) | Inpatient Functional Health Status (N = 4) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
