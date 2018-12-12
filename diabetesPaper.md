@@ -86,7 +86,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | Myorcardial Infarction | 0.0% | 0.0% | 0.0% | 1.2% | - | 0.132 |
 | Sepsis | 1.0% | 0.2% | 0.0% | 1.2% | | 0.247 |
 
-## Diabetes Analysis
+## Further Analysis
+
+The following analysis checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions.  
+
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 0.0% | 100.0% | 6.870042266e-125 | 
@@ -154,7 +157,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.305810397554% | 0.0% | 0.761648766545|2.36686390533% | 0.0% | 0.331975467083|
  
- ## Smoking Analysis
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.1951219512% | 12.2807017544% | 0.98010857542 | 
@@ -222,7 +224,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.346020761246% | 0.0% | 0.627142973378|1.23456790123% | 4.34782608696% | 0.174822610528|
  
- ## Hypertension Analysis
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 4.34782608696% | 26.9035532995% | 6.03571404833e-15 | 
@@ -290,7 +291,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.0% | 0.990099009901% | 0.110870206543|0.892857142857% | 3.125% | 0.242578581388|
  
- ## Dyspnea Analysis
  
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -359,7 +359,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|2.03045685279% | 0.0% | 0.633212377263|
  
- ## COPD Analysis
  | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.3970588235% | 33.3333333333% | 0.00259083206341 | 
@@ -427,7 +426,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.0% | 11.1111111111% | 4.7551155606e-10|1.5306122449% | 8.33333333333% | 0.0957799642934|
  
- ## Congestive Heart Failure Analysis
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.0996441281% | 33.3333333333% | 0.262609298245 | 
@@ -631,7 +629,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.289855072464% | 0.0% | 0.851846679639|1.06951871658% | 9.52380952381% | 0.00747698502665|
  
- ## Bleeding Disorder
  
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -700,7 +697,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.282485875706% | 0.0% | 0.926549732471|1.9801980198% | 0.0% | 0.727799695429|
  
- ## Functional Health Status Analysis
 | | Non-Functional Health Status (N = 559.0) | Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.8067978533% | 50.0% | 0.00448293131856 | 
