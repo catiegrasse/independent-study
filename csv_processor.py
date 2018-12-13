@@ -153,9 +153,13 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("BLEEDDIS")] == "Yes":
             bleeding_disorder = 1
 
-        functional_health_status = 0
+        independent_functional_health_status = 0
+        if row[headers14.index("FNSTATUS2")] == "Independent":
+            independent_functional_health_status = 1
+
+        not_independent_functional_health_status = 0
         if row[headers14.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
-            functional_health_status = 1
+            not_independent_functional_health_status = 1
 
         pneumonia = 0
         if row[headers14.index("OUPNEUMO")] == "Pneumonia":
@@ -231,7 +235,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers14.index("INOUT")] == "Inpatient":
             inpatient = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, independent_functional_health_status, not_independent_functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
         supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
@@ -297,9 +301,13 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers15.index("BLEEDDIS")] == "Yes":
             bleeding_disorder = 1
 
-        functional_health_status = 0
+        independent_functional_health_status = 0
+        if row[headers15.index("FNSTATUS2")] == "Independent":
+            independent_functional_health_status = 1
+
+        not_independent_functional_health_status = 0
         if row[headers15.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
-            functional_health_status = 1
+            not_independent_functional_health_status = 1
 
         pneumonia = 0
         if row[headers15.index("OUPNEUMO")] == "Pneumonia":
@@ -375,7 +383,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers15.index("INOUT")] == "Inpatient":
             inpatient = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, independent_functional_health_status, not_independent_functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
         supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
@@ -441,9 +449,13 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("BLEEDDIS")] == "Yes":
             bleeding_disorder = 1
 
-        functional_health_status = 0
+        independent_functional_health_status = 0
+        if row[headers16.index("FNSTATUS2")] == "Independent":
+            independent_functional_health_status = 1
+
+        not_independent_functional_health_status = 0
         if row[headers16.index("FNSTATUS2")] == "Partially Dependent" or row[headers14.index("FNSTATUS2")] == "Totally Dependent":
-            functional_health_status = 1
+            not_independent_functional_health_status = 1
 
         pneumonia = 0
         if row[headers16.index("OUPNEUMO")] == "Pneumonia":
@@ -519,7 +531,7 @@ with open(FILE_NAME, mode='w') as filter_file:
         if row[headers16.index("INOUT")] == "Inpatient":
             inpatient = 1
 
-        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+        newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, independent_functional_health_status, not_independent_functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
         supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
         csv_writer.writerow(newRow)
 
