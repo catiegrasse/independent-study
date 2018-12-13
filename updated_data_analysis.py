@@ -11,13 +11,26 @@ FILE_NAME = "testingProcessor.csv"
 
 #columns of testingProcessor.csv
 col_names = ["Age", "Sex", "Height", "Weight", "Race", "Diabetes", "Smoke", "Dyspnea", "Ventilator Dependent", "Ascites",
-"COPD", "CGF", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", "Steroid", "Bleeding Disorder", "Functional Health Status",
-"Pneumonia", "Reintubation", "Urinary Infection", "Ventilator", "Unplanned Readmission", "Readmission", "Superficial SSI", "Deep SSI",
+"COPD", "CGF", "Hypertension", "Acute Renal Failure", "Disseminated Cancer", "Steroid", "Bleeding Disorder", "Independent Functional Health Status",
+"Totally or Partially Dependent Functional Health Status", "Pneumonia", "Reintubation", "Urinary Infection", "Ventilator", "Unplanned Readmission", "Readmission", "Superficial SSI", "Deep SSI",
 "Organ/Space SSI", "Wound Disruption", "Deep Vein Thrombosis", "Renal Insufficiency", "Pulmonary Embolism", "CVA with Neurologic Deficit",
 "Cardiac Arrest", "Myocardial Infarction", "Sepsis", "Inpatient"]
 
-#Set the feature you are interested in studying
-feature = "Diabetes"
+comorbidities = ["Diabetes", "Smoke", "Dyspnea", "Ventilator Dependent", "COPD", "Hypertension", "Disseminated Cancer", "Steroid", "Bleeding Disorder",
+"Independent Functional Health Status", "Totally or Partially Dependent Functional Health Status"]
+comorbidities_index = [col_names.index(val) for val in comorbidities]
+
+surgical_complications = ["Superficial SSI", "Deep SSI", "Organ/Space SSI", "Wound Disruption"]
+medical_complications = ["Pneumonia", "Reintubation", "Urinary Infection", "Deep Vein Thrombosis", "Renal Insufficiency",
+"Pulmonary Embolism", "Ventilator Dependent", "Acute Renal Failure", "CVA with Neurologic Deficit", "Myocardial Infarction", "Sepsis"]
+other_complications = ["Readmission", "Unplanned Readmission"]
+
+all_complications = surgical_complications + medical_complications + other_complications
+all_complications_index = [col_names.index(val) for val in all_complications]
+
+features = ["Diabetes", "Smoke", "Hypertension", "Dyspnea", "COPD", "CGF", "Disseminated Cancer", "Steroid", "Bleeding Disorder",
+"Independent Functional Health Status", "Totally or Partially Dependent Functional Health Status"]
+
 
 #Count 
 numFeature = 0.0
@@ -45,73 +58,73 @@ def calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeatu
 	p_value = scipy.stats.norm.sf(abs(z_score))*2
 	return p_value
 
-with open(FILE_NAME, mode='r') as csv_file:
-	for line in csv_file:
-		line = line.split(",")
-		if line[col_names.index(feature)] == "1":
-			listFeature.append(line)
-			numFeature += 1
+def format(pValue):
+	if pValue < 0.01:
+		return "**" + str(pValue) + "**"
+	return str(pValue)
+
+for feature in features:
+
+	with open(FILE_NAME, mode='r') as csv_file:
+		for line in csv_file:
+			line = line.split(",")
+			if line[col_names.index(feature)] == "1":
+				listFeature.append(line)
+				numFeature += 1
+			else:
+				listNonFeature.append(line)
+				numNonFeature += 1
+
+
+	#print "Number of Patients with " + feature, numFeature
+	#print "Number of Patients without " + feature, numNonFeature
+	#print "\n"
+
+	numFeatureIP = sum([1 for x in listFeature if x[-1] == "1\r\n"])
+	numFeatureOP = sum([1 for x in listFeature if x[-1] != "1\r\n"])
+	numNonFeatureIP = sum([1 for x in listNonFeature if x[-1] == "1\r\n"])
+	numNonFeatureOP = sum([1 for x in listNonFeature if x[-1] != "1\r\n"])
+
+	#print "Number of Inpatient Patients with " + feature, numFeatureIP
+	#print "Number of Inpatient Patients without " + feature, numNonFeatureIP
+	#print "Number of Outpatient Patients with " + feature, numFeatureOP
+	#print "Number of Outpatient Patients without " + feature, numNonFeatureOP
+
+
+	#print("| | Non-" + feature + " (N = " + str(numNonFeature) + ") | " + feature + " (N = " + str(numFeature) + ") | p-value | ")
+	#print ("| ------------- | ------------- | ------------- | ------------- |")
+	# for i in all_complications_index:
+	# 	if col_names[i] != feature:
+	# 		successFeature = sum([1 for x in listFeature if x[i] == "1"])*1.0
+	# 		successNonFeature = sum(1 for x in listNonFeature if x[i] == "1")*1.0
+	# 		if (successFeature != 0.0) or (successNonFeature != 0.0):
+	# 			pValue = calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeature)
+	# 		else:
+	# 			pValue = "-"
+	# 		markdown = (" | " + col_names[i] + " | " + str((successNonFeature/numNonFeature)*100.0) + "% | " + str((successFeature/numFeature)*100.0) + "% | " + format(pValue) + " | ")
+	# 		print(markdown)
+	# print("\n")
+
+
+	print("| | Outpatient Non-" + feature + " (N = " + str(numNonFeatureOP) + ") | Outpatient " + feature + " (N = " + str(numFeatureOP) + ") | p-value |" +
+		" Inpatient Non-" + feature + " (N = " + str(numNonFeatureIP) + ") | Inpatient " + feature + " (N = " + str(numFeatureIP)) + ") | p-value |"
+	print("| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |")
+	for i in all_complications_index:
+		successNonFeatureOP = (sum([1 for x in listNonFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0)
+		successFeatureOP = (sum([1 for x in listFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0)
+		successNonFeatureIP = (sum([1 for x in listNonFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0)
+		successFeatureIP = (sum([1 for x in listFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0)
+		if (successFeatureOP != 0.0) or (successNonFeatureOP != 0.0):
+			pValueOP = calculate_p_value(successFeatureOP, successNonFeatureOP, numFeatureOP, numNonFeatureOP)
 		else:
-			listNonFeature.append(line)
-			numNonFeature += 1
-
-print "Number of Patients with " + feature, numFeature
-print "Number of Patients without " + feature, numNonFeature
-print "\n"
-
-numFeatureIP = sum([1 for x in listFeature if x[-1] == "1\r\n"])
-numFeatureOP = sum([1 for x in listFeature if x[-1] != "1\r\n"])
-numNonFeatureIP = sum([1 for x in listNonFeature if x[-1] == "1\r\n"])
-numNonFeatureOP = sum([1 for x in listNonFeature if x[-1] != "1\r\n"])
-
-print "Number of Inpatient Patients with " + feature, numFeatureIP
-print "Number of Inpatient Patients without " + feature, numNonFeatureIP
-print "Number of Outpatient Patients with " + feature, numFeatureOP
-print "Number of Outpatient Patients without " + feature, numNonFeatureOP
-
-for i in range(5, len(col_names) - 1):
-	successFeature = sum([1 for x in listFeature if x[i] == "1"])*1.0
-	successNonFeature = sum(1 for x in listNonFeature if x[i] == "1")*1.0
-	if (successFeature != 0.0) or (successNonFeature != 0.0):
-		pValue = calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeature)
-	else:
-		pValue = "-"
-	print "Number of " + feature + " Patients with " + col_names[i] + " ", successFeature/numFeature
-	print "Number of non-" + feature + " Patients with " + col_names[i] + " ", successNonFeature/numNonFeature
-	print "\n"
-
-print("| | Non-" + feature + " (N = " + str(numNonFeature) + ") | " + feature + " (N = " + str(numFeature) + ") | p-value | ")
-print ("| ------------- | ------------- | ------------- | ------------- |")
-for i in range(5, len(col_names) - 1):
-	successFeature = sum([1 for x in listFeature if x[i] == "1"])*1.0
-	successNonFeature = sum(1 for x in listNonFeature if x[i] == "1")*1.0
-	if (successFeature != 0.0) or (successNonFeature != 0.0):
-		pValue = calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeature)
-	else:
-		pValue = "-"
-	print(" | " + col_names[i] + " | " + str((successNonFeature/numNonFeature)*100.0) + "% | " + str((successFeature/numFeature)*100.0) + "% | " + str(pValue) + " | ")
-
-print("\n")
-
-
-print("| | Outpatient Non-" + feature + " (N = " + str(numNonFeatureOP) + ") | Outpatient " + feature + " (N = " + str(numFeatureOP) + ") | p-value |" +
-	" Inpatient Non-" + feature + " (N = " + str(numNonFeatureIP) + ") | Inpatient " + feature + " (N = " + str(numFeatureIP)) + ") | p-value |"
-print("| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |")
-for i in range(5, len(col_names) - 1):
-	successNonFeatureOP = (sum([1 for x in listNonFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0)
-	successFeatureOP = (sum([1 for x in listFeature if x[i] == "1" and x[-1] != "1\r\n"])*1.0)
-	successNonFeatureIP = (sum([1 for x in listNonFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0)
-	successFeatureIP = (sum([1 for x in listFeature if x[i] == "1" and x[-1] == "1\r\n"])*1.0)
-	if (successFeatureOP != 0.0) or (successNonFeatureOP != 0.0):
-		pValueOP = calculate_p_value(successFeatureOP, successNonFeatureOP, numFeatureOP, numNonFeatureOP)
-	else:
-		pValueOP = "-"
-	if (successFeatureIP != 0.0) or (successNonFeatureIP != 0.0):
-		pValueIP = calculate_p_value(successFeatureIP, successNonFeatureIP, numFeatureIP, numNonFeatureIP)
-	else:
-		pValueIP = "-"
-	print(" | " + col_names[i] + " | " + str(successNonFeatureOP/numNonFeatureOP*100.0) + "% | " + str(successFeatureOP/numFeatureOP*100.0) + "% | " + str(pValueOP) + "|" + 
-		str(successNonFeatureIP/numNonFeatureIP*100.0) + "% | " + str(successFeatureIP/numFeatureIP*100.0) + "% | " + str(pValueIP) + "|")
-
+			pValueOP = "-"
+		if (successFeatureIP != 0.0) or (successNonFeatureIP != 0.0):
+			pValueIP = calculate_p_value(successFeatureIP, successNonFeatureIP, numFeatureIP, numNonFeatureIP)
+		else:
+			pValueIP = "-"
+		markdown = (" | " + col_names[i] + " | " + str(successNonFeatureOP/numNonFeatureOP*100.0) + "% | " + str(successFeatureOP/numFeatureOP*100.0) + "% | " + format(pValueOP) + "|" + 
+			str(successNonFeatureIP/numNonFeatureIP*100.0) + "% | " + str(successFeatureIP/numFeatureIP*100.0) + "% | " + format(pValueIP) + "|")
+		print(markdown)
+	print("\n")
 
 
