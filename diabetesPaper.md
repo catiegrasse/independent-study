@@ -66,7 +66,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | Urinary Tract Infection | 3.686 | 6.205 |
 | Ventilator | 4.906 | 12.276 |
 
-# The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.01).
+#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.01).
 
 ## Recreating Table 2 from the Paper
 
