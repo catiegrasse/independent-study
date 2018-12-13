@@ -66,9 +66,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | Urinary Tract Infection | 3.686 | 6.205 |
 | Ventilator | 4.906 | 12.276 |
 
-#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.01).
+## Expanded Table 2
 
-## Recreating Table 2 from the Paper
+#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.01).
 
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -224,7 +224,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.2756088133% | 3.17002881844% | **8.41487790006e-06** | 
  | Independent Functional Health Status | 97.6807112486% | 97.790585975% | 0.829193372225 | 
  
- ## Recreating Table 3 from the Paper
+ ## Expanded Table 3
  
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -456,7 +456,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 4.21337456513% | 5.47550432277% | 0.0707976876715 | 
  | Unplanned Readmission | 3.88480865868% | 4.99519692603% | 0.0980948170314 | 
  
- ## Recreating Table 4 from the Paper
+ ## Expanded Table 4  
+ 
  | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.0% | 0.0% | -|0.591715976331% | 0.0% | 0.630130333304|
