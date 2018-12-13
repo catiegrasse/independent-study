@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np 
 import math
 import scipy
+from math import log10, floor
 
 #input file should be a csv composed of feature and outcome columns with integer value
 #input file is generated from csv_processor.py
@@ -59,9 +60,18 @@ def calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeatu
 	return p_value
 
 def format(pValue):
-	if pValue < 0.01:
-		return "**" + str(pValue) + "**"
-	return str(pValue)
+	if pValue == "-":
+		return pValue
+	if pValue == 0:
+		return str(0)
+	if pValue < 0.05:
+		return "**" + str(round_sig(pValue)) + "**"
+	return str(round_sig(pValue))
+
+def round_sig(x, sig=4):
+	if x == 0:
+		return 0
+	return round(x, sig-int(floor(log10(abs(x))))-1)
 
 for feature in features:
 
@@ -91,8 +101,8 @@ for feature in features:
 	#print "Number of Outpatient Patients without " + feature, numNonFeatureOP
 
 
-	#print("| | Non-" + feature + " (N = " + str(numNonFeature) + ") | " + feature + " (N = " + str(numFeature) + ") | p-value | ")
-	#print ("| ------------- | ------------- | ------------- | ------------- |")
+	# print("| | Non-" + feature + " (N = " + str(numNonFeature) + ") | " + feature + " (N = " + str(numFeature) + ") | p-value | ")
+	# print ("| ------------- | ------------- | ------------- | ------------- |")
 	# for i in all_complications_index:
 	# 	if col_names[i] != feature:
 	# 		successFeature = sum([1 for x in listFeature if x[i] == "1"])*1.0
@@ -101,7 +111,7 @@ for feature in features:
 	# 			pValue = calculate_p_value(successFeature, successNonFeature, numFeature, numNonFeature)
 	# 		else:
 	# 			pValue = "-"
-	# 		markdown = (" | " + col_names[i] + " | " + str((successNonFeature/numNonFeature)*100.0) + "% | " + str((successFeature/numFeature)*100.0) + "% | " + format(pValue) + " | ")
+	# 		markdown = (" | " + col_names[i] + " | " + str(round_sig((successNonFeature/numNonFeature)*100.0)) + "% | " + str(round_sig((successFeature/numFeature)*100.0)) + "% | " + format(pValue) + " | ")
 	# 		print(markdown)
 	# print("\n")
 
@@ -122,8 +132,12 @@ for feature in features:
 			pValueIP = calculate_p_value(successFeatureIP, successNonFeatureIP, numFeatureIP, numNonFeatureIP)
 		else:
 			pValueIP = "-"
-		markdown = (" | " + col_names[i] + " | " + str(successNonFeatureOP/numNonFeatureOP*100.0) + "% | " + str(successFeatureOP/numFeatureOP*100.0) + "% | " + format(pValueOP) + "|" + 
-			str(successNonFeatureIP/numNonFeatureIP*100.0) + "% | " + str(successFeatureIP/numFeatureIP*100.0) + "% | " + format(pValueIP) + "|")
+		if pValueIP < 0.05:
+			markdown = (" | " + col_names[i] + " | " + "{0:.2f}".format(successNonFeatureOP/numNonFeatureOP*100.0) + "% | " + "{0:.2f}".format(successFeatureOP/numFeatureOP*100.0) + "% | " + format(pValueOP) + "|" + 
+				"**" + "{0:.2f}".format(successNonFeatureIP/numNonFeatureIP*100.0) + "**" + "% | " + "**" + "{0:.2f}".format(successFeatureIP/numFeatureIP*100.0) + "**" + "% | " + format(pValueIP) + "|")
+		else:
+			markdown = (" | " + col_names[i] + " | " + "{0:.2f}".format(successNonFeatureOP/numNonFeatureOP*100.0) + "% | " + "{0:.2f}".format(successFeatureOP/numFeatureOP*100.0) + "% | " + format(pValueOP) + "|" + 
+				 "{0:.2f}".format(successNonFeatureIP/numNonFeatureIP*100.0) + "% | "  + "{0:.2f}".format(successFeatureIP/numFeatureIP*100.0) + "% | " + format(pValueIP) + "|")
 		print(markdown)
 	print("\n")
 
