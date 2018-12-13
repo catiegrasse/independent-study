@@ -68,7 +68,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 
 ## Expanded Table 2
 
-#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.01).
+#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -94,8 +94,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Disseminated Cancer | 2.6399155227% | 1.6393442623% | 0.425387458164 | 
  | Steroid | 6.33579725449% | 3.27868852459% | 0.106443342218 | 
  | Bleeding Disorder | 1.68954593453% | 1.09289617486% | 0.555082648923 | 
- | Independent Functional Health Status | 98.0992608237% | 95.6284153005% | 0.041264312093 | 
- | Totally or Partially Dependent Functional Health Status | 0.739176346357% | 2.73224043716% | 0.0160418831239 | 
+ | Independent Functional Health Status | 98.0992608237% | 95.6284153005% | **0.041264312093** | 
+ | Totally or Partially Dependent Functional Health Status | 0.739176346357% | 2.73224043716% | **0.0160418831239** | 
 
 
 | | Non-Hypertension (N = 1315.0) | Hypertension (N = 380.0) | p-value | 
@@ -123,7 +123,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Steroid | 5.92353257943% | 5.45905707196% | 0.718536886937 | 
  | Bleeding Disorder | 1.50780829295% | 1.98511166253% | 0.487853475006 | 
  | Independent Functional Health Status | 97.8998384491% | 96.7741935484% | 0.171877564208 | 
- | Totally or Partially Dependent Functional Health Status | 0.807754442649% | 2.23325062035% | 0.0113841659364 | 
+ | Totally or Partially Dependent Functional Health Status | 0.807754442649% | 2.23325062035% | **0.0113841659364** | 
 
 
 | | Non-COPD (N = 2401.0) | COPD (N = 424.0) | p-value | 
@@ -137,7 +137,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Steroid | 5.83090379009% | 5.89622641509% | 0.957829690333 | 
  | Bleeding Disorder | 1.45772594752% | 2.35849056604% | 0.172017751535 | 
  | Independent Functional Health Status | 97.8758850479% | 96.6981132075% | 0.135906933088 | 
- | Totally or Partially Dependent Functional Health Status | 0.874635568513% | 2.12264150943% | 0.0208171612139 | 
+ | Totally or Partially Dependent Functional Health Status | 0.874635568513% | 2.12264150943% | **0.0208171612139** | 
 
 
 | | Non-CGF (N = 2963.0) | CGF (N = 427.0) | p-value | 
@@ -164,7 +164,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | COPD | 2.41889584519% | 14.0589569161% | **3.98068067355e-34** | 
  | Hypertension | 29.4251565168% | 78.231292517% | **2.23770280796e-91** | 
  | Steroid | 5.77689243028% | 6.34920634921% | 0.629040638724 | 
- | Bleeding Disorder | 1.42287990894% | 2.94784580499% | 0.0159089337601 | 
+ | Bleeding Disorder | 1.42287990894% | 2.94784580499% | **0.0159089337601** | 
  | Independent Functional Health Status | 97.8372225384% | 96.5986394558% | 0.102000478543 | 
  | Totally or Partially Dependent Functional Health Status | 0.910643141719% | 2.26757369615% | **0.00878206556712** | 
 
@@ -254,7 +254,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Organ/Space SSI | 1.16156282999% | 3.82513661202% | **0.00842347497022** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
  | Pneumonia | 1.16156282999% | 2.73224043716% | 0.0996901191073 | 
- | Reintubation | 0.633579725449% | 2.18579234973% | 0.0401216501229 | 
+ | Reintubation | 0.633579725449% | 2.18579234973% | **0.0401216501229** | 
  | Urinary Infection | 0.211193241816% | 0.0% | 0.53379132141 | 
  | Deep Vein Thrombosis | 0.211193241816% | 1.09289617486% | 0.0659892501615 | 
  | Renal Insufficiency | 0.211193241816% | 0.0% | 0.53379132141 | 
@@ -274,8 +274,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep SSI | 0.0% | 0.0% | - | 
  | Organ/Space SSI | 1.14068441065% | 3.15789473684% | **0.00566835854381** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
- | Pneumonia | 1.06463878327% | 2.63157894737% | 0.0227752498538 | 
- | Reintubation | 0.608365019011% | 1.84210526316% | 0.0237069341973 | 
+ | Pneumonia | 1.06463878327% | 2.63157894737% | **0.0227752498538** | 
+ | Reintubation | 0.608365019011% | 1.84210526316% | **0.0237069341973** | 
  | Urinary Infection | 0.228136882129% | 0.0% | 0.351382762875 | 
  | Deep Vein Thrombosis | 0.228136882129% | 0.789473684211% | 0.104626098634 | 
  | Renal Insufficiency | 0.152091254753% | 0.263157894737% | 0.650049599574 | 
@@ -286,17 +286,17 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | - | 
  | Sepsis | 0.684410646388% | 1.57894736842% | 0.101010206789 | 
  | Readmission | 3.65019011407% | 7.10526315789% | **0.0039172097627** | 
- | Unplanned Readmission | 3.42205323194% | 6.31578947368% | 0.0119275669215 | 
+ | Unplanned Readmission | 3.42205323194% | 6.31578947368% | **0.0119275669215** | 
 
 
 | | Non-Dyspnea (N = 1857.0) | Dyspnea (N = 403.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.16155088853% | 0.248138957816% | 0.707763236617 | 
  | Deep SSI | 0.0% | 0.0% | - | 
- | Organ/Space SSI | 1.29240710824% | 2.9776674938% | 0.0143091409713 | 
+ | Organ/Space SSI | 1.29240710824% | 2.9776674938% | **0.0143091409713** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
- | Pneumonia | 1.18470651589% | 2.48138957816% | 0.045807259998 | 
- | Reintubation | 0.700053850296% | 1.73697270471% | 0.0439321661704 | 
+ | Pneumonia | 1.18470651589% | 2.48138957816% | **0.045807259998** | 
+ | Reintubation | 0.700053850296% | 1.73697270471% | **0.0439321661704** | 
  | Urinary Infection | 0.215401184707% | 0.0% | 0.351064435314 | 
  | Deep Vein Thrombosis | 0.269251480883% | 0.744416873449% | 0.145423264712 | 
  | Renal Insufficiency | 0.16155088853% | 0.248138957816% | 0.707763236617 | 
@@ -307,7 +307,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | - | 
  | Sepsis | 0.753904146473% | 1.4888337469% | 0.153300168411 | 
  | Readmission | 3.87722132472% | 6.94789081886% | **0.00658401867051** | 
- | Unplanned Readmission | 3.60796984383% | 6.20347394541% | 0.0168451010702 | 
+ | Unplanned Readmission | 3.60796984383% | 6.20347394541% | **0.0168451010702** | 
 
 
 | | Non-COPD (N = 2401.0) | COPD (N = 424.0) | p-value | 
@@ -316,17 +316,17 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep SSI | 0.0% | 0.0% | - | 
  | Organ/Space SSI | 1.33277800916% | 3.06603773585% | **0.0085891778145** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
- | Pneumonia | 1.2078300708% | 2.59433962264% | 0.0258964882976 | 
- | Reintubation | 0.708038317368% | 1.88679245283% | 0.0168825950005 | 
+ | Pneumonia | 1.2078300708% | 2.59433962264% | **0.0258964882976** | 
+ | Reintubation | 0.708038317368% | 1.88679245283% | **0.0168825950005** | 
  | Urinary Infection | 0.208246563932% | 0.0% | 0.346963678391 | 
- | Deep Vein Thrombosis | 0.249895876718% | 0.943396226415% | 0.0266475087667 | 
+ | Deep Vein Thrombosis | 0.249895876718% | 0.943396226415% | **0.0266475087667** | 
  | Renal Insufficiency | 0.124947938359% | 0.471698113208% | 0.117345570521 | 
  | Pulmonary Embolism | 0.291545189504% | 0.707547169811% | 0.183626455691 | 
  | Ventilator Dependent | 0.124947938359% | 0.471698113208% | 0.117345570521 | 
  | Acute Renal Failure | 0.0832986255727% | 0.707547169811% | **0.00481334536299** | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
- | Sepsis | 0.708038317368% | 1.88679245283% | 0.0168825950005 | 
+ | Sepsis | 0.708038317368% | 1.88679245283% | **0.0168825950005** | 
  | Readmission | 3.91503540192% | 7.31132075472% | **0.00171778121391** | 
  | Unplanned Readmission | 3.62349021241% | 6.60377358491% | **0.00419730192447** | 
 
@@ -335,19 +335,19 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.168747890651% | 0.234192037471% | 0.763576627344 | 
  | Deep SSI | 0.0% | 0.0% | - | 
- | Organ/Space SSI | 1.38373270334% | 3.04449648712% | 0.0103897392909 | 
+ | Organ/Space SSI | 1.38373270334% | 3.04449648712% | **0.0103897392909** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
  | Pneumonia | 1.21498481269% | 2.81030444965% | **0.00909198393712** | 
  | Reintubation | 0.708741140736% | 2.10772833724% | **0.00390446077576** | 
  | Urinary Infection | 0.202497468782% | 0.0% | 0.352010216781 | 
- | Deep Vein Thrombosis | 0.269996625042% | 0.936768149883% | 0.0300915348737 | 
+ | Deep Vein Thrombosis | 0.269996625042% | 0.936768149883% | **0.0300915348737** | 
  | Renal Insufficiency | 0.134998312521% | 0.468384074941% | 0.125455333443 | 
  | Pulmonary Embolism | 0.303746203172% | 0.702576112412% | 0.194521338895 | 
  | Ventilator Dependent | 0.134998312521% | 0.468384074941% | 0.125455333443 | 
  | Acute Renal Failure | 0.101248734391% | 0.702576112412% | **0.0057140150923** | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
- | Sepsis | 0.742490718866% | 1.87353629977% | 0.0196439968969 | 
+ | Sepsis | 0.742490718866% | 1.87353629977% | **0.0196439968969** | 
  | Readmission | 4.0161997975% | 7.25995316159% | **0.00230938980399** | 
  | Unplanned Readmission | 3.71245359433% | 6.55737704918% | **0.00541549783603** | 
 
@@ -356,19 +356,19 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.170745589072% | 0.226757369615% | 0.791952563835 | 
  | Deep SSI | 0.0% | 0.0% | - | 
- | Organ/Space SSI | 1.42287990894% | 2.94784580499% | 0.0159089337601 | 
+ | Organ/Space SSI | 1.42287990894% | 2.94784580499% | **0.0159089337601** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
  | Pneumonia | 1.22367672168% | 2.94784580499% | **0.0038683632003** | 
  | Reintubation | 0.739897552647% | 2.04081632653% | **0.00596714843266** | 
  | Urinary Infection | 0.199203187251% | 0.0% | 0.348189722896 | 
- | Deep Vein Thrombosis | 0.284575981787% | 0.907029478458% | 0.0380241895602 | 
+ | Deep Vein Thrombosis | 0.284575981787% | 0.907029478458% | **0.0380241895602** | 
  | Renal Insufficiency | 0.142287990894% | 0.453514739229% | 0.142741391835 | 
  | Pulmonary Embolism | 0.313033579966% | 0.680272108844% | 0.220959666589 | 
  | Ventilator Dependent | 0.142287990894% | 0.453514739229% | 0.142741391835 | 
  | Acute Renal Failure | 0.0853727945361% | 0.907029478458% | **0.000109093192306** | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
- | Sepsis | 0.768355150825% | 1.81405895692% | 0.0270935884004 | 
+ | Sepsis | 0.768355150825% | 1.81405895692% | **0.0270935884004** | 
  | Readmission | 4.06943653956% | 7.25623582766% | **0.00215864434006** | 
  | Unplanned Readmission | 3.75640295959% | 6.57596371882% | **0.00473816570184** | 
 
@@ -391,7 +391,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Myocardial Infarction | 0.0% | 0.0% | - | 
  | Sepsis | 0.741473059812% | 2.10970464135% | **0.00261871617525** | 
  | Readmission | 4.15224913495% | 6.75105485232% | **0.00923891736649** | 
- | Unplanned Readmission | 3.83094414236% | 6.11814345992% | 0.0171216326982 | 
+ | Unplanned Readmission | 3.83094414236% | 6.11814345992% | **0.0171216326982** | 
 
 
 | | Non-Bleeding Disorder (N = 4602.0) | Bleeding Disorder (N = 483.0) | p-value | 
@@ -411,8 +411,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
  | Sepsis | 0.760538896132% | 2.07039337474% | **0.00345441384516** | 
- | Readmission | 4.1938287701% | 6.62525879917% | 0.0134367502026 | 
- | Unplanned Readmission | 3.8678835289% | 6.00414078675% | 0.0238111134771 | 
+ | Readmission | 4.1938287701% | 6.62525879917% | **0.0134367502026** | 
+ | Unplanned Readmission | 3.8678835289% | 6.00414078675% | **0.0238111134771** | 
 
 
 | | Non-Independent Functional Health Status (N = 4615.0) | Independent Functional Health Status (N = 1035.0) | p-value | 
@@ -431,7 +431,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Acute Renal Failure | 0.0650054171181% | 0.676328502415% | **2.34998530309e-05** | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
- | Sepsis | 0.758396533044% | 1.44927536232% | 0.0319623949543 | 
+ | Sepsis | 0.758396533044% | 1.44927536232% | **0.0319623949543** | 
  | Readmission | 4.18201516793% | 5.50724637681% | 0.0609688316986 | 
  | Unplanned Readmission | 3.85698808234% | 5.02415458937% | 0.0859219624636 | 
 
@@ -440,7 +440,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.173946656359% | 0.192122958694% | 0.898702022946 | 
  | Deep SSI | 0.0% | 0.0% | - | 
- | Organ/Space SSI | 1.44955546966% | 2.30547550432% | 0.0441647626904 | 
+ | Organ/Space SSI | 1.44955546966% | 2.30547550432% | **0.0441647626904** | 
  | Wound Disruption | 0.0% | 0.0% | - | 
  | Pneumonia | 1.29493621956% | 2.01729106628% | 0.071878994577 | 
  | Reintubation | 0.792423656745% | 1.34486071085% | 0.0824786744236 | 
@@ -452,20 +452,20 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Acute Renal Failure | 0.0773096250483% | 0.672430355427% | **3.07228647785e-05** | 
  | CVA with Neurologic Deficit | 0.0% | 0.0% | - | 
  | Myocardial Infarction | 0.0% | 0.0% | - | 
- | Sepsis | 0.773096250483% | 1.4409221902% | 0.0358005905977 | 
+ | Sepsis | 0.773096250483% | 1.4409221902% | **0.0358005905977** | 
  | Readmission | 4.21337456513% | 5.47550432277% | 0.0707976876715 | 
  | Unplanned Readmission | 3.88480865868% | 4.99519692603% | 0.0980948170314 | 
  
  ## Expanded Table 4  
  
- | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
+| | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.0% | 0.0% | -|0.591715976331% | 0.0% | 0.630130333304|
  | Deep SSI | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Organ/Space SSI | 0.611620795107% | 0.0% | 0.667517289024|2.95857988166% | 5.12820512821% | 0.498251318942|
  | Wound Disruption | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Pneumonia | 0.0% | 0.0% | -|2.36686390533% | 10.2564102564% | 0.0209213353378|
- | Reintubation | 0.0% | 0.0% | -|1.18343195266% | 7.69230769231% | 0.0167520380787|
+ | Pneumonia | 0.0% | 0.0% | -|2.36686390533% | 10.2564102564% | **0.0209213353378**|
+ | Reintubation | 0.0% | 0.0% | -|1.18343195266% | 7.69230769231% | **0.0167520380787**|
  | Urinary Infection | 0.0% | 0.0% | -|0.591715976331% | 0.0% | 0.630130333304|
  | Deep Vein Thrombosis | 0.0% | 0.0% | -|0.591715976331% | 2.5641025641% | 0.255220608217|
  | Renal Insufficiency | 0.305810397554% | 0.0% | 0.761648766545|0.0% | 0.0% | -|
@@ -504,7 +504,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.0% | 0.0% | -|0.451467268623% | 0.552486187845% | 0.868510933203|
  | Deep SSI | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Organ/Space SSI | 0.573394495413% | 0.502512562814% | 0.903783838061|2.25733634312% | 6.0773480663% | 0.0163410311903|
+ | Organ/Space SSI | 0.573394495413% | 0.502512562814% | 0.903783838061|2.25733634312% | 6.0773480663% | **0.0163410311903**|
  | Wound Disruption | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Pneumonia | 0.0% | 0.0% | -|3.16027088036% | 5.52486187845% | 0.163370474856|
  | Reintubation | 0.0% | 0.0% | -|1.80586907449% | 3.86740331492% | 0.127084090534|
@@ -517,15 +517,15 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.229357798165% | 0.502512562814% | 0.510619760942|1.58013544018% | 2.76243093923% | 0.329127575932|
- | Readmission | 3.32568807339% | 5.02512562814% | 0.248166020206|4.28893905192% | 9.39226519337% | 0.0130972191147|
- | Unplanned Readmission | 3.32568807339% | 5.02512562814% | 0.248166020206|3.61173814898% | 7.73480662983% | 0.0289077740131|
+ | Readmission | 3.32568807339% | 5.02512562814% | 0.248166020206|4.28893905192% | 9.39226519337% | **0.0130972191147**|
+ | Unplanned Readmission | 3.32568807339% | 5.02512562814% | 0.248166020206|3.61173814898% | 7.73480662983% | **0.0289077740131**|
 
 
 | | Outpatient Non-Dyspnea (N = 1217) | Outpatient Dyspnea (N = 211) | p-value | Inpatient Non-Dyspnea (N = 640) | Inpatient Dyspnea (N = 192) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.0% | 0.0% | -|0.46875% | 0.520833333333% | 0.92708948418|
  | Deep SSI | 0.0% | 0.0% | -|0.0% | 0.0% | -|
- | Organ/Space SSI | 0.575184880855% | 0.473933649289% | 0.855651648736|2.65625% | 5.72916666667% | 0.0383739904976|
+ | Organ/Space SSI | 0.575184880855% | 0.473933649289% | 0.855651648736|2.65625% | 5.72916666667% | **0.0383739904976**|
  | Wound Disruption | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Pneumonia | 0.0% | 0.0% | -|3.4375% | 5.20833333333% | 0.263107290779|
  | Reintubation | 0.0% | 0.0% | -|2.03125% | 3.64583333333% | 0.200172337115|
@@ -538,8 +538,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.246507806081% | 0.473933649289% | 0.563912861302|1.71875% | 2.60416666667% | 0.43332732079|
- | Readmission | 3.45110928513% | 4.73933649289% | 0.356416421334|4.6875% | 9.375% | 0.014556333906|
- | Unplanned Readmission | 3.45110928513% | 4.73933649289% | 0.356416421334|3.90625% | 7.8125% | 0.0264824108038|
+ | Readmission | 3.45110928513% | 4.73933649289% | 0.356416421334|4.6875% | 9.375% | **0.014556333906**|
+ | Unplanned Readmission | 3.45110928513% | 4.73933649289% | 0.356416421334|3.90625% | 7.8125% | **0.0264824108038**|
 
 
 | | Outpatient Non-COPD (N = 1565) | Outpatient COPD (N = 220) | p-value | Inpatient Non-COPD (N = 836) | Inpatient COPD (N = 204) | p-value |
@@ -555,7 +555,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Renal Insufficiency | 0.191693290735% | 0.909090909091% | 0.0594057010946|0.0% | 0.0% | -|
  | Pulmonary Embolism | 0.255591054313% | 0.454545454545% | 0.601104568792|0.358851674641% | 0.980392156863% | 0.249869827628|
  | Ventilator Dependent | 0.0% | 0.0% | -|0.358851674641% | 0.980392156863% | 0.249869827628|
- | Acute Renal Failure | 0.0% | 0.0% | -|0.239234449761% | 1.47058823529% | 0.0226302025957|
+ | Acute Renal Failure | 0.0% | 0.0% | -|0.239234449761% | 1.47058823529% | **0.0226302025957**|
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.191693290735% | 0.909090909091% | 0.0594057010946|1.67464114833% | 2.94117647059% | 0.237616532585|
@@ -570,18 +570,18 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Organ/Space SSI | 0.520833333333% | 0.900900900901% | 0.472560752679|2.97219558965% | 5.36585365854% | 0.0823233844741|
  | Wound Disruption | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Pneumonia | 0.0% | 0.0% | -|3.45158197507% | 5.85365853659% | 0.102061498281|
- | Reintubation | 0.0% | 0.0% | -|2.01342281879% | 4.39024390244% | 0.0422413932772|
+ | Reintubation | 0.0% | 0.0% | -|2.01342281879% | 4.39024390244% | **0.0422413932772**|
  | Urinary Infection | 0.0% | 0.0% | -|0.575263662512% | 0.0% | 0.276342960732|
  | Deep Vein Thrombosis | 0.0% | 0.0% | -|0.767018216683% | 1.9512195122% | 0.112202387122|
  | Renal Insufficiency | 0.208333333333% | 0.900900900901% | 0.0645280263156|0.0% | 0.0% | -|
  | Pulmonary Embolism | 0.260416666667% | 0.45045045045% | 0.612004534559|0.383509108341% | 0.975609756098% | 0.262529729664|
  | Ventilator Dependent | 0.0% | 0.0% | -|0.383509108341% | 0.975609756098% | 0.262529729664|
- | Acute Renal Failure | 0.0% | 0.0% | -|0.287631831256% | 1.46341463415% | 0.0260856947731|
+ | Acute Renal Failure | 0.0% | 0.0% | -|0.287631831256% | 1.46341463415% | **0.0260856947731**|
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.208333333333% | 0.900900900901% | 0.0645280263156|1.72579098754% | 2.92682926829% | 0.252338678023|
  | Readmission | 3.48958333333% | 4.95495495495% | 0.26979892414|4.98561840844% | 9.75609756098% | **0.00740524501138**|
- | Unplanned Readmission | 3.48958333333% | 4.95495495495% | 0.26979892414|4.12272291467% | 8.29268292683% | 0.0107298577289|
+ | Unplanned Readmission | 3.48958333333% | 4.95495495495% | 0.26979892414|4.12272291467% | 8.29268292683% | **0.0107298577289**|
 
 
 | | Outpatient Non-Disseminated Cancer (N = 2276) | Outpatient Disseminated Cancer (N = 223) | p-value | Inpatient Non-Disseminated Cancer (N = 1238) | Inpatient Disseminated Cancer (N = 218) | p-value |
@@ -622,8 +622,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.228920259443% | 0.851063829787% | 0.0838609892327|1.68421052632% | 3.34728033473% | 0.083195070912|
- | Readmission | 3.54826402137% | 4.68085106383% | 0.37458003625|5.26315789474% | 8.78661087866% | 0.0306230922451|
- | Unplanned Readmission | 3.54826402137% | 4.68085106383% | 0.37458003625|4.35087719298% | 7.53138075314% | 0.0334246175708|
+ | Readmission | 3.54826402137% | 4.68085106383% | 0.37458003625|5.26315789474% | 8.78661087866% | **0.0306230922451**|
+ | Unplanned Readmission | 3.54826402137% | 4.68085106383% | 0.37458003625|4.35087719298% | 7.53138075314% | **0.0334246175708**|
 
 
 | | Outpatient Non-Bleeding Disorder (N = 2975) | Outpatient Bleeding Disorder (N = 238) | p-value | Inpatient Non-Bleeding Disorder (N = 1627) | Inpatient Bleeding Disorder (N = 245) | p-value |
@@ -643,8 +643,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | CVA with Neurologic Deficit | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Myocardial Infarction | 0.0% | 0.0% | -|0.0% | 0.0% | -|
  | Sepsis | 0.235294117647% | 0.840336134454% | 0.0892366665934|1.72095881991% | 3.26530612245% | 0.10081424436|
- | Readmission | 3.56302521008% | 4.6218487395% | 0.401409095849|5.34726490473% | 8.57142857143% | 0.0436084476687|
- | Unplanned Readmission | 3.56302521008% | 4.6218487395% | 0.401409095849|4.42532267978% | 7.34693877551% | 0.0462762795956|
+ | Readmission | 3.56302521008% | 4.6218487395% | 0.401409095849|5.34726490473% | 8.57142857143% | **0.0436084476687**|
+ | Unplanned Readmission | 3.56302521008% | 4.6218487395% | 0.401409095849|4.42532267978% | 7.34693877551% | **0.0462762795956**|
 
 
 | | Outpatient Non-Independent Functional Health Status (N = 2980) | Outpatient Independent Functional Health Status (N = 590) | p-value | Inpatient Non-Independent Functional Health Status (N = 1635) | Inpatient Independent Functional Health Status (N = 445) | p-value |
