@@ -84,145 +84,145 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
 
 
-| | Non-Smoke (N = 947.0) | Smoke (N = 183.0) | p-value | 
+| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 5.808% | 45.36% | **1.389e-50** | 
- | Dyspnea | 3.168% | 8.743% | **0.000476** | 
- | Ventilator Dependent | 0.1056% | 0.5464% | 0.194 | 
- | COPD | 2.851% | 8.197% | **0.0004662** | 
- | Hypertension | 29.99% | 60.11% | **4.989e-15** | 
- | Disseminated Cancer | 2.64% | 1.639% | 0.4254 | 
- | Steroid | 6.336% | 3.279% | 0.1064 | 
- | Bleeding Disorder | 1.69% | 1.093% | 0.5551 | 
- | Independent Functional Health Status | 98.1% | 95.63% | **0.04126** | 
- | Totally or Partially Dependent Functional Health Status | 0.7392% | 2.732% | **0.01604** | 
+ | Diabetes | 12.2% | 12.28% | 0.9801 | 
+ | Dyspnea | 2.661% | 9.649% | **0.0007423** | 
+ | Ventilator Dependent | 0% | 0.8772% | **0.04651** | 
+ | COPD | 2.882% | 7.018% | **0.03706** | 
+ | Hypertension | 31.04% | 50.0% | **0.0001477** | 
+ | Disseminated Cancer | 2.661% | 1.754% | 0.5781 | 
+ | Steroid | 6.43% | 3.509% | 0.2347 | 
+ | Bleeding Disorder | 1.996% | 0% | 0.1284 | 
+ | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
+ | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
 
 
-| | Non-Hypertension (N = 1315.0) | Hypertension (N = 380.0) | p-value | 
+| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 5.399% | 35.79% | **3.549e-57** | 
- | Smoke | 11.94% | 48.68% | **1.088e-55** | 
- | Dyspnea | 2.89% | 8.158% | **4.709e-06** | 
- | Ventilator Dependent | 0.07605% | 0.5263% | 0.06587 | 
- | COPD | 2.433% | 8.158% | **2.04e-07** | 
- | Disseminated Cancer | 2.662% | 1.842% | 0.3654 | 
- | Steroid | 6.008% | 5.263% | 0.5857 | 
- | Bleeding Disorder | 1.597% | 1.579% | 0.9803 | 
- | Independent Functional Health Status | 98.02% | 96.58% | 0.09823 | 
- | Totally or Partially Dependent Functional Health Status | 0.6844% | 2.368% | **0.00479** | 
+ | Diabetes | 4.348% | 26.9% | **6.036e-15** | 
+ | Smoke | 15.49% | 28.93% | **0.0001477** | 
+ | Dyspnea | 2.174% | 7.614% | **0.001818** | 
+ | Ventilator Dependent | 0% | 0.5076% | 0.1713 | 
+ | COPD | 1.359% | 8.122% | **5.129e-05** | 
+ | Disseminated Cancer | 2.717% | 2.03% | 0.6167 | 
+ | Steroid | 5.163% | 7.107% | 0.3478 | 
+ | Bleeding Disorder | 1.359% | 2.03% | 0.5433 | 
+ | Independent Functional Health Status | 97.83% | 97.46% | 0.7832 | 
+ | Totally or Partially Dependent Functional Health Status | 0.5435% | 2.03% | 0.1003 | 
 
 
-| | Non-Dyspnea (N = 1857.0) | Dyspnea (N = 403.0) | p-value | 
+| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 7.27% | 34.99% | **1.528e-53** | 
- | Smoke | 14.0% | 48.64% | **1.415e-55** | 
- | Ventilator Dependent | 0.1077% | 0.4963% | 0.09252 | 
- | COPD | 2.477% | 9.429% | **2.27e-11** | 
- | Hypertension | 25.09% | 79.9% | **2.977e-97** | 
- | Disseminated Cancer | 2.531% | 2.233% | 0.7275 | 
- | Steroid | 5.924% | 5.459% | 0.7185 | 
- | Bleeding Disorder | 1.508% | 1.985% | 0.4879 | 
- | Independent Functional Health Status | 97.9% | 96.77% | 0.1719 | 
- | Totally or Partially Dependent Functional Health Status | 0.8078% | 2.233% | **0.01138** | 
+ | Diabetes | 11.81% | 21.74% | 0.1543 | 
+ | Smoke | 19.0% | 47.83% | **0.0007423** | 
+ | Ventilator Dependent | 0.1845% | 0% | 0.8366 | 
+ | COPD | 2.583% | 30.43% | **4.658e-12** | 
+ | Hypertension | 33.58% | 65.22% | **0.001818** | 
+ | Disseminated Cancer | 2.214% | 8.696% | 0.05017 | 
+ | Steroid | 5.72% | 8.696% | 0.5511 | 
+ | Bleeding Disorder | 1.292% | 8.696% | **0.005473** | 
+ | Independent Functional Health Status | 97.6% | 100.0% | 0.4524 | 
+ | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6119 | 
 
 
-| | Non-COPD (N = 2401.0) | COPD (N = 424.0) | p-value | 
+| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 8.205% | 34.91% | **4.721e-54** | 
- | Smoke | 15.24% | 48.11% | **1.644e-54** | 
- | Dyspnea | 2.249% | 14.39% | **2.045e-31** | 
- | Ventilator Dependent | 0.1249% | 0.4717% | 0.1173 | 
- | Hypertension | 26.95% | 79.72% | **4.241e-98** | 
- | Disseminated Cancer | 2.499% | 2.358% | 0.8638 | 
- | Steroid | 5.831% | 5.896% | 0.9578 | 
- | Bleeding Disorder | 1.458% | 2.358% | 0.172 | 
- | Independent Functional Health Status | 97.88% | 96.7% | 0.1359 | 
- | Totally or Partially Dependent Functional Health Status | 0.8746% | 2.123% | **0.02082** | 
+ | Diabetes | 11.4% | 33.33% | **0.002591** | 
+ | Smoke | 19.49% | 38.1% | **0.03706** | 
+ | Dyspnea | 2.941% | 33.33% | **4.658e-12** | 
+ | Ventilator Dependent | 0.1838% | 0% | 0.8441 | 
+ | Hypertension | 33.27% | 76.19% | **5.129e-05** | 
+ | Disseminated Cancer | 2.39% | 4.762% | 0.4926 | 
+ | Steroid | 5.515% | 14.29% | 0.09261 | 
+ | Bleeding Disorder | 1.287% | 9.524% | **0.003093** | 
+ | Independent Functional Health Status | 97.79% | 95.24% | 0.4433 | 
+ | Totally or Partially Dependent Functional Health Status | 1.103% | 0% | 0.6285 | 
 
 
-| | Non-CGF (N = 2963.0) | CGF (N = 427.0) | p-value | 
+| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 8.944% | 34.89% | **6.411e-53** | 
- | Smoke | 16.17% | 48.01% | **4.915e-53** | 
- | Dyspnea | 2.599% | 14.29% | **3.126e-30** | 
- | Ventilator Dependent | 0.135% | 0.4684% | 0.1255 | 
- | COPD | 2.194% | 14.29% | **4.958e-35** | 
- | Hypertension | 28.38% | 79.86% | **1.05e-96** | 
- | Disseminated Cancer | 2.497% | 2.342% | 0.8467 | 
- | Steroid | 5.839% | 5.855% | 0.9894 | 
- | Bleeding Disorder | 1.485% | 2.342% | 0.1861 | 
- | Independent Functional Health Status | 97.87% | 96.49% | 0.07398 | 
- | Totally or Partially Dependent Functional Health Status | 0.8775% | 2.342% | **0.005779** | 
+ | Diabetes | 12.1% | 33.33% | 0.2626 | 
+ | Smoke | 20.11% | 33.33% | 0.5691 | 
+ | Dyspnea | 4.093% | 0% | 0.7205 | 
+ | Ventilator Dependent | 0.1779% | 0% | 0.9417 | 
+ | COPD | 3.381% | 66.67% | **7.516e-09** | 
+ | Hypertension | 34.52% | 100.0% | **0.01762** | 
+ | Disseminated Cancer | 2.491% | 0% | 0.7819 | 
+ | Steroid | 5.872% | 0% | 0.6654 | 
+ | Bleeding Disorder | 1.601% | 0% | 0.8251 | 
+ | Independent Functional Health Status | 97.86% | 66.67% | **0.000325** | 
+ | Totally or Partially Dependent Functional Health Status | 0.8897% | 33.33% | **4.56e-08** | 
 
 
-| | Non-Disseminated Cancer (N = 3514.0) | Disseminated Cancer (N = 441.0) | p-value | 
+| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 9.476% | 34.01% | **8.844e-50** | 
- | Smoke | 16.82% | 46.94% | **6.32e-50** | 
- | Dyspnea | 2.789% | 14.29% | **1.093e-30** | 
- | Ventilator Dependent | 0.1423% | 0.4535% | 0.1427 | 
- | COPD | 2.419% | 14.06% | **3.981e-34** | 
- | Hypertension | 29.43% | 78.23% | **2.238e-91** | 
- | Steroid | 5.777% | 6.349% | 0.629 | 
- | Bleeding Disorder | 1.423% | 2.948% | **0.01591** | 
- | Independent Functional Health Status | 97.84% | 96.6% | 0.102 | 
- | Totally or Partially Dependent Functional Health Status | 0.9106% | 2.268% | **0.008782** | 
+ | Diabetes | 12.34% | 7.143% | 0.5575 | 
+ | Smoke | 20.33% | 14.29% | 0.5781 | 
+ | Dyspnea | 3.811% | 14.29% | 0.05017 | 
+ | Ventilator Dependent | 0.1815% | 0% | 0.8732 | 
+ | COPD | 3.63% | 7.143% | 0.4926 | 
+ | Hypertension | 35.03% | 28.57% | 0.6167 | 
+ | Steroid | 5.445% | 21.43% | **0.01179** | 
+ | Bleeding Disorder | 1.089% | 21.43% | **1.94e-09** | 
+ | Independent Functional Health Status | 97.64% | 100.0% | 0.5609 | 
+ | Totally or Partially Dependent Functional Health Status | 1.089% | 0% | 0.6947 | 
 
 
-| | Non-Steroid (N = 4046.0) | Steroid (N = 474.0) | p-value | 
+| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 9.886% | 32.07% | **2.971e-44** | 
- | Smoke | 17.33% | 44.51% | **2.927e-44** | 
- | Dyspnea | 2.941% | 13.71% | **2.964e-29** | 
- | Ventilator Dependent | 0.1483% | 0.4219% | 0.1799 | 
- | COPD | 2.546% | 13.71% | **5.095e-34** | 
- | Hypertension | 30.08% | 75.74% | **1.064e-86** | 
- | Disseminated Cancer | 2.101% | 5.696% | **1.897e-06** | 
- | Bleeding Disorder | 1.384% | 3.376% | **0.001052** | 
- | Independent Functional Health Status | 97.83% | 96.62% | 0.09907 | 
- | Totally or Partially Dependent Functional Health Status | 0.9145% | 2.321% | **0.004716** | 
+ | Diabetes | 12.59% | 6.061% | 0.266 | 
+ | Smoke | 20.68% | 12.12% | 0.2347 | 
+ | Dyspnea | 3.947% | 6.061% | 0.5511 | 
+ | Ventilator Dependent | 0.188% | 0% | 0.8031 | 
+ | COPD | 3.383% | 9.091% | 0.09261 | 
+ | Hypertension | 34.4% | 42.42% | 0.3478 | 
+ | Disseminated Cancer | 2.068% | 9.091% | **0.01179** | 
+ | Bleeding Disorder | 1.128% | 9.091% | **0.0003921** | 
+ | Independent Functional Health Status | 97.74% | 96.97% | 0.7733 | 
+ | Totally or Partially Dependent Functional Health Status | 0.9398% | 3.03% | 0.2556 | 
 
 
-| | Non-Bleeding Disorder (N = 4602.0) | Bleeding Disorder (N = 483.0) | p-value | 
+| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 10.15% | 31.88% | **8.447e-44** | 
- | Smoke | 17.71% | 43.69% | **1.007e-41** | 
- | Dyspnea | 3.042% | 13.87% | **2.154e-30** | 
- | Ventilator Dependent | 0.1521% | 0.4141% | 0.1926 | 
- | COPD | 2.651% | 13.87% | **2.58e-35** | 
- | Hypertension | 30.64% | 75.16% | **6.046e-85** | 
- | Disseminated Cancer | 2.086% | 6.211% | **2.887e-08** | 
- | Steroid | 5.063% | 13.25% | **2.89e-13** | 
- | Independent Functional Health Status | 97.83% | 96.48% | 0.06039 | 
- | Totally or Partially Dependent Functional Health Status | 0.9344% | 2.277% | **0.006154** | 
+ | Diabetes | 12.05% | 22.22% | 0.3552 | 
+ | Smoke | 20.5% | 0% | 0.1284 | 
+ | Dyspnea | 3.777% | 22.22% | **0.005473** | 
+ | Ventilator Dependent | 0.1799% | 0% | 0.8987 | 
+ | COPD | 3.417% | 22.22% | **0.003093** | 
+ | Hypertension | 34.71% | 44.44% | 0.5433 | 
+ | Disseminated Cancer | 1.978% | 33.33% | **1.94e-09** | 
+ | Steroid | 5.396% | 33.33% | **0.0003921** | 
+ | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
+ | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
 
 
-| | Non-Independent Functional Health Status (N = 4615.0) | Independent Functional Health Status (N = 1035.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 10.23% | 21.06% | **6.471e-22** | 
- | Smoke | 17.72% | 31.11% | **3.063e-22** | 
- | Dyspnea | 3.034% | 8.696% | **8.023e-17** | 
- | Ventilator Dependent | 0.1517% | 0.2899% | 0.3392 | 
- | COPD | 2.665% | 8.406% | **1.112e-18** | 
- | Hypertension | 30.66% | 53.62% | **1.354e-44** | 
- | Disseminated Cancer | 2.08% | 4.251% | **4.891e-05** | 
- | Steroid | 5.07% | 9.275% | **1.853e-07** | 
- | Bleeding Disorder | 1.235% | 3.188% | **5.728e-06** | 
- | Totally or Partially Dependent Functional Health Status | 1.062% | 1.063% | 0.9976 | 
+ | Diabetes | 38.46% | 11.59% | **0.003452** | 
+ | Smoke | 23.08% | 20.11% | 0.7921 | 
+ | Dyspnea | 0% | 4.167% | 0.4524 | 
+ | Ventilator Dependent | 0% | 0.1812% | 0.8779 | 
+ | COPD | 7.692% | 3.623% | 0.4433 | 
+ | Hypertension | 38.46% | 34.78% | 0.7832 | 
+ | Disseminated Cancer | 0% | 2.536% | 0.5609 | 
+ | Steroid | 7.692% | 5.797% | 0.7733 | 
+ | Bleeding Disorder | 7.692% | 1.449% | 0.07556 | 
+ | Totally or Partially Dependent Functional Health Status | 46.15% | 0% | **6.007e-58** | 
 
 
-| | Non-Totally or Partially Dependent Functional Health Status (N = 5174.0) | Totally or Partially Dependent Functional Health Status (N = 1041.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 10.4% | 21.23% | **2.068e-22** | 
- | Smoke | 17.97% | 31.12% | **5.127e-22** | 
- | Dyspnea | 3.15% | 8.646% | **2.695e-16** | 
- | Ventilator Dependent | 0.1546% | 0.2882% | 0.3496 | 
- | COPD | 2.783% | 8.357% | **4.157e-18** | 
- | Hypertension | 31.08% | 53.7% | **2.268e-44** | 
- | Disseminated Cancer | 2.126% | 4.227% | **6.943e-05** | 
- | Steroid | 5.141% | 9.318% | **1.577e-07** | 
- | Bleeding Disorder | 1.276% | 3.17% | **8.415e-06** | 
- | Independent Functional Health Status | 97.68% | 97.79% | 0.8292 | 
+ | Diabetes | 11.81% | 50.0% | **0.004483** | 
+ | Smoke | 20.04% | 33.33% | 0.4195 | 
+ | Dyspnea | 4.114% | 0% | 0.6119 | 
+ | Ventilator Dependent | 0.1789% | 0% | 0.9174 | 
+ | COPD | 3.757% | 0% | 0.6285 | 
+ | Hypertension | 34.53% | 66.67% | 0.1003 | 
+ | Disseminated Cancer | 2.504% | 0% | 0.6947 | 
+ | Steroid | 5.725% | 16.67% | 0.2556 | 
+ | Bleeding Disorder | 1.61% | 0% | 0.754 | 
+ | Independent Functional Health Status | 98.75% | 0% | **6.007e-58** | 
  
  ## Expanded Table 3
  
@@ -247,214 +247,214 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Unplanned Readmission | 3.831% | 5.797% | 0.4386 | 
 
 
-| | Non-Smoke (N = 947.0) | Smoke (N = 183.0) | p-value | 
+| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.2112% | 0% | 0.5338 | 
+ | Superficial SSI | 0.2217% | 0% | 0.6148 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.162% | 3.825% | **0.008423** | 
+ | Organ/Space SSI | 0.8869% | 4.386% | **0.007677** | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.162% | 2.732% | 0.09969 | 
- | Reintubation | 0.6336% | 2.186% | **0.04012** | 
- | Urinary Infection | 0.2112% | 0% | 0.5338 | 
- | Deep Vein Thrombosis | 0.2112% | 1.093% | 0.06599 | 
- | Renal Insufficiency | 0.2112% | 0% | 0.5338 | 
- | Pulmonary Embolism | 0.2112% | 1.093% | 0.06599 | 
- | Ventilator Dependent | 0.1056% | 0.5464% | 0.194 | 
- | Acute Renal Failure | 0.2112% | 0% | 0.5338 | 
+ | Pneumonia | 1.552% | 0.8772% | 0.5858 | 
+ | Reintubation | 0.8869% | 0.8772% | 0.9921 | 
+ | Urinary Infection | 0.2217% | 0% | 0.6148 | 
+ | Deep Vein Thrombosis | 0.2217% | 0.8772% | 0.2924 | 
+ | Renal Insufficiency | 0.2217% | 0% | 0.6148 | 
+ | Pulmonary Embolism | 0% | 1.754% | **0.004834** | 
+ | Ventilator Dependent | 0% | 0.8772% | **0.04651** | 
+ | Acute Renal Failure | 0.2217% | 0% | 0.6148 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8448% | 1.093% | 0.7428 | 
- | Readmission | 4.013% | 6.557% | 0.1254 | 
- | Unplanned Readmission | 3.696% | 6.011% | 0.1468 | 
+ | Sepsis | 0.6652% | 1.754% | 0.2673 | 
+ | Readmission | 3.769% | 7.018% | 0.1319 | 
+ | Unplanned Readmission | 3.548% | 6.14% | 0.2107 | 
 
 
-| | Non-Hypertension (N = 1315.0) | Hypertension (N = 380.0) | p-value | 
+| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1521% | 0.2632% | 0.65 | 
+ | Superficial SSI | 0% | 0.5076% | 0.1713 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.141% | 3.158% | **0.005668** | 
+ | Organ/Space SSI | 1.087% | 2.538% | 0.1892 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.065% | 2.632% | **0.02278** | 
- | Reintubation | 0.6084% | 1.842% | **0.02371** | 
- | Urinary Infection | 0.2281% | 0% | 0.3514 | 
- | Deep Vein Thrombosis | 0.2281% | 0.7895% | 0.1046 | 
- | Renal Insufficiency | 0.1521% | 0.2632% | 0.65 | 
- | Pulmonary Embolism | 0.2281% | 0.7895% | 0.1046 | 
- | Ventilator Dependent | 0.07605% | 0.5263% | 0.06587 | 
- | Acute Renal Failure | 0.1521% | 0.2632% | 0.65 | 
+ | Pneumonia | 0.8152% | 2.538% | 0.09858 | 
+ | Reintubation | 0.5435% | 1.523% | 0.2362 | 
+ | Urinary Infection | 0.2717% | 0% | 0.464 | 
+ | Deep Vein Thrombosis | 0.2717% | 0.5076% | 0.6528 | 
+ | Renal Insufficiency | 0% | 0.5076% | 0.1713 | 
+ | Pulmonary Embolism | 0.2717% | 0.5076% | 0.6528 | 
+ | Ventilator Dependent | 0% | 0.5076% | 0.1713 | 
+ | Acute Renal Failure | 0% | 0.5076% | 0.1713 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.6844% | 1.579% | 0.101 | 
- | Readmission | 3.65% | 7.105% | **0.003917** | 
- | Unplanned Readmission | 3.422% | 6.316% | **0.01193** | 
+ | Sepsis | 0.2717% | 2.03% | **0.03341** | 
+ | Readmission | 2.717% | 7.614% | **0.006991** | 
+ | Unplanned Readmission | 2.717% | 6.599% | **0.02608** | 
 
 
-| | Non-Dyspnea (N = 1857.0) | Dyspnea (N = 403.0) | p-value | 
+| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1616% | 0.2481% | 0.7078 | 
+ | Superficial SSI | 0.1845% | 0% | 0.8366 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.292% | 2.978% | **0.01431** | 
+ | Organ/Space SSI | 1.661% | 0% | 0.5333 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.185% | 2.481% | **0.04581** | 
- | Reintubation | 0.7001% | 1.737% | **0.04393** | 
- | Urinary Infection | 0.2154% | 0% | 0.3511 | 
- | Deep Vein Thrombosis | 0.2693% | 0.7444% | 0.1454 | 
- | Renal Insufficiency | 0.1616% | 0.2481% | 0.7078 | 
- | Pulmonary Embolism | 0.2693% | 0.7444% | 0.1454 | 
- | Ventilator Dependent | 0.1077% | 0.4963% | 0.09252 | 
- | Acute Renal Failure | 0.1077% | 0.4963% | 0.09252 | 
+ | Pneumonia | 1.476% | 0% | 0.5573 | 
+ | Reintubation | 0.9225% | 0% | 0.6436 | 
+ | Urinary Infection | 0.1845% | 0% | 0.8366 | 
+ | Deep Vein Thrombosis | 0.369% | 0% | 0.7704 | 
+ | Renal Insufficiency | 0.1845% | 0% | 0.8366 | 
+ | Pulmonary Embolism | 0.369% | 0% | 0.7704 | 
+ | Ventilator Dependent | 0.1845% | 0% | 0.8366 | 
+ | Acute Renal Failure | 0% | 4.348% | **1.182e-06** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7539% | 1.489% | 0.1533 | 
- | Readmission | 3.877% | 6.948% | **0.006584** | 
- | Unplanned Readmission | 3.608% | 6.203% | **0.01685** | 
+ | Sepsis | 0.9225% | 0% | 0.6436 | 
+ | Readmission | 4.428% | 4.348% | 0.9854 | 
+ | Unplanned Readmission | 4.059% | 4.348% | 0.9453 | 
 
 
-| | Non-COPD (N = 2401.0) | COPD (N = 424.0) | p-value | 
+| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1666% | 0.2358% | 0.7545 | 
+ | Superficial SSI | 0.1838% | 0% | 0.8441 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.333% | 3.066% | **0.008589** | 
+ | Organ/Space SSI | 1.471% | 4.762% | 0.2372 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.208% | 2.594% | **0.0259** | 
- | Reintubation | 0.708% | 1.887% | **0.01688** | 
- | Urinary Infection | 0.2082% | 0% | 0.347 | 
- | Deep Vein Thrombosis | 0.2499% | 0.9434% | **0.02665** | 
- | Renal Insufficiency | 0.1249% | 0.4717% | 0.1173 | 
- | Pulmonary Embolism | 0.2915% | 0.7075% | 0.1836 | 
- | Ventilator Dependent | 0.1249% | 0.4717% | 0.1173 | 
- | Acute Renal Failure | 0.0833% | 0.7075% | **0.004813** | 
+ | Pneumonia | 1.287% | 4.762% | 0.186 | 
+ | Reintubation | 0.7353% | 4.762% | 0.0532 | 
+ | Urinary Infection | 0.1838% | 0% | 0.8441 | 
+ | Deep Vein Thrombosis | 0.1838% | 4.762% | **0.000528** | 
+ | Renal Insufficiency | 0% | 4.762% | **3.502e-07** | 
+ | Pulmonary Embolism | 0.3676% | 0% | 0.7807 | 
+ | Ventilator Dependent | 0.1838% | 0% | 0.8441 | 
+ | Acute Renal Failure | 0% | 4.762% | **3.502e-07** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.708% | 1.887% | **0.01688** | 
- | Readmission | 3.915% | 7.311% | **0.001718** | 
- | Unplanned Readmission | 3.623% | 6.604% | **0.004197** | 
+ | Sepsis | 0.5515% | 9.524% | **1.649e-05** | 
+ | Readmission | 4.044% | 14.29% | **0.02513** | 
+ | Unplanned Readmission | 3.676% | 14.29% | **0.01577** | 
 
 
-| | Non-CGF (N = 2963.0) | CGF (N = 427.0) | p-value | 
+| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1687% | 0.2342% | 0.7636 | 
+ | Superficial SSI | 0.1779% | 0% | 0.9417 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.384% | 3.044% | **0.01039** | 
+ | Organ/Space SSI | 1.601% | 0% | 0.8251 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.215% | 2.81% | **0.009092** | 
- | Reintubation | 0.7087% | 2.108% | **0.003904** | 
- | Urinary Infection | 0.2025% | 0% | 0.352 | 
- | Deep Vein Thrombosis | 0.27% | 0.9368% | **0.03009** | 
- | Renal Insufficiency | 0.135% | 0.4684% | 0.1255 | 
- | Pulmonary Embolism | 0.3037% | 0.7026% | 0.1945 | 
- | Ventilator Dependent | 0.135% | 0.4684% | 0.1255 | 
- | Acute Renal Failure | 0.1012% | 0.7026% | **0.005714** | 
+ | Pneumonia | 1.246% | 33.33% | **2.711e-06** | 
+ | Reintubation | 0.7117% | 33.33% | **1.777e-09** | 
+ | Urinary Infection | 0.1779% | 0% | 0.9417 | 
+ | Deep Vein Thrombosis | 0.3559% | 0% | 0.9176 | 
+ | Renal Insufficiency | 0.1779% | 0% | 0.9417 | 
+ | Pulmonary Embolism | 0.3559% | 0% | 0.9176 | 
+ | Ventilator Dependent | 0.1779% | 0% | 0.9417 | 
+ | Acute Renal Failure | 0.1779% | 0% | 0.9417 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7425% | 1.874% | **0.01964** | 
- | Readmission | 4.016% | 7.26% | **0.002309** | 
- | Unplanned Readmission | 3.712% | 6.557% | **0.005415** | 
+ | Sepsis | 0.8897% | 0% | 0.8697 | 
+ | Readmission | 4.448% | 0% | 0.7086 | 
+ | Unplanned Readmission | 4.093% | 0% | 0.7205 | 
 
 
-| | Non-Disseminated Cancer (N = 3514.0) | Disseminated Cancer (N = 441.0) | p-value | 
+| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1707% | 0.2268% | 0.792 | 
+ | Superficial SSI | 0.1815% | 0% | 0.8732 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.423% | 2.948% | **0.01591** | 
+ | Organ/Space SSI | 1.633% | 0% | 0.6298 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.224% | 2.948% | **0.003868** | 
- | Reintubation | 0.7399% | 2.041% | **0.005967** | 
- | Urinary Infection | 0.1992% | 0% | 0.3482 | 
- | Deep Vein Thrombosis | 0.2846% | 0.907% | **0.03802** | 
- | Renal Insufficiency | 0.1423% | 0.4535% | 0.1427 | 
- | Pulmonary Embolism | 0.313% | 0.6803% | 0.221 | 
- | Ventilator Dependent | 0.1423% | 0.4535% | 0.1427 | 
- | Acute Renal Failure | 0.08537% | 0.907% | **0.0001091** | 
+ | Pneumonia | 1.27% | 7.143% | 0.06627 | 
+ | Reintubation | 0.9074% | 0% | 0.7203 | 
+ | Urinary Infection | 0.1815% | 0% | 0.8732 | 
+ | Deep Vein Thrombosis | 0.363% | 0% | 0.8213 | 
+ | Renal Insufficiency | 0.1815% | 0% | 0.8732 | 
+ | Pulmonary Embolism | 0.363% | 0% | 0.8213 | 
+ | Ventilator Dependent | 0.1815% | 0% | 0.8732 | 
+ | Acute Renal Failure | 0% | 7.143% | **3.406e-10** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7684% | 1.814% | **0.02709** | 
- | Readmission | 4.069% | 7.256% | **0.002159** | 
- | Unplanned Readmission | 3.756% | 6.576% | **0.004738** | 
+ | Sepsis | 0.9074% | 0% | 0.7203 | 
+ | Readmission | 4.356% | 7.143% | 0.6165 | 
+ | Unplanned Readmission | 3.993% | 7.143% | 0.5559 | 
 
 
-| | Non-Steroid (N = 4046.0) | Steroid (N = 474.0) | p-value | 
+| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.173% | 0.211% | 0.8524 | 
+ | Superficial SSI | 0.188% | 0% | 0.8031 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.409% | 3.165% | **0.00387** | 
+ | Organ/Space SSI | 1.316% | 6.061% | **0.03464** | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.236% | 2.954% | **0.002745** | 
- | Reintubation | 0.7415% | 2.11% | **0.002619** | 
- | Urinary Infection | 0.1977% | 0% | 0.3326 | 
- | Deep Vein Thrombosis | 0.2966% | 0.8439% | 0.05768 | 
- | Renal Insufficiency | 0.1483% | 0.4219% | 0.1799 | 
- | Pulmonary Embolism | 0.2966% | 0.8439% | 0.05768 | 
- | Ventilator Dependent | 0.1483% | 0.4219% | 0.1799 | 
- | Acute Renal Failure | 0.07415% | 1.055% | **1.54e-06** | 
+ | Pneumonia | 1.316% | 3.03% | 0.4186 | 
+ | Reintubation | 0.7519% | 3.03% | 0.1751 | 
+ | Urinary Infection | 0.188% | 0% | 0.8031 | 
+ | Deep Vein Thrombosis | 0.3759% | 0% | 0.7242 | 
+ | Renal Insufficiency | 0.188% | 0% | 0.8031 | 
+ | Pulmonary Embolism | 0.188% | 3.03% | **0.007636** | 
+ | Ventilator Dependent | 0.188% | 0% | 0.8031 | 
+ | Acute Renal Failure | 0% | 3.03% | **5.852e-05** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7415% | 2.11% | **0.002619** | 
- | Readmission | 4.152% | 6.751% | **0.009239** | 
- | Unplanned Readmission | 3.831% | 6.118% | **0.01712** | 
+ | Sepsis | 0.5639% | 6.061% | **0.001069** | 
+ | Readmission | 4.699% | 0% | 0.2027 | 
+ | Unplanned Readmission | 4.323% | 0% | 0.2226 | 
 
 
-| | Non-Bleeding Disorder (N = 4602.0) | Bleeding Disorder (N = 483.0) | p-value | 
+| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1738% | 0.207% | 0.8688 | 
+ | Superficial SSI | 0.1799% | 0% | 0.8987 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.434% | 3.106% | **0.005252** | 
+ | Organ/Space SSI | 1.619% | 0% | 0.7004 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.26% | 2.899% | **0.003743** | 
- | Reintubation | 0.7605% | 2.07% | **0.003454** | 
- | Urinary Infection | 0.1956% | 0% | 0.3307 | 
- | Deep Vein Thrombosis | 0.3042% | 0.8282% | 0.06512 | 
- | Renal Insufficiency | 0.1521% | 0.4141% | 0.1926 | 
- | Pulmonary Embolism | 0.3042% | 0.8282% | 0.06512 | 
- | Ventilator Dependent | 0.1521% | 0.4141% | 0.1926 | 
- | Acute Renal Failure | 0.06519% | 1.242% | **4.779e-09** | 
+ | Pneumonia | 1.439% | 0% | 0.717 | 
+ | Reintubation | 0.8993% | 0% | 0.7751 | 
+ | Urinary Infection | 0.1799% | 0% | 0.8987 | 
+ | Deep Vein Thrombosis | 0.3597% | 0% | 0.857 | 
+ | Renal Insufficiency | 0.1799% | 0% | 0.8987 | 
+ | Pulmonary Embolism | 0.3597% | 0% | 0.857 | 
+ | Ventilator Dependent | 0.1799% | 0% | 0.8987 | 
+ | Acute Renal Failure | 0% | 11.11% | **3.637e-15** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7605% | 2.07% | **0.003454** | 
- | Readmission | 4.194% | 6.625% | **0.01344** | 
- | Unplanned Readmission | 3.868% | 6.004% | **0.02381** | 
+ | Sepsis | 0.8993% | 0% | 0.7751 | 
+ | Readmission | 4.496% | 0% | 0.5152 | 
+ | Unplanned Readmission | 4.137% | 0% | 0.5333 | 
 
 
-| | Non-Independent Functional Health Status (N = 4615.0) | Independent Functional Health Status (N = 1035.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1733% | 0.1932% | 0.8906 | 
+ | Superficial SSI | 0% | 0.1812% | 0.8779 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.452% | 2.222% | 0.07358 | 
+ | Organ/Space SSI | 7.692% | 1.449% | 0.07556 | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.3% | 1.932% | 0.1197 | 
- | Reintubation | 0.8017% | 1.256% | 0.1584 | 
- | Urinary Infection | 0.195% | 0.09662% | 0.4961 | 
- | Deep Vein Thrombosis | 0.325% | 0.4831% | 0.439 | 
- | Renal Insufficiency | 0.1517% | 0.2899% | 0.3392 | 
- | Pulmonary Embolism | 0.3034% | 0.5797% | 0.1761 | 
- | Ventilator Dependent | 0.1517% | 0.2899% | 0.3392 | 
- | Acute Renal Failure | 0.06501% | 0.6763% | **2.35e-05** | 
+ | Pneumonia | 15.38% | 1.087% | **1.612e-05** | 
+ | Reintubation | 15.38% | 0.5435% | **1.628e-08** | 
+ | Urinary Infection | 0% | 0.1812% | 0.8779 | 
+ | Deep Vein Thrombosis | 7.692% | 0.1812% | **6.57e-06** | 
+ | Renal Insufficiency | 0% | 0.1812% | 0.8779 | 
+ | Pulmonary Embolism | 0% | 0.3623% | 0.8279 | 
+ | Ventilator Dependent | 0% | 0.1812% | 0.8779 | 
+ | Acute Renal Failure | 0% | 0.1812% | 0.8779 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7584% | 1.449% | **0.03196** | 
- | Readmission | 4.182% | 5.507% | 0.06097 | 
- | Unplanned Readmission | 3.857% | 5.024% | 0.08592 | 
+ | Sepsis | 0% | 0.9058% | 0.7303 | 
+ | Readmission | 0% | 4.529% | 0.4325 | 
+ | Unplanned Readmission | 0% | 4.167% | 0.4524 | 
 
 
-| | Non-Totally or Partially Dependent Functional Health Status (N = 5174.0) | Totally or Partially Dependent Functional Health Status (N = 1041.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1739% | 0.1921% | 0.8987 | 
+ | Superficial SSI | 0.1789% | 0% | 0.9174 | 
  | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.45% | 2.305% | **0.04416** | 
+ | Organ/Space SSI | 1.431% | 16.67% | **0.003028** | 
  | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.295% | 2.017% | 0.07188 | 
- | Reintubation | 0.7924% | 1.345% | 0.08248 | 
- | Urinary Infection | 0.1933% | 0.09606% | 0.496 | 
- | Deep Vein Thrombosis | 0.3286% | 0.4803% | 0.452 | 
- | Renal Insufficiency | 0.1546% | 0.2882% | 0.3496 | 
- | Pulmonary Embolism | 0.3092% | 0.5764% | 0.1855 | 
- | Ventilator Dependent | 0.1546% | 0.2882% | 0.3496 | 
- | Acute Renal Failure | 0.07731% | 0.6724% | **3.072e-05** | 
+ | Pneumonia | 1.252% | 16.67% | **0.001479** | 
+ | Reintubation | 0.7156% | 16.67% | **3.329e-05** | 
+ | Urinary Infection | 0.1789% | 0% | 0.9174 | 
+ | Deep Vein Thrombosis | 0.3578% | 0% | 0.8833 | 
+ | Renal Insufficiency | 0.1789% | 0% | 0.9174 | 
+ | Pulmonary Embolism | 0.3578% | 0% | 0.8833 | 
+ | Ventilator Dependent | 0.1789% | 0% | 0.9174 | 
+ | Acute Renal Failure | 0.1789% | 0% | 0.9174 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.7731% | 1.441% | **0.0358** | 
- | Readmission | 4.213% | 5.476% | 0.0708 | 
- | Unplanned Readmission | 3.885% | 4.995% | 0.09809 | 
+ | Sepsis | 0.8945% | 0% | 0.816 | 
+ | Readmission | 4.472% | 0% | 0.5962 | 
+ | Unplanned Readmission | 4.114% | 0% | 0.6119 | 
  
  ## Expanded Table 4  
  
@@ -479,214 +479,214 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Unplanned Readmission | 3.67% | 3.33% | 0.925|4.14% | 7.69% | 0.3502|
 
 
-| | Outpatient Non-Smoke (N = 616) | Outpatient Smoke (N = 98) | p-value | Inpatient Non-Smoke (N = 331) | Inpatient Smoke (N = 85) | p-value |
+| | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) | p-value | Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.60% | 0.00% | 0.4725|
+ | Superficial SSI | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.65% | 0.00% | 0.4237|**2.11**% | **8.24**% | **0.005253**|
+ | Organ/Space SSI | 0.69% | 0.00% | 0.4915|**1.23**% | **10.87**% | **0.001384**|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.32% | 5.88% | 0.2738|
- | Reintubation | 0.00% | 0.00% | -|1.81% | 4.71% | 0.1203|
- | Urinary Infection | 0.00% | 0.00% | -|0.60% | 0.00% | 0.4725|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.60% | 2.35% | 0.1406|
- | Renal Insufficiency | 0.32% | 0.00% | 0.5722|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.16% | 1.02% | 0.1355|0.30% | 1.18% | 0.2986|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.30% | 1.18% | 0.2986|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.60% | 0.00% | 0.4725|
+ | Pneumonia | 0.00% | 0.00% | -|4.32% | 2.17% | 0.504|
+ | Reintubation | 0.00% | 0.00% | -|2.47% | 2.17% | 0.9082|
+ | Urinary Infection | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.62% | 2.17% | 0.3397|
+ | Renal Insufficiency | 0.35% | 0.00% | 0.6271|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.00% | 1.47% | **0.03898**|0.00% | 2.17% | 0.05995|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 2.17% | 0.05995|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.32% | 0.00% | 0.5722|1.81% | 2.35% | 0.7463|
- | Readmission | 3.41% | 5.10% | 0.406|5.14% | 8.24% | 0.2743|
- | Unplanned Readmission | 3.41% | 5.10% | 0.406|4.23% | 7.06% | 0.2768|
+ | Sepsis | 0.35% | 0.00% | 0.6271|1.23% | 4.35% | 0.1748|
+ | Readmission | 3.11% | 5.88% | 0.2729|4.94% | 8.70% | 0.3348|
+ | Unplanned Readmission | 3.11% | 5.88% | 0.2729|4.32% | 6.52% | 0.5381|
 
 
-| | Outpatient Non-Hypertension (N = 872) | Outpatient Hypertension (N = 199) | p-value | Inpatient Non-Hypertension (N = 443) | Inpatient Hypertension (N = 181) | p-value |
+| | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) | p-value | Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.45% | 0.55% | 0.8685|
+ | Superficial SSI | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.57% | 0.50% | 0.9038|**2.26**% | **6.08**% | **0.01634**|
+ | Organ/Space SSI | 0.39% | 0.99% | 0.4943|2.68% | 4.17% | 0.553|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.16% | 5.52% | 0.1634|
- | Reintubation | 0.00% | 0.00% | -|1.81% | 3.87% | 0.1271|
- | Urinary Infection | 0.00% | 0.00% | -|0.68% | 0.00% | 0.2671|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.68% | 1.66% | 0.2548|
- | Renal Insufficiency | 0.23% | 0.50% | 0.5106|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.23% | 0.50% | 0.5106|0.23% | 1.10% | 0.1496|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.23% | 1.10% | 0.1496|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.45% | 0.55% | 0.8685|
+ | Pneumonia | 0.00% | 0.00% | -|2.68% | 5.21% | 0.3443|
+ | Reintubation | 0.00% | 0.00% | -|1.79% | 3.12% | 0.5296|
+ | Urinary Infection | 0.00% | 0.00% | -|0.89% | 0.00% | 0.3534|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.89% | 1.04% | 0.9127|
+ | Renal Insufficiency | 0.00% | 0.99% | 0.1109|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.39% | 0.00% | 0.5293|0.00% | 1.04% | 0.2789|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.23% | 0.50% | 0.5106|1.58% | 2.76% | 0.3291|
- | Readmission | 3.33% | 5.03% | 0.2482|**4.29**% | **9.39**% | **0.0131**|
- | Unplanned Readmission | 3.33% | 5.03% | 0.2482|**3.61**% | **7.73**% | **0.02891**|
+ | Sepsis | 0.00% | 0.99% | 0.1109|0.89% | 3.12% | 0.2426|
+ | Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **10.42**% | **0.007781**|
+ | Unplanned Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **8.33**% | **0.02777**|
 
 
-| | Outpatient Non-Dyspnea (N = 1217) | Outpatient Dyspnea (N = 211) | p-value | Inpatient Non-Dyspnea (N = 640) | Inpatient Dyspnea (N = 192) | p-value |
+| | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) | p-value | Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.47% | 0.52% | 0.9271|
+ | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.58% | 0.47% | 0.8557|**2.66**% | **5.73**% | **0.03837**|
+ | Organ/Space SSI | 0.58% | 0.00% | 0.7914|3.55% | 0.00% | 0.5248|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.44% | 5.21% | 0.2631|
- | Reintubation | 0.00% | 0.00% | -|2.03% | 3.65% | 0.2002|
- | Urinary Infection | 0.00% | 0.00% | -|0.62% | 0.00% | 0.2722|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.78% | 1.56% | 0.3306|
- | Renal Insufficiency | 0.25% | 0.47% | 0.5639|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.25% | 0.47% | 0.5639|0.31% | 1.04% | 0.2002|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.31% | 1.04% | 0.2002|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.31% | 1.04% | 0.2002|
+ | Pneumonia | 0.00% | 0.00% | -|4.06% | 0.00% | 0.4955|
+ | Reintubation | 0.00% | 0.00% | -|2.54% | 0.00% | 0.5928|
+ | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.02% | 0.00% | 0.737|
+ | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|0.51% | 0.00% | 0.8128|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **9.09**% | **2.214e-05**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.25% | 0.47% | 0.5639|1.72% | 2.60% | 0.4333|
- | Readmission | 3.45% | 4.74% | 0.3564|**4.69**% | **9.38**% | **0.01456**|
- | Unplanned Readmission | 3.45% | 4.74% | 0.3564|**3.91**% | **7.81**% | **0.02648**|
+ | Sepsis | 0.29% | 0.00% | 0.8518|2.03% | 0.00% | 0.6332|
+ | Readmission | 3.77% | 0.00% | 0.4933|5.58% | 9.09% | 0.6273|
+ | Unplanned Readmission | 3.77% | 0.00% | 0.4933|4.57% | 9.09% | 0.495|
 
 
-| | Outpatient Non-COPD (N = 1565) | Outpatient COPD (N = 220) | p-value | Inpatient Non-COPD (N = 836) | Inpatient COPD (N = 204) | p-value |
+| | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) | p-value | Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.49% | 0.9827|
+ | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.51% | 0.91% | 0.4591|2.87% | 5.39% | 0.07339|
+ | Organ/Space SSI | 0.29% | 11.11% | **1.745e-05**|3.57% | 0.00% | 0.5054|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.47% | 5.39% | 0.2003|
- | Reintubation | 0.00% | 0.00% | -|2.03% | 3.92% | 0.1144|
- | Urinary Infection | 0.00% | 0.00% | -|0.60% | 0.00% | 0.2682|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.72% | 1.96% | 0.1028|
- | Renal Insufficiency | 0.19% | 0.91% | 0.05941|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.26% | 0.45% | 0.6011|0.36% | 0.98% | 0.2499|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.36% | 0.98% | 0.2499|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.24**% | **1.47**% | **0.02263**|
+ | Pneumonia | 0.00% | 0.00% | -|3.57% | 8.33% | 0.405|
+ | Reintubation | 0.00% | 0.00% | -|2.04% | 8.33% | 0.1671|
+ | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|**0.51**% | **8.33**% | **0.007023**|
+ | Renal Insufficiency | 0.00% | 11.11% | **4.755e-10**|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.29% | 0.00% | 0.8721|0.51% | 0.00% | 0.8041|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **8.33**% | **5.096e-05**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.19% | 0.91% | 0.05941|1.67% | 2.94% | 0.2376|
- | Readmission | 3.45% | 5.00% | 0.2506|**4.78**% | **9.80**% | **0.005839**|
- | Unplanned Readmission | 3.45% | 5.00% | 0.2506|**3.95**% | **8.33**% | **0.008654**|
+ | Sepsis | 0.00% | 11.11% | **4.755e-10**|1.53% | 8.33% | 0.09578|
+ | Readmission | 3.45% | 11.11% | 0.2256|5.10% | 16.67% | 0.09534|
+ | Unplanned Readmission | 3.45% | 11.11% | 0.2256|**4.08**% | **16.67**% | **0.04791**|
 
 
-| | Outpatient Non-CGF (N = 1920) | Outpatient CGF (N = 222) | p-value | Inpatient Non-CGF (N = 1043) | Inpatient CGF (N = 205) | p-value |
+| | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.49% | 0.9873|
+ | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.52% | 0.90% | 0.4726|2.97% | 5.37% | 0.08232|
+ | Organ/Space SSI | 0.56% | 0.00% | 0.9152|3.38% | 0.00% | 0.8516|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.45% | 5.85% | 0.1021|
- | Reintubation | 0.00% | 0.00% | -|**2.01**% | **4.39**% | **0.04224**|
- | Urinary Infection | 0.00% | 0.00% | -|0.58% | 0.00% | 0.2763|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.77% | 1.95% | 0.1122|
- | Renal Insufficiency | 0.21% | 0.90% | 0.06453|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.26% | 0.45% | 0.612|0.38% | 0.98% | 0.2625|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.38% | 0.98% | 0.2625|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.29**% | **1.46**% | **0.02609**|
+ | Pneumonia | 0.00% | 0.00% | -|**3.38**% | **100.00**% | **5.385e-07**|
+ | Reintubation | 0.00% | 0.00% | -|**1.93**% | **100.00**% | **1.69e-10**|
+ | Urinary Infection | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.97% | 0.00% | 0.9213|
+ | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.48% | 0.00% | 0.9445|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.21% | 0.90% | 0.06453|1.73% | 2.93% | 0.2523|
- | Readmission | 3.49% | 4.95% | 0.2698|**4.99**% | **9.76**% | **0.007405**|
- | Unplanned Readmission | 3.49% | 4.95% | 0.2698|**4.12**% | **8.29**% | **0.01073**|
+ | Sepsis | 0.28% | 0.00% | 0.9401|1.93% | 0.00% | 0.8884|
+ | Readmission | 3.66% | 0.00% | 0.7828|5.80% | 0.00% | 0.8041|
+ | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.83% | 0.00% | 0.8218|
 
 
-| | Outpatient Non-Disseminated Cancer (N = 2276) | Outpatient Disseminated Cancer (N = 223) | p-value | Inpatient Non-Disseminated Cancer (N = 1238) | Inpatient Disseminated Cancer (N = 218) | p-value |
+| | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) | p-value | Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.46% | 0.9593|
+ | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.53% | 0.90% | 0.4803|3.07% | 5.05% | 0.1357|
+ | Organ/Space SSI | 0.56% | 0.00% | 0.9401|3.59% | 0.00% | 0.4871|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.47% | 5.96% | 0.07793|
- | Reintubation | 0.00% | 0.00% | -|2.10% | 4.13% | 0.07141|
- | Urinary Infection | 0.00% | 0.00% | -|0.57% | 0.00% | 0.2657|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.81% | 1.83% | 0.1519|
- | Renal Insufficiency | 0.22% | 0.90% | 0.06785|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.26% | 0.45% | 0.6182|0.40% | 0.92% | 0.3121|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.40% | 0.92% | 0.3121|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.24**% | **1.83**% | **0.001721**|
+ | Pneumonia | 0.00% | 0.00% | -|3.59% | 7.69% | 0.4564|
+ | Reintubation | 0.00% | 0.00% | -|2.56% | 0.00% | 0.5589|
+ | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.03% | 0.00% | 0.7137|
+ | Renal Insufficiency | 0.28% | 0.00% | 0.9577|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.28% | 0.00% | 0.9577|0.51% | 0.00% | 0.7958|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **7.69**% | **0.0001035**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.22% | 0.90% | 0.06785|1.78% | 2.75% | 0.3336|
- | Readmission | 3.51% | 4.93% | 0.2807|**5.09**% | **9.63**% | **0.007968**|
- | Unplanned Readmission | 3.51% | 4.93% | 0.2807|**4.20**% | **8.26**% | **0.009833**|
+ | Sepsis | 0.28% | 0.00% | 0.9577|2.05% | 0.00% | 0.6021|
+ | Readmission | 3.65% | 0.00% | 0.8457|5.64% | 7.69% | 0.7587|
+ | Unplanned Readmission | 3.65% | 0.00% | 0.8457|4.62% | 7.69% | 0.6156|
 
 
-| | Outpatient Non-Steroid (N = 2621) | Outpatient Steroid (N = 235) | p-value | Inpatient Non-Steroid (N = 1425) | Inpatient Steroid (N = 239) | p-value |
+| | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) | p-value | Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.42% | 0.8803|
+ | Superficial SSI | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.53% | 0.85% | 0.5329|3.02% | 5.44% | 0.0547|
+ | Organ/Space SSI | 0.58% | 0.00% | 0.7914|2.67% | 9.52% | 0.09885|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.51% | 5.86% | 0.08056|
- | Reintubation | 0.00% | 0.00% | -|2.11% | 4.18% | 0.05217|
- | Urinary Infection | 0.00% | 0.00% | -|0.56% | 0.00% | 0.2456|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.84% | 1.67% | 0.2228|
- | Renal Insufficiency | 0.23% | 0.85% | 0.08386|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.27% | 0.43% | 0.6597|0.35% | 1.26% | 0.06142|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.42% | 0.84% | 0.3898|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.21**% | **2.09**% | **9.962e-05**|
+ | Pneumonia | 0.00% | 0.00% | -|3.74% | 4.76% | 0.818|
+ | Reintubation | 0.00% | 0.00% | -|2.14% | 4.76% | 0.4568|
+ | Urinary Infection | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.07% | 0.00% | 0.6339|
+ | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|**0.00**% | **4.76**% | **0.002778**|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **4.76**% | **0.002778**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.23% | 0.85% | 0.08386|1.68% | 3.35% | 0.0832|
- | Readmission | 3.55% | 4.68% | 0.3746|**5.26**% | **8.79**% | **0.03062**|
- | Unplanned Readmission | 3.55% | 4.68% | 0.3746|**4.35**% | **7.53**% | **0.03342**|
+ | Sepsis | 0.29% | 0.00% | 0.8518|**1.07**% | **9.52**% | **0.007477**|
+ | Readmission | 3.77% | 0.00% | 0.4933|6.42% | 0.00% | 0.2317|
+ | Unplanned Readmission | 3.77% | 0.00% | 0.4933|5.35% | 0.00% | 0.2774|
 
 
-| | Outpatient Non-Bleeding Disorder (N = 2975) | Outpatient Bleeding Disorder (N = 238) | p-value | Inpatient Non-Bleeding Disorder (N = 1627) | Inpatient Bleeding Disorder (N = 245) | p-value |
+| | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) | p-value | Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.41% | 0.8601|
+ | Superficial SSI | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.54% | 0.84% | 0.5474|3.07% | 5.31% | 0.07078|
+ | Organ/Space SSI | 0.56% | 0.00% | 0.8961|3.47% | 0.00% | 0.6428|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.56% | 5.71% | 0.1029|
- | Reintubation | 0.00% | 0.00% | -|2.15% | 4.08% | 0.0659|
- | Urinary Infection | 0.00% | 0.00% | -|0.55% | 0.00% | 0.2432|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.86% | 1.63% | 0.2482|
- | Renal Insufficiency | 0.24% | 0.84% | 0.08924|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.27% | 0.42% | 0.6709|0.37% | 1.22% | 0.07104|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.43% | 0.82% | 0.4154|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.18**% | **2.45**% | **1.776e-06**|
+ | Pneumonia | 0.00% | 0.00% | -|3.96% | 0.00% | 0.6191|
+ | Reintubation | 0.00% | 0.00% | -|2.48% | 0.00% | 0.6965|
+ | Urinary Infection | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.99% | 0.00% | 0.8065|
+ | Renal Insufficiency | 0.28% | 0.00% | 0.9265|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.28% | 0.00% | 0.9265|0.50% | 0.00% | 0.8628|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **16.67**% | **6.017e-09**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.24% | 0.84% | 0.08924|1.72% | 3.27% | 0.1008|
- | Readmission | 3.56% | 4.62% | 0.4014|**5.35**% | **8.57**% | **0.04361**|
- | Unplanned Readmission | 3.56% | 4.62% | 0.4014|**4.43**% | **7.35**% | **0.04628**|
+ | Sepsis | 0.28% | 0.00% | 0.9265|1.98% | 0.00% | 0.7278|
+ | Readmission | 3.67% | 0.00% | 0.7353|5.94% | 0.00% | 0.5385|
+ | Unplanned Readmission | 3.67% | 0.00% | 0.7353|4.95% | 0.00% | 0.5764|
 
 
-| | Outpatient Non-Independent Functional Health Status (N = 2980) | Outpatient Independent Functional Health Status (N = 590) | p-value | Inpatient Non-Independent Functional Health Status (N = 1635) | Inpatient Independent Functional Health Status (N = 445) | p-value |
+| | Outpatient Non-Independent Functional Health Status (N = 5) | Outpatient Independent Functional Health Status (N = 352) | p-value | Inpatient Non-Independent Functional Health Status (N = 8) | Inpatient Independent Functional Health Status (N = 200) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.45% | 0.9142|
+ | Superficial SSI | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.54% | 0.68% | 0.6749|3.12% | 4.27% | 0.2328|
+ | Organ/Space SSI | 0.00% | 0.57% | 0.8658|12.50% | 3.00% | 0.144|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.67% | 4.49% | 0.4225|
- | Reintubation | 0.00% | 0.00% | -|2.26% | 2.92% | 0.4215|
- | Urinary Infection | 0.00% | 0.00% | -|0.55% | 0.22% | 0.3784|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.92% | 1.12% | 0.6928|
- | Renal Insufficiency | 0.23% | 0.51% | 0.2507|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.27% | 0.34% | 0.7671|0.37% | 0.90% | 0.1504|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.43% | 0.67% | 0.5059|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.18**% | **1.57**% | **0.0001719**|
+ | Pneumonia | 0.00% | 0.00% | -|**25.00**% | **3.00**% | **0.001509**|
+ | Reintubation | 0.00% | 0.00% | -|**25.00**% | **1.50**% | **2.088e-05**|
+ | Urinary Infection | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|**12.50**% | **0.50**% | **0.0006483**|
+ | Renal Insufficiency | 0.00% | 0.28% | 0.905|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.00% | 0.28% | 0.905|0.00% | 0.50% | 0.8411|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.23% | 0.51% | 0.2507|1.71% | 2.70% | 0.1802|
- | Readmission | 3.56% | 4.07% | 0.5451|5.32% | 7.42% | 0.09292|
- | Unplanned Readmission | 3.56% | 4.07% | 0.5451|4.40% | 6.29% | 0.09874|
+ | Sepsis | 0.00% | 0.28% | 0.905|0.00% | 2.00% | 0.6863|
+ | Readmission | 0.00% | 3.69% | 0.6616|0.00% | 6.00% | 0.4754|
+ | Unplanned Readmission | 0.00% | 3.69% | 0.6616|0.00% | 5.00% | 0.5168|
 
 
-| | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 3335) | Outpatient Totally or Partially Dependent Functional Health Status (N = 592) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 1839) | Inpatient Totally or Partially Dependent Functional Health Status (N = 449) | p-value |
+| | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 355) | Outpatient Totally or Partially Dependent Functional Health Status (N = 2) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 204) | Inpatient Totally or Partially Dependent Functional Health Status (N = 4) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.45% | 0.9039|
+ | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
  | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.54% | 0.68% | 0.683|3.10% | 4.45% | 0.1535|
+ | Organ/Space SSI | 0.56% | 0.00% | 0.9152|**2.94**% | **25.00**% | **0.0154**|
  | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.64% | 4.68% | 0.3072|
- | Reintubation | 0.00% | 0.00% | -|2.23% | 3.12% | 0.2704|
- | Urinary Infection | 0.00% | 0.00% | -|0.54% | 0.22% | 0.3779|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.92% | 1.11% | 0.7127|
- | Renal Insufficiency | 0.24% | 0.51% | 0.2575|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.27% | 0.34% | 0.7731|0.38% | 0.89% | 0.1611|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.44% | 0.67% | 0.522|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.22**% | **1.56**% | **0.0002293**|
+ | Pneumonia | 0.00% | 0.00% | -|**3.43**% | **25.00**% | **0.02632**|
+ | Reintubation | 0.00% | 0.00% | -|**1.96**% | **25.00**% | **0.002889**|
+ | Urinary Infection | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.98% | 0.00% | 0.8423|
+ | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
+ | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.49% | 0.00% | 0.8884|
+ | Ventilator Dependent | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.24% | 0.51% | 0.2575|1.74% | 2.67% | 0.1971|
- | Readmission | 3.57% | 4.05% | 0.5609|5.38% | 7.35% | 0.1091|
- | Unplanned Readmission | 3.57% | 4.05% | 0.5609|4.46% | 6.24% | 0.1145|
+ | Sepsis | 0.28% | 0.00% | 0.9401|1.96% | 0.00% | 0.7773|
+ | Readmission | 3.66% | 0.00% | 0.7828|5.88% | 0.00% | 0.6173|
+ | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.90% | 0.00% | 0.6499|
  
  
  ### Notes
