@@ -222,7 +222,6 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Disseminated Cancer | 2.504% | 0% | 0.6947 | 
  | Steroid | 5.725% | 16.67% | 0.2556 | 
  | Bleeding Disorder | 1.61% | 0% | 0.754 | 
- | Independent Functional Health Status | 98.75% | 0% | **6.007e-58** | 
  
  ## Expanded Table 3
  
@@ -238,7 +237,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.2016% | 1.449% | 0.102 | 
  | Renal Insufficiency | 0.2016% | 0% | 0.7089 | 
  | Pulmonary Embolism | 0.4032% | 0% | 0.5972 | 
- | Ventilator Dependent | 0.2016% | 0% | 0.7089 | 
+ | Ventilator | 0.6048% | 2.899% | 0.05664 | 
  | Acute Renal Failure | 0.2016% | 0% | 0.7089 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -259,7 +258,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.2217% | 0.8772% | 0.2924 | 
  | Renal Insufficiency | 0.2217% | 0% | 0.6148 | 
  | Pulmonary Embolism | 0% | 1.754% | **0.004834** | 
- | Ventilator Dependent | 0% | 0.8772% | **0.04651** | 
+ | Ventilator | 0.6652% | 1.754% | 0.2673 | 
  | Acute Renal Failure | 0.2217% | 0% | 0.6148 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -280,7 +279,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.2717% | 0.5076% | 0.6528 | 
  | Renal Insufficiency | 0% | 0.5076% | 0.1713 | 
  | Pulmonary Embolism | 0.2717% | 0.5076% | 0.6528 | 
- | Ventilator Dependent | 0% | 0.5076% | 0.1713 | 
+ | Ventilator | 1.087% | 0.5076% | 0.4835 | 
  | Acute Renal Failure | 0% | 0.5076% | 0.1713 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -301,7 +300,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.369% | 0% | 0.7704 | 
  | Renal Insufficiency | 0.1845% | 0% | 0.8366 | 
  | Pulmonary Embolism | 0.369% | 0% | 0.7704 | 
- | Ventilator Dependent | 0.1845% | 0% | 0.8366 | 
+ | Ventilator | 0.9225% | 0% | 0.6436 | 
  | Acute Renal Failure | 0% | 4.348% | **1.182e-06** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -322,7 +321,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.1838% | 4.762% | **0.000528** | 
  | Renal Insufficiency | 0% | 4.762% | **3.502e-07** | 
  | Pulmonary Embolism | 0.3676% | 0% | 0.7807 | 
- | Ventilator Dependent | 0.1838% | 0% | 0.8441 | 
+ | Ventilator | 0.7353% | 4.762% | 0.0532 | 
  | Acute Renal Failure | 0% | 4.762% | **3.502e-07** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -343,7 +342,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.3559% | 0% | 0.9176 | 
  | Renal Insufficiency | 0.1779% | 0% | 0.9417 | 
  | Pulmonary Embolism | 0.3559% | 0% | 0.9176 | 
- | Ventilator Dependent | 0.1779% | 0% | 0.9417 | 
+ | Ventilator | 0.8897% | 0% | 0.8697 | 
  | Acute Renal Failure | 0.1779% | 0% | 0.9417 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -364,7 +363,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.363% | 0% | 0.8213 | 
  | Renal Insufficiency | 0.1815% | 0% | 0.8732 | 
  | Pulmonary Embolism | 0.363% | 0% | 0.8213 | 
- | Ventilator Dependent | 0.1815% | 0% | 0.8732 | 
+ | Ventilator | 0.726% | 7.143% | **0.01135** | 
  | Acute Renal Failure | 0% | 7.143% | **3.406e-10** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -385,7 +384,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.3759% | 0% | 0.7242 | 
  | Renal Insufficiency | 0.188% | 0% | 0.8031 | 
  | Pulmonary Embolism | 0.188% | 3.03% | **0.007636** | 
- | Ventilator Dependent | 0.188% | 0% | 0.8031 | 
+ | Ventilator | 0.5639% | 6.061% | **0.001069** | 
  | Acute Renal Failure | 0% | 3.03% | **5.852e-05** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -406,7 +405,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.3597% | 0% | 0.857 | 
  | Renal Insufficiency | 0.1799% | 0% | 0.8987 | 
  | Pulmonary Embolism | 0.3597% | 0% | 0.857 | 
- | Ventilator Dependent | 0.1799% | 0% | 0.8987 | 
+ | Ventilator | 0.7194% | 11.11% | **0.0009596** | 
  | Acute Renal Failure | 0% | 11.11% | **3.637e-15** | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -427,7 +426,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 7.692% | 0.1812% | **6.57e-06** | 
  | Renal Insufficiency | 0% | 0.1812% | 0.8779 | 
  | Pulmonary Embolism | 0% | 0.3623% | 0.8279 | 
- | Ventilator Dependent | 0% | 0.1812% | 0.8779 | 
+ | Ventilator | 15.38% | 0.5435% | **1.628e-08** | 
  | Acute Renal Failure | 0% | 0.1812% | 0.8779 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -448,7 +447,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.3578% | 0% | 0.8833 | 
  | Renal Insufficiency | 0.1789% | 0% | 0.9174 | 
  | Pulmonary Embolism | 0.3578% | 0% | 0.8833 | 
- | Ventilator Dependent | 0.1789% | 0% | 0.9174 | 
+ | Ventilator | 0.7156% | 16.67% | **3.329e-05** | 
  | Acute Renal Failure | 0.1789% | 0% | 0.9174 | 
  | CVA with Neurologic Deficit | 0% | 0% | - | 
  | Myocardial Infarction | 0% | 0% | - | 
@@ -470,7 +469,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.59% | 2.56% | 0.2552|
  | Renal Insufficiency | 0.31% | 0.00% | 0.7616|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.31% | 0.00% | 0.7616|0.59% | 0.00% | 0.6301|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
+ | Ventilator | 0.00% | 0.00% | -|1.78% | 5.13% | 0.2178|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -491,7 +490,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.62% | 2.17% | 0.3397|
  | Renal Insufficiency | 0.35% | 0.00% | 0.6271|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.00% | 1.47% | **0.03898**|0.00% | 2.17% | 0.05995|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 2.17% | 0.05995|
+ | Ventilator | 0.00% | 0.00% | -|1.85% | 4.35% | 0.3294|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -512,7 +511,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.89% | 1.04% | 0.9127|
  | Renal Insufficiency | 0.00% | 0.99% | 0.1109|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.39% | 0.00% | 0.5293|0.00% | 1.04% | 0.2789|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
+ | Ventilator | 0.00% | 0.00% | -|3.57% | 1.04% | 0.235|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -533,7 +532,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.02% | 0.00% | 0.737|
  | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|0.51% | 0.00% | 0.8128|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
+ | Ventilator | 0.00% | 0.00% | -|2.54% | 0.00% | 0.5928|
  | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **9.09**% | **2.214e-05**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -554,7 +553,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|**0.51**% | **8.33**% | **0.007023**|
  | Renal Insufficiency | 0.00% | 11.11% | **4.755e-10**|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.29% | 0.00% | 0.8721|0.51% | 0.00% | 0.8041|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
+ | Ventilator | 0.00% | 0.00% | -|2.04% | 8.33% | 0.1671|
  | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **8.33**% | **5.096e-05**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -575,7 +574,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.97% | 0.00% | 0.9213|
  | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.48% | 0.00% | 0.9445|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
+ | Ventilator | 0.00% | 0.00% | -|2.42% | 0.00% | 0.875|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -596,7 +595,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.03% | 0.00% | 0.7137|
  | Renal Insufficiency | 0.28% | 0.00% | 0.9577|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.28% | 0.00% | 0.9577|0.51% | 0.00% | 0.7958|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
+ | Ventilator | 0.00% | 0.00% | -|2.05% | 7.69% | 0.1985|
  | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **7.69**% | **0.0001035**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -617,7 +616,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.07% | 0.00% | 0.6339|
  | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|**0.00**% | **4.76**% | **0.002778**|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
+ | Ventilator | 0.00% | 0.00% | -|**1.60**% | **9.52**% | **0.02466**|
  | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **4.76**% | **0.002778**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -638,7 +637,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.99% | 0.00% | 0.8065|
  | Renal Insufficiency | 0.28% | 0.00% | 0.9265|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.28% | 0.00% | 0.9265|0.50% | 0.00% | 0.8628|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
+ | Ventilator | 0.00% | 0.00% | -|**1.98**% | **16.67**% | **0.02064**|
  | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **16.67**% | **6.017e-09**|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -659,7 +658,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|**12.50**% | **0.50**% | **0.0006483**|
  | Renal Insufficiency | 0.00% | 0.28% | 0.905|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.00% | 0.28% | 0.905|0.00% | 0.50% | 0.8411|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
+ | Ventilator | 0.00% | 0.00% | -|**25.00**% | **1.50**% | **2.088e-05**|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -680,7 +679,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.98% | 0.00% | 0.8423|
  | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
  | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.49% | 0.00% | 0.8884|
- | Ventilator Dependent | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
+ | Ventilator | 0.00% | 0.00% | -|**1.96**% | **25.00**% | **0.002889**|
  | Acute Renal Failure | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
  | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
@@ -691,6 +690,17 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  
  ### Notes
  I did not perform this analysis for Ventilator Dependent, Ascites, and Acute Renal Failure due to lack of patients with the conditions in both outpatient and inpatient settings. 
+
+ ## Multivariate Logistic Regression
+ 
+ Odds Ratio calculations made by including the variables: [Smoke]:
+
+|   | Odds ratio (data) | 
+| -------------  | ------------- | 
+| Organ/Space SSI  | | 
+| Pulmonary Embolism  |  | 
+
+ 
 
 
 
