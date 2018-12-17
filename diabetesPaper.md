@@ -704,6 +704,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 The odds ratio for Pulmonary Embolism is likely so high because there were only 2 patients with this outcome and both were smokers (complete quasi-separation). 
 
 #### Controlling for significant comorbidities
+Calculating the odds ratios of specific outcomes for the variable smoking.  
 Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
 
 |   | Odds ratio (data) | 95% Confidence Interval |
