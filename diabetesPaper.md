@@ -697,8 +697,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 
 |   | Odds ratio (data) | 
 | -------------  | ------------- | 
-| Organ/Space SSI  | | 
-| Pulmonary Embolism  |  | 
+| Organ/Space SSI  | 5.1263 | 
+| Pulmonary Embolism  | 193242590233598.4  | **this seems too high, looking into this further
 
  
 
