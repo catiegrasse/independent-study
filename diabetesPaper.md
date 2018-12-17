@@ -692,6 +692,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  I did not perform this analysis for Ventilator Dependent, Ascites, and Acute Renal Failure due to lack of patients with the conditions in both outpatient and inpatient settings. 
 
  ## Multivariate Logistic Regression
+ Calculating the odds ratios of specific outcomes for the variable smoking.
  
  Odds Ratio calculations made by including the variables: [Smoke]:
 
@@ -699,6 +700,13 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 | -------------  | ------------- | 
 | Organ/Space SSI  | 5.1263 | 
 | Pulmonary Embolism  | 193242590233598.4  | **this seems too high, looking into this further
+
+#### Controlling for significant comorbidities
+Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
+|   | Odds ratio (data) | 
+| -------------  | ------------- | 
+| Organ/Space SSI  | 2.868 | 
+| Pulmonary Embolism  | 9.496  | 
 
  
 
