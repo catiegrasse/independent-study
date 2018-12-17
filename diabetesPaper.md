@@ -699,7 +699,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 |   | Odds ratio (data) | 
 | -------------  | ------------- | 
 | Organ/Space SSI  | 5.1263 | 
-| Pulmonary Embolism  | 193242590233598.4  | **this seems too high, looking into this further
+| Pulmonary Embolism  | 193242590233598.4  | 
+
+The odds ratio for Pulmonary Embolism is likely so high because the only patients that had pulmonary embolism as an outcome complication were patients that also smoked. 
 
 #### Controlling for significant comorbidities
 Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
