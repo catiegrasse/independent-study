@@ -703,6 +703,7 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 
 #### Controlling for significant comorbidities
 Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
+
 |   | Odds ratio (data) | 
 | -------------  | ------------- | 
 | Organ/Space SSI  | 2.868 | 
