@@ -3,9 +3,24 @@
 #### Short Abstract
 
 #### Introduction
-Chronic Rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009 (4). This paper seeks to examine the effect of preoperative health conditions on postoperative endoscopic sinus surgery in adult patients. Data from the ACS NSQIP dataset from the years 2014-2016 was used for this analysis. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2014-2016, the data contained records of 565 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing statistically significant results.
+Chronic rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009. Endoscopic sinus surgery (ESS) is the preferred treatment for chronic rhinosinusitis, following failure of conservative therapy approaches (4). Since chronic rhinosinusitis affects such a large percentage of the population, this paper seeks to examine the effect of preoperative health conditions on postoperative ESS in adult patients. Data from the ACS NSQIP dataset from the years 2014-2016 was used for this analysis. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2014-2016, the data contained records of 565 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing statistically significant results.
 
 #### Experimental Set-Up 
+Patient data was collected through the ACS NSQIP database and samples from the year 2014-2016 were used for this analysis. From 2014-2016, 565 patients were identified as having undergone endoscopic sinus surgery if their patient record contained any of the ESS CPT codes:
+31237: Nasal/sinus endoscopy, surgical; with biopsy, polypectomy or debridement
+31239: Nasal/sinus endoscopy, surgical; with dacryocystorhinostomy
+31240: Nasal/sinus endoscopy, surgical; with concha bullosa resection
+31254: Nasal/sinus endoscopy, surgical; with ethmoidectomy, partial (anterior)
+31255: Nasal/sinus endoscopy, surgical; with ethmoidectomy, total (antreior and posterior)
+31256: Nasal/sinus endoscopy, surgical, with maxillary antrostomy
+31267: Nasal/sinus endoscopy, surgical, with maxillary antrostomy; with removal of tissue from maxillary sinus
+31276: Nasal/sinus endoscopy, surgical with frontal sinus exploration, with or without removal of tissue from frontal sinus
+31287: Nasal/sinus endoscopy, surgical, with spenoidotomy
+31288: Nasal/sinus endoscopy, surgical, with sphenoidotomy; with removal of tissue from the sphenoid sinus
+
+Further analysis was only performed on this sample of 565 patients. 
+
+Statistical analysis was performed using Python scripts. Multivariate logistic regression was performed using the statsmodels Python library, an open source module for conducting statistical tests, building statistical models, and statistical data exploration (5). 
 
 #### Experimental Results
 
@@ -16,5 +31,7 @@ Since this analysis used data only from the years 2014-2016 in the NSQIP databas
 (1) NSQIP User Guide  
 (2) NSQIP Data  
 (3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590   
-(4) https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/full/10.1097/00005537-200202000-00020
+(4) https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/full/10.1097/00005537-200202000-00020  
+(5) https://www.statsmodels.org/stable/index.html
+
 
