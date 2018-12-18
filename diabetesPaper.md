@@ -698,8 +698,8 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
 
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 5.1263 | (1.354 - 19.409) | **p < 0.01** |
-| Pulmonary Embolism  | 193242590233598.4  | (0 - inf) |
+| Organ/Space SSI  | 5.1263 | (1.354 - 19.409) | **0.0156** |
+| Pulmonary Embolism  | 193242590233598.4  | (0 - inf) | |
 
 The odds ratio for Pulmonary Embolism is likely so high because there were only 2 patients with this outcome and both were smokers (complete quasi-separation). 
 
@@ -709,8 +709,8 @@ Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, 
 
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 4.125 | (0.990 - 17.202) | |
-| Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | |
+| Organ/Space SSI  | 4.125 | (0.990 - 17.202) | 0.0513 |
+| Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | 0.2178 |
 
  
 
