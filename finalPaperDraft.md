@@ -15,6 +15,6 @@ Since this analysis used data only from the years 2014-2016 in the NSQIP databas
 #### Sources
 (1) NSQIP User Guide  
 (2) NSQIP Data  
-(3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590 
+(3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590   
 (4) https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/full/10.1097/00005537-200202000-00020
 
