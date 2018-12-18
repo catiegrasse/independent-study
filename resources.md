@@ -37,6 +37,7 @@ Chi-Squared Info: http://math.hws.edu/javamath/ryan/ChiSquare.html
 Python Logistic Regression: https://pythonfordatascience.org/logistic-regression-python/  
 Multiple Logistic Regression in Python https://statinfer.com/204-2-3-multiple-logistic-regression/  
 Two-Sample Z Test Calculation: https://www.khanacademy.org/math/ap-statistics/two-sample-inference/two-sample-z-test-proportions/e/p-value-difference-proportions  
+Calculating P-Value for Odds Ratio: https://www.bmj.com/content/343/bmj.d2304
 
 
 
