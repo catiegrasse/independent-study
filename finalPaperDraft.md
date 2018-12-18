@@ -1,14 +1,13 @@
 ## Final Write-Up
-#### Draft
 
-### Short Abstract
+#### Short Abstract
 
-### Introduction
+#### Introduction
 
-### Experimental Set-Up 
+#### Experimental Set-Up 
 
-### Experimental Results
+#### Experimental Results
 
-### Conclusion
+#### Conclusion
 
-### Sources
+#### Sources
