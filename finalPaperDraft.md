@@ -20,7 +20,7 @@ Patient data collected through the ACS NSQIP database from the years 2014-2016 w
 
 Patients that did not contain one of the above CPT codes in their data were filtered out from the study. Further analysis was only performed on this sample of 565 patients.   
 
-Statistical analysis was performed using python scripts written for this study. Multivariate logistic regression was performed using the statsmodels Python library, an open source module for conducting statistical tests, building statistical models, and statistical data exploration (5). All python modules used for this study can be found in this Github repository: https://github.com/catiegrasse/independent-study
+Statistical analysis was performed using python scripts written for this study. Pandas, an open source python library for data analysis, was used to process the CSV files from the NSQIP database into easy to use data structures (6). Multivariate logistic regression was performed using the statsmodels Python library, an open source module for conducting statistical tests, building statistical models, and statistical data exploration (5). All python modules used for this study can be found in this Github repository: https://github.com/catiegrasse/independent-study
 
 #### Experimental Results
 
@@ -32,6 +32,7 @@ Since this analysis used data only from the years 2014-2016 in the NSQIP databas
 (2) NSQIP Data  
 (3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590   
 (4) https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/full/10.1097/00005537-200202000-00020  
-(5) https://www.statsmodels.org/stable/index.html
+(5) https://www.statsmodels.org/stable/index.html  
+(6) https://pandas.pydata.org/pandas-docs/stable/index.html  
 
 
