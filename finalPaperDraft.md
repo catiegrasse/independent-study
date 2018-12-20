@@ -169,8 +169,9 @@ Patients that reported steroid use <30 days prior to surgery had a statistically
  | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
  | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
  
-Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).
+Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).  
 
+In this sample, 552 patients had an independent functional health status, 6 patients had a totally or partially dependent functional health status, and 7 patients had an unknown functional health status. 
 
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -200,7 +201,7 @@ Patients with a bleeding disorder had a statistically significant higher inciden
  | Steroid | 5.725% | 16.67% | 0.2556 | 
  | Bleeding Disorder | 1.61% | 0% | 0.754 | 
  
- Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
  
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
@@ -223,6 +224,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 1.008% | 0% | 0.4022 | 
  | Readmission | 4.234% | 5.797% | 0.5541 | 
  | Unplanned Readmission | 3.831% | 5.797% | 0.4386 | 
+ 
+ Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.797% vs 0.8065%, p < 0.05) and postoperative reintubation (4.348% vs 0.4032%, p < 0.05).
 
 
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
@@ -244,6 +247,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.6652% | 1.754% | 0.2673 | 
  | Readmission | 3.769% | 7.018% | 0.1319 | 
  | Unplanned Readmission | 3.548% | 6.14% | 0.2107 | 
+ 
+ Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (4.386% vs 0.8869%, p < 0.05) and postoperative pulmonary embolism (1.754% vs 0%, p < 0.05).
 
 
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
@@ -265,7 +270,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.2717% | 2.03% | **0.03341** | 
  | Readmission | 2.717% | 7.614% | **0.006991** | 
  | Unplanned Readmission | 2.717% | 6.599% | **0.02608** | 
-
+ 
+Patients that had hypertension had a statistically significant higher incidence of postoperative sepsis (2.03% vs 0.2717%, p < 0.05), postoperative readmission (7.614% vs 2.717%, p < 0.05), and unplanned postoperative readmission (6.599% vs 2.717%, p < 0.05).
 
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -286,7 +292,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.9225% | 0% | 0.6436 | 
  | Readmission | 4.428% | 4.348% | 0.9854 | 
  | Unplanned Readmission | 4.059% | 4.348% | 0.9453 | 
-
+ 
+ Patients that had dyspnea had a statistically significant higher incidence of postoperative acute renal failure (4.348% vs 0%, p < 0.05).
 
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -308,6 +315,7 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 4.044% | 14.29% | **0.02513** | 
  | Unplanned Readmission | 3.676% | 14.29% | **0.01577** | 
 
+Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (4.762% vs 0.1838%, p < 0.05), postoperative renal insuffiency (4.762% vs 0%, p < 0.05), postoperative acute renal failure (4.762% vs 0%, p < 0.05), sepsis (9.524% vs 0.5515%, p < 0.05), postoperative readmission (14.29% vs 4.044%, p < 0.05), and unplanned postoperative readmission (14.29% vs 3.676%, p < 0.05).
 
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -328,7 +336,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.8897% | 0% | 0.8697 | 
  | Readmission | 4.448% | 0% | 0.7086 | 
  | Unplanned Readmission | 4.093% | 0% | 0.7205 | 
-
+ 
+ Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (33.33% vs 1.246%, p < 0.05) and postoperative reintubation (33.33% vs 0.7117%, p < 0.05).
 
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -350,6 +359,7 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 4.356% | 7.143% | 0.6165 | 
  | Unplanned Readmission | 3.993% | 7.143% | 0.5559 | 
 
+Patients with disseminated cancer had a statistically significant higher incidence of postoperative ventilator use (7.143% vs 0.726%, p < 0.05) and postoperative acute renal failure (7.143% vs 0%, p < 0.05).
 
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -371,6 +381,7 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 4.699% | 0% | 0.2027 | 
  | Unplanned Readmission | 4.323% | 0% | 0.2226 | 
 
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.061% vs 1.316%, p < 0.05), postoperative pulmonary embolism (3.03% vs 0.188%, p < 0.05), postoperative ventilator use (6.061% vs 0.5639%, p < 0.05), postoperative acute renal failure (3.03% vs 0%, p < 0.05), and postoperative sepsis (6.061% vs 0.5639%, p < 0.05).
 
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -391,6 +402,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.8993% | 0% | 0.7751 | 
  | Readmission | 4.496% | 0% | 0.5152 | 
  | Unplanned Readmission | 4.137% | 0% | 0.5333 | 
+ 
+ Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (11.11% vs 0.7194%, p < 0.05) and postoperative acute renal failure (11.11% vs 0%, p < 0.05).
 
 
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
@@ -412,6 +425,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0% | 0.9058% | 0.7303 | 
  | Readmission | 0% | 4.529% | 0.4325 | 
  | Unplanned Readmission | 0% | 4.167% | 0.4524 | 
+ 
+ Patients with an independent functional health status had a statistically significant lower incidence of postoperative penumonia (1.087% vs 15.38%, p < 0.05), postoperative reintubation (0.5435% vs 15.38%), postoperative deep vein thrombosis (0.1812% vs 7.692%, p < 0.05), and postoperative ventilator use (0.5435% vs 15.38%, p < 0.05).
 
 
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
@@ -434,6 +449,8 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 4.472% | 0% | 0.5962 | 
  | Unplanned Readmission | 4.114% | 0% | 0.6119 | 
  
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
+ 
  ## Expanded Table 4  
  
 | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
@@ -455,6 +472,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.31% | 0.00% | 0.7616|2.37% | 0.00% | 0.332|
  | Readmission | 3.67% | 3.33% | 0.925|5.33% | 7.69% | 0.5677|
  | Unplanned Readmission | 3.67% | 3.33% | 0.925|4.14% | 7.69% | 0.3502|
+ 
+ In the inpatient setting, patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (10.26% vs 2.37%, p < 0.05) and postoperative reintubation (7.69% vs 1.18%, p < 0.05).
 
 
 | | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) | p-value | Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) | p-value |
@@ -476,6 +495,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.35% | 0.00% | 0.6271|1.23% | 4.35% | 0.1748|
  | Readmission | 3.11% | 5.88% | 0.2729|4.94% | 8.70% | 0.3348|
  | Unplanned Readmission | 3.11% | 5.88% | 0.2729|4.32% | 6.52% | 0.5381|
+ 
+ In the outpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (1.47% vs 0%, p < 0.05). In the inpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI).
 
 
 | | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) | p-value | Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) | p-value |
@@ -497,6 +518,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.00% | 0.99% | 0.1109|0.89% | 3.12% | 0.2426|
  | Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **10.42**% | **0.007781**|
  | Unplanned Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **8.33**% | **0.02777**|
+ 
+ In the inpatient setting, patients with hypertension had a statistically significant higher incidence of postoperative readmission (10.42% vs 1.79%, p < 0.05) and unplanned postoperative readmission (8.33% vs 1.79%, p < 0.05). 
 
 
 | | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) | p-value | Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) | p-value |
@@ -518,6 +541,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.29% | 0.00% | 0.8518|2.03% | 0.00% | 0.6332|
  | Readmission | 3.77% | 0.00% | 0.4933|5.58% | 9.09% | 0.6273|
  | Unplanned Readmission | 3.77% | 0.00% | 0.4933|4.57% | 9.09% | 0.495|
+ 
+ In the inpatient setting, patients with dyspnea had a statistically significant higher incidence of postoperative acute renal failure (9.09% vs 0%, p < 0.05).
 
 
 | | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) | p-value | Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) | p-value |
@@ -540,6 +565,7 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 3.45% | 11.11% | 0.2256|5.10% | 16.67% | 0.09534|
  | Unplanned Readmission | 3.45% | 11.11% | 0.2256|**4.08**% | **16.67**% | **0.04791**|
 
+In the outpatient setting, patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (11.11% vs 0.29%, p < 0.05), postoperative renail insuffiency (11.11% vs 0%, p < 0.05), and postoperative sepsis (11.11% vs 0%, p < 0.05). In the inpatient setting, patients with chronic obstructive pulmoonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (8.33% vs 0.51%, p < 0.05), postoperative acute renal failure (8.33% vs 0%, p < 0.05), and unplanned postoperative readmission (16.67% vs 4.08%, p < 0.05). 
 
 | | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -561,6 +587,7 @@ The following tables present findings for significant differences in postoperati
  | Readmission | 3.66% | 0.00% | 0.7828|5.80% | 0.00% | 0.8041|
  | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.83% | 0.00% | 0.8218|
 
+In the inpatient setting, patients with congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (100% vs 3.83%, p < 0.05) and postoperative reintubation (100% vs 1.93%, p < 0.05). However, only a small sample (N = 1) of patients had congestive heart failure and were in the inpatient setting. 
 
 | | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) | p-value | Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -581,6 +608,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.28% | 0.00% | 0.9577|2.05% | 0.00% | 0.6021|
  | Readmission | 3.65% | 0.00% | 0.8457|5.64% | 7.69% | 0.7587|
  | Unplanned Readmission | 3.65% | 0.00% | 0.8457|4.62% | 7.69% | 0.6156|
+ 
+ In the inpatient setting, patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renail failure (7.69% vs 0%, p < 0.05).
 
 
 | | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) | p-value | Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) | p-value |
@@ -602,6 +631,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.29% | 0.00% | 0.8518|**1.07**% | **9.52**% | **0.007477**|
  | Readmission | 3.77% | 0.00% | 0.4933|6.42% | 0.00% | 0.2317|
  | Unplanned Readmission | 3.77% | 0.00% | 0.4933|5.35% | 0.00% | 0.2774|
+ 
+ In the inpatient setting, patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (4.76% vs 0%, p < 0.05), postoperative ventilator use (9.52% vs 1.60%, p < 0.05), postoperative acute renal failure (4.76% vs 0%, p < 0.05), and postoperative sepsis (9.52% vs 1.07%, p < 0.05).
 
 
 | | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) | p-value | Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) | p-value |
@@ -623,6 +654,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.28% | 0.00% | 0.9265|1.98% | 0.00% | 0.7278|
  | Readmission | 3.67% | 0.00% | 0.7353|5.94% | 0.00% | 0.5385|
  | Unplanned Readmission | 3.67% | 0.00% | 0.7353|4.95% | 0.00% | 0.5764|
+ 
+ In the inpatient setting, patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilaor (16.67% vs 1.98%, p < 0.05) and postoperative acute renal failure (16.67% vs 0%, p < 0.05). 
 
 
 | | Outpatient Non-Independent Functional Health Status (N = 5) | Outpatient Independent Functional Health Status (N = 352) | p-value | Inpatient Non-Independent Functional Health Status (N = 8) | Inpatient Independent Functional Health Status (N = 200) | p-value |
@@ -644,6 +677,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.00% | 0.28% | 0.905|0.00% | 2.00% | 0.6863|
  | Readmission | 0.00% | 3.69% | 0.6616|0.00% | 6.00% | 0.4754|
  | Unplanned Readmission | 0.00% | 3.69% | 0.6616|0.00% | 5.00% | 0.5168|
+ 
+ In the inpatient setting, patients with an independent functional health status had a statistically significant lower incidence of postoperative pnemonia (3.00% vs 25.00%, p < 0.05), postoperative reintubation (1.50% vs 25.00%, p < 0.05), postoperative deep vein thrombosis (0.50% vs 12.50%, p < 0.05), and postoperative ventilator (1.50% vs 25.00%, p < 0.05).
 
 
 | | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 355) | Outpatient Totally or Partially Dependent Functional Health Status (N = 2) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 204) | Inpatient Totally or Partially Dependent Functional Health Status (N = 4) | p-value |
@@ -665,6 +700,8 @@ The following tables present findings for significant differences in postoperati
  | Sepsis | 0.28% | 0.00% | 0.9401|1.96% | 0.00% | 0.7773|
  | Readmission | 3.66% | 0.00% | 0.7828|5.88% | 0.00% | 0.6173|
  | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.90% | 0.00% | 0.6499|
+ 
+ In the inpatient setting, patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (25.00% vs 2.94%, p < 0.05), postoperative reintubation (25.00% vs 1.96%, p < 0.05), postoperative ventilator (25.00% vs 1.96%, p < 0.05).
  
  
  ### Notes
