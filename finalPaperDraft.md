@@ -41,7 +41,7 @@ The following tables present findings for significant differences between popula
  | Independent Functional Health Status | 98.39% | 92.75% | **0.003452** | 
  | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
  
-From the table above, there was a signficant difference in proportions of patients with diabetes that had COPD (10.14%) and patients without diabetes that had COPD (2.83%), proportions of patients with diabetes that had hypertension (76.81%) and patients without diabetes that had hypertension (29.03%), proportions of patients with diabetes that had totally or partially dependent functional health status (4.348%) and patients without diabetes that had an independent functional health status (0.605%).
+Patients with diabetes had a statistically significanct higher incidence of COPD (10.14% vs 2.823%, p < 0.05), hypertension (76.81% vs 29.03%, p < 0.05), and totally or partially dependent functional health status (4.348% vs 0.6048%, p < 0.05).
 
 
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
@@ -57,7 +57,7 @@ From the table above, there was a signficant difference in proportions of patien
  | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
  | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
 
-From the table above, there was a significant difference in proportions of patients that smoked <1 year before surgery and had dyspnea (9.649%) and patients that did not smoke and had dyspnea (2.661%), proportions of patients that smoked <1 year before surgery and were ventilator dependent (0.8772%) and patients that did not smoke and were ventilator dependent (0.3706), proportions of patients that smoked <1 year before surgery and had hypertension (50%) and patients that did not smoke and had hypertension (31.04%). 
+Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (9.649% vs 2.661%, p < 0.05), ventilator dependencee (0.8772% vs 0%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), and hypertension (50% vs 31.04%, p < 0.05). 
 
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
@@ -71,6 +71,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.359% | 2.03% | 0.5433 | 
  | Independent Functional Health Status | 97.83% | 97.46% | 0.7832 | 
  | Totally or Partially Dependent Functional Health Status | 0.5435% | 2.03% | 0.1003 | 
+ 
+Patients with hypertension had a statistically significant higher incidence of diabetes (26.9% vs 4.348%, p < 0.05), smoking <1 year prior to surgery (28.93% vs 15.49%, p < 0.05), dyspnea (7.614% vs 2.174%, p < 0.05), and COPD (8.122% vs 1.359%, p < 0.05).
 
 
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
@@ -85,6 +87,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.292% | 8.696% | **0.005473** | 
  | Independent Functional Health Status | 97.6% | 100.0% | 0.4524 | 
  | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6119 | 
+ 
+ Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (47.83% vs 19.0%, p < 0.05), COPD (30.43% vs 2.583%, p < 0.05), hypertension (65.22% vs 33.58%), and having a bleeding disorder (8.696% vs 1.292%). 
 
 
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
@@ -99,6 +103,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.287% | 9.524% | **0.003093** | 
  | Independent Functional Health Status | 97.79% | 95.24% | 0.4433 | 
  | Totally or Partially Dependent Functional Health Status | 1.103% | 0% | 0.6285 | 
+ 
+Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (33.33% vs 11.4%, p < 0.05), smoking <1 year prior to surgery (38.1% vs 19.49%, p < 0.05), dyspnea (33.33% vs 2.941%, p < 0.05), hypertension (76.19% vs 33.27%), and having a bleeding disorder (9.524% vs 1.287%).
 
 
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
@@ -114,6 +120,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.601% | 0% | 0.8251 | 
  | Independent Functional Health Status | 97.86% | 66.67% | **0.000325** | 
  | Totally or Partially Dependent Functional Health Status | 0.8897% | 33.33% | **4.56e-08** | 
+ 
+Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (66.67% vs 3.381%, p < 0.05), hypertension (100.0% vs 34.52%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8897%, p < 0.05). 
 
 
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
@@ -128,6 +136,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.089% | 21.43% | **1.94e-09** | 
  | Independent Functional Health Status | 97.64% | 100.0% | 0.5609 | 
  | Totally or Partially Dependent Functional Health Status | 1.089% | 0% | 0.6947 | 
+ 
+Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (21.43% vs 5.445%, p < 0.05) and having a bleeding disorder (21.43% vs 5.445%, p < 0.05).
 
 
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
@@ -142,6 +152,8 @@ From the table above, there was a significant difference in proportions of patie
  | Bleeding Disorder | 1.128% | 9.091% | **0.0003921** | 
  | Independent Functional Health Status | 97.74% | 96.97% | 0.7733 | 
  | Totally or Partially Dependent Functional Health Status | 0.9398% | 3.03% | 0.2556 | 
+ 
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (9.091% vs 2.068%, p < 0.05) and having a bleeding disorder (9.091% vs 1.128%, p < 0.05).
 
 
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
@@ -156,6 +168,8 @@ From the table above, there was a significant difference in proportions of patie
  | Steroid | 5.396% | 33.33% | **0.0003921** | 
  | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
  | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
+ 
+Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).
 
 
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
@@ -170,6 +184,8 @@ From the table above, there was a significant difference in proportions of patie
  | Steroid | 7.692% | 5.797% | 0.7733 | 
  | Bleeding Disorder | 7.692% | 1.449% | 0.07556 | 
  | Totally or Partially Dependent Functional Health Status | 46.15% | 0% | **6.007e-58** | 
+ 
+ Patients with an independent functional health status had a statistically significant lower incidence of diabetes (11.59% vs 38.46%, p < 0.05).
 
 
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
@@ -183,6 +199,8 @@ From the table above, there was a significant difference in proportions of patie
  | Disseminated Cancer | 2.504% | 0% | 0.6947 | 
  | Steroid | 5.725% | 16.67% | 0.2556 | 
  | Bleeding Disorder | 1.61% | 0% | 0.754 | 
+ 
+ Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
  
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
