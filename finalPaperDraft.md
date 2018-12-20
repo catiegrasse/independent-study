@@ -706,6 +706,7 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  ## Multivariate Logistic Regression 
 Further analysis was done on specific outcomes (organ/space surgical site infection and pulmonary embolism) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
 
+##### Multivariate Logistic Regression for Patients who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
 | Organ/Space SSI  | 4.125 | (0.990 - 17.202) | 0.0513 |
@@ -715,6 +716,7 @@ Neither organ/space surgical site infection nor pulmonary embolism had statistic
 
 Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of postoperative pulmonary embolism, but due to small sample size (N = 1), further analysis was not performed for this outcome.
 
+##### Multivariate Logistic Regression for Patients in Inpatient Setting who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
 | Organ/Space SSI  | 2.082 | (0.3792 - 11.43) | 0.406 |
