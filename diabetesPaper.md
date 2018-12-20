@@ -713,7 +713,7 @@ Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, 
 | Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | 0.2178 |
 
 #### Inpatient vs Outpatient
-From the expanded table 4, there was a significant difference in proportions of patients in the inpatient setting that smoked and had Organ/Space SSI complications following ESS and patients in the inpatient setting that *did not smoke* and had Organ/Space SSI complications following ESS. There was also a significant difference in proportions of patients in the outpatient setting that smoked and had Pulmonary Embolism complications following ESS and patients in the outpatient setting that *did not smoke* and had Pulmonary Embolism complications following ESS.
+From the expanded table 4, there was a significant difference in proportions of patients in the inpatient setting that smoked and had Organ/Space SSI complications following ESS and patients in the inpatient setting that *did not smoke* and had Organ/Space SSI complications following ESS. There was also a significant difference in proportions of patients in the outpatient setting that smoked and had Pulmonary Embolism complications following ESS and patients in the outpatient setting that *did not smoke* and had Pulmonary Embolism complications following ESS. However, since there was only one patient in the outpatient setting that reported smoking <1 year prior to surgery, the odds ratio and confidence intervals were not calculated for this result.
 
 The following tables calculate the odds ratios of these outcomes for patients in either the inpatient or outpatient setting for the variable smoking. 
 Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
