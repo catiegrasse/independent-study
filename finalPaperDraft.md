@@ -40,6 +40,8 @@ The following tables present findings for significant differences between popula
  | Bleeding Disorder | 1.411% | 2.899% | 0.3552 | 
  | Independent Functional Health Status | 98.39% | 92.75% | **0.003452** | 
  | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
+ 
+From the table above, there was a signficant difference in proportions of patients with diabetes that had COPD (10.14%) and patients without diabetes that had COPD (2.83%), proportions of patients with diabetes that had hypertension (76.81%) and patients without diabetes that had hypertension (29.03%), proportions of patients with diabetes that had totally or partially dependent functional health status (4.348%) and patients without diabetes that had an independent functional health status (0.605%).
 
 
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
@@ -55,6 +57,7 @@ The following tables present findings for significant differences between popula
  | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
  | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
 
+From the table above, there was a significant difference in proportions of patients that smoked <1 year before surgery and had dyspnea (9.649%) and patients that did not smoke and had dyspnea (2.661%), proportions of patients that smoked <1 year before surgery and were ventilator dependent (0.8772%) and patients that did not smoke and were ventilator dependent (0.3706), proportions of patients that smoked <1 year before surgery and had hypertension (50%) and patients that did not smoke and had hypertension (31.04%). 
 
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
