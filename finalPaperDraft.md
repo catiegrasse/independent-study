@@ -746,8 +746,8 @@ Since this analysis used data only from the years 2014-2016 in the NSQIP databas
 (1) NSQIP User Guide  
 (2) NSQIP Data  
 (3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590   
-(4) https://onlinelibrary-wiley-com.proxy.lib.duke.edu/doi/full/10.1097/00005537-200202000-00020  
-(5) https://www.statsmodels.org/stable/index.html  
-(6) https://pandas.pydata.org/pandas-docs/stable/index.html  
+(4) Damm, Michael, et al. “Impact of Functional Endoscopic Sinus Surgery on Symptoms and Quality of Life in Chronic Rhinosinusitis.” The Canadian Journal of Chemical Engineering, Wiley-Blackwell, 2 Jan. 2009, onlinelibrary.wiley.com/doi/10.1097/00005537-200202000-00020/abstract 
+(5) Seabold, Skipper, and Josef Perktold. “Statsmodels: Econometric and statistical modeling with python.” Proceedings of the 9th Python in Science Conference. 2010.
+(6) Wes McKinney. Data Structures for Statistical Computing in Python, Proceedings of the 9th Python in Science Conference, 51-56 (2010) 
 
 
