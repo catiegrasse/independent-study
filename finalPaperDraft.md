@@ -207,7 +207,7 @@ In this sample, 552 patients had an independent functional health status, 6 pati
  
 Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
 
-##### Postoperative Complications
+#### Postoperative Complications
  
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
@@ -464,8 +464,9 @@ Patients that reported steroid use <30 days prior to surgery had a statistically
  
 Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
  
- ##### Postoperative Complications in the Inpatient and Outpatient Setting 
+ #### Postoperative Complications in the Inpatient and Outpatient Setting 
  
+ ##### Postoperative Complication Rates in ESS Patients with Diabetes in the Inpatient and Outpatient Setting
 | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
@@ -488,7 +489,7 @@ Patients with a totally or partially dependent functional health status had a st
  
  In the inpatient setting, patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (10.26% vs 2.37%, p < 0.05) and postoperative reintubation (7.69% vs 1.18%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery in the Inpatient and Outpatient Setting
 | | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) | p-value | Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
@@ -511,7 +512,7 @@ Patients with a totally or partially dependent functional health status had a st
  
  In the outpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (1.47% vs 0%, p < 0.05). In the inpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Hypertension in the Inpatient and Outpatient Setting
 | | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) | p-value | Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
@@ -534,7 +535,7 @@ Patients with a totally or partially dependent functional health status had a st
  
  In the inpatient setting, patients with hypertension had a statistically significant higher incidence of postoperative readmission (10.42% vs 1.79%, p < 0.05) and unplanned postoperative readmission (8.33% vs 1.79%, p < 0.05). 
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Dyspnea in the Inpatient and Outpatient Setting
 | | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) | p-value | Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
@@ -557,7 +558,7 @@ Patients with a totally or partially dependent functional health status had a st
  
  In the inpatient setting, patients with dyspnea had a statistically significant higher incidence of postoperative acute renal failure (9.09% vs 0%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD) in the Inpatient and Outpatient Setting
 | | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) | p-value | Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
@@ -580,6 +581,7 @@ Patients with a totally or partially dependent functional health status had a st
 
 In the outpatient setting, patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (11.11% vs 0.29%, p < 0.05), postoperative renail insuffiency (11.11% vs 0%, p < 0.05), and postoperative sepsis (11.11% vs 0%, p < 0.05). In the inpatient setting, patients with chronic obstructive pulmoonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (8.33% vs 0.51%, p < 0.05), postoperative acute renal failure (8.33% vs 0%, p < 0.05), and unplanned postoperative readmission (16.67% vs 4.08%, p < 0.05). 
 
+ ##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF) in the Inpatient and Outpatient Setting
 | | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
@@ -601,7 +603,8 @@ In the outpatient setting, patients with chronic obstructive pulmonary disease (
  | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.83% | 0.00% | 0.8218|
 
 In the inpatient setting, patients with congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (100% vs 3.83%, p < 0.05) and postoperative reintubation (100% vs 1.93%, p < 0.05). However, only a small sample (N = 1) of patients had congestive heart failure and were in the inpatient setting. 
-
+ 
+ ##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer in the Inpatient and Outpatient Setting
 | | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) | p-value | Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
@@ -624,7 +627,7 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  
  In the inpatient setting, patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renail failure (7.69% vs 0%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients who used Steroids <30 Days Prior to Surgery in the Inpatient and Outpatient Setting
 | | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) | p-value | Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
@@ -647,7 +650,7 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  
  In the inpatient setting, patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (4.76% vs 0%, p < 0.05), postoperative ventilator use (9.52% vs 1.60%, p < 0.05), postoperative acute renal failure (4.76% vs 0%, p < 0.05), and postoperative sepsis (9.52% vs 1.07%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with a Bleeding Disorder in the Inpatient and Outpatient Setting
 | | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) | p-value | Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
@@ -670,7 +673,7 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  
  In the inpatient setting, patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilaor (16.67% vs 1.98%, p < 0.05) and postoperative acute renal failure (16.67% vs 0%, p < 0.05). 
 
-
+ ##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status in the Inpatient and Outpatient Setting
 | | Outpatient Non-Independent Functional Health Status (N = 5) | Outpatient Independent Functional Health Status (N = 352) | p-value | Inpatient Non-Independent Functional Health Status (N = 8) | Inpatient Independent Functional Health Status (N = 200) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
@@ -693,7 +696,7 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  
  In the inpatient setting, patients with an independent functional health status had a statistically significant lower incidence of postoperative pnemonia (3.00% vs 25.00%, p < 0.05), postoperative reintubation (1.50% vs 25.00%, p < 0.05), postoperative deep vein thrombosis (0.50% vs 12.50%, p < 0.05), and postoperative ventilator (1.50% vs 25.00%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status in the Inpatient and Outpatient Setting
 | | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 355) | Outpatient Totally or Partially Dependent Functional Health Status (N = 2) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 204) | Inpatient Totally or Partially Dependent Functional Health Status (N = 4) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
