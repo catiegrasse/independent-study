@@ -1,7 +1,7 @@
 ## Final Write-Up
 
 #### Short Abstract
-Endoscopic sinus surgery is the preferred treatment for chronic rhinosinusitis. This study seeks to use the ACS NSQIP dataset from 2014-2016 to analyze postoperative ESS outcomes for adult patients with specific preoperative health conditions.
+Endoscopic sinus surgery is the preferred treatment for chronic rhinosinusitis. This study uses the ACS NSQIP dataset from 2014-2016 to analyze postoperative ESS outcomes for adult patients with specific preoperative health conditions. From this analysis, patients that smoked <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism and postoperative organ/space surgical site infection but did not have statistically significant higher odds ratios for these postoperative outcomes.
 
 #### Introduction
 Chronic rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009. Endoscopic sinus surgery (ESS) is the preferred treatment for chronic rhinosinusitis, following failure of conservative therapy approaches (4). Since chronic rhinosinusitis affects such a large percentage of the population, this study seeks to examine the effect of preoperative health conditions on postoperative ESS in adult patients. This analysis was done using data from the ACS NSQIP dataset during the years 2014-2016. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2014-2016, the data contained records of 565 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing postoperative outcomes.
@@ -29,6 +29,7 @@ Significance between proportions of patients with comorbidities was determined u
 
 The following tables present findings for significant differences between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
+##### Comorbidity Rates in ESS Patients with Diabetes
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Smoke | 20.16% | 20.29% | 0.9801 | 
@@ -44,7 +45,7 @@ The following tables present findings for significant differences between popula
  
 Patients with diabetes had a statistically significanct higher incidence of COPD (10.14% vs 2.823%, p < 0.05), hypertension (76.81% vs 29.03%, p < 0.05), and totally or partially dependent functional health status (4.348% vs 0.6048%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients who Smoked <1 Year Prior to Surgery
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.2% | 12.28% | 0.9801 | 
@@ -60,6 +61,7 @@ Patients with diabetes had a statistically significanct higher incidence of COPD
 
 Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (9.649% vs 2.661%, p < 0.05), ventilator dependencee (0.8772% vs 0%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), and hypertension (50% vs 31.04%, p < 0.05). 
 
+##### Comorbidity Rates in ESS Patients with Hypertension
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 4.348% | 26.9% | **6.036e-15** | 
@@ -75,7 +77,7 @@ Patients that smoked <1 year prior to surgery had a statistically significant hi
  
 Patients with hypertension had a statistically significant higher incidence of diabetes (26.9% vs 4.348%, p < 0.05), smoking <1 year prior to surgery (28.93% vs 15.49%, p < 0.05), dyspnea (7.614% vs 2.174%, p < 0.05), and COPD (8.122% vs 1.359%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with Dyspnea
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.81% | 21.74% | 0.1543 | 
@@ -91,7 +93,7 @@ Patients with hypertension had a statistically significant higher incidence of d
  
  Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (47.83% vs 19.0%, p < 0.05), COPD (30.43% vs 2.583%, p < 0.05), hypertension (65.22% vs 33.58%), and having a bleeding disorder (8.696% vs 1.292%). 
 
-
+##### Comorbidity Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.4% | 33.33% | **0.002591** | 
@@ -107,7 +109,7 @@ Patients with hypertension had a statistically significant higher incidence of d
  
 Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (33.33% vs 11.4%, p < 0.05), smoking <1 year prior to surgery (38.1% vs 19.49%, p < 0.05), dyspnea (33.33% vs 2.941%, p < 0.05), hypertension (76.19% vs 33.27%), and having a bleeding disorder (9.524% vs 1.287%).
 
-
+##### Comorbidity Rates in ESS Patients with Congestive Heart Failure (CGF)
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.1% | 33.33% | 0.2626 | 
@@ -124,7 +126,7 @@ Patients with chronic obstructive pulmonary disease (COPD) had a statistically s
  
 Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (66.67% vs 3.381%, p < 0.05), hypertension (100.0% vs 34.52%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8897%, p < 0.05). 
 
-
+##### Comorbidity Rates in ESS Patients with Disseminated Cancer
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.34% | 7.143% | 0.5575 | 
@@ -140,7 +142,7 @@ Patients with congestive heart failure (CGF) had a statistically significant hig
  
 Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (21.43% vs 5.445%, p < 0.05) and having a bleeding disorder (21.43% vs 5.445%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.59% | 6.061% | 0.266 | 
@@ -156,7 +158,7 @@ Patients with disseminated cancer had a statistically significant higher inciden
  
 Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (9.091% vs 2.068%, p < 0.05) and having a bleeding disorder (9.091% vs 1.128%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with Bleeding Disorder
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.05% | 22.22% | 0.3552 | 
@@ -174,6 +176,7 @@ Patients with a bleeding disorder had a statistically significant higher inciden
 
 In this sample, 552 patients had an independent functional health status, 6 patients had a totally or partially dependent functional health status, and 7 patients had an unknown functional health status. 
 
+##### Comorbidity Rates in ESS Patients with an Independent Functional Health Status
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 38.46% | 11.59% | **0.003452** | 
@@ -189,7 +192,7 @@ In this sample, 552 patients had an independent functional health status, 6 pati
  
  Patients with an independent functional health status had a statistically significant lower incidence of diabetes (11.59% vs 38.46%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.81% | 50.0% | **0.004483** | 
@@ -203,9 +206,12 @@ In this sample, 552 patients had an independent functional health status, 6 pati
  | Bleeding Disorder | 1.61% | 0% | 0.754 | 
  
 Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
+
+##### Postoperative Complications
  
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Diabetes
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.2016% | 0% | 0.7089 | 
@@ -228,7 +234,7 @@ The following tables present findings for significant differences in postoperati
  
  Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.797% vs 0.8065%, p < 0.05) and postoperative reintubation (4.348% vs 0.4032%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.2217% | 0% | 0.6148 | 
@@ -251,7 +257,7 @@ The following tables present findings for significant differences in postoperati
  
  Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (4.386% vs 0.8869%, p < 0.05) and postoperative pulmonary embolism (1.754% vs 0%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with Hypertension
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0% | 0.5076% | 0.1713 | 
@@ -274,6 +280,7 @@ The following tables present findings for significant differences in postoperati
  
 Patients that had hypertension had a statistically significant higher incidence of postoperative sepsis (2.03% vs 0.2717%, p < 0.05), postoperative readmission (7.614% vs 2.717%, p < 0.05), and unplanned postoperative readmission (6.599% vs 2.717%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Dyspnea
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1845% | 0% | 0.8366 | 
@@ -296,6 +303,7 @@ Patients that had hypertension had a statistically significant higher incidence 
  
  Patients that had dyspnea had a statistically significant higher incidence of postoperative acute renal failure (4.348% vs 0%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1838% | 0% | 0.8441 | 
@@ -318,6 +326,7 @@ Patients that had hypertension had a statistically significant higher incidence 
 
 Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (4.762% vs 0.1838%, p < 0.05), postoperative renal insuffiency (4.762% vs 0%, p < 0.05), postoperative acute renal failure (4.762% vs 0%, p < 0.05), sepsis (9.524% vs 0.5515%, p < 0.05), postoperative readmission (14.29% vs 4.044%, p < 0.05), and unplanned postoperative readmission (14.29% vs 3.676%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF)
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1779% | 0% | 0.9417 | 
@@ -340,6 +349,7 @@ Patients that had chronic obstructive pulmonary disease (COPD) had a statistical
  
  Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (33.33% vs 1.246%, p < 0.05) and postoperative reintubation (33.33% vs 0.7117%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1815% | 0% | 0.8732 | 
@@ -362,6 +372,7 @@ Patients that had chronic obstructive pulmonary disease (COPD) had a statistical
 
 Patients with disseminated cancer had a statistically significant higher incidence of postoperative ventilator use (7.143% vs 0.726%, p < 0.05) and postoperative acute renal failure (7.143% vs 0%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.188% | 0% | 0.8031 | 
@@ -384,6 +395,7 @@ Patients with disseminated cancer had a statistically significant higher inciden
 
 Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.061% vs 1.316%, p < 0.05), postoperative pulmonary embolism (3.03% vs 0.188%, p < 0.05), postoperative ventilator use (6.061% vs 0.5639%, p < 0.05), postoperative acute renal failure (3.03% vs 0%, p < 0.05), and postoperative sepsis (6.061% vs 0.5639%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Bleeding Disorder
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1799% | 0% | 0.8987 | 
@@ -406,7 +418,7 @@ Patients that reported steroid use <30 days prior to surgery had a statistically
  
  Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (11.11% vs 0.7194%, p < 0.05) and postoperative acute renal failure (11.11% vs 0%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0% | 0.1812% | 0.8779 | 
@@ -429,7 +441,7 @@ Patients that reported steroid use <30 days prior to surgery had a statistically
  
  Patients with an independent functional health status had a statistically significant lower incidence of postoperative penumonia (1.087% vs 15.38%, p < 0.05), postoperative reintubation (0.5435% vs 15.38%), postoperative deep vein thrombosis (0.1812% vs 7.692%, p < 0.05), and postoperative ventilator use (0.5435% vs 15.38%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1789% | 0% | 0.9174 | 
@@ -452,7 +464,7 @@ Patients that reported steroid use <30 days prior to surgery had a statistically
  
 Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
  
- ## Expanded Table 4  
+ ##### Postoperative Complications in the Inpatient and Outpatient Setting 
  
 | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
