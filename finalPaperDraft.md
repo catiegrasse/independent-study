@@ -1,75 +1,35 @@
-## Analysis
-#### Source: "Effect of diabetes mellitus on postoperative endoscopic sinus surgery outcomes"  
-This paper analyzed the NSQIP database from the years 2005 - 2013 (our data: 2014 - 2016)  
-From this group in the database, found 644 patients identified as having undergone ESS  (our data: 565 patients (approx .02% of total database)))
-- Paper: 85/644 (13.2%) had DM vs Our data: 69/565 (12.2%) had DM 
-- Paper: DM patients were significantly older than non-DM patients vs Our data: average age of patient with DM = 54 vs average age of patient without DM = 44
-## Findings
-|   | Non - Diabetics (N = 496) | Diabetics (N = 69) | p-Value from data | p-Value in paper |
-| ------------- | ------------- | ------------- | -------------|------------- |
-| <= 40 years  | 43.15%  | 17.39 % | < .001 | < .001 |
-| 41-60 years  | 37.90%  | 33.33% | 0.541 | 0.038 |
-| 61-80 years  | 16.73%  | 46.38% | < .001 | < .001 | 
-| > 80 years   | 2.22%   | 2.90%  | 0.725 | 0.032 |
-| Male | 47.18% | 44.93% | 0.726 | 0.920 |
-| Female | 52.82% | 55.07% | ~ | ~ | 
-| White | 73.79% | 68.11% | 0.320 | 0.217 |
-| Black | 11.90% | 18.84% | 0.105 | 0.009 | 
-| Other | 5.44% | 7.25% | 0.542 | 0.740 |
-| Unknown | 8.87% | 5.80% | 0.392 | 0.108
-| Smoking | 20.16% | 20.28% | 0.982 | 0.687 |
-| Dyspnea | 3.63% | 7.24% | 0.155 | 0.004 |
-| Hypertension | 29.03% | 76.81% | < .001 | < .001 |
-| Unplanned Readmission | 3.83% | 5.79% | 0.440 | 0.252 |
-| Pneumonia | 0.81% | 5.80% | | |
+## Final Write-Up
 
+#### Short Abstract
+Endoscopic sinus surgery is the preferred treatment for chronic rhinosinusitis. This study uses the ACS NSQIP dataset from 2014-2016 to analyze postoperative ESS outcomes for adult patients with specific preoperative health conditions. From this analysis, patients that smoked <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism and postoperative organ/space surgical site infection but did not have statistically significant higher odds ratios for these postoperative outcomes.
 
-- Dyspnea (difficulty breathing) and hypertension were the only statistically significant comorbidities according to the paper
-- In my analysis, only hypertension appeared to be statistically significant (p < 0.05)
+#### Introduction
+Chronic rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009. Endoscopic sinus surgery (ESS) is the preferred treatment for chronic rhinosinusitis, following failure of conservative therapy approaches (4). Since chronic rhinosinusitis affects such a large percentage of the population, this study seeks to examine the effect of preoperative health conditions on postoperative ESS in adult patients. This analysis was done using data from the ACS NSQIP dataset during the years 2014-2016. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2014-2016, the data contained records of 565 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing postoperative outcomes.
 
-## Logistic Regression
-- Example logistic regression output using python statsmodels.py  
-#### Outcome: Pneumonia
+#### Experimental Set-Up 
+Patient data collected through the ACS NSQIP database from the years 2014-2016 were used for this analysis. From 2014-2016, 565 patients were identified as having undergone endoscopic sinus surgery. Patients were identified as having undergone endoscopic sinus surgey if their patient record contained any of the ESS CPT codes:  
+31237: Nasal/sinus endoscopy, surgical; with biopsy, polypectomy or debridement  
+31239: Nasal/sinus endoscopy, surgical; with dacryocystorhinostomy  
+31240: Nasal/sinus endoscopy, surgical; with concha bullosa resection  
+31254: Nasal/sinus endoscopy, surgical; with ethmoidectomy, partial (anterior)  
+31255: Nasal/sinus endoscopy, surgical; with ethmoidectomy, total (antreior and posterior)  
+31256: Nasal/sinus endoscopy, surgical, with maxillary antrostomy  
+31267: Nasal/sinus endoscopy, surgical, with maxillary antrostomy; with removal of tissue from maxillary sinus  
+31276: Nasal/sinus endoscopy, surgical with frontal sinus exploration, with or without removal of tissue from frontal sinus  
+31287: Nasal/sinus endoscopy, surgical, with spenoidotomy  
+31288: Nasal/sinus endoscopy, surgical, with sphenoidotomy; with removal of tissue from the sphenoid sinus  
 
-|   | coef | std err | z | P > abs(z) | 0.025 | 0.975 |
-| ------------- | ------------- | ------------- | -------------|------------- | ------------- | ------------- |
-| const  | -0.0983 | 0.746 | -0.132 | 0.895 | -1.560 | 1.363 |
-| Age  | -0.0867  | 0.023 | -3.805 | 0.000 | -0.131 | -0.042 |
-| Sex  | -0.1138  | 0.467 | -0.244 | 0.808 | -1.029 | 0.802 |
-| Race  | 0.0560  | 0.258 | 0.217 | 0.828 | -0.450 | 0.562 |
-| Diabetes   | 0.1080  | 0.932  | 0.116 | 0.908 | -1.719 | 1.935 |
-| Smoking   | 0.0032   | 0.667  | 0.005 | 0.996 | -1.303 | 1.310 |
-| Dyspnea  | 0.0974   | 1.629  | 0.060 | 0.952 | -3.095 | 3.290 |
-| Hypertension   | 0.1012  | 0.734  | 0.138 | 0.890 | -1.338 | 1.540 |
+Patients that did not contain one of the above CPT codes in their data were filtered out from the study. Further analysis was only performed on this sample of 565 patients.   
 
-- Example odds ratio calculation: exp(diabetes coef) = exp(0.1080) = 1.114
+Statistical analysis was performed using python scripts written for this study. Pandas, an open source python library for data analysis, was used to process the CSV files from the NSQIP database into data structures for statistical analysis (6). Multivariate logistic regression was performed using the statsmodels python library, an open source module for conducting statistical tests, building statistical models, and statistical data exploration (5). All python scripts and modules used for this study can be found in this Github repository: https://github.com/catiegrasse/independent-study  
 
-## Odds Ratio
-Odds Ratio calculations made by including the variables: [Age, Sex, Race, Diabetes, Smoking, Dyspnea, Hypertension]:
+Significance between proportions of patients with comorbidities was determined using a two-sample z test for independence. Odds ratios were calculated using the statsmodels python library, which generates the coefficients and 95% confidence interval for each variable in the logistic regression. The odds ratio for a specific variable was calculated by taking the exponential of that variable's coefficient as generated by the statsmodels logistic regression. The confidence interval for a specific variable was calculated by taking the exponential of that variable's confidence interval as generated by the statsmodels logistic regression. 
 
-|   | Odds ratio (data) | 0.025 | 0.975 | Odds ratio (paper) | 
-| ------------- | ------------- | ------------- | ------------- | ------------- | 
-| Pneumonia  | 1.114 | 0.869 | 0.933 | 13.283 | 
-| Unplanned Readmission  | 1.499 | 0.191 | 5.296 | 3.413 | 
-| Unplanned Reintubation | 1.076| 0.088 | 16.980 | 7.783 |
-| Urinary Tract Infection | 1.039 | 0.001 | 502.21 | 6.205 |
-| Ventilator | 1.022 | 0.184 | 5.490 | 12.276 |
+#### Experimental Results
 
-## Odds Ratio
-Odds Ratio calculations made by including the variables: [Diabetes]:
+The following tables present findings for significant differences between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
-|   | Odds ratio (data) | Odds ratio (paper) | 
-| -------------  | ------------- | ------------- | 
-| Pneumonia  | 7.569 | 13.283 | 
-| Unplanned Readmission  | 1.545 | 3.413 | 
-| Unplanned Reintubation | 11.230 | 7.783 |
-| Urinary Tract Infection | 3.686 | 6.205 |
-| Ventilator | 4.906 | 12.276 |
-
-## Expanded Table 2
-
-#### The following recreations of tables 2 and 3 from the paper checks for significant differences between populations with and without a specific health condition. p-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
-
+##### Comorbidity Rates in ESS Patients with Diabetes
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Smoke | 20.16% | 20.29% | 0.9801 | 
@@ -82,8 +42,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.411% | 2.899% | 0.3552 | 
  | Independent Functional Health Status | 98.39% | 92.75% | **0.003452** | 
  | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
+ 
+Patients with diabetes had a statistically significanct higher incidence of COPD (10.14% vs 2.823%, p < 0.05), hypertension (76.81% vs 29.03%, p < 0.05), and totally or partially dependent functional health status (4.348% vs 0.6048%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients who Smoked <1 Year Prior to Surgery
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.2% | 12.28% | 0.9801 | 
@@ -97,7 +59,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
  | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
 
+Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (9.649% vs 2.661%, p < 0.05), ventilator dependencee (0.8772% vs 0%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), and hypertension (50% vs 31.04%, p < 0.05). 
 
+##### Comorbidity Rates in ESS Patients with Hypertension
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 4.348% | 26.9% | **6.036e-15** | 
@@ -110,8 +74,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.359% | 2.03% | 0.5433 | 
  | Independent Functional Health Status | 97.83% | 97.46% | 0.7832 | 
  | Totally or Partially Dependent Functional Health Status | 0.5435% | 2.03% | 0.1003 | 
+ 
+Patients with hypertension had a statistically significant higher incidence of diabetes (26.9% vs 4.348%, p < 0.05), smoking <1 year prior to surgery (28.93% vs 15.49%, p < 0.05), dyspnea (7.614% vs 2.174%, p < 0.05), and COPD (8.122% vs 1.359%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with Dyspnea
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.81% | 21.74% | 0.1543 | 
@@ -124,8 +90,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.292% | 8.696% | **0.005473** | 
  | Independent Functional Health Status | 97.6% | 100.0% | 0.4524 | 
  | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6119 | 
+ 
+ Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (47.83% vs 19.0%, p < 0.05), COPD (30.43% vs 2.583%, p < 0.05), hypertension (65.22% vs 33.58%), and having a bleeding disorder (8.696% vs 1.292%). 
 
-
+##### Comorbidity Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.4% | 33.33% | **0.002591** | 
@@ -138,8 +106,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.287% | 9.524% | **0.003093** | 
  | Independent Functional Health Status | 97.79% | 95.24% | 0.4433 | 
  | Totally or Partially Dependent Functional Health Status | 1.103% | 0% | 0.6285 | 
+ 
+Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (33.33% vs 11.4%, p < 0.05), smoking <1 year prior to surgery (38.1% vs 19.49%, p < 0.05), dyspnea (33.33% vs 2.941%, p < 0.05), hypertension (76.19% vs 33.27%), and having a bleeding disorder (9.524% vs 1.287%).
 
-
+##### Comorbidity Rates in ESS Patients with Congestive Heart Failure (CGF)
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.1% | 33.33% | 0.2626 | 
@@ -153,8 +123,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.601% | 0% | 0.8251 | 
  | Independent Functional Health Status | 97.86% | 66.67% | **0.000325** | 
  | Totally or Partially Dependent Functional Health Status | 0.8897% | 33.33% | **4.56e-08** | 
+ 
+Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (66.67% vs 3.381%, p < 0.05), hypertension (100.0% vs 34.52%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8897%, p < 0.05). 
 
-
+##### Comorbidity Rates in ESS Patients with Disseminated Cancer
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.34% | 7.143% | 0.5575 | 
@@ -167,8 +139,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.089% | 21.43% | **1.94e-09** | 
  | Independent Functional Health Status | 97.64% | 100.0% | 0.5609 | 
  | Totally or Partially Dependent Functional Health Status | 1.089% | 0% | 0.6947 | 
+ 
+Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (21.43% vs 5.445%, p < 0.05) and having a bleeding disorder (21.43% vs 5.445%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.59% | 6.061% | 0.266 | 
@@ -181,8 +155,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Bleeding Disorder | 1.128% | 9.091% | **0.0003921** | 
  | Independent Functional Health Status | 97.74% | 96.97% | 0.7733 | 
  | Totally or Partially Dependent Functional Health Status | 0.9398% | 3.03% | 0.2556 | 
+ 
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (9.091% vs 2.068%, p < 0.05) and having a bleeding disorder (9.091% vs 1.128%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with Bleeding Disorder
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 12.05% | 22.22% | 0.3552 | 
@@ -195,8 +171,12 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Steroid | 5.396% | 33.33% | **0.0003921** | 
  | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
  | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
+ 
+Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).  
 
+In this sample, 552 patients had an independent functional health status, 6 patients had a totally or partially dependent functional health status, and 7 patients had an unknown functional health status. 
 
+##### Comorbidity Rates in ESS Patients with an Independent Functional Health Status
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 38.46% | 11.59% | **0.003452** | 
@@ -209,8 +189,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Steroid | 7.692% | 5.797% | 0.7733 | 
  | Bleeding Disorder | 7.692% | 1.449% | 0.07556 | 
  | Totally or Partially Dependent Functional Health Status | 46.15% | 0% | **6.007e-58** | 
+ 
+ Patients with an independent functional health status had a statistically significant lower incidence of diabetes (11.59% vs 38.46%, p < 0.05).
 
-
+##### Comorbidity Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Diabetes | 11.81% | 50.0% | **0.004483** | 
@@ -223,8 +205,13 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Steroid | 5.725% | 16.67% | 0.2556 | 
  | Bleeding Disorder | 1.61% | 0% | 0.754 | 
  
- ## Expanded Table 3
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
+
+#### Postoperative Complications
  
+The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
+
+##### Postoperative Complication Rates in ESS Patients with Diabetes
 | | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.2016% | 0% | 0.7089 | 
@@ -244,8 +231,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 1.008% | 0% | 0.4022 | 
  | Readmission | 4.234% | 5.797% | 0.5541 | 
  | Unplanned Readmission | 3.831% | 5.797% | 0.4386 | 
+ 
+ Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.797% vs 0.8065%, p < 0.05) and postoperative reintubation (4.348% vs 0.4032%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery
 | | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.2217% | 0% | 0.6148 | 
@@ -265,8 +254,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.6652% | 1.754% | 0.2673 | 
  | Readmission | 3.769% | 7.018% | 0.1319 | 
  | Unplanned Readmission | 3.548% | 6.14% | 0.2107 | 
+ 
+ Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (4.386% vs 0.8869%, p < 0.05) and postoperative pulmonary embolism (1.754% vs 0%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with Hypertension
 | | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0% | 0.5076% | 0.1713 | 
@@ -286,8 +277,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.2717% | 2.03% | **0.03341** | 
  | Readmission | 2.717% | 7.614% | **0.006991** | 
  | Unplanned Readmission | 2.717% | 6.599% | **0.02608** | 
+ 
+Patients that had hypertension had a statistically significant higher incidence of postoperative sepsis (2.03% vs 0.2717%, p < 0.05), postoperative readmission (7.614% vs 2.717%, p < 0.05), and unplanned postoperative readmission (6.599% vs 2.717%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with Dyspnea
 | | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1845% | 0% | 0.8366 | 
@@ -307,8 +300,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.9225% | 0% | 0.6436 | 
  | Readmission | 4.428% | 4.348% | 0.9854 | 
  | Unplanned Readmission | 4.059% | 4.348% | 0.9453 | 
+ 
+ Patients that had dyspnea had a statistically significant higher incidence of postoperative acute renal failure (4.348% vs 0%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
 | | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1838% | 0% | 0.8441 | 
@@ -329,7 +324,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 4.044% | 14.29% | **0.02513** | 
  | Unplanned Readmission | 3.676% | 14.29% | **0.01577** | 
 
+Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (4.762% vs 0.1838%, p < 0.05), postoperative renal insuffiency (4.762% vs 0%, p < 0.05), postoperative acute renal failure (4.762% vs 0%, p < 0.05), sepsis (9.524% vs 0.5515%, p < 0.05), postoperative readmission (14.29% vs 4.044%, p < 0.05), and unplanned postoperative readmission (14.29% vs 3.676%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF)
 | | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1779% | 0% | 0.9417 | 
@@ -349,8 +346,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.8897% | 0% | 0.8697 | 
  | Readmission | 4.448% | 0% | 0.7086 | 
  | Unplanned Readmission | 4.093% | 0% | 0.7205 | 
+ 
+ Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (33.33% vs 1.246%, p < 0.05) and postoperative reintubation (33.33% vs 0.7117%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer
 | | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1815% | 0% | 0.8732 | 
@@ -371,7 +370,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 4.356% | 7.143% | 0.6165 | 
  | Unplanned Readmission | 3.993% | 7.143% | 0.5559 | 
 
+Patients with disseminated cancer had a statistically significant higher incidence of postoperative ventilator use (7.143% vs 0.726%, p < 0.05) and postoperative acute renal failure (7.143% vs 0%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
 | | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.188% | 0% | 0.8031 | 
@@ -392,7 +393,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 4.699% | 0% | 0.2027 | 
  | Unplanned Readmission | 4.323% | 0% | 0.2226 | 
 
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.061% vs 1.316%, p < 0.05), postoperative pulmonary embolism (3.03% vs 0.188%, p < 0.05), postoperative ventilator use (6.061% vs 0.5639%, p < 0.05), postoperative acute renal failure (3.03% vs 0%, p < 0.05), and postoperative sepsis (6.061% vs 0.5639%, p < 0.05).
 
+##### Postoperative Complication Rates in ESS Patients with Bleeding Disorder
 | | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1799% | 0% | 0.8987 | 
@@ -412,8 +415,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.8993% | 0% | 0.7751 | 
  | Readmission | 4.496% | 0% | 0.5152 | 
  | Unplanned Readmission | 4.137% | 0% | 0.5333 | 
+ 
+ Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (11.11% vs 0.7194%, p < 0.05) and postoperative acute renal failure (11.11% vs 0%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status
 | | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0% | 0.1812% | 0.8779 | 
@@ -433,8 +438,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0% | 0.9058% | 0.7303 | 
  | Readmission | 0% | 4.529% | 0.4325 | 
  | Unplanned Readmission | 0% | 4.167% | 0.4524 | 
+ 
+ Patients with an independent functional health status had a statistically significant lower incidence of postoperative penumonia (1.087% vs 15.38%, p < 0.05), postoperative reintubation (0.5435% vs 15.38%), postoperative deep vein thrombosis (0.1812% vs 7.692%, p < 0.05), and postoperative ventilator use (0.5435% vs 15.38%, p < 0.05).
 
-
+##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
 | | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.1789% | 0% | 0.9174 | 
@@ -455,8 +462,11 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 4.472% | 0% | 0.5962 | 
  | Unplanned Readmission | 4.114% | 0% | 0.6119 | 
  
- ## Expanded Table 4  
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
  
+ #### Postoperative Complications in the Inpatient and Outpatient Setting 
+ 
+ ##### Postoperative Complication Rates in ESS Patients with Diabetes in the Inpatient and Outpatient Setting
 | | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
@@ -476,8 +486,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.31% | 0.00% | 0.7616|2.37% | 0.00% | 0.332|
  | Readmission | 3.67% | 3.33% | 0.925|5.33% | 7.69% | 0.5677|
  | Unplanned Readmission | 3.67% | 3.33% | 0.925|4.14% | 7.69% | 0.3502|
+ 
+ In the inpatient setting, patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (10.26% vs 2.37%, p < 0.05) and postoperative reintubation (7.69% vs 1.18%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery in the Inpatient and Outpatient Setting
 | | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) | p-value | Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
@@ -497,8 +509,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.35% | 0.00% | 0.6271|1.23% | 4.35% | 0.1748|
  | Readmission | 3.11% | 5.88% | 0.2729|4.94% | 8.70% | 0.3348|
  | Unplanned Readmission | 3.11% | 5.88% | 0.2729|4.32% | 6.52% | 0.5381|
+ 
+ In the outpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (1.47% vs 0%, p < 0.05). In the inpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Hypertension in the Inpatient and Outpatient Setting
 | | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) | p-value | Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
@@ -518,8 +532,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.00% | 0.99% | 0.1109|0.89% | 3.12% | 0.2426|
  | Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **10.42**% | **0.007781**|
  | Unplanned Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **8.33**% | **0.02777**|
+ 
+ In the inpatient setting, patients with hypertension had a statistically significant higher incidence of postoperative readmission (10.42% vs 1.79%, p < 0.05) and unplanned postoperative readmission (8.33% vs 1.79%, p < 0.05). 
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Dyspnea in the Inpatient and Outpatient Setting
 | | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) | p-value | Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
@@ -539,8 +555,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.29% | 0.00% | 0.8518|2.03% | 0.00% | 0.6332|
  | Readmission | 3.77% | 0.00% | 0.4933|5.58% | 9.09% | 0.6273|
  | Unplanned Readmission | 3.77% | 0.00% | 0.4933|4.57% | 9.09% | 0.495|
+ 
+ In the inpatient setting, patients with dyspnea had a statistically significant higher incidence of postoperative acute renal failure (9.09% vs 0%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD) in the Inpatient and Outpatient Setting
 | | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) | p-value | Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
@@ -561,7 +579,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 3.45% | 11.11% | 0.2256|5.10% | 16.67% | 0.09534|
  | Unplanned Readmission | 3.45% | 11.11% | 0.2256|**4.08**% | **16.67**% | **0.04791**|
 
+In the outpatient setting, patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (11.11% vs 0.29%, p < 0.05), postoperative renail insuffiency (11.11% vs 0%, p < 0.05), and postoperative sepsis (11.11% vs 0%, p < 0.05). In the inpatient setting, patients with chronic obstructive pulmoonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (8.33% vs 0.51%, p < 0.05), postoperative acute renal failure (8.33% vs 0%, p < 0.05), and unplanned postoperative readmission (16.67% vs 4.08%, p < 0.05). 
 
+ ##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF) in the Inpatient and Outpatient Setting
 | | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
@@ -582,7 +602,9 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 3.66% | 0.00% | 0.7828|5.80% | 0.00% | 0.8041|
  | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.83% | 0.00% | 0.8218|
 
-
+In the inpatient setting, patients with congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (100% vs 3.83%, p < 0.05) and postoperative reintubation (100% vs 1.93%, p < 0.05). However, only a small sample (N = 1) of patients had congestive heart failure and were in the inpatient setting. 
+ 
+ ##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer in the Inpatient and Outpatient Setting
 | | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) | p-value | Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
@@ -602,8 +624,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.28% | 0.00% | 0.9577|2.05% | 0.00% | 0.6021|
  | Readmission | 3.65% | 0.00% | 0.8457|5.64% | 7.69% | 0.7587|
  | Unplanned Readmission | 3.65% | 0.00% | 0.8457|4.62% | 7.69% | 0.6156|
+ 
+ In the inpatient setting, patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renail failure (7.69% vs 0%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients who used Steroids <30 Days Prior to Surgery in the Inpatient and Outpatient Setting
 | | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) | p-value | Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
@@ -623,8 +647,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.29% | 0.00% | 0.8518|**1.07**% | **9.52**% | **0.007477**|
  | Readmission | 3.77% | 0.00% | 0.4933|6.42% | 0.00% | 0.2317|
  | Unplanned Readmission | 3.77% | 0.00% | 0.4933|5.35% | 0.00% | 0.2774|
+ 
+ In the inpatient setting, patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (4.76% vs 0%, p < 0.05), postoperative ventilator use (9.52% vs 1.60%, p < 0.05), postoperative acute renal failure (4.76% vs 0%, p < 0.05), and postoperative sepsis (9.52% vs 1.07%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with a Bleeding Disorder in the Inpatient and Outpatient Setting
 | | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) | p-value | Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
@@ -644,8 +670,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.28% | 0.00% | 0.9265|1.98% | 0.00% | 0.7278|
  | Readmission | 3.67% | 0.00% | 0.7353|5.94% | 0.00% | 0.5385|
  | Unplanned Readmission | 3.67% | 0.00% | 0.7353|4.95% | 0.00% | 0.5764|
+ 
+ In the inpatient setting, patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilaor (16.67% vs 1.98%, p < 0.05) and postoperative acute renal failure (16.67% vs 0%, p < 0.05). 
 
-
+ ##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status in the Inpatient and Outpatient Setting
 | | Outpatient Non-Independent Functional Health Status (N = 5) | Outpatient Independent Functional Health Status (N = 352) | p-value | Inpatient Non-Independent Functional Health Status (N = 8) | Inpatient Independent Functional Health Status (N = 200) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
@@ -665,8 +693,10 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Sepsis | 0.00% | 0.28% | 0.905|0.00% | 2.00% | 0.6863|
  | Readmission | 0.00% | 3.69% | 0.6616|0.00% | 6.00% | 0.4754|
  | Unplanned Readmission | 0.00% | 3.69% | 0.6616|0.00% | 5.00% | 0.5168|
+ 
+ In the inpatient setting, patients with an independent functional health status had a statistically significant lower incidence of postoperative pnemonia (3.00% vs 25.00%, p < 0.05), postoperative reintubation (1.50% vs 25.00%, p < 0.05), postoperative deep vein thrombosis (0.50% vs 12.50%, p < 0.05), and postoperative ventilator (1.50% vs 25.00%, p < 0.05).
 
-
+ ##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status in the Inpatient and Outpatient Setting
 | | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 355) | Outpatient Totally or Partially Dependent Functional Health Status (N = 2) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 204) | Inpatient Totally or Partially Dependent Functional Health Status (N = 4) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
  | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
@@ -687,51 +717,38 @@ Odds Ratio calculations made by including the variables: [Diabetes]:
  | Readmission | 3.66% | 0.00% | 0.7828|5.88% | 0.00% | 0.6173|
  | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.90% | 0.00% | 0.6499|
  
- 
- ### Notes
- I did not perform this analysis for Ventilator Dependent, Ascites, and Acute Renal Failure due to lack of patients with the conditions in both outpatient and inpatient settings. 
+ In the inpatient setting, patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (25.00% vs 2.94%, p < 0.05), postoperative reintubation (25.00% vs 1.96%, p < 0.05), postoperative ventilator (25.00% vs 1.96%, p < 0.05).
 
- ## Multivariate Logistic Regression
- Calculating the odds ratios of specific outcomes for the variable smoking.
- 
- Odds Ratio calculations made by including the variables: [Smoke]:
+ ## Multivariate Logistic Regression 
+Further analysis was done on specific outcomes (organ/space surgical site infection and pulmonary embolism) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
 
-|   | Odds ratio (data) | 95% Confidence Interval | P-Value |
-| -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 5.1263 | (1.354 - 19.409) | **0.0156** |
-| Pulmonary Embolism  | 193242590233598.4  | (0 - inf) | |
-
-The odds ratio for Pulmonary Embolism is likely so high because there were only 2 patients with this outcome and both were smokers (complete quasi-separation). 
-
-#### Controlling for significant comorbidities
-Calculating the odds ratios of specific outcomes for the variable smoking.  
-Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
-
+##### Multivariate Logistic Regression for Patients who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
 | Organ/Space SSI  | 4.125 | (0.990 - 17.202) | 0.0513 |
 | Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | 0.2178 |
 
-#### Inpatient vs Outpatient
-From the expanded table 4, there was a significant difference in proportions of patients in the inpatient setting that smoked and had Organ/Space SSI complications following ESS and patients in the inpatient setting that *did not smoke* and had Organ/Space SSI complications following ESS. There was also a significant difference in proportions of patients in the outpatient setting that smoked and had Pulmonary Embolism complications following ESS and patients in the outpatient setting that *did not smoke* and had Pulmonary Embolism complications following ESS. However, since there was only one patient in the outpatient setting that reported smoking <1 year prior to surgery, the odds ratio and confidence intervals were not calculated for this result.
+Neither organ/space surgical site infection nor pulmonary embolism had statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
 
-The following tables calculate the odds ratios of these outcomes for patients in either the inpatient or outpatient setting for the variable smoking. 
-Odds Ratio calculations made by including the variables: [Smoke, Dyspnea, COPD, Hypertension, Ventilator Dependent]:
+Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of postoperative pulmonary embolism, but due to small sample size (N = 1), further analysis was not performed for this outcome.
 
 ##### Multivariate Logistic Regression for Patients in Inpatient Setting who Reported Smoking <1 Year Prior to Surgery
-
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
 | Organ/Space SSI  | 2.082 | (0.3792 - 11.43) | 0.406 |
 
+Patients that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for the postoperative outcome organ/space surgical site infection.
+
+#### Conclusion
+Since this analysis used data only from the years 2014-2016 in the NSQIP database, there were certain outcomes and comorbidities with 10 or less patients in the inpatient or outpatient setting (for example: postoperative ventilator use, actue renal failure, and ascites) which did not allow for robust analysis. Further research could be done using a larger sample of the NSQIP dataset to both validate the results shown in this paper as well as analyze less common comorbidities and postoperative complications.
+
+#### Sources
+(1) NSQIP User Guide  
+(2) NSQIP Data  
+(3) Filimonov A, Chung SY, Wong A, Brady JS, Baredes S, Eloy JA. Effect of diabetes mellitus on postoperative endo- scopic sinus surgery outcomes. Int Forum Allergy Rhinol. 2017;7:584–590   
+(4) Damm, Michael, et al. “Impact of Functional Endoscopic Sinus Surgery on Symptoms and Quality of Life in Chronic Rhinosinusitis.” The Canadian Journal of Chemical Engineering, Wiley-Blackwell, 2 Jan. 2009, onlinelibrary.wiley.com/doi/10.1097/00005537-200202000-00020/abstract   
+(5) Seabold, Skipper, and Josef Perktold. “Statsmodels: Econometric and statistical modeling with python.” Proceedings of the 9th Python in Science Conference. 2010.  
+(6) Wes McKinney. Data Structures for Statistical Computing in Python, Proceedings of the 9th Python in Science Conference, 51-56 (2010)  
 
 
- 
-
-
-
-
-
-
-
-
+American College of Surgeons National Surgical Quality Improvement Program and the hospitals participating in the ACS NSQIP are the source of the data used herein; they have not verified and are not responsible for the statistical validity of the data analysis or the conclusions derived by the authors.
