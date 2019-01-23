@@ -21,14 +21,21 @@ AGE_START = 0 # int
 AGE_END = 100 # int
 CPT_CODES = ["31237", "31239", "31240", "31256", "31267", "31276", "31254", "31255", "31287", "31288"] # lst
 ICD_CODES = [] # lst
-SEX = ["male", "female"] # lst
-FILTER_BY_READMISSION = False
-FILTER_BY_REOPERATION = False
 
 # open files and remove headers
+f12 = open("acs_nsqip_puf12.txt", "rb")
+f13 = open("acs_nsqip_puf13.txt", "rb")
 f14 = open("acs_nsqip_puf14.txt", "rb")
 f15 = open("acs_nsqip_puf15_v2.txt", "rb")
 f16 = open("acs_nsqip_puf16.txt", "rb")
+
+for line in f12:
+    headers12 = line.split("\t")
+    break
+
+for line in f13:
+    headers13 = line.split("\t")
+    break
 
 for line in f14:
     headers14 = line.split("\t")
@@ -42,107 +49,61 @@ for line in f16:
     headers16 = line.split("\t")
     break
 
-readmissionRegex = re.compile(READMISSION_REGEX)
-readmissionIndices14 = []
-for i in range(len(headers14)):
-    if readmissionRegex.match(headers14[i]):
-        readmissionIndices14.append(i)
 
-readmissionRegex = re.compile(READMISSION_REGEX)
-readmissionIndices15 = []
-for i in range(len(headers15)):
-    if readmissionRegex.match(headers15[i]):
-        readmissionIndices15.append(i)
-
-readmissionRegex = re.compile(READMISSION_REGEX)
-readmissionIndices16 = []
-for i in range(len(headers16)):
-    if readmissionRegex.match(headers16[i]):
-        readmissionIndices16.append(i)
-
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices14 = []
-for i in range(len(headers14)):
-    if reoperationRegex.match(headers14[i]):
-        reoperationIndices14.append(i)
-
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices15 = []
-for i in range(len(headers15)):
-    if reoperationRegex.match(headers15[i]):
-        reoperationIndices15.append(i)
-
-reoperationRegex = re.compile(REOPERATION_REGEX)
-reoperationIndices16 = []
-
-for i in range(len(headers16)):
-    if reoperationRegex.match(headers16[i]):
-        readmissionIndices16.append(i)
+with open("filtered_csv12.csv", mode='wb') as filter_file12, open("filtered_csv13.csv", mode='wb') as filter_file13, open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv15.csv", mode = 'wb') as filter_file15, open("filtered_csv16.csv", mode = 'wb') as filter_file16:
     
-ageIndex14 = headers14.index("Age")
-sexIndex14 = headers14.index("SEX")
+    csv_writer = csv.writer(filter_file12, delimiter=',')  
+    csv_writer.writerow(headers12)
 
-ageIndex15 = headers15.index("Age")
-sexIndex15 = headers15.index("SEX")
+    recordCount = 0
+    totalCount = 0
+    for line in f12:
+        totalCount += 1
+        line = line.split("\t")
 
-ageIndex16 = headers16.index("Age")
-sexIndex16 = headers16.index("SEX")
+        # filter by CPT code
+        if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-intRegex = re.compile(INT_REGEX)
+            # write to file
+            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
+            recordCount += 1
+            csv_writer.writerow(line) 
 
-with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv15.csv", mode = 'wb') as filter_file15, open("filtered_csv16.csv", mode = 'wb') as filter_file16:
-    csv_writer = csv.writer(filter_file14, delimiter=',')
-    
-    # write headers to file
+
+    csv_writer = csv.writer(filter_file13, delimiter=',')  
+    csv_writer.writerow(headers13)
+
+    recordCount = 0
+    totalCount = 0
+    for line in f13:
+        totalCount += 1
+        line = line.split("\t")
+
+        # filter by CPT code
+        if len(set(line).intersection(set(CPT_CODES))) > 0:
+
+            # write to file
+            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
+            recordCount += 1
+            csv_writer.writerow(line)
+
+
+    csv_writer = csv.writer(filter_file14, delimiter=',')  
     csv_writer.writerow(headers14)
 
-    ageList = range(AGE_START, AGE_END + 1)
-    ageArray14 = []
-    sexDictionary14 = {key: 0 for key in SEX}
     recordCount = 0
     totalCount = 0
     for line in f14:
         totalCount += 1
         line = line.split("\t")
-        age = line[ageIndex14]
-        sex = line[sexIndex14].strip()
-        # filter by age
-        if intRegex.match(age) and AGE_START <= int(age) <= AGE_END:
 
-            # filter by sex
-            if sex in SEX:
+        # filter by CPT code
+        if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                # filter by CPT code
-                if len(set(line).intersection(set(CPT_CODES))) > 0:
-
-                    if FILTER_BY_READMISSION is True:
-
-                        # filter by readmission
-                        readmissionResponses14 = [line[ind] for ind in readmissionIndices14]
-                        if "Yes" in readmissionResponses14:
-
-                            # write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    elif FILTER_BY_REOPERATION is True:
-
-                        # filter by reoperation
-                        reoperationResponses14 = [line[ind] for ind in reoperationIndices14]
-                        if "Yes" in reoperationResponses14:
-
-                            #write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    # if not filtering by reoperation or readmission
-                    else:
-                        # write to file
-                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                        recordCount += 1
-                        csv_writer.writerow(line)
+            # write to file
+            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
+            recordCount += 1
+            csv_writer.writerow(line)
 
 
     csv_writer = csv.writer(filter_file15, delimiter=',')
@@ -150,45 +111,14 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
     for line in f15:
         totalCount += 1
         line = line.split("\t")
-        age = line[ageIndex15]
-        sex = line[sexIndex15].strip()
-        # filter by age
-        if intRegex.match(age) and AGE_START <= int(age) <= AGE_END:
-                    
-            # filter by sex
-            if sex in SEX:
-                        
-                # filter by CPT code
-                if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                    if FILTER_BY_READMISSION is True:
+        # filter by CPT code
+        if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                        # filter by readmission
-                        readmissionResponses15 = [line[ind] for ind in readmissionIndices15]
-                        if "Yes" in readmissionResponses14:
-
-                            # write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    elif FILTER_BY_REOPERATION is True:
-
-                        #filter by reoperation
-                        reoperationResponses15 = [line[ind] for ind in reoperationIndices15]
-                        if "Yes" in reoperationResponses15:
-
-                            #write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    else:
-
-                        # write to file
-                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                        recordCount += 1
-                        csv_writer.writerow(line)
+            # write to file
+            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
+            recordCount += 1
+            csv_writer.writerow(line)
 
 
     csv_writer = csv.writer(filter_file16, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL) 
@@ -197,45 +127,14 @@ with open("filtered_csv14.csv", mode='wb') as filter_file14, open("filtered_csv1
     for line in f16:
         totalCount += 1
         line = line.split("\t")
-        age = line[ageIndex16]
-        sex = line[sexIndex16].strip()
-        # filter by age
-        if intRegex.match(age) and AGE_START <= int(age) <= AGE_END:
-                    
-            # filter by sex
-            if sex in SEX:
-                        
-                # filter by CPT code
-                if len(set(line).intersection(set(CPT_CODES))) > 0:
+        
+        # filter by CPT code
+        if len(set(line).intersection(set(CPT_CODES))) > 0:
 
-                    if FILTER_BY_READMISSION is True:
-
-                        # filter by readmission
-                        readmissionResponses16 = [line[ind] for ind in readmissionIndices16]
-                        if "Yes" in readmissionResponses16:
-
-                            # write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    elif FILTER_BY_REOPERATION is True:
-
-                        #filter by reoperation
-                        reoperationResponses16 = [line[ind] for ind in reoperationIndices16]
-                        if "Yes" in reoperationResponses16:
-
-                            # write to file
-                            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                            recordCount += 1
-                            csv_writer.writerow(line)
-
-                    else:
-
-                        # write to file
-                        print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
-                        recordCount += 1
-                        csv_writer.writerow(line)
+            # write to file
+            print "WRITING TO FILE ", set(line).intersection(set(CPT_CODES))
+            recordCount += 1
+            csv_writer.writerow(line)
 
 print "TOTAL NUMBER OF RECORDS PROCESSED: ", totalCount
 print "NUMBER OF RECORDS ADDED: ", recordCount
