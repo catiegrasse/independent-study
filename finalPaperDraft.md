@@ -30,182 +30,181 @@ Significance between proportions of patients with comorbidities was determined u
 The following tables present findings for significant differences between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Diabetes
-| | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
+| | Non-Diabetes (N = 804.0) | Diabetes (N = 117.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Smoke | 20.16% | 20.29% | 0.9801 | 
- | Dyspnea | 3.629% | 7.246% | 0.1543 | 
- | Ventilator Dependent | 0.2016% | 0% | 0.7089 | 
- | COPD | 2.823% | 10.14% | **0.002591** | 
- | Hypertension | 29.03% | 76.81% | **6.036e-15** | 
- | Disseminated Cancer | 2.621% | 1.449% | 0.5575 | 
- | Steroid | 6.25% | 2.899% | 0.266 | 
- | Bleeding Disorder | 1.411% | 2.899% | 0.3552 | 
- | Independent Functional Health Status | 98.39% | 92.75% | **0.003452** | 
- | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
+ | Smoke | 19.9% | 18.8% | 0.7807 | 
+ | Dyspnea | 3.234% | 6.838% | 0.05341 | 
+ | Ventilator Dependent | 0.1244% | 0.8547% | 0.1128 | 
+ | COPD | 2.861% | 6.838% | **0.02584** | 
+ | Hypertension | 27.24% | 75.21% | **8.22e-25** | 
+ | Disseminated Cancer | 2.114% | 0.8547% | 0.3577 | 
+ | Steroid | 5.846% | 4.274% | 0.4912 | 
+ | Bleeding Disorder | 1.119% | 2.564% | 0.1979 | 
+ | Independent Functional Health Status | 98.51% | 93.16% | **0.0002104** | 
+ | Totally or Partially Dependent Functional Health Status | 0.6219% | 4.274% | **0.0003694** | 
  
-Patients with diabetes had a statistically significanct higher incidence of COPD (10.14% vs 2.823%, p < 0.05), hypertension (76.81% vs 29.03%, p < 0.05), and totally or partially dependent functional health status (4.348% vs 0.6048%, p < 0.05).
+Patients with diabetes had a statistically significanct higher incidence of COPD (6.838% vs 2.861%, p < 0.05), hypertension (75.21% vs 27.24%, p < 0.05), and totally or partially dependent functional health status (4.274% vs 0.6219%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients who Smoked <1 Year Prior to Surgery
-| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
+| | Non-Smoke (N = 739.0) | Smoke (N = 182.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.2% | 12.28% | 0.9801 | 
- | Dyspnea | 2.661% | 9.649% | **0.0007423** | 
- | Ventilator Dependent | 0% | 0.8772% | **0.04651** | 
- | COPD | 2.882% | 7.018% | **0.03706** | 
- | Hypertension | 31.04% | 50.0% | **0.0001477** | 
- | Disseminated Cancer | 2.661% | 1.754% | 0.5781 | 
- | Steroid | 6.43% | 3.509% | 0.2347 | 
- | Bleeding Disorder | 1.996% | 0% | 0.1284 | 
- | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
- | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
+ | Diabetes | 12.86% | 12.09% | 0.7807 | 
+ | Dyspnea | 2.706% | 7.692% | **0.001396** | 
+ | Ventilator Dependent | 0% | 1.099% | **0.004333** | 
+ | COPD | 2.436% | 7.143% | **0.00161** | 
+ | Hypertension | 31.39% | 41.21% | **0.01187** | 
+ | Disseminated Cancer | 2.03% | 1.648% | 0.7392 | 
+ | Steroid | 6.089% | 3.846% | 0.2402 | 
+ | Bleeding Disorder | 1.488% | 0.5495% | 0.317 | 
+ | Independent Functional Health Status | 97.97% | 97.25% | 0.5519 | 
+ | Totally or Partially Dependent Functional Health Status | 0.9472% | 1.648% | 0.4136 | 
 
-Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (9.649% vs 2.661%, p < 0.05), ventilator dependencee (0.8772% vs 0%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), and hypertension (50% vs 31.04%, p < 0.05). 
+Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (7.692% vs 2.706%, p < 0.05), ventilator dependencee (1.099% vs 0%, p < 0.05), COPD (7.143% vs 2.436%, p < 0.05), and hypertension (41.21% vs 31.39%, p < 0.05). 
 
 ##### Comorbidity Rates in ESS Patients with Hypertension
-| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
+| | Non-Hypertension (N = 614.0) | Hypertension (N = 307.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 4.348% | 26.9% | **6.036e-15** | 
- | Smoke | 15.49% | 28.93% | **0.0001477** | 
- | Dyspnea | 2.174% | 7.614% | **0.001818** | 
- | Ventilator Dependent | 0% | 0.5076% | 0.1713 | 
- | COPD | 1.359% | 8.122% | **5.129e-05** | 
- | Disseminated Cancer | 2.717% | 2.03% | 0.6167 | 
- | Steroid | 5.163% | 7.107% | 0.3478 | 
- | Bleeding Disorder | 1.359% | 2.03% | 0.5433 | 
- | Independent Functional Health Status | 97.83% | 97.46% | 0.7832 | 
- | Totally or Partially Dependent Functional Health Status | 0.5435% | 2.03% | 0.1003 | 
+ | Diabetes | 4.723% | 28.66% | **8.22e-25** | 
+ | Smoke | 17.43% | 24.43% | **0.01187** | 
+ | Dyspnea | 2.443% | 6.189% | **0.004482** | 
+ | Ventilator Dependent | 0% | 0.6515% | **0.04527** | 
+ | COPD | 1.954% | 6.189% | **0.0007822** | 
+ | Disseminated Cancer | 2.28% | 1.303% | 0.3125 | 
+ | Steroid | 4.886% | 7.166% | 0.1576 | 
+ | Bleeding Disorder | 0.9772% | 1.954% | 0.2176 | 
+ | Independent Functional Health Status | 98.21% | 97.07% | 0.2631 | 
+ | Totally or Partially Dependent Functional Health Status | 0.8143% | 1.629% | 0.2609 | 
  
-Patients with hypertension had a statistically significant higher incidence of diabetes (26.9% vs 4.348%, p < 0.05), smoking <1 year prior to surgery (28.93% vs 15.49%, p < 0.05), dyspnea (7.614% vs 2.174%, p < 0.05), and COPD (8.122% vs 1.359%, p < 0.05).
+Patients with hypertension had a statistically significant higher incidence of diabetes (28.66% vs 4.723%, p < 0.05), smoking <1 year prior to surgery (24.43% vs 17.43%, p < 0.05), dyspnea (6.189% vs 2.443%, p < 0.05), ventilator dependence (0.6515% vs 0%, p < 0.05) and COPD (6.189% vs 1.954%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Dyspnea
-| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
+| | Non-Dyspnea (N = 887.0) | Dyspnea (N = 34.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.81% | 21.74% | 0.1543 | 
- | Smoke | 19.0% | 47.83% | **0.0007423** | 
- | Ventilator Dependent | 0.1845% | 0% | 0.8366 | 
- | COPD | 2.583% | 30.43% | **4.658e-12** | 
- | Hypertension | 33.58% | 65.22% | **0.001818** | 
- | Disseminated Cancer | 2.214% | 8.696% | 0.05017 | 
- | Steroid | 5.72% | 8.696% | 0.5511 | 
- | Bleeding Disorder | 1.292% | 8.696% | **0.005473** | 
- | Independent Functional Health Status | 97.6% | 100.0% | 0.4524 | 
- | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6119 | 
+ | Diabetes | 12.29% | 23.53% | 0.05341 | 
+ | Smoke | 18.94% | 41.18% | **0.001396** | 
+ | Ventilator Dependent | 0.2255% | 0% | 0.7816 | 
+ | COPD | 2.368% | 29.41% | **9.418e-18** | 
+ | Hypertension | 32.47% | 55.88% | **0.004482** | 
+ | Disseminated Cancer | 1.804% | 5.882% | 0.0918 | 
+ | Steroid | 5.637% | 5.882% | 0.9515 | 
+ | Bleeding Disorder | 1.015% | 8.824% | **8.133e-05** | 
+ | Independent Functional Health Status | 97.86% | 97.06% | 0.7537 | 
+ | Totally or Partially Dependent Functional Health Status | 1.015% | 2.941% | 0.2874 | 
  
- Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (47.83% vs 19.0%, p < 0.05), COPD (30.43% vs 2.583%, p < 0.05), hypertension (65.22% vs 33.58%), and having a bleeding disorder (8.696% vs 1.292%). 
+ Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (41.18% vs 18.94%, p < 0.05), COPD (29.41% vs 2.368%, p < 0.05), hypertension (55.88% vs 32.47%), and having a bleeding disorder (8.824% vs 1.015%). 
 
 ##### Comorbidity Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
-| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
+| | Non-COPD (N = 890.0) | COPD (N = 31.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.4% | 33.33% | **0.002591** | 
- | Smoke | 19.49% | 38.1% | **0.03706** | 
- | Dyspnea | 2.941% | 33.33% | **4.658e-12** | 
- | Ventilator Dependent | 0.1838% | 0% | 0.8441 | 
- | Hypertension | 33.27% | 76.19% | **5.129e-05** | 
- | Disseminated Cancer | 2.39% | 4.762% | 0.4926 | 
- | Steroid | 5.515% | 14.29% | 0.09261 | 
- | Bleeding Disorder | 1.287% | 9.524% | **0.003093** | 
- | Independent Functional Health Status | 97.79% | 95.24% | 0.4433 | 
- | Totally or Partially Dependent Functional Health Status | 1.103% | 0% | 0.6285 | 
+ | Diabetes | 12.25% | 25.81% | **0.02584** | 
+ | Smoke | 18.99% | 41.94% | **0.00161** | 
+ | Dyspnea | 2.697% | 32.26% | **9.418e-18** | 
+ | Ventilator Dependent | 0.2247% | 0% | 0.7916 | 
+ | Hypertension | 32.36% | 61.29% | **0.0007822** | 
+ | Disseminated Cancer | 1.91% | 3.226% | 0.6029 | 
+ | Steroid | 5.393% | 12.9% | 0.07493 | 
+ | Bleeding Disorder | 1.011% | 9.677% | **2.88e-05** | 
+ | Independent Functional Health Status | 97.87% | 96.77% | 0.682 | 
+ | Totally or Partially Dependent Functional Health Status | 1.011% | 3.226% | 0.2422 | 
  
-Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (33.33% vs 11.4%, p < 0.05), smoking <1 year prior to surgery (38.1% vs 19.49%, p < 0.05), dyspnea (33.33% vs 2.941%, p < 0.05), hypertension (76.19% vs 33.27%), and having a bleeding disorder (9.524% vs 1.287%).
+Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (25.81% vs 12.25%, p < 0.05), smoking <1 year prior to surgery (41.94% vs 18.99%, p < 0.05), dyspnea (32.26% vs 2.697%, p < 0.05), and hypertension (61.29% vs 32.36%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Congestive Heart Failure (CGF)
-| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
+| | Non-CGF (N = 915.0) | CGF (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.1% | 33.33% | 0.2626 | 
- | Smoke | 20.11% | 33.33% | 0.5691 | 
- | Dyspnea | 4.093% | 0% | 0.7205 | 
- | Ventilator Dependent | 0.1779% | 0% | 0.9417 | 
- | COPD | 3.381% | 66.67% | **7.516e-09** | 
- | Hypertension | 34.52% | 100.0% | **0.01762** | 
- | Disseminated Cancer | 2.491% | 0% | 0.7819 | 
- | Steroid | 5.872% | 0% | 0.6654 | 
- | Bleeding Disorder | 1.601% | 0% | 0.8251 | 
- | Independent Functional Health Status | 97.86% | 66.67% | **0.000325** | 
- | Totally or Partially Dependent Functional Health Status | 0.8897% | 33.33% | **4.56e-08** | 
+ | Diabetes | 12.57% | 33.33% | 0.1279 | 
+ | Smoke | 19.67% | 33.33% | 0.4022 | 
+ | Dyspnea | 3.607% | 16.67% | 0.09082 | 
+ | Ventilator Dependent | 0.2186% | 0% | 0.9087 | 
+ | COPD | 3.169% | 33.33% | **4.437e-05** | 
+ | Hypertension | 33.01% | 83.33% | **0.009145** | 
+ | Disseminated Cancer | 1.967% | 0% | 0.7286 | 
+ | Steroid | 5.683% | 0% | 0.5477 | 
+ | Bleeding Disorder | 1.311% | 0% | 0.7777 | 
+ | Independent Functional Health Status | 98.03% | 66.67% | **1.487e-07** | 
+ | Totally or Partially Dependent Functional Health Status | 0.8743% | 33.33% | **2.057e-14** | 
  
-Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (66.67% vs 3.381%, p < 0.05), hypertension (100.0% vs 34.52%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8897%, p < 0.05). 
+Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (33.33% vs 3.169%, p < 0.05), hypertension (83.33% vs 33.01%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8743%, p < 0.05). 
 
 ##### Comorbidity Rates in ESS Patients with Disseminated Cancer
-| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
+| | Non-Disseminated Cancer (N = 903.0) | Disseminated Cancer (N = 18.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.34% | 7.143% | 0.5575 | 
- | Smoke | 20.33% | 14.29% | 0.5781 | 
- | Dyspnea | 3.811% | 14.29% | 0.05017 | 
- | Ventilator Dependent | 0.1815% | 0% | 0.8732 | 
- | COPD | 3.63% | 7.143% | 0.4926 | 
- | Hypertension | 35.03% | 28.57% | 0.6167 | 
- | Steroid | 5.445% | 21.43% | **0.01179** | 
- | Bleeding Disorder | 1.089% | 21.43% | **1.94e-09** | 
- | Independent Functional Health Status | 97.64% | 100.0% | 0.5609 | 
- | Totally or Partially Dependent Functional Health Status | 1.089% | 0% | 0.6947 | 
- 
-Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (21.43% vs 5.445%, p < 0.05) and having a bleeding disorder (21.43% vs 5.445%, p < 0.05).
+ | Diabetes | 12.85% | 5.556% | 0.3577 | 
+ | Smoke | 19.82% | 16.67% | 0.7392 | 
+ | Dyspnea | 3.544% | 11.11% | 0.0918 | 
+ | Ventilator Dependent | 0.2215% | 0% | 0.8416 | 
+ | COPD | 3.322% | 5.556% | 0.6029 | 
+ | Hypertension | 33.55% | 22.22% | 0.3125 | 
+ | Steroid | 5.316% | 22.22% | **0.00209** | 
+ | Bleeding Disorder | 0.9967% | 16.67% | **6.435e-09** | 
+ | Independent Functional Health Status | 97.79% | 100.0% | 0.5232 | 
+ | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6535 | 
+
+ Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (22.22% vs 5.316%, p < 0.05) and having a bleeding disorder (16.67% vs 0.9967%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
-| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
+| | Non-Steroid (N = 869.0) | Steroid (N = 52.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.59% | 6.061% | 0.266 | 
- | Smoke | 20.68% | 12.12% | 0.2347 | 
- | Dyspnea | 3.947% | 6.061% | 0.5511 | 
- | Ventilator Dependent | 0.188% | 0% | 0.8031 | 
- | COPD | 3.383% | 9.091% | 0.09261 | 
- | Hypertension | 34.4% | 42.42% | 0.3478 | 
- | Disseminated Cancer | 2.068% | 9.091% | **0.01179** | 
- | Bleeding Disorder | 1.128% | 9.091% | **0.0003921** | 
- | Independent Functional Health Status | 97.74% | 96.97% | 0.7733 | 
- | Totally or Partially Dependent Functional Health Status | 0.9398% | 3.03% | 0.2556 | 
+ | Diabetes | 12.89% | 9.615% | 0.4912 | 
+ | Smoke | 20.14% | 13.46% | 0.2402 | 
+ | Dyspnea | 3.682% | 3.846% | 0.9515 | 
+ | Ventilator Dependent | 0.2301% | 0% | 0.7291 | 
+ | COPD | 3.107% | 7.692% | 0.07493 | 
+ | Hypertension | 32.8% | 42.31% | 0.1576 | 
+ | Disseminated Cancer | 1.611% | 7.692% | **0.00209** | 
+ | Bleeding Disorder | 1.036% | 5.769% | **0.003457** | 
+ | Independent Functional Health Status | 97.93% | 96.15% | 0.3937 | 
+ | Totally or Partially Dependent Functional Health Status | 0.9206% | 3.846% | **0.048** | 
  
-Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (9.091% vs 2.068%, p < 0.05) and having a bleeding disorder (9.091% vs 1.128%, p < 0.05).
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (7.692% vs 1.611%, p < 0.05), having a bleeding disorder (5.769% vs 1.036%, p < 0.05), and totally or partially dependent functional health status (3.846% vs 0.9206%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Bleeding Disorder
-| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
+| | Non-Bleeding Disorder (N = 909.0) | Bleeding Disorder (N = 12.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.05% | 22.22% | 0.3552 | 
- | Smoke | 20.5% | 0% | 0.1284 | 
- | Dyspnea | 3.777% | 22.22% | **0.005473** | 
- | Ventilator Dependent | 0.1799% | 0% | 0.8987 | 
- | COPD | 3.417% | 22.22% | **0.003093** | 
- | Hypertension | 34.71% | 44.44% | 0.5433 | 
- | Disseminated Cancer | 1.978% | 33.33% | **1.94e-09** | 
- | Steroid | 5.396% | 33.33% | **0.0003921** | 
- | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
- | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
- 
-Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).  
+ | Diabetes | 12.54% | 25.0% | 0.1979 | 
+ | Smoke | 19.91% | 8.333% | 0.317 | 
+ | Dyspnea | 3.41% | 25.0% | **8.133e-05** | 
+ | Ventilator Dependent | 0.22% | 0% | 0.8708 | 
+ | COPD | 3.08% | 25.0% | **2.88e-05** | 
+ | Hypertension | 33.11% | 50.0% | 0.2176 | 
+ | Disseminated Cancer | 1.65% | 25.0% | **6.435e-09** | 
+ | Steroid | 5.391% | 25.0% | **0.003457** | 
+ | Independent Functional Health Status | 97.91% | 91.67% | 0.1405 | 
+ | Totally or Partially Dependent Functional Health Status | 1.1% | 0% | 0.7149 | 
 
-In this sample, 552 patients had an independent functional health status, 6 patients had a totally or partially dependent functional health status, and 7 patients had an unknown functional health status. 
+Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (25.0% vs 3.41%, p < 0.05), COPD (25.0% vs 3.08%, p < 0.05), disseminated cancer (25.0% vs 1.65%, p < 0.05), and steroid use <30 days prior to surgery (25.0% vs 5.391%, p < 0.05).  
 
 ##### Comorbidity Rates in ESS Patients with an Independent Functional Health Status
-| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 20.0) | Independent Functional Health Status (N = 901.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 38.46% | 11.59% | **0.003452** | 
- | Smoke | 23.08% | 20.11% | 0.7921 | 
- | Dyspnea | 0% | 4.167% | 0.4524 | 
- | Ventilator Dependent | 0% | 0.1812% | 0.8779 | 
- | COPD | 7.692% | 3.623% | 0.4433 | 
- | Hypertension | 38.46% | 34.78% | 0.7832 | 
- | Disseminated Cancer | 0% | 2.536% | 0.5609 | 
- | Steroid | 7.692% | 5.797% | 0.7733 | 
- | Bleeding Disorder | 7.692% | 1.449% | 0.07556 | 
- | Totally or Partially Dependent Functional Health Status | 46.15% | 0% | **6.007e-58** | 
+ | Diabetes | 40.0% | 12.1% | **0.0002104** | 
+ | Smoke | 25.0% | 19.64% | 0.5519 | 
+ | Dyspnea | 5.0% | 3.663% | 0.7537 | 
+ | Ventilator Dependent | 5.0% | 0.111% | **3.388e-06** | 
+ | COPD | 5.0% | 3.33% | 0.682 | 
+ | Hypertension | 45.0% | 33.07% | 0.2631 | 
+ | Disseminated Cancer | 0% | 1.998% | 0.5232 | 
+ | Steroid | 10.0% | 5.549% | 0.3937 | 
+ | Bleeding Disorder | 5.0% | 1.221% | 0.1405 | 
+ | Totally or Partially Dependent Functional Health Status | 50.0% | 0% | **4.711e-101** | 
  
- Patients with an independent functional health status had a statistically significant lower incidence of diabetes (11.59% vs 38.46%, p < 0.05).
+ Patients with an independent functional health status had a statistically significant lower incidence of diabetes (12.1% vs 40.0%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
-| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 911.0) | Totally or Partially Dependent Functional Health Status (N = 10.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.81% | 50.0% | **0.004483** | 
- | Smoke | 20.04% | 33.33% | 0.4195 | 
- | Dyspnea | 4.114% | 0% | 0.6119 | 
- | Ventilator Dependent | 0.1789% | 0% | 0.9174 | 
- | COPD | 3.757% | 0% | 0.6285 | 
- | Hypertension | 34.53% | 66.67% | 0.1003 | 
- | Disseminated Cancer | 2.504% | 0% | 0.6947 | 
- | Steroid | 5.725% | 16.67% | 0.2556 | 
- | Bleeding Disorder | 1.61% | 0% | 0.754 | 
+ | Diabetes | 12.29% | 50.0% | **0.0003694** | 
+ | Smoke | 19.65% | 30.0% | 0.4136 | 
+ | Dyspnea | 3.622% | 10.0% | 0.2874 | 
+ | Ventilator Dependent | 0.2195% | 0% | 0.8821 | 
+ | COPD | 3.293% | 10.0% | 0.2422 | 
+ | Hypertension | 33.15% | 50.0% | 0.2609 | 
+ | Disseminated Cancer | 1.976% | 0% | 0.6535 | 
+ | Steroid | 5.488% | 20.0% | **0.048** | 
+ | Bleeding Disorder | 1.317% | 0% | 0.7149 | 
+ | Independent Functional Health Status | 98.9% | 0% | **4.711e-101** | 
  
-Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 12.29%, p < 0.05)
 
 #### Postoperative Complications
  
