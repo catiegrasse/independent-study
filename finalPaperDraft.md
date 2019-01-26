@@ -720,24 +720,23 @@ In the inpatient setting, patients with congestive heart failure (CGF) had a sta
  In the inpatient setting, patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (25.00% vs 2.94%, p < 0.05), postoperative reintubation (25.00% vs 1.96%, p < 0.05), postoperative ventilator (25.00% vs 1.96%, p < 0.05).
 
  ## Multivariate Logistic Regression 
-Further analysis was done on specific outcomes (organ/space surgical site infection and pulmonary embolism) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
+Further analysis was done on specific outcome (organ/space surgical site) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
 
 ##### Multivariate Logistic Regression for Patients who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 4.125 | (0.990 - 17.202) | 0.0513 |
-| Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | 0.2178 |
+| Organ/Space SSI  | 4.495039 | (1.111729  - 18.174734) | **0.0346842001437** |
 
-Neither organ/space surgical site infection nor pulmonary embolism had statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
+Organ/space surgical site infection had a statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
 
 Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of postoperative pulmonary embolism, but due to small sample size (N = 1), further analysis was not performed for this outcome.
 
 ##### Multivariate Logistic Regression for Patients in Inpatient Setting who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio (data) | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 2.082 | (0.3792 - 11.43) | 0.406 |
+| Organ/Space SSI  | 2.956319 | (0.564183 - 15.491114) | 0.201067500253 |
 
-Patients that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for the postoperative outcome organ/space surgical site infection.
+Patients in the inpatient setting that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for postoperative organ/space surgical site infection.
 
 #### Conclusion
 Since this analysis used data only from the years 2014-2016 in the NSQIP database, there were certain outcomes and comorbidities with 10 or less patients in the inpatient or outpatient setting (for example: postoperative ventilator use, actue renal failure, and ascites) which did not allow for robust analysis. Further research could be done using a larger sample of the NSQIP dataset to both validate the results shown in this paper as well as analyze less common comorbidities and postoperative complications.
