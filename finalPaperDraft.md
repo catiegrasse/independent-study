@@ -211,257 +211,258 @@ Patients with a totally or partially dependent functional health status had a st
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Diabetes
-| | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
+| | Non-Diabetes (N = 804.0) | Diabetes (N = 117.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.2016% | 0% | 0.7089 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.411% | 2.899% | 0.3552 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 0.8065% | 5.797% | **0.001011** | 
- | Reintubation | 0.4032% | 4.348% | **0.001045** | 
- | Urinary Infection | 0.2016% | 0% | 0.7089 | 
- | Deep Vein Thrombosis | 0.2016% | 1.449% | 0.102 | 
- | Renal Insufficiency | 0.2016% | 0% | 0.7089 | 
- | Pulmonary Embolism | 0.4032% | 0% | 0.5972 | 
- | Ventilator | 0.6048% | 2.899% | 0.05664 | 
- | Acute Renal Failure | 0.2016% | 0% | 0.7089 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2488% | 0% | 0.5891 | 
+ | Deep SSI | 0.1244% | 0% | 0.7027 | 
+ | Organ/Space SSI | 0.8706% | 1.709% | 0.3888 | 
+ | Wound Disruption | 0.2488% | 0% | 0.5891 | 
+ | Pneumonia | 0.4975% | 5.983% | **3.34e-07** | 
+ | Reintubation | 0.6219% | 5.128% | **2.761e-05** | 
+ | Urinary Infection | 0.2488% | 1.709% | **0.02478** | 
+ | Deep Vein Thrombosis | 0.2488% | 1.709% | **0.02478** | 
+ | Renal Insufficiency | 0.1244% | 0.8547% | 0.1128 | 
+ | Pulmonary Embolism | 0.4975% | 0% | 0.4445 | 
+ | Ventilator | 0.7463% | 5.128% | **9.414e-05** | 
+ | Acute Renal Failure | 0.1244% | 0% | 0.7027 | 
+ | CVA with Neurologic Deficit | 0.2488% | 0% | 0.5891 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 1.008% | 0% | 0.4022 | 
- | Readmission | 4.234% | 5.797% | 0.5541 | 
- | Unplanned Readmission | 3.831% | 5.797% | 0.4386 | 
+ | Sepsis | 0.7463% | 1.709% | 0.2942 | 
+ | Readmission | 3.234% | 6.838% | 0.05341 | 
+ | Unplanned Readmission | 2.736% | 6.838% | **0.01955** |  
  
- Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.797% vs 0.8065%, p < 0.05) and postoperative reintubation (4.348% vs 0.4032%, p < 0.05).
+ Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.983% vs 0.4975%, p < 0.05), postoperative reintubation (5.128% vs 0.6219%, p < 0.05), postoperative urinary infection (1.709% vs 0.2488%, p < 0.05), postoperative deep vein thrombosis (1.709% vs 0.2488%, p < 0.05), postoperative ventilator use (5.128% vs 0.7643%, p < 0.05), and unplanned readmission (6.838% vs 2.736%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery
-| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
+| | Non-Smoke (N = 739.0) | Smoke (N = 182.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.2217% | 0% | 0.6148 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 0.8869% | 4.386% | **0.007677** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.552% | 0.8772% | 0.5858 | 
- | Reintubation | 0.8869% | 0.8772% | 0.9921 | 
- | Urinary Infection | 0.2217% | 0% | 0.6148 | 
- | Deep Vein Thrombosis | 0.2217% | 0.8772% | 0.2924 | 
- | Renal Insufficiency | 0.2217% | 0% | 0.6148 | 
- | Pulmonary Embolism | 0% | 1.754% | **0.004834** | 
- | Ventilator | 0.6652% | 1.754% | 0.2673 | 
- | Acute Renal Failure | 0.2217% | 0% | 0.6148 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2706% | 0% | 0.4823 | 
+ | Deep SSI | 0.1353% | 0% | 0.6195 | 
+ | Organ/Space SSI | 0.5413% | 2.747% | **0.006728** | 
+ | Wound Disruption | 0.2706% | 0% | 0.4823 | 
+ | Pneumonia | 1.353% | 0.5495% | 0.3713 | 
+ | Reintubation | 1.083% | 1.648% | 0.5291 | 
+ | Urinary Infection | 0.5413% | 0% | 0.3199 | 
+ | Deep Vein Thrombosis | 0.2706% | 1.099% | 0.128 | 
+ | Renal Insufficiency | 0.2706% | 0% | 0.4823 | 
+ | Pulmonary Embolism | 0.2706% | 1.099% | 0.128 | 
+ | Ventilator | 1.083% | 2.198% | 0.2346 | 
+ | Acute Renal Failure | 0.1353% | 0% | 0.6195 | 
+ | CVA with Neurologic Deficit | 0.1353% | 0.5495% | 0.2823 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.6652% | 1.754% | 0.2673 | 
- | Readmission | 3.769% | 7.018% | 0.1319 | 
- | Unplanned Readmission | 3.548% | 6.14% | 0.2107 | 
+ | Sepsis | 0.8119% | 1.099% | 0.7086 | 
+ | Readmission | 3.383% | 4.945% | 0.3168 | 
+ | Unplanned Readmission | 2.977% | 4.396% | 0.3342 | 
  
- Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (4.386% vs 0.8869%, p < 0.05) and postoperative pulmonary embolism (1.754% vs 0%, p < 0.05).
+ Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (2.747% vs 0.5413%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Hypertension
-| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
+ | | Non-Hypertension (N = 614.0) | Hypertension (N = 307.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0% | 0.5076% | 0.1713 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.087% | 2.538% | 0.1892 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 0.8152% | 2.538% | 0.09858 | 
- | Reintubation | 0.5435% | 1.523% | 0.2362 | 
- | Urinary Infection | 0.2717% | 0% | 0.464 | 
- | Deep Vein Thrombosis | 0.2717% | 0.5076% | 0.6528 | 
- | Renal Insufficiency | 0% | 0.5076% | 0.1713 | 
- | Pulmonary Embolism | 0.2717% | 0.5076% | 0.6528 | 
- | Ventilator | 1.087% | 0.5076% | 0.4835 | 
- | Acute Renal Failure | 0% | 0.5076% | 0.1713 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0% | 0.6515% | **0.04527** | 
+ | Deep SSI | 0.1629% | 0% | 0.4793 | 
+ | Organ/Space SSI | 0.6515% | 1.629% | 0.1553 | 
+ | Wound Disruption | 0.1629% | 0.3257% | 0.6167 | 
+ | Pneumonia | 0.8143% | 1.954% | 0.1333 | 
+ | Reintubation | 0.8143% | 1.954% | 0.1333 | 
+ | Urinary Infection | 0.3257% | 0.6515% | 0.4785 | 
+ | Deep Vein Thrombosis | 0.3257% | 0.6515% | 0.4785 | 
+ | Renal Insufficiency | 0% | 0.6515% | **0.04527** | 
+ | Pulmonary Embolism | 0.4886% | 0.3257% | 0.7231 | 
+ | Ventilator | 1.303% | 1.303% | 1.0 | 
+ | Acute Renal Failure | 0% | 0.3257% | 0.1571 | 
+ | CVA with Neurologic Deficit | 0.1629% | 0.3257% | 0.6167 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.2717% | 2.03% | **0.03341** | 
- | Readmission | 2.717% | 7.614% | **0.006991** | 
- | Unplanned Readmission | 2.717% | 6.599% | **0.02608** | 
- 
-Patients that had hypertension had a statistically significant higher incidence of postoperative sepsis (2.03% vs 0.2717%, p < 0.05), postoperative readmission (7.614% vs 2.717%, p < 0.05), and unplanned postoperative readmission (6.599% vs 2.717%, p < 0.05).
+ | Sepsis | 0.3257% | 1.954% | **0.01204** | 
+ | Readmission | 2.117% | 6.84% | **0.000339** | 
+ | Unplanned Readmission | 1.954% | 5.863% | **0.001632** | 
+
+Patients that had hypertension had a statistically significant higher incidence of postoperative renal insufficiency (0.6515% vs 0%, p < 0.05), postoperative sepsis (1.954% vs 0.3257%, p < 0.05), postoperative readmission (6.84% vs 2.117%, p < 0.05), and unplanned postoperative readmission (5.863% vs 1.954%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Dyspnea
-| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
+| | Non-Dyspnea (N = 887.0) | Dyspnea (N = 34.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1845% | 0% | 0.8366 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.661% | 0% | 0.5333 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.476% | 0% | 0.5573 | 
- | Reintubation | 0.9225% | 0% | 0.6436 | 
- | Urinary Infection | 0.1845% | 0% | 0.8366 | 
- | Deep Vein Thrombosis | 0.369% | 0% | 0.7704 | 
- | Renal Insufficiency | 0.1845% | 0% | 0.8366 | 
- | Pulmonary Embolism | 0.369% | 0% | 0.7704 | 
- | Ventilator | 0.9225% | 0% | 0.6436 | 
- | Acute Renal Failure | 0% | 4.348% | **1.182e-06** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2255% | 0% | 0.7816 | 
+ | Deep SSI | 0.1127% | 0% | 0.8447 | 
+ | Organ/Space SSI | 1.015% | 0% | 0.555 | 
+ | Wound Disruption | 0.2255% | 0% | 0.7816 | 
+ | Pneumonia | 1.24% | 0% | 0.5136 | 
+ | Reintubation | 1.24% | 0% | 0.5136 | 
+ | Urinary Infection | 0.3382% | 2.941% | **0.02351** | 
+ | Deep Vein Thrombosis | 0.451% | 0% | 0.6947 | 
+ | Renal Insufficiency | 0.2255% | 0% | 0.7816 | 
+ | Pulmonary Embolism | 0.451% | 0% | 0.6947 | 
+ | Ventilator | 1.353% | 0% | 0.4948 | 
+ | Acute Renal Failure | 0% | 2.941% | **3.214e-07** | 
+ | CVA with Neurologic Deficit | 0.2255% | 0% | 0.7816 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.9225% | 0% | 0.6436 | 
- | Readmission | 4.428% | 4.348% | 0.9854 | 
- | Unplanned Readmission | 4.059% | 4.348% | 0.9453 | 
- 
- Patients that had dyspnea had a statistically significant higher incidence of postoperative acute renal failure (4.348% vs 0%, p < 0.05).
+ | Sepsis | 0.9019% | 0% | 0.5781 | 
+ | Readmission | 3.608% | 5.882% | 0.49 | 
+ | Unplanned Readmission | 3.157% | 5.882% | 0.3796 | 
+
+ Patients that had dyspnea had a statistically significant higher incidence of postoperative urinary infection (2.941% vs 0.3382%, p < 0.05) and postoperative acute renal failure (2.941% vs 0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
-| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
-| ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1838% | 0% | 0.8441 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.471% | 4.762% | 0.2372 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.287% | 4.762% | 0.186 | 
- | Reintubation | 0.7353% | 4.762% | 0.0532 | 
- | Urinary Infection | 0.1838% | 0% | 0.8441 | 
- | Deep Vein Thrombosis | 0.1838% | 4.762% | **0.000528** | 
- | Renal Insufficiency | 0% | 4.762% | **3.502e-07** | 
- | Pulmonary Embolism | 0.3676% | 0% | 0.7807 | 
- | Ventilator | 0.7353% | 4.762% | 0.0532 | 
- | Acute Renal Failure | 0% | 4.762% | **3.502e-07** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
- | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.5515% | 9.524% | **1.649e-05** | 
- | Readmission | 4.044% | 14.29% | **0.02513** | 
- | Unplanned Readmission | 3.676% | 14.29% | **0.01577** | 
 
-Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (4.762% vs 0.1838%, p < 0.05), postoperative renal insuffiency (4.762% vs 0%, p < 0.05), postoperative acute renal failure (4.762% vs 0%, p < 0.05), sepsis (9.524% vs 0.5515%, p < 0.05), postoperative readmission (14.29% vs 4.044%, p < 0.05), and unplanned postoperative readmission (14.29% vs 3.676%, p < 0.05).
+| | Non-COPD (N = 890.0) | COPD (N = 31.0) | p-value | 
+| ------------- | ------------- | ------------- | ------------- |
+ | Superficial SSI | 0.2247% | 0% | 0.7916 | 
+ | Deep SSI | 0.1124% | 0% | 0.8519 | 
+ | Organ/Space SSI | 0.8989% | 3.226% | 0.1954 | 
+ | Wound Disruption | 0.2247% | 0% | 0.7916 | 
+ | Pneumonia | 1.124% | 3.226% | 0.2895 | 
+ | Reintubation | 1.124% | 3.226% | 0.2895 | 
+ | Urinary Infection | 0.3371% | 3.226% | **0.0162** | 
+ | Deep Vein Thrombosis | 0.3371% | 3.226% | **0.0162** | 
+ | Renal Insufficiency | 0.1124% | 3.226% | **0.0002514** | 
+ | Pulmonary Embolism | 0.4494% | 0% | 0.7083 | 
+ | Ventilator | 1.236% | 3.226% | 0.3369 | 
+ | Acute Renal Failure | 0% | 3.226% | **8.274e-08** | 
+ | CVA with Neurologic Deficit | 0.2247% | 0% | 0.7916 | 
+ | Myocardial Infarction | 0% | 0% | - | 
+ | Sepsis | 0.6742% | 6.452% | **0.0006551** | 
+ | Readmission | 3.483% | 9.677% | 0.07217 | 
+ | Unplanned Readmission | 3.034% | 9.677% | **0.04052** | 
+
+Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative urinary infection (3.226% vs 0.3371%, p < 0.05), postoperative deep vein thrombosis (3.226% vs 0.3371%, p < 0.05), postoperative renal insuffiency (3.226% vs 0.1124%, p < 0.05), postoperative acute renal failure (3.226% vs 0%, p < 0.05), sepsis (6.452% vs 0.6742%, p < 0.05), and unplanned postoperative readmission (9.677% vs 3.034%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF)
-| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
+| | Non-CGF (N = 915.0) | CGF (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1779% | 0% | 0.9417 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.601% | 0% | 0.8251 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.246% | 33.33% | **2.711e-06** | 
- | Reintubation | 0.7117% | 33.33% | **1.777e-09** | 
- | Urinary Infection | 0.1779% | 0% | 0.9417 | 
- | Deep Vein Thrombosis | 0.3559% | 0% | 0.9176 | 
- | Renal Insufficiency | 0.1779% | 0% | 0.9417 | 
- | Pulmonary Embolism | 0.3559% | 0% | 0.9176 | 
- | Ventilator | 0.8897% | 0% | 0.8697 | 
- | Acute Renal Failure | 0.1779% | 0% | 0.9417 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2186% | 0% | 0.9087 | 
+ | Deep SSI | 0.1093% | 0% | 0.9354 | 
+ | Organ/Space SSI | 0.9836% | 0% | 0.8071 | 
+ | Wound Disruption | 0.2186% | 0% | 0.9087 | 
+ | Pneumonia | 1.093% | 16.67% | **0.0004649** | 
+ | Reintubation | 1.093% | 16.67% | **0.0004649** | 
+ | Urinary Infection | 0.4372% | 0% | 0.8711 | 
+ | Deep Vein Thrombosis | 0.4372% | 0% | 0.8711 | 
+ | Renal Insufficiency | 0.2186% | 0% | 0.9087 | 
+ | Pulmonary Embolism | 0.4372% | 0% | 0.8711 | 
+ | Ventilator | 1.311% | 0% | 0.7777 | 
+ | Acute Renal Failure | 0.1093% | 0% | 0.9354 | 
+ | CVA with Neurologic Deficit | 0.2186% | 0% | 0.9087 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8897% | 0% | 0.8697 | 
- | Readmission | 4.448% | 0% | 0.7086 | 
- | Unplanned Readmission | 4.093% | 0% | 0.7205 | 
- 
- Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (33.33% vs 1.246%, p < 0.05) and postoperative reintubation (33.33% vs 0.7117%, p < 0.05).
+ | Sepsis | 0.8743% | 0% | 0.8181 | 
+ | Readmission | 3.716% | 0% | 0.6304 | 
+ | Unplanned Readmission | 3.279% | 0% | 0.652 | 
+
+ Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (16.67% vs 1.093%, p < 0.05) and postoperative reintubation (16.67% vs 1.093%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer
-| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
+| | Non-Disseminated Cancer (N = 903.0) | Disseminated Cancer (N = 18.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1815% | 0% | 0.8732 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.633% | 0% | 0.6298 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.27% | 7.143% | 0.06627 | 
- | Reintubation | 0.9074% | 0% | 0.7203 | 
- | Urinary Infection | 0.1815% | 0% | 0.8732 | 
- | Deep Vein Thrombosis | 0.363% | 0% | 0.8213 | 
- | Renal Insufficiency | 0.1815% | 0% | 0.8732 | 
- | Pulmonary Embolism | 0.363% | 0% | 0.8213 | 
- | Ventilator | 0.726% | 7.143% | **0.01135** | 
- | Acute Renal Failure | 0% | 7.143% | **3.406e-10** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2215% | 0% | 0.8416 | 
+ | Deep SSI | 0.1107% | 0% | 0.8877 | 
+ | Organ/Space SSI | 0.9967% | 0% | 0.6704 | 
+ | Wound Disruption | 0.2215% | 0% | 0.8416 | 
+ | Pneumonia | 1.107% | 5.556% | 0.0854 | 
+ | Reintubation | 1.218% | 0% | 0.6376 | 
+ | Urinary Infection | 0.443% | 0% | 0.7772 | 
+ | Deep Vein Thrombosis | 0.443% | 0% | 0.7772 | 
+ | Renal Insufficiency | 0.2215% | 0% | 0.8416 | 
+ | Pulmonary Embolism | 0.443% | 0% | 0.7772 | 
+ | Ventilator | 1.218% | 5.556% | 0.1081 | 
+ | Acute Renal Failure | 0% | 5.556% | **1.374e-12** | 
+ | CVA with Neurologic Deficit | 0.2215% | 0% | 0.8416 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.9074% | 0% | 0.7203 | 
- | Readmission | 4.356% | 7.143% | 0.6165 | 
- | Unplanned Readmission | 3.993% | 7.143% | 0.5559 | 
+ | Sepsis | 0.8859% | 0% | 0.6884 | 
+ | Readmission | 3.654% | 5.556% | 0.6719 | 
+ | Unplanned Readmission | 3.212% | 5.556% | 0.5791 | 
 
-Patients with disseminated cancer had a statistically significant higher incidence of postoperative ventilator use (7.143% vs 0.726%, p < 0.05) and postoperative acute renal failure (7.143% vs 0%, p < 0.05).
+Patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renal failure (5.556% vs 0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
-| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
+| | Non-Steroid (N = 869.0) | Steroid (N = 52.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.188% | 0% | 0.8031 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.316% | 6.061% | **0.03464** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.316% | 3.03% | 0.4186 | 
- | Reintubation | 0.7519% | 3.03% | 0.1751 | 
- | Urinary Infection | 0.188% | 0% | 0.8031 | 
- | Deep Vein Thrombosis | 0.3759% | 0% | 0.7242 | 
- | Renal Insufficiency | 0.188% | 0% | 0.8031 | 
- | Pulmonary Embolism | 0.188% | 3.03% | **0.007636** | 
- | Ventilator | 0.5639% | 6.061% | **0.001069** | 
- | Acute Renal Failure | 0% | 3.03% | **5.852e-05** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2301% | 0% | 0.7291 | 
+ | Deep SSI | 0% | 1.923% | **4.31e-05** | 
+ | Organ/Space SSI | 0.8055% | 3.846% | **0.03038** | 
+ | Wound Disruption | 0.1151% | 1.923% | **0.006516** | 
+ | Pneumonia | 1.151% | 1.923% | 0.6185 | 
+ | Reintubation | 1.036% | 3.846% | 0.06996 | 
+ | Urinary Infection | 0.3452% | 1.923% | 0.09282 | 
+ | Deep Vein Thrombosis | 0.3452% | 1.923% | 0.09282 | 
+ | Renal Insufficiency | 0.2301% | 0% | 0.7291 | 
+ | Pulmonary Embolism | 0.2301% | 3.846% | **0.0001173** | 
+ | Ventilator | 1.151% | 3.846% | 0.09593 | 
+ | Acute Renal Failure | 0% | 1.923% | **4.31e-05** | 
+ | CVA with Neurologic Deficit | 0.2301% | 0% | 0.7291 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.5639% | 6.061% | **0.001069** | 
- | Readmission | 4.699% | 0% | 0.2027 | 
- | Unplanned Readmission | 4.323% | 0% | 0.2226 | 
+ | Sepsis | 0.5754% | 5.769% | **8.833e-05** | 
+ | Readmission | 3.797% | 1.923% | 0.4862 | 
+ | Unplanned Readmission | 3.337% | 1.923% | 0.5769 | 
 
-Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.061% vs 1.316%, p < 0.05), postoperative pulmonary embolism (3.03% vs 0.188%, p < 0.05), postoperative ventilator use (6.061% vs 0.5639%, p < 0.05), postoperative acute renal failure (3.03% vs 0%, p < 0.05), and postoperative sepsis (6.061% vs 0.5639%, p < 0.05).
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative deep surgical site infection (1.923% vs 0%, p < 0.05), postoperative organ/space surgical site infection (SSI) (3.846% vs 0.8055%, p < 0.05), postoperative wound disruption (1.923% vs 0.1151%, p < 0.05), postoperative pulmonary embolism (3.846% vs 0.2301%, p < 0.05), postoperative acute renal failure (1.923% vs 0%, p < 0.05), and postoperative sepsis (5.769% vs 0.5754%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Bleeding Disorder
-| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
+| | Non-Bleeding Disorder (N = 909.0) | Bleeding Disorder (N = 12.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1799% | 0% | 0.8987 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.619% | 0% | 0.7004 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.439% | 0% | 0.717 | 
- | Reintubation | 0.8993% | 0% | 0.7751 | 
- | Urinary Infection | 0.1799% | 0% | 0.8987 | 
- | Deep Vein Thrombosis | 0.3597% | 0% | 0.857 | 
- | Renal Insufficiency | 0.1799% | 0% | 0.8987 | 
- | Pulmonary Embolism | 0.3597% | 0% | 0.857 | 
- | Ventilator | 0.7194% | 11.11% | **0.0009596** | 
- | Acute Renal Failure | 0% | 11.11% | **3.637e-15** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.22% | 0% | 0.8708 | 
+ | Deep SSI | 0.11% | 0% | 0.9085 | 
+ | Organ/Space SSI | 0.9901% | 0% | 0.7291 | 
+ | Wound Disruption | 0.22% | 0% | 0.8708 | 
+ | Pneumonia | 1.21% | 0% | 0.7014 | 
+ | Reintubation | 1.21% | 0% | 0.7014 | 
+ | Urinary Infection | 0.44% | 0% | 0.8179 | 
+ | Deep Vein Thrombosis | 0.44% | 0% | 0.8179 | 
+ | Renal Insufficiency | 0.22% | 0% | 0.8708 | 
+ | Pulmonary Embolism | 0.44% | 0% | 0.8179 | 
+ | Ventilator | 1.21% | 8.333% | **0.03064** | 
+ | Acute Renal Failure | 0% | 8.333% | **3.088e-18** | 
+ | CVA with Neurologic Deficit | 0.22% | 0% | 0.8708 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8993% | 0% | 0.7751 | 
- | Readmission | 4.496% | 0% | 0.5152 | 
- | Unplanned Readmission | 4.137% | 0% | 0.5333 | 
+ | Sepsis | 0.8801% | 0% | 0.7441 | 
+ | Readmission | 3.74% | 0% | 0.4948 | 
+ | Unplanned Readmission | 3.3% | 0% | 0.5223 | 
  
- Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (11.11% vs 0.7194%, p < 0.05) and postoperative acute renal failure (11.11% vs 0%, p < 0.05).
+ Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (8.333% vs 0.1.21%, p < 0.05) and postoperative acute renal failure (8.333% vs 1.21%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status
-| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 20.0) | Independent Functional Health Status (N = 901.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0% | 0.1812% | 0.8779 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 7.692% | 1.449% | 0.07556 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 15.38% | 1.087% | **1.612e-05** | 
- | Reintubation | 15.38% | 0.5435% | **1.628e-08** | 
- | Urinary Infection | 0% | 0.1812% | 0.8779 | 
- | Deep Vein Thrombosis | 7.692% | 0.1812% | **6.57e-06** | 
- | Renal Insufficiency | 0% | 0.1812% | 0.8779 | 
- | Pulmonary Embolism | 0% | 0.3623% | 0.8279 | 
- | Ventilator | 15.38% | 0.5435% | **1.628e-08** | 
- | Acute Renal Failure | 0% | 0.1812% | 0.8779 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 5.0% | 0.111% | **3.388e-06** | 
+ | Deep SSI | 0% | 0.111% | 0.8815 | 
+ | Organ/Space SSI | 5.0% | 0.8879% | 0.06445 | 
+ | Wound Disruption | 5.0% | 0.111% | **3.388e-06** | 
+ | Pneumonia | 10.0% | 0.9989% | **0.0002472** | 
+ | Reintubation | 10.0% | 0.9989% | **0.0002472** | 
+ | Urinary Infection | 0% | 0.444% | 0.7652 | 
+ | Deep Vein Thrombosis | 5.0% | 0.333% | **0.001693** | 
+ | Renal Insufficiency | 0% | 0.222% | 0.8329 | 
+ | Pulmonary Embolism | 0% | 0.444% | 0.7652 | 
+ | Ventilator | 15.0% | 0.9989% | **4.726e-08** | 
+ | Acute Renal Failure | 0% | 0.111% | 0.8815 | 
+ | CVA with Neurologic Deficit | 0% | 0.222% | 0.8329 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0% | 0.9058% | 0.7303 | 
- | Readmission | 0% | 4.529% | 0.4325 | 
- | Unplanned Readmission | 0% | 4.167% | 0.4524 | 
- 
- Patients with an independent functional health status had a statistically significant lower incidence of postoperative penumonia (1.087% vs 15.38%, p < 0.05), postoperative reintubation (0.5435% vs 15.38%), postoperative deep vein thrombosis (0.1812% vs 7.692%, p < 0.05), and postoperative ventilator use (0.5435% vs 15.38%, p < 0.05).
+ | Sepsis | 5.0% | 0.7769% | **0.04411** | 
+ | Readmission | 5.0% | 3.663% | 0.7537 | 
+ | Unplanned Readmission | 0% | 3.33% | 0.4067 | 
+
+ Patients with an independent functional health status had a statistically significant lower incidence of postoperative superficial surgical site infection (0.111% vs 5.0%, p < 0.05), postoperative wound disruption (0.111% vs 5.0%, p < 0.05), postoperative penumonia (0.9989% vs 10.0%, p < 0.05), postoperative reintubation (0.9989% vs 10.0%), postoperative deep vein thrombosis (0.333% vs 5.0%, p < 0.05), postoperative ventilator use (0.9989% vs 15.0%, p < 0.05), and postoperative sepsis (0.7769% vs 5.0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
-| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 911.0) | Totally or Partially Dependent Functional Health Status (N = 10.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1789% | 0% | 0.9174 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.431% | 16.67% | **0.003028** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.252% | 16.67% | **0.001479** | 
- | Reintubation | 0.7156% | 16.67% | **3.329e-05** | 
- | Urinary Infection | 0.1789% | 0% | 0.9174 | 
- | Deep Vein Thrombosis | 0.3578% | 0% | 0.8833 | 
- | Renal Insufficiency | 0.1789% | 0% | 0.9174 | 
- | Pulmonary Embolism | 0.3578% | 0% | 0.8833 | 
- | Ventilator | 0.7156% | 16.67% | **3.329e-05** | 
- | Acute Renal Failure | 0.1789% | 0% | 0.9174 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2195% | 0% | 0.8821 | 
+ | Deep SSI | 0.1098% | 0% | 0.9165 | 
+ | Organ/Space SSI | 0.8782% | 10.0% | **0.003541** | 
+ | Wound Disruption | 0.1098% | 10.0% | **2.353e-11** | 
+ | Pneumonia | 0.9879% | 20.0% | **3.707e-08** | 
+ | Reintubation | 0.9879% | 20.0% | **3.707e-08** | 
+ | Urinary Infection | 0.4391% | 0% | 0.8337 | 
+ | Deep Vein Thrombosis | 0.3293% | 10.0% | **3.742e-06** | 
+ | Renal Insufficiency | 0.2195% | 0% | 0.8821 | 
+ | Pulmonary Embolism | 0.4391% | 0% | 0.8337 | 
+ | Ventilator | 1.098% | 20.0% | **1.585e-07** | 
+ | Acute Renal Failure | 0.1098% | 0% | 0.9165 | 
+ | CVA with Neurologic Deficit | 0.2195% | 0% | 0.8821 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8945% | 0% | 0.816 | 
- | Readmission | 4.472% | 0% | 0.5962 | 
- | Unplanned Readmission | 4.114% | 0% | 0.6119 | 
+ | Sepsis | 0.7684% | 10.0% | **0.001755** | 
+ | Readmission | 3.732% | 0% | 0.5336 | 
+ | Unplanned Readmission | 3.293% | 0% | 0.5596 | 
  
-Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (10.0% vs 1.431%, p < 0.8782), postoperative wound disruption (10.0% vs 0.1098%, p < 0.05), postoperative pneumonia (20.0% vs 0.9879%, p < 0.05), postoperative reintubation (20.0% vs 0.9879%, p < 0.05), postoperative deep vein thrombosis (10.0% vs 0.3293%, p < 0.05), postoperative ventilator use (20.0% vs 1.098%, p < 0.05), and postoperative sepsis (10.0% vs 0.7684%, p < 0.05).
  
  #### Postoperative Complications in the Inpatient and Outpatient Setting 
  
