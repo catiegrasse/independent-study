@@ -52,14 +52,16 @@ for i in range(len(HEADERSLIST)):
     for j in range(len(HEADERSLIST[i])):
         if readmissionRegex.match(HEADERSLIST[i][j]):
             readmissionIndices.append(j)
-    READMISSION_LIST[i].append(readmissionIndices)
+    READMISSION_LIST[i] = readmissionIndices 
 
 unplannedReadmissionRegex = re.compile(UNPLANNED_READMISSION_REGEX)
 
-for i in range(len(UNPLANNED_READMISSION_LIST)):
+for i in range(len(HEADERSLIST)):
+    unplannedReadmissionIndices = []
     for j in range(len(HEADERSLIST[i])):
         if unplannedReadmissionRegex.match(HEADERSLIST[i][j]):
-            UNPLANNED_READMISSION_LIST[i].append(j)
+            unplannedReadmissionIndices.append(j)
+    UNPLANNED_READMISSION_LIST[i] = unplannedReadmissionIndices
 
 
 # count number of patients with specified icd 
@@ -156,9 +158,7 @@ with open(FILE_NAME, mode='w') as filter_file:
                 ventilator = 1
 
             readmission = 0
-            print(READMISSION_LIST[i])
-            print(READMISSION_LIST)
-            print(len(row))
+
             readmissionResponses = [row[ind] for ind in READMISSION_LIST[i] if row[ind] == "Yes"]
             if len(readmissionResponses) > 0:
                 readmission = 1
