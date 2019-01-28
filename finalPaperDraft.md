@@ -729,15 +729,15 @@ Further analysis was done on specific outcome (organ/space surgical site) that h
 
 Organ/space surgical site infection had a statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
 
-Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of postoperative pulmonary embolism, but due to small sample size (N = 1), further analysis was not performed for this outcome.
+Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of pulmonary embolism. 
 
 ##### Multivariate Logistic Regression for Patients in Inpatient Setting who Reported Smoking <1 Year Prior to Surgery
 |   | Odds ratio | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
 | Organ/Space SSI  | 2.956319 | (0.564183 - 15.491114) | 0.201067500253 |
-| Pulmonary Embolism  | 2.995781 | (0.300717 - 29.844318) | 0.355289430553 |
 
-Patients in the inpatient setting that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for postoperative organ/space surgical site infection or postoperative pulmonary embolism. 
+Patients in the inpatient setting that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for postoperative organ/space surgical site infection.
+
 
 #### Conclusion
 Since this analysis used data only from the years 2014-2016 in the NSQIP database, there were certain outcomes and comorbidities with 10 or less patients in the inpatient or outpatient setting (for example: postoperative ventilator use, actue renal failure, and ascites) which did not allow for robust analysis. Further research could be done using a larger sample of the NSQIP dataset to both validate the results shown in this paper as well as analyze less common comorbidities and postoperative complications.
