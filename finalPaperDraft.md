@@ -738,6 +738,19 @@ Analysis was also done for specific outcomes that had statistically significant 
 
 Patients in the inpatient setting that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for postoperative organ/space surgical site infection.
 
+##### Multivariate Logistic Regression for Patients with Diabetes
+|   | Odds ratio | 95% Confidence Interval | P-Value |
+| -------------  | ------------- | ------------- | ------------- | 
+| Pneumonia  | 10.567476 | (2.548475  - 43.818967) | **0.00120483037749** |
+| Reintubation | 5.807587 | (1.465882 - 23.008712) | **0.0122149774841** |
+| Urinary Infection | 8.860938 | (8.434066e-01 - 93.094152) | 0.0686587650707 |
+| Deep Vein Thrombosis | 2.934356 | (0.289600 - 29.732181) | 0.289600 | 
+| Ventilator | 11.754673 | (2.812848 - 49.121868) | **0.000771627735559** |
+| Unplanned Readmission | 1.235400 | (0.486742 - 3.135570) | 0.669467527008 |
+
+Significant comorbidities COPD, hypertension, and independent functional health status were included in these calculations. 
+
+##### Multivariate Logistic Regression for Patients with Hypertension
 
 #### Sources
 (1) NSQIP User Guide  
