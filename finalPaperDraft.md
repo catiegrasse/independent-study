@@ -748,9 +748,18 @@ Patients in the inpatient setting that smoked <1 year prior to surgery did not h
 | Ventilator | 11.754673 | (2.812848 - 49.121868) | **0.000771627735559** |
 | Unplanned Readmission | 1.235400 | (0.486742 - 3.135570) | 0.669467527008 |
 
-Significant comorbidities COPD, hypertension, and independent functional health status were included in these calculations. 
+Significant comorbidities COPD, hypertension, and independent functional health status were included in the above calculations. 
 
 ##### Multivariate Logistic Regression for Patients with Hypertension
+|   | Odds ratio | 95% Confidence Interval | P-Value |
+| -------------  | ------------- | ------------- | ------------- | 
+| Superficial SSI  | 33.943539 | (7.796004e-02  - 1.477890e+04) | 0.258479203527 |
+| Renal Insuffiency | 34.167179 | (1.450050e-02 - 8.050730e+04) | 0.37922358841 |
+| Sepsis | 6.716250 | (1.170379 - 38.541371) | **0.0323632941052** |
+| Readmission | 2.606849 | (1.258310 - 5.400625) | **0.00991170574051** |
+| Unplanned Readmission | 2.451024 | (1.075180 - 5.587453) | **0.0326932839153** |
+
+Significant comorbidities diabetes, COPD, smoking <1 year prior to surgery, dyspnea, and ventilator dependence were included in the above calculations.
 
 #### Sources
 (1) NSQIP User Guide  
