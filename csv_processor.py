@@ -15,26 +15,25 @@ import math
 
 READMISSION_REGEX = "^.*READM.*$"
 UNPLANNED_READMISSION_REGEX = "^.*UNPLANNEDREADMISSION.*$"
-REOPERATION_REGEX = "^.*REOP.*$"
-NEGATIVE_REOPERATION_VALUES = ["NULL", "-99", "No"]
-POLYPECTOMY_BIOPSY_CPT = ["31237"]
-OTHER_ESS_CPT = ["31237", "31239", "31240", "31276", "31256", "31267", "31254", "31255", "31287", "31288"]
-SEX_COLUMNS = ["male", "female"]
-RACE_COLUMNS = ["White", "Black or African American", "Unknown/Not Reported"]
-COMORBIDITY_COLUMNS = ["SMOKE", "DYSPNEA", "HYPERMED"]
-OUTCOME_COLUMNS = ["OUPNEUMO", "REINTUB", "URNINFEC", "FAILWEAN"]
 
 
 FILE_NAME= "testingProcessor.csv"
 
 # open files and remove headers
+csv_reader6 = csv.reader(open("filtered_csv6.csv"))
+csv_reader7 = csv.reader(open("filtered_csv7.csv"))
+csv_reader8 = csv.reader(open("filtered_csv8.csv"))
+csv_reader9 = csv.reader(open("filtered_csv9.csv"))
+csv_reader10 = csv.reader(open("filtered_csv10.csv"))
+csv_reader11 = csv.reader(open("filtered_csv11.csv"))
 csv_reader12 = csv.reader(open("filtered_csv12.csv"))
 csv_reader13 = csv.reader(open("filtered_csv13.csv"))
 csv_reader14 = csv.reader(open("filtered_csv14.csv"))
 csv_reader15 = csv.reader(open("filtered_csv15.csv"))
 csv_reader16 = csv.reader(open("filtered_csv16.csv"))
 
-CSV_READER_LIST = [csv_reader12, csv_reader13, csv_reader14, csv_reader15, csv_reader16]
+CSV_READER_LIST = [csv_reader6, csv_reader7, csv_reader8, csv_reader9, csv_reader10, csv_reader11,
+csv_reader12, csv_reader13, csv_reader14, csv_reader15, csv_reader16]
 HEADERSLIST = [[]]*len(CSV_READER_LIST)
 
 READMISSION_LIST = [[]]*len(CSV_READER_LIST)
@@ -73,17 +72,6 @@ with open(FILE_NAME, mode='w') as filter_file:
     for i in range(len(HEADERSLIST)):
         csv_reader = CSV_READER_LIST[i]
         for row in csv_reader:
-            
-            age = row[HEADERSLIST[i].index("AGE")]
-            sex = SEX_COLUMNS.index(row[HEADERSLIST[i].index("SEX")])
-            height = row[HEADERSLIST[i].index("HEIGHT")]
-            weight = row[HEADERSLIST[i].index("WEIGHT")]
-
-            #create an other category
-            if row[HEADERSLIST[i].index("RACE_NEW")] not in RACE_COLUMNS:
-                race = len(RACE_COLUMNS)
-            else:
-                race = RACE_COLUMNS.index(row[HEADERSLIST[i].index("RACE_NEW")])
 
             diabetes = 0
             if row[HEADERSLIST[i].index("DIABETES")] != "NO" and row[HEADERSLIST[i].index("DIABETES")] != "NULL":
@@ -111,7 +99,7 @@ with open(FILE_NAME, mode='w') as filter_file:
 
             cgf = 0
             if row[HEADERSLIST[i].index("HXCHF")] == "Yes":
-                chf = 1
+                cgf = 1
 
             hypertension = 0
             if row[HEADERSLIST[i].index("HYPERMED")] == "Yes":
@@ -216,7 +204,7 @@ with open(FILE_NAME, mode='w') as filter_file:
             if row[HEADERSLIST[i].index("INOUT")] == "Inpatient":
                 inpatient = 1
 
-            newRow = [age, sex, height, weight, race, diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, independent_functional_health_status, not_independent_functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
+            newRow = [diabetes, smoke, dyspnea, ventilator_dependent, ascites, copd, cgf, hypertension, acute_renal_failure, disseminated_cancer, steroid, bleeding_disorder, independent_functional_health_status, not_independent_functional_health_status, pneumonia, reintubation, urinaryInfection, ventilator, unplannedReadmission, readmission,
             supInfec, deepSSI, orgSpaceSSI, woundDisruption, deepVeinThrombosis, renalInsufficiency, pulmonaryEmbolism, cva, cardiacArrest, myocardialInfarction, sepsis, inpatient] 
             csv_writer.writerow(newRow)
 
