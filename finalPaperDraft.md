@@ -1,13 +1,13 @@
 ## Final Write-Up
 
 #### Short Abstract
-Endoscopic sinus surgery is the preferred treatment for chronic rhinosinusitis. This study uses the ACS NSQIP dataset from 2014-2016 to analyze postoperative ESS outcomes for adult patients with specific preoperative health conditions. From this analysis, patients that smoked <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism and postoperative organ/space surgical site infection but did not have statistically significant higher odds ratios for these postoperative outcomes.
+Endoscopic sinus surgery is the preferred treatment for chronic rhinosinusitis. This study uses the ACS NSQIP dataset from 2005-2016 to analyze postoperative ESS outcomes for adult patients with specific preoperative health conditions. From this analysis, patients that smoked <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism and postoperative organ/space surgical site infection but did not have statistically significant higher odds ratios for these postoperative outcomes.
 
 #### Introduction
-Chronic rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009. Endoscopic sinus surgery (ESS) is the preferred treatment for chronic rhinosinusitis, following failure of conservative therapy approaches (4). Since chronic rhinosinusitis affects such a large percentage of the population, this study seeks to examine the effect of preoperative health conditions on postoperative ESS in adult patients. This analysis was done using data from the ACS NSQIP dataset during the years 2014-2016. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2014-2016, the data contained records of 565 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing postoperative outcomes.
+Chronic rhinosinusitis has been rising in the US population since 1991, with 15% of the US population being affected by the disease in 2009. Endoscopic sinus surgery (ESS) is the preferred treatment for chronic rhinosinusitis, following failure of conservative therapy approaches (4). Since chronic rhinosinusitis affects such a large percentage of the population, this study seeks to examine the effect of preoperative health conditions on postoperative ESS in adult patients. This analysis was done using data from the ACS NSQIP dataset during the years 2005-2016. This data contains over 150 demographic and health variables such as preoperative risk factors, intraoperative variables, and 30-day postoperative outcomes for inpatient and outpatient patients undergoing major surgical procedures (1). From 2005-2016, the data contained records of 1224 patients identified as having undergone endoscopic sinus surgery (ESS), approximately 0.02% of the entire dataset (2). Other studies have demonstrated the usefulness of the NSQIP dataset in examining the relationship between a specific health condition and ESS outcomes. A study used NSQIP data from 2005-2013 to analyze ESS outcomes for patients with diabetes mellitus (DM), finding that patients with DM are at a greater risk for for postoperative medical complications following ESS (3). Rather than focus on a specific comorbidity, this study took a broad approach by looking at multiple comorbidities that were included as variables in the dataset and analyzing postoperative outcomes.
 
 #### Experimental Set-Up 
-Patient data collected through the ACS NSQIP database from the years 2014-2016 were used for this analysis. From 2014-2016, 565 patients were identified as having undergone endoscopic sinus surgery. Patients were identified as having undergone endoscopic sinus surgey if their patient record contained any of the ESS CPT codes:  
+Patient data collected through the ACS NSQIP database from the years 2005-2016 were used for this analysis. From 2005-2016, 1224 patients were identified as having undergone endoscopic sinus surgery. Patients were identified as having undergone endoscopic sinus surgey if their patient record contained any of the ESS CPT codes:  
 31237: Nasal/sinus endoscopy, surgical; with biopsy, polypectomy or debridement  
 31239: Nasal/sinus endoscopy, surgical; with dacryocystorhinostomy  
 31240: Nasal/sinus endoscopy, surgical; with concha bullosa resection  
@@ -19,7 +19,7 @@ Patient data collected through the ACS NSQIP database from the years 2014-2016 w
 31287: Nasal/sinus endoscopy, surgical, with spenoidotomy  
 31288: Nasal/sinus endoscopy, surgical, with sphenoidotomy; with removal of tissue from the sphenoid sinus  
 
-Patients that did not contain one of the above CPT codes in their data were filtered out from the study. Further analysis was only performed on this sample of 565 patients.   
+Patients that did not contain one of the above CPT codes in their data were filtered out from the study. Further analysis was only performed on this sample of 1223 patients.   
 
 Statistical analysis was performed using python scripts written for this study. Pandas, an open source python library for data analysis, was used to process the CSV files from the NSQIP database into data structures for statistical analysis (6). Multivariate logistic regression was performed using the statsmodels python library, an open source module for conducting statistical tests, building statistical models, and statistical data exploration (5). All python scripts and modules used for this study can be found in this Github repository: https://github.com/catiegrasse/independent-study  
 
@@ -30,717 +30,736 @@ Significance between proportions of patients with comorbidities was determined u
 The following tables present findings for significant differences between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Diabetes
-| | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
+| | Non-Diabetes (N = 804.0) | Diabetes (N = 117.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Smoke | 20.16% | 20.29% | 0.9801 | 
- | Dyspnea | 3.629% | 7.246% | 0.1543 | 
- | Ventilator Dependent | 0.2016% | 0% | 0.7089 | 
- | COPD | 2.823% | 10.14% | **0.002591** | 
- | Hypertension | 29.03% | 76.81% | **6.036e-15** | 
- | Disseminated Cancer | 2.621% | 1.449% | 0.5575 | 
- | Steroid | 6.25% | 2.899% | 0.266 | 
- | Bleeding Disorder | 1.411% | 2.899% | 0.3552 | 
- | Independent Functional Health Status | 98.39% | 92.75% | **0.003452** | 
- | Totally or Partially Dependent Functional Health Status | 0.6048% | 4.348% | **0.004483** | 
+ | Smoke | 19.9% | 18.8% | 0.7807 | 
+ | Dyspnea | 3.234% | 6.838% | 0.05341 | 
+ | Ventilator Dependent | 0.1244% | 0.8547% | 0.1128 | 
+ | COPD | 2.861% | 6.838% | **0.02584** | 
+ | Hypertension | 27.24% | 75.21% | **8.22e-25** | 
+ | Disseminated Cancer | 2.114% | 0.8547% | 0.3577 | 
+ | Steroid | 5.846% | 4.274% | 0.4912 | 
+ | Bleeding Disorder | 1.119% | 2.564% | 0.1979 | 
+ | Independent Functional Health Status | 98.51% | 93.16% | **0.0002104** | 
+ | Totally or Partially Dependent Functional Health Status | 0.6219% | 4.274% | **0.0003694** | 
  
-Patients with diabetes had a statistically significanct higher incidence of COPD (10.14% vs 2.823%, p < 0.05), hypertension (76.81% vs 29.03%, p < 0.05), and totally or partially dependent functional health status (4.348% vs 0.6048%, p < 0.05).
+Patients with diabetes had a statistically significanct higher incidence of COPD (6.838% vs 2.861%, p < 0.05), hypertension (75.21% vs 27.24%, p < 0.05), and totally or partially dependent functional health status (4.274% vs 0.6219%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients who Smoked <1 Year Prior to Surgery
-| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
+| | Non-Smoke (N = 739.0) | Smoke (N = 182.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.2% | 12.28% | 0.9801 | 
- | Dyspnea | 2.661% | 9.649% | **0.0007423** | 
- | Ventilator Dependent | 0% | 0.8772% | **0.04651** | 
- | COPD | 2.882% | 7.018% | **0.03706** | 
- | Hypertension | 31.04% | 50.0% | **0.0001477** | 
- | Disseminated Cancer | 2.661% | 1.754% | 0.5781 | 
- | Steroid | 6.43% | 3.509% | 0.2347 | 
- | Bleeding Disorder | 1.996% | 0% | 0.1284 | 
- | Independent Functional Health Status | 97.78% | 97.37% | 0.7921 | 
- | Totally or Partially Dependent Functional Health Status | 0.8869% | 1.754% | 0.4195 | 
+ | Diabetes | 12.86% | 12.09% | 0.7807 | 
+ | Dyspnea | 2.706% | 7.692% | **0.001396** | 
+ | Ventilator Dependent | 0% | 1.099% | **0.004333** | 
+ | COPD | 2.436% | 7.143% | **0.00161** | 
+ | Hypertension | 31.39% | 41.21% | **0.01187** | 
+ | Disseminated Cancer | 2.03% | 1.648% | 0.7392 | 
+ | Steroid | 6.089% | 3.846% | 0.2402 | 
+ | Bleeding Disorder | 1.488% | 0.5495% | 0.317 | 
+ | Independent Functional Health Status | 97.97% | 97.25% | 0.5519 | 
+ | Totally or Partially Dependent Functional Health Status | 0.9472% | 1.648% | 0.4136 | 
 
-Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (9.649% vs 2.661%, p < 0.05), ventilator dependencee (0.8772% vs 0%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), COPD (7.018% vs 2.882%, p < 0.05), and hypertension (50% vs 31.04%, p < 0.05). 
+Patients that smoked <1 year prior to surgery had a statistically significant higher incidence of dyspnea (7.692% vs 2.706%, p < 0.05), ventilator dependencee (1.099% vs 0%, p < 0.05), COPD (7.143% vs 2.436%, p < 0.05), and hypertension (41.21% vs 31.39%, p < 0.05). 
 
 ##### Comorbidity Rates in ESS Patients with Hypertension
-| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
+| | Non-Hypertension (N = 614.0) | Hypertension (N = 307.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 4.348% | 26.9% | **6.036e-15** | 
- | Smoke | 15.49% | 28.93% | **0.0001477** | 
- | Dyspnea | 2.174% | 7.614% | **0.001818** | 
- | Ventilator Dependent | 0% | 0.5076% | 0.1713 | 
- | COPD | 1.359% | 8.122% | **5.129e-05** | 
- | Disseminated Cancer | 2.717% | 2.03% | 0.6167 | 
- | Steroid | 5.163% | 7.107% | 0.3478 | 
- | Bleeding Disorder | 1.359% | 2.03% | 0.5433 | 
- | Independent Functional Health Status | 97.83% | 97.46% | 0.7832 | 
- | Totally or Partially Dependent Functional Health Status | 0.5435% | 2.03% | 0.1003 | 
+ | Diabetes | 4.723% | 28.66% | **8.22e-25** | 
+ | Smoke | 17.43% | 24.43% | **0.01187** | 
+ | Dyspnea | 2.443% | 6.189% | **0.004482** | 
+ | Ventilator Dependent | 0% | 0.6515% | **0.04527** | 
+ | COPD | 1.954% | 6.189% | **0.0007822** | 
+ | Disseminated Cancer | 2.28% | 1.303% | 0.3125 | 
+ | Steroid | 4.886% | 7.166% | 0.1576 | 
+ | Bleeding Disorder | 0.9772% | 1.954% | 0.2176 | 
+ | Independent Functional Health Status | 98.21% | 97.07% | 0.2631 | 
+ | Totally or Partially Dependent Functional Health Status | 0.8143% | 1.629% | 0.2609 | 
  
-Patients with hypertension had a statistically significant higher incidence of diabetes (26.9% vs 4.348%, p < 0.05), smoking <1 year prior to surgery (28.93% vs 15.49%, p < 0.05), dyspnea (7.614% vs 2.174%, p < 0.05), and COPD (8.122% vs 1.359%, p < 0.05).
+Patients with hypertension had a statistically significant higher incidence of diabetes (28.66% vs 4.723%, p < 0.05), smoking <1 year prior to surgery (24.43% vs 17.43%, p < 0.05), dyspnea (6.189% vs 2.443%, p < 0.05), ventilator dependence (0.6515% vs 0%, p < 0.05) and COPD (6.189% vs 1.954%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Dyspnea
-| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
+| | Non-Dyspnea (N = 887.0) | Dyspnea (N = 34.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.81% | 21.74% | 0.1543 | 
- | Smoke | 19.0% | 47.83% | **0.0007423** | 
- | Ventilator Dependent | 0.1845% | 0% | 0.8366 | 
- | COPD | 2.583% | 30.43% | **4.658e-12** | 
- | Hypertension | 33.58% | 65.22% | **0.001818** | 
- | Disseminated Cancer | 2.214% | 8.696% | 0.05017 | 
- | Steroid | 5.72% | 8.696% | 0.5511 | 
- | Bleeding Disorder | 1.292% | 8.696% | **0.005473** | 
- | Independent Functional Health Status | 97.6% | 100.0% | 0.4524 | 
- | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6119 | 
+ | Diabetes | 12.29% | 23.53% | 0.05341 | 
+ | Smoke | 18.94% | 41.18% | **0.001396** | 
+ | Ventilator Dependent | 0.2255% | 0% | 0.7816 | 
+ | COPD | 2.368% | 29.41% | **9.418e-18** | 
+ | Hypertension | 32.47% | 55.88% | **0.004482** | 
+ | Disseminated Cancer | 1.804% | 5.882% | 0.0918 | 
+ | Steroid | 5.637% | 5.882% | 0.9515 | 
+ | Bleeding Disorder | 1.015% | 8.824% | **8.133e-05** | 
+ | Independent Functional Health Status | 97.86% | 97.06% | 0.7537 | 
+ | Totally or Partially Dependent Functional Health Status | 1.015% | 2.941% | 0.2874 | 
  
- Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (47.83% vs 19.0%, p < 0.05), COPD (30.43% vs 2.583%, p < 0.05), hypertension (65.22% vs 33.58%), and having a bleeding disorder (8.696% vs 1.292%). 
+ Patients with dyspnea had a statistically significant higher incidence of smoking <1 year prior to surgery (41.18% vs 18.94%, p < 0.05), COPD (29.41% vs 2.368%, p < 0.05), hypertension (55.88% vs 32.47%), and having a bleeding disorder (8.824% vs 1.015%). 
 
 ##### Comorbidity Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
-| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
+| | Non-COPD (N = 890.0) | COPD (N = 31.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.4% | 33.33% | **0.002591** | 
- | Smoke | 19.49% | 38.1% | **0.03706** | 
- | Dyspnea | 2.941% | 33.33% | **4.658e-12** | 
- | Ventilator Dependent | 0.1838% | 0% | 0.8441 | 
- | Hypertension | 33.27% | 76.19% | **5.129e-05** | 
- | Disseminated Cancer | 2.39% | 4.762% | 0.4926 | 
- | Steroid | 5.515% | 14.29% | 0.09261 | 
- | Bleeding Disorder | 1.287% | 9.524% | **0.003093** | 
- | Independent Functional Health Status | 97.79% | 95.24% | 0.4433 | 
- | Totally or Partially Dependent Functional Health Status | 1.103% | 0% | 0.6285 | 
+ | Diabetes | 12.25% | 25.81% | **0.02584** | 
+ | Smoke | 18.99% | 41.94% | **0.00161** | 
+ | Dyspnea | 2.697% | 32.26% | **9.418e-18** | 
+ | Ventilator Dependent | 0.2247% | 0% | 0.7916 | 
+ | Hypertension | 32.36% | 61.29% | **0.0007822** | 
+ | Disseminated Cancer | 1.91% | 3.226% | 0.6029 | 
+ | Steroid | 5.393% | 12.9% | 0.07493 | 
+ | Bleeding Disorder | 1.011% | 9.677% | **2.88e-05** | 
+ | Independent Functional Health Status | 97.87% | 96.77% | 0.682 | 
+ | Totally or Partially Dependent Functional Health Status | 1.011% | 3.226% | 0.2422 | 
  
-Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (33.33% vs 11.4%, p < 0.05), smoking <1 year prior to surgery (38.1% vs 19.49%, p < 0.05), dyspnea (33.33% vs 2.941%, p < 0.05), hypertension (76.19% vs 33.27%), and having a bleeding disorder (9.524% vs 1.287%).
+Patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of diabetes (25.81% vs 12.25%, p < 0.05), smoking <1 year prior to surgery (41.94% vs 18.99%, p < 0.05), dyspnea (32.26% vs 2.697%, p < 0.05), and hypertension (61.29% vs 32.36%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Congestive Heart Failure (CGF)
-| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
+| | Non-CGF (N = 915.0) | CGF (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.1% | 33.33% | 0.2626 | 
- | Smoke | 20.11% | 33.33% | 0.5691 | 
- | Dyspnea | 4.093% | 0% | 0.7205 | 
- | Ventilator Dependent | 0.1779% | 0% | 0.9417 | 
- | COPD | 3.381% | 66.67% | **7.516e-09** | 
- | Hypertension | 34.52% | 100.0% | **0.01762** | 
- | Disseminated Cancer | 2.491% | 0% | 0.7819 | 
- | Steroid | 5.872% | 0% | 0.6654 | 
- | Bleeding Disorder | 1.601% | 0% | 0.8251 | 
- | Independent Functional Health Status | 97.86% | 66.67% | **0.000325** | 
- | Totally or Partially Dependent Functional Health Status | 0.8897% | 33.33% | **4.56e-08** | 
+ | Diabetes | 12.57% | 33.33% | 0.1279 | 
+ | Smoke | 19.67% | 33.33% | 0.4022 | 
+ | Dyspnea | 3.607% | 16.67% | 0.09082 | 
+ | Ventilator Dependent | 0.2186% | 0% | 0.9087 | 
+ | COPD | 3.169% | 33.33% | **4.437e-05** | 
+ | Hypertension | 33.01% | 83.33% | **0.009145** | 
+ | Disseminated Cancer | 1.967% | 0% | 0.7286 | 
+ | Steroid | 5.683% | 0% | 0.5477 | 
+ | Bleeding Disorder | 1.311% | 0% | 0.7777 | 
+ | Independent Functional Health Status | 98.03% | 66.67% | **1.487e-07** | 
+ | Totally or Partially Dependent Functional Health Status | 0.8743% | 33.33% | **2.057e-14** | 
  
-Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (66.67% vs 3.381%, p < 0.05), hypertension (100.0% vs 34.52%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8897%, p < 0.05). 
+Patients with congestive heart failure (CGF) had a statistically significant higher incidence of COPD (33.33% vs 3.169%, p < 0.05), hypertension (83.33% vs 33.01%, p < 0.05), and totally or partially dependent functional health status (33.33% vs 0.8743%, p < 0.05). 
 
 ##### Comorbidity Rates in ESS Patients with Disseminated Cancer
-| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
+| | Non-Disseminated Cancer (N = 903.0) | Disseminated Cancer (N = 18.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.34% | 7.143% | 0.5575 | 
- | Smoke | 20.33% | 14.29% | 0.5781 | 
- | Dyspnea | 3.811% | 14.29% | 0.05017 | 
- | Ventilator Dependent | 0.1815% | 0% | 0.8732 | 
- | COPD | 3.63% | 7.143% | 0.4926 | 
- | Hypertension | 35.03% | 28.57% | 0.6167 | 
- | Steroid | 5.445% | 21.43% | **0.01179** | 
- | Bleeding Disorder | 1.089% | 21.43% | **1.94e-09** | 
- | Independent Functional Health Status | 97.64% | 100.0% | 0.5609 | 
- | Totally or Partially Dependent Functional Health Status | 1.089% | 0% | 0.6947 | 
- 
-Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (21.43% vs 5.445%, p < 0.05) and having a bleeding disorder (21.43% vs 5.445%, p < 0.05).
+ | Diabetes | 12.85% | 5.556% | 0.3577 | 
+ | Smoke | 19.82% | 16.67% | 0.7392 | 
+ | Dyspnea | 3.544% | 11.11% | 0.0918 | 
+ | Ventilator Dependent | 0.2215% | 0% | 0.8416 | 
+ | COPD | 3.322% | 5.556% | 0.6029 | 
+ | Hypertension | 33.55% | 22.22% | 0.3125 | 
+ | Steroid | 5.316% | 22.22% | **0.00209** | 
+ | Bleeding Disorder | 0.9967% | 16.67% | **6.435e-09** | 
+ | Independent Functional Health Status | 97.79% | 100.0% | 0.5232 | 
+ | Totally or Partially Dependent Functional Health Status | 1.107% | 0% | 0.6535 | 
+
+ Patients with disseminated cancer had a statistically significant higher incidence of preoperative steroid use (22.22% vs 5.316%, p < 0.05) and having a bleeding disorder (16.67% vs 0.9967%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
-| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
+| | Non-Steroid (N = 869.0) | Steroid (N = 52.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.59% | 6.061% | 0.266 | 
- | Smoke | 20.68% | 12.12% | 0.2347 | 
- | Dyspnea | 3.947% | 6.061% | 0.5511 | 
- | Ventilator Dependent | 0.188% | 0% | 0.8031 | 
- | COPD | 3.383% | 9.091% | 0.09261 | 
- | Hypertension | 34.4% | 42.42% | 0.3478 | 
- | Disseminated Cancer | 2.068% | 9.091% | **0.01179** | 
- | Bleeding Disorder | 1.128% | 9.091% | **0.0003921** | 
- | Independent Functional Health Status | 97.74% | 96.97% | 0.7733 | 
- | Totally or Partially Dependent Functional Health Status | 0.9398% | 3.03% | 0.2556 | 
+ | Diabetes | 12.89% | 9.615% | 0.4912 | 
+ | Smoke | 20.14% | 13.46% | 0.2402 | 
+ | Dyspnea | 3.682% | 3.846% | 0.9515 | 
+ | Ventilator Dependent | 0.2301% | 0% | 0.7291 | 
+ | COPD | 3.107% | 7.692% | 0.07493 | 
+ | Hypertension | 32.8% | 42.31% | 0.1576 | 
+ | Disseminated Cancer | 1.611% | 7.692% | **0.00209** | 
+ | Bleeding Disorder | 1.036% | 5.769% | **0.003457** | 
+ | Independent Functional Health Status | 97.93% | 96.15% | 0.3937 | 
+ | Totally or Partially Dependent Functional Health Status | 0.9206% | 3.846% | **0.048** | 
  
-Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (9.091% vs 2.068%, p < 0.05) and having a bleeding disorder (9.091% vs 1.128%, p < 0.05).
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of disseminated cancer (7.692% vs 1.611%, p < 0.05), having a bleeding disorder (5.769% vs 1.036%, p < 0.05), and totally or partially dependent functional health status (3.846% vs 0.9206%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with Bleeding Disorder
-| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
+| | Non-Bleeding Disorder (N = 909.0) | Bleeding Disorder (N = 12.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 12.05% | 22.22% | 0.3552 | 
- | Smoke | 20.5% | 0% | 0.1284 | 
- | Dyspnea | 3.777% | 22.22% | **0.005473** | 
- | Ventilator Dependent | 0.1799% | 0% | 0.8987 | 
- | COPD | 3.417% | 22.22% | **0.003093** | 
- | Hypertension | 34.71% | 44.44% | 0.5433 | 
- | Disseminated Cancer | 1.978% | 33.33% | **1.94e-09** | 
- | Steroid | 5.396% | 33.33% | **0.0003921** | 
- | Independent Functional Health Status | 97.84% | 88.89% | 0.07556 | 
- | Totally or Partially Dependent Functional Health Status | 1.079% | 0% | 0.754 | 
- 
-Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (22.22% vs 3.777%, p < 0.05), COPD (22.22% vs 3.417%, p < 0.05), disseminated cancer (33.33% vs 1.978%, p < 0.05), and steroid use <30 days prior to surgery (33.33% vs 5.396%, p < 0.05).  
+ | Diabetes | 12.54% | 25.0% | 0.1979 | 
+ | Smoke | 19.91% | 8.333% | 0.317 | 
+ | Dyspnea | 3.41% | 25.0% | **8.133e-05** | 
+ | Ventilator Dependent | 0.22% | 0% | 0.8708 | 
+ | COPD | 3.08% | 25.0% | **2.88e-05** | 
+ | Hypertension | 33.11% | 50.0% | 0.2176 | 
+ | Disseminated Cancer | 1.65% | 25.0% | **6.435e-09** | 
+ | Steroid | 5.391% | 25.0% | **0.003457** | 
+ | Independent Functional Health Status | 97.91% | 91.67% | 0.1405 | 
+ | Totally or Partially Dependent Functional Health Status | 1.1% | 0% | 0.7149 | 
 
-In this sample, 552 patients had an independent functional health status, 6 patients had a totally or partially dependent functional health status, and 7 patients had an unknown functional health status. 
+Patients with a bleeding disorder had a statistically significant higher incidence of dyspnea (25.0% vs 3.41%, p < 0.05), COPD (25.0% vs 3.08%, p < 0.05), disseminated cancer (25.0% vs 1.65%, p < 0.05), and steroid use <30 days prior to surgery (25.0% vs 5.391%, p < 0.05).  
 
 ##### Comorbidity Rates in ESS Patients with an Independent Functional Health Status
-| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 20.0) | Independent Functional Health Status (N = 901.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 38.46% | 11.59% | **0.003452** | 
- | Smoke | 23.08% | 20.11% | 0.7921 | 
- | Dyspnea | 0% | 4.167% | 0.4524 | 
- | Ventilator Dependent | 0% | 0.1812% | 0.8779 | 
- | COPD | 7.692% | 3.623% | 0.4433 | 
- | Hypertension | 38.46% | 34.78% | 0.7832 | 
- | Disseminated Cancer | 0% | 2.536% | 0.5609 | 
- | Steroid | 7.692% | 5.797% | 0.7733 | 
- | Bleeding Disorder | 7.692% | 1.449% | 0.07556 | 
- | Totally or Partially Dependent Functional Health Status | 46.15% | 0% | **6.007e-58** | 
+ | Diabetes | 40.0% | 12.1% | **0.0002104** | 
+ | Smoke | 25.0% | 19.64% | 0.5519 | 
+ | Dyspnea | 5.0% | 3.663% | 0.7537 | 
+ | Ventilator Dependent | 5.0% | 0.111% | **3.388e-06** | 
+ | COPD | 5.0% | 3.33% | 0.682 | 
+ | Hypertension | 45.0% | 33.07% | 0.2631 | 
+ | Disseminated Cancer | 0% | 1.998% | 0.5232 | 
+ | Steroid | 10.0% | 5.549% | 0.3937 | 
+ | Bleeding Disorder | 5.0% | 1.221% | 0.1405 | 
+ | Totally or Partially Dependent Functional Health Status | 50.0% | 0% | **4.711e-101** | 
  
- Patients with an independent functional health status had a statistically significant lower incidence of diabetes (11.59% vs 38.46%, p < 0.05).
+ Patients with an independent functional health status had a statistically significant lower incidence of diabetes (12.1% vs 40.0%, p < 0.05).
 
 ##### Comorbidity Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
-| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 911.0) | Totally or Partially Dependent Functional Health Status (N = 10.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Diabetes | 11.81% | 50.0% | **0.004483** | 
- | Smoke | 20.04% | 33.33% | 0.4195 | 
- | Dyspnea | 4.114% | 0% | 0.6119 | 
- | Ventilator Dependent | 0.1789% | 0% | 0.9174 | 
- | COPD | 3.757% | 0% | 0.6285 | 
- | Hypertension | 34.53% | 66.67% | 0.1003 | 
- | Disseminated Cancer | 2.504% | 0% | 0.6947 | 
- | Steroid | 5.725% | 16.67% | 0.2556 | 
- | Bleeding Disorder | 1.61% | 0% | 0.754 | 
+ | Diabetes | 12.29% | 50.0% | **0.0003694** | 
+ | Smoke | 19.65% | 30.0% | 0.4136 | 
+ | Dyspnea | 3.622% | 10.0% | 0.2874 | 
+ | Ventilator Dependent | 0.2195% | 0% | 0.8821 | 
+ | COPD | 3.293% | 10.0% | 0.2422 | 
+ | Hypertension | 33.15% | 50.0% | 0.2609 | 
+ | Disseminated Cancer | 1.976% | 0% | 0.6535 | 
+ | Steroid | 5.488% | 20.0% | **0.048** | 
+ | Bleeding Disorder | 1.317% | 0% | 0.7149 | 
+ | Independent Functional Health Status | 98.9% | 0% | **4.711e-101** | 
  
-Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 11.81%, p < 0.05)
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of diabetes (50.0% vs 12.29%, p < 0.05)
 
 #### Postoperative Complications
  
 The following tables present findings for significant differences in postoperative complications between populations with and without a specific health condition that underwent ESS. P-values were generated using two-sample z-test for the difference of proportions. Bolded values indicate that the results were statistically significant (p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Diabetes
-| | Non-Diabetes (N = 496.0) | Diabetes (N = 69.0) | p-value | 
+| | Non-Diabetes (N = 804.0) | Diabetes (N = 117.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.2016% | 0% | 0.7089 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.411% | 2.899% | 0.3552 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 0.8065% | 5.797% | **0.001011** | 
- | Reintubation | 0.4032% | 4.348% | **0.001045** | 
- | Urinary Infection | 0.2016% | 0% | 0.7089 | 
- | Deep Vein Thrombosis | 0.2016% | 1.449% | 0.102 | 
- | Renal Insufficiency | 0.2016% | 0% | 0.7089 | 
- | Pulmonary Embolism | 0.4032% | 0% | 0.5972 | 
- | Ventilator | 0.6048% | 2.899% | 0.05664 | 
- | Acute Renal Failure | 0.2016% | 0% | 0.7089 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2488% | 0% | 0.5891 | 
+ | Deep SSI | 0.1244% | 0% | 0.7027 | 
+ | Organ/Space SSI | 0.8706% | 1.709% | 0.3888 | 
+ | Wound Disruption | 0.2488% | 0% | 0.5891 | 
+ | Pneumonia | 0.4975% | 5.983% | **3.34e-07** | 
+ | Reintubation | 0.6219% | 5.128% | **2.761e-05** | 
+ | Urinary Infection | 0.2488% | 1.709% | **0.02478** | 
+ | Deep Vein Thrombosis | 0.2488% | 1.709% | **0.02478** | 
+ | Renal Insufficiency | 0.1244% | 0.8547% | 0.1128 | 
+ | Pulmonary Embolism | 0.4975% | 0% | 0.4445 | 
+ | Ventilator | 0.7463% | 5.128% | **9.414e-05** | 
+ | Acute Renal Failure | 0.1244% | 0% | 0.7027 | 
+ | CVA with Neurologic Deficit | 0.2488% | 0% | 0.5891 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 1.008% | 0% | 0.4022 | 
- | Readmission | 4.234% | 5.797% | 0.5541 | 
- | Unplanned Readmission | 3.831% | 5.797% | 0.4386 | 
+ | Sepsis | 0.7463% | 1.709% | 0.2942 | 
+ | Readmission | 3.234% | 6.838% | 0.05341 | 
+ | Unplanned Readmission | 2.736% | 6.838% | **0.01955** |  
  
- Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.797% vs 0.8065%, p < 0.05) and postoperative reintubation (4.348% vs 0.4032%, p < 0.05).
+ Patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (5.983% vs 0.4975%, p < 0.05), postoperative reintubation (5.128% vs 0.6219%, p < 0.05), postoperative urinary infection (1.709% vs 0.2488%, p < 0.05), postoperative deep vein thrombosis (1.709% vs 0.2488%, p < 0.05), postoperative ventilator use (5.128% vs 0.7643%, p < 0.05), and unplanned readmission (6.838% vs 2.736%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery
-| | Non-Smoke (N = 451.0) | Smoke (N = 114.0) | p-value | 
+| | Non-Smoke (N = 739.0) | Smoke (N = 182.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.2217% | 0% | 0.6148 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 0.8869% | 4.386% | **0.007677** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.552% | 0.8772% | 0.5858 | 
- | Reintubation | 0.8869% | 0.8772% | 0.9921 | 
- | Urinary Infection | 0.2217% | 0% | 0.6148 | 
- | Deep Vein Thrombosis | 0.2217% | 0.8772% | 0.2924 | 
- | Renal Insufficiency | 0.2217% | 0% | 0.6148 | 
- | Pulmonary Embolism | 0% | 1.754% | **0.004834** | 
- | Ventilator | 0.6652% | 1.754% | 0.2673 | 
- | Acute Renal Failure | 0.2217% | 0% | 0.6148 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2706% | 0% | 0.4823 | 
+ | Deep SSI | 0.1353% | 0% | 0.6195 | 
+ | Organ/Space SSI | 0.5413% | 2.747% | **0.006728** | 
+ | Wound Disruption | 0.2706% | 0% | 0.4823 | 
+ | Pneumonia | 1.353% | 0.5495% | 0.3713 | 
+ | Reintubation | 1.083% | 1.648% | 0.5291 | 
+ | Urinary Infection | 0.5413% | 0% | 0.3199 | 
+ | Deep Vein Thrombosis | 0.2706% | 1.099% | 0.128 | 
+ | Renal Insufficiency | 0.2706% | 0% | 0.4823 | 
+ | Pulmonary Embolism | 0.2706% | 1.099% | 0.128 | 
+ | Ventilator | 1.083% | 2.198% | 0.2346 | 
+ | Acute Renal Failure | 0.1353% | 0% | 0.6195 | 
+ | CVA with Neurologic Deficit | 0.1353% | 0.5495% | 0.2823 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.6652% | 1.754% | 0.2673 | 
- | Readmission | 3.769% | 7.018% | 0.1319 | 
- | Unplanned Readmission | 3.548% | 6.14% | 0.2107 | 
+ | Sepsis | 0.8119% | 1.099% | 0.7086 | 
+ | Readmission | 3.383% | 4.945% | 0.3168 | 
+ | Unplanned Readmission | 2.977% | 4.396% | 0.3342 | 
  
- Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (4.386% vs 0.8869%, p < 0.05) and postoperative pulmonary embolism (1.754% vs 0%, p < 0.05).
+ Patients that smoked <1 year prior to surgery had a higher incidence of postoperative organ/space surgical site infection (SSI) (2.747% vs 0.5413%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Hypertension
-| | Non-Hypertension (N = 368.0) | Hypertension (N = 197.0) | p-value | 
+ | | Non-Hypertension (N = 614.0) | Hypertension (N = 307.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0% | 0.5076% | 0.1713 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.087% | 2.538% | 0.1892 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 0.8152% | 2.538% | 0.09858 | 
- | Reintubation | 0.5435% | 1.523% | 0.2362 | 
- | Urinary Infection | 0.2717% | 0% | 0.464 | 
- | Deep Vein Thrombosis | 0.2717% | 0.5076% | 0.6528 | 
- | Renal Insufficiency | 0% | 0.5076% | 0.1713 | 
- | Pulmonary Embolism | 0.2717% | 0.5076% | 0.6528 | 
- | Ventilator | 1.087% | 0.5076% | 0.4835 | 
- | Acute Renal Failure | 0% | 0.5076% | 0.1713 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0% | 0.6515% | **0.04527** | 
+ | Deep SSI | 0.1629% | 0% | 0.4793 | 
+ | Organ/Space SSI | 0.6515% | 1.629% | 0.1553 | 
+ | Wound Disruption | 0.1629% | 0.3257% | 0.6167 | 
+ | Pneumonia | 0.8143% | 1.954% | 0.1333 | 
+ | Reintubation | 0.8143% | 1.954% | 0.1333 | 
+ | Urinary Infection | 0.3257% | 0.6515% | 0.4785 | 
+ | Deep Vein Thrombosis | 0.3257% | 0.6515% | 0.4785 | 
+ | Renal Insufficiency | 0% | 0.6515% | **0.04527** | 
+ | Pulmonary Embolism | 0.4886% | 0.3257% | 0.7231 | 
+ | Ventilator | 1.303% | 1.303% | 1.0 | 
+ | Acute Renal Failure | 0% | 0.3257% | 0.1571 | 
+ | CVA with Neurologic Deficit | 0.1629% | 0.3257% | 0.6167 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.2717% | 2.03% | **0.03341** | 
- | Readmission | 2.717% | 7.614% | **0.006991** | 
- | Unplanned Readmission | 2.717% | 6.599% | **0.02608** | 
- 
-Patients that had hypertension had a statistically significant higher incidence of postoperative sepsis (2.03% vs 0.2717%, p < 0.05), postoperative readmission (7.614% vs 2.717%, p < 0.05), and unplanned postoperative readmission (6.599% vs 2.717%, p < 0.05).
+ | Sepsis | 0.3257% | 1.954% | **0.01204** | 
+ | Readmission | 2.117% | 6.84% | **0.000339** | 
+ | Unplanned Readmission | 1.954% | 5.863% | **0.001632** | 
+
+Patients that had hypertension had a statistically significant higher incidence of postoperative renal insufficiency (0.6515% vs 0%, p < 0.05), postoperative sepsis (1.954% vs 0.3257%, p < 0.05), postoperative readmission (6.84% vs 2.117%, p < 0.05), and unplanned postoperative readmission (5.863% vs 1.954%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Dyspnea
-| | Non-Dyspnea (N = 542.0) | Dyspnea (N = 23.0) | p-value | 
+| | Non-Dyspnea (N = 887.0) | Dyspnea (N = 34.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1845% | 0% | 0.8366 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.661% | 0% | 0.5333 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.476% | 0% | 0.5573 | 
- | Reintubation | 0.9225% | 0% | 0.6436 | 
- | Urinary Infection | 0.1845% | 0% | 0.8366 | 
- | Deep Vein Thrombosis | 0.369% | 0% | 0.7704 | 
- | Renal Insufficiency | 0.1845% | 0% | 0.8366 | 
- | Pulmonary Embolism | 0.369% | 0% | 0.7704 | 
- | Ventilator | 0.9225% | 0% | 0.6436 | 
- | Acute Renal Failure | 0% | 4.348% | **1.182e-06** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2255% | 0% | 0.7816 | 
+ | Deep SSI | 0.1127% | 0% | 0.8447 | 
+ | Organ/Space SSI | 1.015% | 0% | 0.555 | 
+ | Wound Disruption | 0.2255% | 0% | 0.7816 | 
+ | Pneumonia | 1.24% | 0% | 0.5136 | 
+ | Reintubation | 1.24% | 0% | 0.5136 | 
+ | Urinary Infection | 0.3382% | 2.941% | **0.02351** | 
+ | Deep Vein Thrombosis | 0.451% | 0% | 0.6947 | 
+ | Renal Insufficiency | 0.2255% | 0% | 0.7816 | 
+ | Pulmonary Embolism | 0.451% | 0% | 0.6947 | 
+ | Ventilator | 1.353% | 0% | 0.4948 | 
+ | Acute Renal Failure | 0% | 2.941% | **3.214e-07** | 
+ | CVA with Neurologic Deficit | 0.2255% | 0% | 0.7816 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.9225% | 0% | 0.6436 | 
- | Readmission | 4.428% | 4.348% | 0.9854 | 
- | Unplanned Readmission | 4.059% | 4.348% | 0.9453 | 
- 
- Patients that had dyspnea had a statistically significant higher incidence of postoperative acute renal failure (4.348% vs 0%, p < 0.05).
+ | Sepsis | 0.9019% | 0% | 0.5781 | 
+ | Readmission | 3.608% | 5.882% | 0.49 | 
+ | Unplanned Readmission | 3.157% | 5.882% | 0.3796 | 
+
+ Patients that had dyspnea had a statistically significant higher incidence of postoperative urinary infection (2.941% vs 0.3382%, p < 0.05) and postoperative acute renal failure (2.941% vs 0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD)
-| | Non-COPD (N = 544.0) | COPD (N = 21.0) | p-value | 
-| ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1838% | 0% | 0.8441 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.471% | 4.762% | 0.2372 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.287% | 4.762% | 0.186 | 
- | Reintubation | 0.7353% | 4.762% | 0.0532 | 
- | Urinary Infection | 0.1838% | 0% | 0.8441 | 
- | Deep Vein Thrombosis | 0.1838% | 4.762% | **0.000528** | 
- | Renal Insufficiency | 0% | 4.762% | **3.502e-07** | 
- | Pulmonary Embolism | 0.3676% | 0% | 0.7807 | 
- | Ventilator | 0.7353% | 4.762% | 0.0532 | 
- | Acute Renal Failure | 0% | 4.762% | **3.502e-07** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
- | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.5515% | 9.524% | **1.649e-05** | 
- | Readmission | 4.044% | 14.29% | **0.02513** | 
- | Unplanned Readmission | 3.676% | 14.29% | **0.01577** | 
 
-Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (4.762% vs 0.1838%, p < 0.05), postoperative renal insuffiency (4.762% vs 0%, p < 0.05), postoperative acute renal failure (4.762% vs 0%, p < 0.05), sepsis (9.524% vs 0.5515%, p < 0.05), postoperative readmission (14.29% vs 4.044%, p < 0.05), and unplanned postoperative readmission (14.29% vs 3.676%, p < 0.05).
+| | Non-COPD (N = 890.0) | COPD (N = 31.0) | p-value | 
+| ------------- | ------------- | ------------- | ------------- |
+ | Superficial SSI | 0.2247% | 0% | 0.7916 | 
+ | Deep SSI | 0.1124% | 0% | 0.8519 | 
+ | Organ/Space SSI | 0.8989% | 3.226% | 0.1954 | 
+ | Wound Disruption | 0.2247% | 0% | 0.7916 | 
+ | Pneumonia | 1.124% | 3.226% | 0.2895 | 
+ | Reintubation | 1.124% | 3.226% | 0.2895 | 
+ | Urinary Infection | 0.3371% | 3.226% | **0.0162** | 
+ | Deep Vein Thrombosis | 0.3371% | 3.226% | **0.0162** | 
+ | Renal Insufficiency | 0.1124% | 3.226% | **0.0002514** | 
+ | Pulmonary Embolism | 0.4494% | 0% | 0.7083 | 
+ | Ventilator | 1.236% | 3.226% | 0.3369 | 
+ | Acute Renal Failure | 0% | 3.226% | **8.274e-08** | 
+ | CVA with Neurologic Deficit | 0.2247% | 0% | 0.7916 | 
+ | Myocardial Infarction | 0% | 0% | - | 
+ | Sepsis | 0.6742% | 6.452% | **0.0006551** | 
+ | Readmission | 3.483% | 9.677% | 0.07217 | 
+ | Unplanned Readmission | 3.034% | 9.677% | **0.04052** | 
+
+Patients that had chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative urinary infection (3.226% vs 0.3371%, p < 0.05), postoperative deep vein thrombosis (3.226% vs 0.3371%, p < 0.05), postoperative renal insuffiency (3.226% vs 0.1124%, p < 0.05), postoperative acute renal failure (3.226% vs 0%, p < 0.05), sepsis (6.452% vs 0.6742%, p < 0.05), and unplanned postoperative readmission (9.677% vs 3.034%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF)
-| | Non-CGF (N = 562.0) | CGF (N = 3.0) | p-value | 
+| | Non-CGF (N = 915.0) | CGF (N = 6.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1779% | 0% | 0.9417 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.601% | 0% | 0.8251 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.246% | 33.33% | **2.711e-06** | 
- | Reintubation | 0.7117% | 33.33% | **1.777e-09** | 
- | Urinary Infection | 0.1779% | 0% | 0.9417 | 
- | Deep Vein Thrombosis | 0.3559% | 0% | 0.9176 | 
- | Renal Insufficiency | 0.1779% | 0% | 0.9417 | 
- | Pulmonary Embolism | 0.3559% | 0% | 0.9176 | 
- | Ventilator | 0.8897% | 0% | 0.8697 | 
- | Acute Renal Failure | 0.1779% | 0% | 0.9417 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2186% | 0% | 0.9087 | 
+ | Deep SSI | 0.1093% | 0% | 0.9354 | 
+ | Organ/Space SSI | 0.9836% | 0% | 0.8071 | 
+ | Wound Disruption | 0.2186% | 0% | 0.9087 | 
+ | Pneumonia | 1.093% | 16.67% | **0.0004649** | 
+ | Reintubation | 1.093% | 16.67% | **0.0004649** | 
+ | Urinary Infection | 0.4372% | 0% | 0.8711 | 
+ | Deep Vein Thrombosis | 0.4372% | 0% | 0.8711 | 
+ | Renal Insufficiency | 0.2186% | 0% | 0.9087 | 
+ | Pulmonary Embolism | 0.4372% | 0% | 0.8711 | 
+ | Ventilator | 1.311% | 0% | 0.7777 | 
+ | Acute Renal Failure | 0.1093% | 0% | 0.9354 | 
+ | CVA with Neurologic Deficit | 0.2186% | 0% | 0.9087 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8897% | 0% | 0.8697 | 
- | Readmission | 4.448% | 0% | 0.7086 | 
- | Unplanned Readmission | 4.093% | 0% | 0.7205 | 
- 
- Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (33.33% vs 1.246%, p < 0.05) and postoperative reintubation (33.33% vs 0.7117%, p < 0.05).
+ | Sepsis | 0.8743% | 0% | 0.8181 | 
+ | Readmission | 3.716% | 0% | 0.6304 | 
+ | Unplanned Readmission | 3.279% | 0% | 0.652 | 
+
+ Patients that had congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (16.67% vs 1.093%, p < 0.05) and postoperative reintubation (16.67% vs 1.093%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer
-| | Non-Disseminated Cancer (N = 551.0) | Disseminated Cancer (N = 14.0) | p-value | 
+| | Non-Disseminated Cancer (N = 903.0) | Disseminated Cancer (N = 18.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1815% | 0% | 0.8732 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.633% | 0% | 0.6298 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.27% | 7.143% | 0.06627 | 
- | Reintubation | 0.9074% | 0% | 0.7203 | 
- | Urinary Infection | 0.1815% | 0% | 0.8732 | 
- | Deep Vein Thrombosis | 0.363% | 0% | 0.8213 | 
- | Renal Insufficiency | 0.1815% | 0% | 0.8732 | 
- | Pulmonary Embolism | 0.363% | 0% | 0.8213 | 
- | Ventilator | 0.726% | 7.143% | **0.01135** | 
- | Acute Renal Failure | 0% | 7.143% | **3.406e-10** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2215% | 0% | 0.8416 | 
+ | Deep SSI | 0.1107% | 0% | 0.8877 | 
+ | Organ/Space SSI | 0.9967% | 0% | 0.6704 | 
+ | Wound Disruption | 0.2215% | 0% | 0.8416 | 
+ | Pneumonia | 1.107% | 5.556% | 0.0854 | 
+ | Reintubation | 1.218% | 0% | 0.6376 | 
+ | Urinary Infection | 0.443% | 0% | 0.7772 | 
+ | Deep Vein Thrombosis | 0.443% | 0% | 0.7772 | 
+ | Renal Insufficiency | 0.2215% | 0% | 0.8416 | 
+ | Pulmonary Embolism | 0.443% | 0% | 0.7772 | 
+ | Ventilator | 1.218% | 5.556% | 0.1081 | 
+ | Acute Renal Failure | 0% | 5.556% | **1.374e-12** | 
+ | CVA with Neurologic Deficit | 0.2215% | 0% | 0.8416 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.9074% | 0% | 0.7203 | 
- | Readmission | 4.356% | 7.143% | 0.6165 | 
- | Unplanned Readmission | 3.993% | 7.143% | 0.5559 | 
+ | Sepsis | 0.8859% | 0% | 0.6884 | 
+ | Readmission | 3.654% | 5.556% | 0.6719 | 
+ | Unplanned Readmission | 3.212% | 5.556% | 0.5791 | 
 
-Patients with disseminated cancer had a statistically significant higher incidence of postoperative ventilator use (7.143% vs 0.726%, p < 0.05) and postoperative acute renal failure (7.143% vs 0%, p < 0.05).
+Patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renal failure (5.556% vs 0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients who Used Steroids <30 Days Prior to Surgery
-| | Non-Steroid (N = 532.0) | Steroid (N = 33.0) | p-value | 
+| | Non-Steroid (N = 869.0) | Steroid (N = 52.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.188% | 0% | 0.8031 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.316% | 6.061% | **0.03464** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.316% | 3.03% | 0.4186 | 
- | Reintubation | 0.7519% | 3.03% | 0.1751 | 
- | Urinary Infection | 0.188% | 0% | 0.8031 | 
- | Deep Vein Thrombosis | 0.3759% | 0% | 0.7242 | 
- | Renal Insufficiency | 0.188% | 0% | 0.8031 | 
- | Pulmonary Embolism | 0.188% | 3.03% | **0.007636** | 
- | Ventilator | 0.5639% | 6.061% | **0.001069** | 
- | Acute Renal Failure | 0% | 3.03% | **5.852e-05** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2301% | 0% | 0.7291 | 
+ | Deep SSI | 0% | 1.923% | **4.31e-05** | 
+ | Organ/Space SSI | 0.8055% | 3.846% | **0.03038** | 
+ | Wound Disruption | 0.1151% | 1.923% | **0.006516** | 
+ | Pneumonia | 1.151% | 1.923% | 0.6185 | 
+ | Reintubation | 1.036% | 3.846% | 0.06996 | 
+ | Urinary Infection | 0.3452% | 1.923% | 0.09282 | 
+ | Deep Vein Thrombosis | 0.3452% | 1.923% | 0.09282 | 
+ | Renal Insufficiency | 0.2301% | 0% | 0.7291 | 
+ | Pulmonary Embolism | 0.2301% | 3.846% | **0.0001173** | 
+ | Ventilator | 1.151% | 3.846% | 0.09593 | 
+ | Acute Renal Failure | 0% | 1.923% | **4.31e-05** | 
+ | CVA with Neurologic Deficit | 0.2301% | 0% | 0.7291 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.5639% | 6.061% | **0.001069** | 
- | Readmission | 4.699% | 0% | 0.2027 | 
- | Unplanned Readmission | 4.323% | 0% | 0.2226 | 
+ | Sepsis | 0.5754% | 5.769% | **8.833e-05** | 
+ | Readmission | 3.797% | 1.923% | 0.4862 | 
+ | Unplanned Readmission | 3.337% | 1.923% | 0.5769 | 
 
-Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.061% vs 1.316%, p < 0.05), postoperative pulmonary embolism (3.03% vs 0.188%, p < 0.05), postoperative ventilator use (6.061% vs 0.5639%, p < 0.05), postoperative acute renal failure (3.03% vs 0%, p < 0.05), and postoperative sepsis (6.061% vs 0.5639%, p < 0.05).
+Patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative deep surgical site infection (1.923% vs 0%, p < 0.05), postoperative organ/space surgical site infection (SSI) (3.846% vs 0.8055%, p < 0.05), postoperative wound disruption (1.923% vs 0.1151%, p < 0.05), postoperative pulmonary embolism (3.846% vs 0.2301%, p < 0.05), postoperative acute renal failure (1.923% vs 0%, p < 0.05), and postoperative sepsis (5.769% vs 0.5754%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with Bleeding Disorder
-| | Non-Bleeding Disorder (N = 556.0) | Bleeding Disorder (N = 9.0) | p-value | 
+| | Non-Bleeding Disorder (N = 909.0) | Bleeding Disorder (N = 12.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1799% | 0% | 0.8987 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.619% | 0% | 0.7004 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.439% | 0% | 0.717 | 
- | Reintubation | 0.8993% | 0% | 0.7751 | 
- | Urinary Infection | 0.1799% | 0% | 0.8987 | 
- | Deep Vein Thrombosis | 0.3597% | 0% | 0.857 | 
- | Renal Insufficiency | 0.1799% | 0% | 0.8987 | 
- | Pulmonary Embolism | 0.3597% | 0% | 0.857 | 
- | Ventilator | 0.7194% | 11.11% | **0.0009596** | 
- | Acute Renal Failure | 0% | 11.11% | **3.637e-15** | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.22% | 0% | 0.8708 | 
+ | Deep SSI | 0.11% | 0% | 0.9085 | 
+ | Organ/Space SSI | 0.9901% | 0% | 0.7291 | 
+ | Wound Disruption | 0.22% | 0% | 0.8708 | 
+ | Pneumonia | 1.21% | 0% | 0.7014 | 
+ | Reintubation | 1.21% | 0% | 0.7014 | 
+ | Urinary Infection | 0.44% | 0% | 0.8179 | 
+ | Deep Vein Thrombosis | 0.44% | 0% | 0.8179 | 
+ | Renal Insufficiency | 0.22% | 0% | 0.8708 | 
+ | Pulmonary Embolism | 0.44% | 0% | 0.8179 | 
+ | Ventilator | 1.21% | 8.333% | **0.03064** | 
+ | Acute Renal Failure | 0% | 8.333% | **3.088e-18** | 
+ | CVA with Neurologic Deficit | 0.22% | 0% | 0.8708 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8993% | 0% | 0.7751 | 
- | Readmission | 4.496% | 0% | 0.5152 | 
- | Unplanned Readmission | 4.137% | 0% | 0.5333 | 
+ | Sepsis | 0.8801% | 0% | 0.7441 | 
+ | Readmission | 3.74% | 0% | 0.4948 | 
+ | Unplanned Readmission | 3.3% | 0% | 0.5223 | 
  
- Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (11.11% vs 0.7194%, p < 0.05) and postoperative acute renal failure (11.11% vs 0%, p < 0.05).
+ Patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilator use (8.333% vs 0.1.21%, p < 0.05) and postoperative acute renal failure (8.333% vs 1.21%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status
-| | Non-Independent Functional Health Status (N = 13.0) | Independent Functional Health Status (N = 552.0) | p-value | 
+| | Non-Independent Functional Health Status (N = 20.0) | Independent Functional Health Status (N = 901.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0% | 0.1812% | 0.8779 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 7.692% | 1.449% | 0.07556 | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 15.38% | 1.087% | **1.612e-05** | 
- | Reintubation | 15.38% | 0.5435% | **1.628e-08** | 
- | Urinary Infection | 0% | 0.1812% | 0.8779 | 
- | Deep Vein Thrombosis | 7.692% | 0.1812% | **6.57e-06** | 
- | Renal Insufficiency | 0% | 0.1812% | 0.8779 | 
- | Pulmonary Embolism | 0% | 0.3623% | 0.8279 | 
- | Ventilator | 15.38% | 0.5435% | **1.628e-08** | 
- | Acute Renal Failure | 0% | 0.1812% | 0.8779 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 5.0% | 0.111% | **3.388e-06** | 
+ | Deep SSI | 0% | 0.111% | 0.8815 | 
+ | Organ/Space SSI | 5.0% | 0.8879% | 0.06445 | 
+ | Wound Disruption | 5.0% | 0.111% | **3.388e-06** | 
+ | Pneumonia | 10.0% | 0.9989% | **0.0002472** | 
+ | Reintubation | 10.0% | 0.9989% | **0.0002472** | 
+ | Urinary Infection | 0% | 0.444% | 0.7652 | 
+ | Deep Vein Thrombosis | 5.0% | 0.333% | **0.001693** | 
+ | Renal Insufficiency | 0% | 0.222% | 0.8329 | 
+ | Pulmonary Embolism | 0% | 0.444% | 0.7652 | 
+ | Ventilator | 15.0% | 0.9989% | **4.726e-08** | 
+ | Acute Renal Failure | 0% | 0.111% | 0.8815 | 
+ | CVA with Neurologic Deficit | 0% | 0.222% | 0.8329 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0% | 0.9058% | 0.7303 | 
- | Readmission | 0% | 4.529% | 0.4325 | 
- | Unplanned Readmission | 0% | 4.167% | 0.4524 | 
- 
- Patients with an independent functional health status had a statistically significant lower incidence of postoperative penumonia (1.087% vs 15.38%, p < 0.05), postoperative reintubation (0.5435% vs 15.38%), postoperative deep vein thrombosis (0.1812% vs 7.692%, p < 0.05), and postoperative ventilator use (0.5435% vs 15.38%, p < 0.05).
+ | Sepsis | 5.0% | 0.7769% | **0.04411** | 
+ | Readmission | 5.0% | 3.663% | 0.7537 | 
+ | Unplanned Readmission | 0% | 3.33% | 0.4067 | 
+
+ Patients with an independent functional health status had a statistically significant lower incidence of postoperative superficial surgical site infection (0.111% vs 5.0%, p < 0.05), postoperative wound disruption (0.111% vs 5.0%, p < 0.05), postoperative penumonia (0.9989% vs 10.0%, p < 0.05), postoperative reintubation (0.9989% vs 10.0%), postoperative deep vein thrombosis (0.333% vs 5.0%, p < 0.05), postoperative ventilator use (0.9989% vs 15.0%, p < 0.05), and postoperative sepsis (0.7769% vs 5.0%, p < 0.05).
 
 ##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status
-| | Non-Totally or Partially Dependent Functional Health Status (N = 559.0) | Totally or Partially Dependent Functional Health Status (N = 6.0) | p-value | 
+| | Non-Totally or Partially Dependent Functional Health Status (N = 911.0) | Totally or Partially Dependent Functional Health Status (N = 10.0) | p-value | 
 | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.1789% | 0% | 0.9174 | 
- | Deep SSI | 0% | 0% | - | 
- | Organ/Space SSI | 1.431% | 16.67% | **0.003028** | 
- | Wound Disruption | 0% | 0% | - | 
- | Pneumonia | 1.252% | 16.67% | **0.001479** | 
- | Reintubation | 0.7156% | 16.67% | **3.329e-05** | 
- | Urinary Infection | 0.1789% | 0% | 0.9174 | 
- | Deep Vein Thrombosis | 0.3578% | 0% | 0.8833 | 
- | Renal Insufficiency | 0.1789% | 0% | 0.9174 | 
- | Pulmonary Embolism | 0.3578% | 0% | 0.8833 | 
- | Ventilator | 0.7156% | 16.67% | **3.329e-05** | 
- | Acute Renal Failure | 0.1789% | 0% | 0.9174 | 
- | CVA with Neurologic Deficit | 0% | 0% | - | 
+ | Superficial SSI | 0.2195% | 0% | 0.8821 | 
+ | Deep SSI | 0.1098% | 0% | 0.9165 | 
+ | Organ/Space SSI | 0.8782% | 10.0% | **0.003541** | 
+ | Wound Disruption | 0.1098% | 10.0% | **2.353e-11** | 
+ | Pneumonia | 0.9879% | 20.0% | **3.707e-08** | 
+ | Reintubation | 0.9879% | 20.0% | **3.707e-08** | 
+ | Urinary Infection | 0.4391% | 0% | 0.8337 | 
+ | Deep Vein Thrombosis | 0.3293% | 10.0% | **3.742e-06** | 
+ | Renal Insufficiency | 0.2195% | 0% | 0.8821 | 
+ | Pulmonary Embolism | 0.4391% | 0% | 0.8337 | 
+ | Ventilator | 1.098% | 20.0% | **1.585e-07** | 
+ | Acute Renal Failure | 0.1098% | 0% | 0.9165 | 
+ | CVA with Neurologic Deficit | 0.2195% | 0% | 0.8821 | 
  | Myocardial Infarction | 0% | 0% | - | 
- | Sepsis | 0.8945% | 0% | 0.816 | 
- | Readmission | 4.472% | 0% | 0.5962 | 
- | Unplanned Readmission | 4.114% | 0% | 0.6119 | 
+ | Sepsis | 0.7684% | 10.0% | **0.001755** | 
+ | Readmission | 3.732% | 0% | 0.5336 | 
+ | Unplanned Readmission | 3.293% | 0% | 0.5596 | 
  
-Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (16.67% vs 1.431%, p < 0.05), postoperative pneumonia (16.67% vs 1.252%, p < 0.05), postoperative reintubation (16.67% vs 0.7156%, p < 0.05), and postoperative ventilator use (16.67% vs 0.7156%, p < 0.05).
+Patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (10.0% vs 1.431%, p < 0.8782), postoperative wound disruption (10.0% vs 0.1098%, p < 0.05), postoperative pneumonia (20.0% vs 0.9879%, p < 0.05), postoperative reintubation (20.0% vs 0.9879%, p < 0.05), postoperative deep vein thrombosis (10.0% vs 0.3293%, p < 0.05), postoperative ventilator use (20.0% vs 1.098%, p < 0.05), and postoperative sepsis (10.0% vs 0.7684%, p < 0.05).
  
  #### Postoperative Complications in the Inpatient and Outpatient Setting 
  
  ##### Postoperative Complication Rates in ESS Patients with Diabetes in the Inpatient and Outpatient Setting
-| | Outpatient Non-Diabetes (N = 327) | Outpatient Diabetes (N = 30) | p-value | Inpatient Non-Diabetes (N = 169) | Inpatient Diabetes (N = 39) | p-value |
+| | Outpatient Non-Diabetes (N = 556) | Outpatient Diabetes (N = 53) | p-value | Inpatient Non-Diabetes (N = 248) | Inpatient Diabetes (N = 64) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.61% | 0.00% | 0.6675|2.96% | 5.13% | 0.4983|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|**2.37**% | **10.26**% | **0.02092**|
- | Reintubation | 0.00% | 0.00% | -|**1.18**% | **7.69**% | **0.01675**|
- | Urinary Infection | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.59% | 2.56% | 0.2552|
- | Renal Insufficiency | 0.31% | 0.00% | 0.7616|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.31% | 0.00% | 0.7616|0.59% | 0.00% | 0.6301|
- | Ventilator | 0.00% | 0.00% | -|1.78% | 5.13% | 0.2178|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.59% | 0.00% | 0.6301|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.18% | 0.00% | 0.7573|0.40% | 0.00% | 0.6109|
+ | Deep SSI | 0.00% | 0.00% | -|0.40% | 0.00% | 0.6109|
+ | Organ/Space SSI | 0.36% | 0.00% | 0.6619|2.02% | 3.12% | 0.5933|
+ | Wound Disruption | 0.18% | 0.00% | 0.7573|0.40% | 0.00% | 0.6109|
+ | Pneumonia | 0.00% | 0.00% | -|**1.61**% | **10.94**% | **0.0003108**|
+ | Reintubation | 0.00% | 0.00% | -|**2.02**% | **9.38**% | **0.004428**|
+ | Urinary Infection | 0.00% | 1.89% | **0.001189**|0.81% | 1.56% | 0.5805|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.81% | 3.12% | 0.1416|
+ | Renal Insufficiency | 0.18% | 0.00% | 0.7573|**0.00**% | **1.56**% | **0.04865**|
+ | Pulmonary Embolism | 0.18% | 0.00% | 0.7573|1.21% | 0.00% | 0.3766|
+ | Ventilator | 0.00% | 0.00% | -|**2.42**% | **9.38**% | **0.009887**|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.40% | 0.00% | 0.6109|
+ | CVA with Neurologic Deficit | 0.18% | 0.00% | 0.7573|0.40% | 0.00% | 0.6109|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.31% | 0.00% | 0.7616|2.37% | 0.00% | 0.332|
- | Readmission | 3.67% | 3.33% | 0.925|5.33% | 7.69% | 0.5677|
- | Unplanned Readmission | 3.67% | 3.33% | 0.925|4.14% | 7.69% | 0.3502|
- 
- In the inpatient setting, patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (10.26% vs 2.37%, p < 0.05) and postoperative reintubation (7.69% vs 1.18%, p < 0.05).
+ | Sepsis | 0.18% | 0.00% | 0.7573|2.02% | 3.12% | 0.5933|
+ | Readmission | 2.70% | 3.77% | 0.6496|4.44% | 9.38% | 0.1206|
+ | Unplanned Readmission | 2.52% | 3.77% | 0.585|**3.23**% | **9.38**% | **0.03413**|
+
+  In the inpatient setting, patients with diabetes had a statistically significant higher incidence of postoperative pneumonia (10.94% vs 1.61%, p < 0.05), postoperative reintubation (9.38% vs 2.02%, p < 0.05), postoperative renal insufficiency (1.56% vs 0.00%, p < 0.05), postoperative ventilator use (9.38% vs 2.42%, p < 0.05), and unplanned readmission (9.38% vs 3.23%, p < 0.05). In the outpatient setting, patients with diabetes had statistically significant higher incidence of postoperative urinary infection (1.89% vs 0.00%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients who Smoked <1 Year Prior to Surgery in the Inpatient and Outpatient Setting
-| | Outpatient Non-Smoke (N = 289) | Outpatient Smoke (N = 68) | p-value | Inpatient Non-Smoke (N = 162) | Inpatient Smoke (N = 46) | p-value |
+| | Outpatient Non-Smoke (N = 500) | Outpatient Smoke (N = 109) | p-value | Inpatient Non-Smoke (N = 239) | Inpatient Smoke (N = 73) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.69% | 0.00% | 0.4915|**1.23**% | **10.87**% | **0.001384**|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|4.32% | 2.17% | 0.504|
- | Reintubation | 0.00% | 0.00% | -|2.47% | 2.17% | 0.9082|
- | Urinary Infection | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.62% | 2.17% | 0.3397|
- | Renal Insufficiency | 0.35% | 0.00% | 0.6271|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.00% | 1.47% | **0.03898**|0.00% | 2.17% | 0.05995|
- | Ventilator | 0.00% | 0.00% | -|1.85% | 4.35% | 0.3294|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.62% | 0.00% | 0.5932|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.20% | 0.00% | 0.6403|0.42% | 0.00% | 0.5799|
+ | Deep SSI | 0.00% | 0.00% | -|0.42% | 0.00% | 0.5799|
+ | Organ/Space SSI | 0.40% | 0.00% | 0.5084|**0.84**% | **6.85**% | **0.002398**|
+ | Wound Disruption | 0.20% | 0.00% | 0.6403|0.42% | 0.00% | 0.5799|
+ | Pneumonia | 0.00% | 0.00% | -|4.18% | 1.37% | 0.2538|
+ | Reintubation | 0.00% | 0.00% | -|3.35% | 4.11% | 0.7573|
+ | Urinary Infection | 0.20% | 0.00% | 0.6403|1.26% | 0.00% | 0.3361|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.84% | 2.74% | 0.2059|
+ | Renal Insufficiency | 0.20% | 0.00% | 0.6403|0.42% | 0.00% | 0.5799|
+ | Pulmonary Embolism | 0.00% | 0.92% | **0.03207**|0.84% | 1.37% | 0.6829|
+ | Ventilator | 0.00% | 0.00% | -|3.35% | 5.48% | 0.407|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.42% | 0.00% | 0.5799|
+ | CVA with Neurologic Deficit | 0.20% | 0.00% | 0.6403|0.00% | 1.37% | 0.06994|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.35% | 0.00% | 0.6271|1.23% | 4.35% | 0.1748|
- | Readmission | 3.11% | 5.88% | 0.2729|4.94% | 8.70% | 0.3348|
- | Unplanned Readmission | 3.11% | 5.88% | 0.2729|4.32% | 6.52% | 0.5381|
- 
- In the outpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (1.47% vs 0%, p < 0.05). In the inpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI).
+ | Sepsis | 0.20% | 0.00% | 0.6403|2.09% | 2.74% | 0.7436|
+ | Readmission | 2.60% | 3.67% | 0.539|5.02% | 6.85% | 0.5469|
+ | Unplanned Readmission | 2.40% | 3.67% | 0.4527|4.18% | 5.48% | 0.6399|
+
+  In the outpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (0.92% vs 0%, p < 0.05). In the inpatient setting, patients that reported smoking <1 year prior to surgery had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.85% vs 0.84%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients with Hypertension in the Inpatient and Outpatient Setting
-| | Outpatient Non-Hypertension (N = 256) | Outpatient Hypertension (N = 101) | p-value | Inpatient Non-Hypertension (N = 112) | Inpatient Hypertension (N = 96) | p-value |
+| | Outpatient Non-Hypertension (N = 445) | Outpatient Hypertension (N = 164) | p-value | Inpatient Non-Hypertension (N = 169) | Inpatient Hypertension (N = 143) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.39% | 0.99% | 0.4943|2.68% | 4.17% | 0.553|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|2.68% | 5.21% | 0.3443|
- | Reintubation | 0.00% | 0.00% | -|1.79% | 3.12% | 0.5296|
- | Urinary Infection | 0.00% | 0.00% | -|0.89% | 0.00% | 0.3534|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.89% | 1.04% | 0.9127|
- | Renal Insufficiency | 0.00% | 0.99% | 0.1109|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.39% | 0.00% | 0.5293|0.00% | 1.04% | 0.2789|
- | Ventilator | 0.00% | 0.00% | -|3.57% | 1.04% | 0.235|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 1.04% | 0.2789|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.00% | 0.61% | 0.09923|0.00% | 0.70% | 0.2762|
+ | Deep SSI | 0.00% | 0.00% | -|0.59% | 0.00% | 0.3569|
+ | Organ/Space SSI | 0.22% | 0.61% | 0.4613|1.78% | 2.80% | 0.5436|
+ | Wound Disruption | 0.22% | 0.00% | 0.5435|0.00% | 0.70% | 0.2762|
+ | Pneumonia | 0.00% | 0.00% | -|2.96% | 4.20% | 0.5549|
+ | Reintubation | 0.00% | 0.00% | -|2.96% | 4.20% | 0.5549|
+ | Urinary Infection | 0.00% | 0.61% | 0.09923|1.18% | 0.70% | 0.6624|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.18% | 1.40% | 0.8663|
+ | Renal Insufficiency | 0.00% | 0.61% | 0.09923|0.00% | 0.70% | 0.2762|
+ | Pulmonary Embolism | 0.22% | 0.00% | 0.5435|1.18% | 0.70% | 0.6624|
+ | Ventilator | 0.00% | 0.00% | -|4.73% | 2.80% | 0.3755|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 0.70% | 0.2762|
+ | CVA with Neurologic Deficit | 0.00% | 0.61% | 0.09923|0.59% | 0.00% | 0.3569|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.00% | 0.99% | 0.1109|0.89% | 3.12% | 0.2426|
- | Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **10.42**% | **0.007781**|
- | Unplanned Readmission | 3.12% | 4.95% | 0.4069|**1.79**% | **8.33**% | **0.02777**|
+ | Sepsis | 0.00% | 0.61% | 0.09923|1.18% | 3.50% | 0.1693|
+ | Readmission | 2.02% | 4.88% | 0.05774|**2.37**% | **9.09**% | **0.009127**|
+ | Unplanned Readmission | 2.02% | 4.27% | 0.1243|**1.78**% | **7.69**% | **0.01189**|
  
- In the inpatient setting, patients with hypertension had a statistically significant higher incidence of postoperative readmission (10.42% vs 1.79%, p < 0.05) and unplanned postoperative readmission (8.33% vs 1.79%, p < 0.05). 
+ In the inpatient setting, patients with hypertension had a statistically significant higher incidence of postoperative readmission (9.09% vs 2.37%, p < 0.05) and unplanned postoperative readmission (7.69% vs 1.78%, p < 0.05). 
 
  ##### Postoperative Complication Rates in ESS Patients with Dyspnea in the Inpatient and Outpatient Setting
-| | Outpatient Non-Dyspnea (N = 345) | Outpatient Dyspnea (N = 12) | p-value | Inpatient Non-Dyspnea (N = 197) | Inpatient Dyspnea (N = 11) | p-value |
+| | Outpatient Non-Dyspnea (N = 591) | Outpatient Dyspnea (N = 18) | p-value | Inpatient Non-Dyspnea (N = 296) | Inpatient Dyspnea (N = 16) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.58% | 0.00% | 0.7914|3.55% | 0.00% | 0.5248|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|4.06% | 0.00% | 0.4955|
- | Reintubation | 0.00% | 0.00% | -|2.54% | 0.00% | 0.5928|
- | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8128|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.02% | 0.00% | 0.737|
- | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|0.51% | 0.00% | 0.8128|
- | Ventilator | 0.00% | 0.00% | -|2.54% | 0.00% | 0.5928|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **9.09**% | **2.214e-05**|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.17% | 0.00% | 0.8613|0.34% | 0.00% | 0.8159|
+ | Deep SSI | 0.00% | 0.00% | -|0.34% | 0.00% | 0.8159|
+ | Organ/Space SSI | 0.34% | 0.00% | 0.8047|2.36% | 0.00% | 0.5338|
+ | Wound Disruption | 0.17% | 0.00% | 0.8613|0.34% | 0.00% | 0.8159|
+ | Pneumonia | 0.00% | 0.00% | -|3.72% | 0.00% | 0.4324|
+ | Reintubation | 0.00% | 0.00% | -|3.72% | 0.00% | 0.4324|
+ | Urinary Infection | 0.00% | 5.56% | **9.766e-09**|1.01% | 0.00% | 0.6857|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.35% | 0.00% | 0.6398|
+ | Renal Insufficiency | 0.17% | 0.00% | 0.8613|0.34% | 0.00% | 0.8159|
+ | Pulmonary Embolism | 0.17% | 0.00% | 0.8613|1.01% | 0.00% | 0.6857|
+ | Ventilator | 0.00% | 0.00% | -|4.05% | 0.00% | 0.4115|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **6.25**% | **1.647e-05**|
+ | CVA with Neurologic Deficit | 0.17% | 0.00% | 0.8613|0.34% | 0.00% | 0.8159|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.29% | 0.00% | 0.8518|2.03% | 0.00% | 0.6332|
- | Readmission | 3.77% | 0.00% | 0.4933|5.58% | 9.09% | 0.6273|
- | Unplanned Readmission | 3.77% | 0.00% | 0.4933|4.57% | 9.09% | 0.495|
+ | Sepsis | 0.17% | 0.00% | 0.8613|2.36% | 0.00% | 0.5338|
+ | Readmission | 2.88% | 0.00% | 0.4655|5.07% | 12.50% | 0.202|
+ | Unplanned Readmission | 2.71% | 0.00% | 0.4793|4.05% | 12.50% | 0.1119|
  
- In the inpatient setting, patients with dyspnea had a statistically significant higher incidence of postoperative acute renal failure (9.09% vs 0%, p < 0.05).
+In the outpatient setting, patients with dyspnea had statistically significant higher incidence of postoperative urinary infection (5.56% vs 0.00%, p < 0.05). In the inpatient setting, patients with dyspnea had a statistically significant higher incidence of postoperative acute renal failure (6.25% vs 0%, p < 0.05). 
 
  ##### Postoperative Complication Rates in ESS Patients with Chronic Obstructive Pulmonary Disease (COPD) in the Inpatient and Outpatient Setting
-| | Outpatient Non-COPD (N = 348) | Outpatient COPD (N = 9) | p-value | Inpatient Non-COPD (N = 196) | Inpatient COPD (N = 12) | p-value |
+| | Outpatient Non-COPD (N = 593) | Outpatient COPD (N = 16) | p-value | Inpatient Non-COPD (N = 297) | Inpatient COPD (N = 15) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.29% | 11.11% | **1.745e-05**|3.57% | 0.00% | 0.5054|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.57% | 8.33% | 0.405|
- | Reintubation | 0.00% | 0.00% | -|2.04% | 8.33% | 0.1671|
- | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.8041|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|**0.51**% | **8.33**% | **0.007023**|
- | Renal Insufficiency | 0.00% | 11.11% | **4.755e-10**|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.29% | 0.00% | 0.8721|0.51% | 0.00% | 0.8041|
- | Ventilator | 0.00% | 0.00% | -|2.04% | 8.33% | 0.1671|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **8.33**% | **5.096e-05**|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.17% | 0.00% | 0.8694|0.34% | 0.00% | 0.8219|
+ | Deep SSI | 0.00% | 0.00% | -|0.34% | 0.00% | 0.8219|
+ | Organ/Space SSI | 0.17% | 6.25% | **2.722e-05**|2.36% | 0.00% | 0.5476|
+ | Wound Disruption | 0.17% | 0.00% | 0.8694|0.34% | 0.00% | 0.8219|
+ | Pneumonia | 0.00% | 0.00% | -|3.37% | 6.67% | 0.499|
+ | Reintubation | 0.00% | 0.00% | -|3.37% | 6.67% | 0.499|
+ | Urinary Infection | 0.00% | 6.25% | **1.109e-09**|1.01% | 0.00% | 0.6957|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.01% | 6.67% | 0.05744|
+ | Renal Insufficiency | 0.00% | 6.25% | **1.109e-09**|0.34% | 0.00% | 0.8219|
+ | Pulmonary Embolism | 0.17% | 0.00% | 0.8694|1.01% | 0.00% | 0.6957|
+ | Ventilator | 0.00% | 0.00% | -|3.70% | 6.67% | 0.5604|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **6.67**% | **8.317e-06**|
+ | CVA with Neurologic Deficit | 0.17% | 0.00% | 0.8694|0.34% | 0.00% | 0.8219|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.00% | 11.11% | **4.755e-10**|1.53% | 8.33% | 0.09578|
- | Readmission | 3.45% | 11.11% | 0.2256|5.10% | 16.67% | 0.09534|
- | Unplanned Readmission | 3.45% | 11.11% | 0.2256|**4.08**% | **16.67**% | **0.04791**|
+ | Sepsis | 0.00% | 6.25% | **1.109e-09**|2.02% | 6.67% | 0.2358|
+ | Readmission | 2.70% | 6.25% | 0.3947|5.05% | 13.33% | 0.1679|
+ | Unplanned Readmission | 2.53% | 6.25% | 0.3585|4.04% | 13.33% | 0.08984|
 
-In the outpatient setting, patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (11.11% vs 0.29%, p < 0.05), postoperative renail insuffiency (11.11% vs 0%, p < 0.05), and postoperative sepsis (11.11% vs 0%, p < 0.05). In the inpatient setting, patients with chronic obstructive pulmoonary disease (COPD) had a statistically significant higher incidence of postoperative deep vein thrombosis (8.33% vs 0.51%, p < 0.05), postoperative acute renal failure (8.33% vs 0%, p < 0.05), and unplanned postoperative readmission (16.67% vs 4.08%, p < 0.05). 
+In the outpatient setting, patients with chronic obstructive pulmonary disease (COPD) had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (6.25% vs 0.17%, p < 0.05), postoperative urinary infection (6.25% vs 0.00%, p < 0.05), postoperative renal insuffiency (6.25% vs 0%, p < 0.05), and postoperative sepsis (6.25% vs 0.00%, p < 0.05). In the inpatient setting, patients with chronic obstructive pulmoonary disease (COPD) had a statistically significant higher incidence of postoperative acute renal failure (6.67% vs 0.00%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients with Congestive Heart Failure (CGF) in the Inpatient and Outpatient Setting
-| | Outpatient Non-CGF (N = 355) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 207) | Inpatient CGF (N = 1) | p-value |
+| | Outpatient Non-CGF (N = 607) | Outpatient CGF (N = 2) | p-value | Inpatient Non-CGF (N = 308) | Inpatient CGF (N = 4) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.56% | 0.00% | 0.9152|3.38% | 0.00% | 0.8516|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|**3.38**% | **100.00**% | **5.385e-07**|
- | Reintubation | 0.00% | 0.00% | -|**1.93**% | **100.00**% | **1.69e-10**|
- | Urinary Infection | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.97% | 0.00% | 0.9213|
- | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.48% | 0.00% | 0.9445|
- | Ventilator | 0.00% | 0.00% | -|2.42% | 0.00% | 0.875|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.48% | 0.00% | 0.9445|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.16% | 0.00% | 0.9542|0.32% | 0.00% | 0.9091|
+ | Deep SSI | 0.00% | 0.00% | -|0.32% | 0.00% | 0.9091|
+ | Organ/Space SSI | 0.33% | 0.00% | 0.9352|2.27% | 0.00% | 0.7604|
+ | Wound Disruption | 0.16% | 0.00% | 0.9542|0.32% | 0.00% | 0.9091|
+ | Pneumonia | 0.00% | 0.00% | -|**3.25**% | **25.00**% | **0.01909**|
+ | Reintubation | 0.00% | 0.00% | -|**3.25**% | **25.00**% | **0.01909**|
+ | Urinary Infection | 0.16% | 0.00% | 0.9542|0.97% | 0.00% | 0.8428|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.30% | 0.00% | 0.8186|
+ | Renal Insufficiency | 0.16% | 0.00% | 0.9542|0.32% | 0.00% | 0.9091|
+ | Pulmonary Embolism | 0.16% | 0.00% | 0.9542|0.97% | 0.00% | 0.8428|
+ | Ventilator | 0.00% | 0.00% | -|3.90% | 0.00% | 0.6873|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.32% | 0.00% | 0.9091|
+ | CVA with Neurologic Deficit | 0.16% | 0.00% | 0.9542|0.32% | 0.00% | 0.9091|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.28% | 0.00% | 0.9401|1.93% | 0.00% | 0.8884|
- | Readmission | 3.66% | 0.00% | 0.7828|5.80% | 0.00% | 0.8041|
- | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.83% | 0.00% | 0.8218|
+ | Sepsis | 0.16% | 0.00% | 0.9542|2.27% | 0.00% | 0.7604|
+ | Readmission | 2.80% | 0.00% | 0.8103|5.52% | 0.00% | 0.6289|
+ | Unplanned Readmission | 2.64% | 0.00% | 0.816|4.55% | 0.00% | 0.6626|
 
-In the inpatient setting, patients with congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (100% vs 3.83%, p < 0.05) and postoperative reintubation (100% vs 1.93%, p < 0.05). However, only a small sample (N = 1) of patients had congestive heart failure and were in the inpatient setting. 
+In the inpatient setting, patients with congestive heart failure (CGF) had a statistically significant higher incidence of postoperative pneumonia (25.00% vs 3.25%, p < 0.05) and postoperative reintubation (25.00% vs 3.25%, p < 0.05). However, it should be noted that only a small sample (N = 4) of patients had congestive heart failure in the inpatient setting. 
  
  ##### Postoperative Complication Rates in ESS Patients with Disseminated Cancer in the Inpatient and Outpatient Setting
-| | Outpatient Non-Disseminated Cancer (N = 356) | Outpatient Disseminated Cancer (N = 1) | p-value | Inpatient Non-Disseminated Cancer (N = 195) | Inpatient Disseminated Cancer (N = 13) | p-value |
+| | Outpatient Non-Disseminated Cancer (N = 607) | Outpatient Disseminated Cancer (N = 2) | p-value | Inpatient Non-Disseminated Cancer (N = 296) | Inpatient Disseminated Cancer (N = 16) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.56% | 0.00% | 0.9401|3.59% | 0.00% | 0.4871|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.59% | 7.69% | 0.4564|
- | Reintubation | 0.00% | 0.00% | -|2.56% | 0.00% | 0.5589|
- | Urinary Infection | 0.00% | 0.00% | -|0.51% | 0.00% | 0.7958|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.03% | 0.00% | 0.7137|
- | Renal Insufficiency | 0.28% | 0.00% | 0.9577|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.28% | 0.00% | 0.9577|0.51% | 0.00% | 0.7958|
- | Ventilator | 0.00% | 0.00% | -|2.05% | 7.69% | 0.1985|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **7.69**% | **0.0001035**|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.16% | 0.00% | 0.9542|0.34% | 0.00% | 0.8159|
+ | Deep SSI | 0.00% | 0.00% | -|0.34% | 0.00% | 0.8159|
+ | Organ/Space SSI | 0.33% | 0.00% | 0.9352|2.36% | 0.00% | 0.5338|
+ | Wound Disruption | 0.16% | 0.00% | 0.9542|0.34% | 0.00% | 0.8159|
+ | Pneumonia | 0.00% | 0.00% | -|3.38% | 6.25% | 0.5441|
+ | Reintubation | 0.00% | 0.00% | -|3.72% | 0.00% | 0.4324|
+ | Urinary Infection | 0.16% | 0.00% | 0.9542|1.01% | 0.00% | 0.6857|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.35% | 0.00% | 0.6398|
+ | Renal Insufficiency | 0.16% | 0.00% | 0.9542|0.34% | 0.00% | 0.8159|
+ | Pulmonary Embolism | 0.16% | 0.00% | 0.9542|1.01% | 0.00% | 0.6857|
+ | Ventilator | 0.00% | 0.00% | -|3.72% | 6.25% | 0.6077|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **6.25**% | **1.647e-05**|
+ | CVA with Neurologic Deficit | 0.16% | 0.00% | 0.9542|0.34% | 0.00% | 0.8159|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.28% | 0.00% | 0.9577|2.05% | 0.00% | 0.6021|
- | Readmission | 3.65% | 0.00% | 0.8457|5.64% | 7.69% | 0.7587|
- | Unplanned Readmission | 3.65% | 0.00% | 0.8457|4.62% | 7.69% | 0.6156|
+ | Sepsis | 0.16% | 0.00% | 0.9542|2.36% | 0.00% | 0.5338|
+ | Readmission | 2.80% | 0.00% | 0.8103|5.41% | 6.25% | 0.8847|
+ | Unplanned Readmission | 2.64% | 0.00% | 0.816|4.39% | 6.25% | 0.7266|
  
- In the inpatient setting, patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renail failure (7.69% vs 0%, p < 0.05).
+ In the inpatient setting, patients with disseminated cancer had a statistically significant higher incidence of postoperative acute renail failure (6.25% vs 0.00%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients who used Steroids <30 Days Prior to Surgery in the Inpatient and Outpatient Setting
-| | Outpatient Non-Steroid (N = 345) | Outpatient Steroid (N = 12) | p-value | Inpatient Non-Steroid (N = 187) | Inpatient Steroid (N = 21) | p-value |
+| | Outpatient Non-Steroid (N = 591) | Outpatient Steroid (N = 18) | p-value | Inpatient Non-Steroid (N = 278) | Inpatient Steroid (N = 34) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.58% | 0.00% | 0.7914|2.67% | 9.52% | 0.09885|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.74% | 4.76% | 0.818|
- | Reintubation | 0.00% | 0.00% | -|2.14% | 4.76% | 0.4568|
- | Urinary Infection | 0.00% | 0.00% | -|0.53% | 0.00% | 0.7369|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.07% | 0.00% | 0.6339|
- | Renal Insufficiency | 0.29% | 0.00% | 0.8518|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.29% | 0.00% | 0.8518|**0.00**% | **4.76**% | **0.002778**|
- | Ventilator | 0.00% | 0.00% | -|**1.60**% | **9.52**% | **0.02466**|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **4.76**% | **0.002778**|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.17% | 0.00% | 0.8613|0.36% | 0.00% | 0.7261|
+ | Deep SSI | 0.00% | 0.00% | -|**0.00**% | **2.94**% | **0.004183**|
+ | Organ/Space SSI | 0.34% | 0.00% | 0.8047|1.80% | 5.88% | 0.1291|
+ | Wound Disruption | 0.17% | 0.00% | 0.8613|**0.00**% | **2.94**% | **0.004183**|
+ | Pneumonia | 0.00% | 0.00% | -|3.60% | 2.94% | 0.8448|
+ | Reintubation | 0.00% | 0.00% | -|3.24% | 5.88% | 0.4299|
+ | Urinary Infection | 0.17% | 0.00% | 0.8613|0.72% | 2.94% | 0.2102|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.08% | 2.94% | 0.3623|
+ | Renal Insufficiency | 0.17% | 0.00% | 0.8613|0.36% | 0.00% | 0.7261|
+ | Pulmonary Embolism | 0.17% | 0.00% | 0.8613|**0.36**% | **5.88**% | **0.00184**|
+ | Ventilator | 0.00% | 0.00% | -|3.60% | 5.88% | 0.5131|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **2.94**% | **0.004183**|
+ | CVA with Neurologic Deficit | 0.17% | 0.00% | 0.8613|0.36% | 0.00% | 0.7261|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.29% | 0.00% | 0.8518|**1.07**% | **9.52**% | **0.007477**|
- | Readmission | 3.77% | 0.00% | 0.4933|6.42% | 0.00% | 0.2317|
- | Unplanned Readmission | 3.77% | 0.00% | 0.4933|5.35% | 0.00% | 0.2774|
+ | Sepsis | 0.17% | 0.00% | 0.8613|**1.44**% | **8.82**% | **0.006059**|
+ | Readmission | 2.88% | 0.00% | 0.4655|5.76% | 2.94% | 0.495|
+ | Unplanned Readmission | 2.71% | 0.00% | 0.4793|4.68% | 2.94% | 0.6446|
  
- In the inpatient setting, patients that reported steroid use <30 days prior to surgery had a statistically significant higher incidence of postoperative pulmonary embolism (4.76% vs 0%, p < 0.05), postoperative ventilator use (9.52% vs 1.60%, p < 0.05), postoperative acute renal failure (4.76% vs 0%, p < 0.05), and postoperative sepsis (9.52% vs 1.07%, p < 0.05).
+ In the inpatient setting, patients that reported steroid use < 30 days prior to surgery had a statistically significant higher incidence of postoperative deep surgical site infection (2.94% vs 0.00%, p < 0.05), postopeartive wound disruption (2.94% vs 0.00%, p < 0.05), postoperative pulmonary embolism (5.88% vs 0.36%, p < 0.05), postoperative acute renal failure (2.94% vs 0.00%, p < 0.05), and postoperative sepsis (8.82% vs 1.44%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients with a Bleeding Disorder in the Inpatient and Outpatient Setting
-| | Outpatient Non-Bleeding Disorder (N = 354) | Outpatient Bleeding Disorder (N = 3) | p-value | Inpatient Non-Bleeding Disorder (N = 202) | Inpatient Bleeding Disorder (N = 6) | p-value |
+| | Outpatient Non-Bleeding Disorder (N = 605) | Outpatient Bleeding Disorder (N = 4) | p-value | Inpatient Non-Bleeding Disorder (N = 304) | Inpatient Bleeding Disorder (N = 8) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.56% | 0.00% | 0.8961|3.47% | 0.00% | 0.6428|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|3.96% | 0.00% | 0.6191|
- | Reintubation | 0.00% | 0.00% | -|2.48% | 0.00% | 0.6965|
- | Urinary Infection | 0.00% | 0.00% | -|0.50% | 0.00% | 0.8628|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.99% | 0.00% | 0.8065|
- | Renal Insufficiency | 0.28% | 0.00% | 0.9265|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.28% | 0.00% | 0.9265|0.50% | 0.00% | 0.8628|
- | Ventilator | 0.00% | 0.00% | -|**1.98**% | **16.67**% | **0.02064**|
- | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **16.67**% | **6.017e-09**|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.17% | 0.00% | 0.9351|0.33% | 0.00% | 0.8709|
+ | Deep SSI | 0.00% | 0.00% | -|0.33% | 0.00% | 0.8709|
+ | Organ/Space SSI | 0.33% | 0.00% | 0.9083|2.30% | 0.00% | 0.6642|
+ | Wound Disruption | 0.17% | 0.00% | 0.9351|0.33% | 0.00% | 0.8709|
+ | Pneumonia | 0.00% | 0.00% | -|3.62% | 0.00% | 0.5838|
+ | Reintubation | 0.00% | 0.00% | -|3.62% | 0.00% | 0.5838|
+ | Urinary Infection | 0.17% | 0.00% | 0.9351|0.99% | 0.00% | 0.7777|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|1.32% | 0.00% | 0.744|
+ | Renal Insufficiency | 0.17% | 0.00% | 0.9351|0.33% | 0.00% | 0.8709|
+ | Pulmonary Embolism | 0.17% | 0.00% | 0.9351|0.99% | 0.00% | 0.7777|
+ | Ventilator | 0.00% | 0.00% | -|3.62% | 12.50% | 0.1972|
+ | Acute Renal Failure | 0.00% | 0.00% | -|**0.00**% | **12.50**% | **6.645e-10**|
+ | CVA with Neurologic Deficit | 0.17% | 0.00% | 0.9351|0.33% | 0.00% | 0.8709|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.28% | 0.00% | 0.9265|1.98% | 0.00% | 0.7278|
- | Readmission | 3.67% | 0.00% | 0.7353|5.94% | 0.00% | 0.5385|
- | Unplanned Readmission | 3.67% | 0.00% | 0.7353|4.95% | 0.00% | 0.5764|
+ | Sepsis | 0.17% | 0.00% | 0.9351|2.30% | 0.00% | 0.6642|
+ | Readmission | 2.81% | 0.00% | 0.7338|5.59% | 0.00% | 0.4915|
+ | Unplanned Readmission | 2.64% | 0.00% | 0.7417|4.61% | 0.00% | 0.5346|
  
- In the inpatient setting, patients with a bleeding disorder had a statistically significant higher incidence of postoperative ventilaor (16.67% vs 1.98%, p < 0.05) and postoperative acute renal failure (16.67% vs 0%, p < 0.05). 
+ In the inpatient setting, patients with a bleeding disorder had a statistically significant higher incidence of postoperative acute renal failure (12.50% vs 0.00%, p < 0.05). 
 
  ##### Postoperative Complication Rates in ESS Patients with an Independent Functional Health Status in the Inpatient and Outpatient Setting
-| | Outpatient Non-Independent Functional Health Status (N = 5) | Outpatient Independent Functional Health Status (N = 352) | p-value | Inpatient Non-Independent Functional Health Status (N = 8) | Inpatient Independent Functional Health Status (N = 200) | p-value |
+| | Outpatient Non-Independent Functional Health Status (N = 9) | Outpatient Independent Functional Health Status (N = 600) | p-value | Inpatient Non-Independent Functional Health Status (N = 11) | Inpatient Independent Functional Health Status (N = 301) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.00% | 0.57% | 0.8658|12.50% | 3.00% | 0.144|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|**25.00**% | **3.00**% | **0.001509**|
- | Reintubation | 0.00% | 0.00% | -|**25.00**% | **1.50**% | **2.088e-05**|
- | Urinary Infection | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|**12.50**% | **0.50**% | **0.0006483**|
- | Renal Insufficiency | 0.00% | 0.28% | 0.905|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.00% | 0.28% | 0.905|0.00% | 0.50% | 0.8411|
- | Ventilator | 0.00% | 0.00% | -|**25.00**% | **1.50**% | **2.088e-05**|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 0.50% | 0.8411|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 11.11% | 0.00% | **3.041e-16**|0.00% | 0.33% | 0.8482|
+ | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.33% | 0.8482|
+ | Organ/Space SSI | 0.00% | 0.33% | 0.8623|9.09% | 1.99% | 0.1185|
+ | Wound Disruption | 0.00% | 0.17% | 0.9024|**9.09**% | **0.00**% | **1.611e-07**|
+ | Pneumonia | 0.00% | 0.00% | -|**18.18**% | **2.99**% | **0.007288**|
+ | Reintubation | 0.00% | 0.00% | -|**18.18**% | **2.99**% | **0.007288**|
+ | Urinary Infection | 0.00% | 0.17% | 0.9024|0.00% | 1.00% | 0.7393|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|**9.09**% | **1.00**% | **0.01909**|
+ | Renal Insufficiency | 0.00% | 0.17% | 0.9024|0.00% | 0.33% | 0.8482|
+ | Pulmonary Embolism | 0.00% | 0.17% | 0.9024|0.00% | 1.00% | 0.7393|
+ | Ventilator | 0.00% | 0.00% | -|**27.27**% | **2.99**% | **3.898e-05**|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.00% | 0.33% | 0.8482|
+ | CVA with Neurologic Deficit | 0.00% | 0.17% | 0.9024|0.00% | 0.33% | 0.8482|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.00% | 0.28% | 0.905|0.00% | 2.00% | 0.6863|
- | Readmission | 0.00% | 3.69% | 0.6616|0.00% | 6.00% | 0.4754|
- | Unplanned Readmission | 0.00% | 3.69% | 0.6616|0.00% | 5.00% | 0.5168|
- 
- In the inpatient setting, patients with an independent functional health status had a statistically significant lower incidence of postoperative pnemonia (3.00% vs 25.00%, p < 0.05), postoperative reintubation (1.50% vs 25.00%, p < 0.05), postoperative deep vein thrombosis (0.50% vs 12.50%, p < 0.05), and postoperative ventilator (1.50% vs 25.00%, p < 0.05).
+ | Sepsis | 0.00% | 0.17% | 0.9024|9.09% | 1.99% | 0.1185|
+ | Readmission | 11.11% | 2.67% | 0.1269|0.00% | 5.65% | 0.4176|
+ | Unplanned Readmission | 0.00% | 2.67% | 0.6196|0.00% | 4.65% | 0.4642|
+
+ In the inpatient setting, patients with an independent functional health status had a statistically significant lower incidence of postoperative superficial surgical site infection (0.00% vs 11.11%, p < 0.05), postoperative wound disruption (0.00% vs 9.09%, p < 0.05), postoperative pneumonia (2.99% vs 18.18%, p < 0.05), postoperative reintubation (2.99% vs 18.18%, p < 0.05), postoperative deep vein thrombosis (1.00% vs 9.09%, p < 0.05), and postoperative ventilator use (2.99% vs 27.27%, p < 0.05).
 
  ##### Postoperative Complication Rates in ESS Patients with a Totally or Partially Dependent Functional Health Status in the Inpatient and Outpatient Setting
-| | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 355) | Outpatient Totally or Partially Dependent Functional Health Status (N = 2) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 204) | Inpatient Totally or Partially Dependent Functional Health Status (N = 4) | p-value |
+| | Outpatient Non-Totally or Partially Dependent Functional Health Status (N = 606) | Outpatient Totally or Partially Dependent Functional Health Status (N = 3) | p-value | Inpatient Non-Totally or Partially Dependent Functional Health Status (N = 305) | Inpatient Totally or Partially Dependent Functional Health Status (N = 7) | p-value |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
- | Superficial SSI | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
- | Deep SSI | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Organ/Space SSI | 0.56% | 0.00% | 0.9152|**2.94**% | **25.00**% | **0.0154**|
- | Wound Disruption | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Pneumonia | 0.00% | 0.00% | -|**3.43**% | **25.00**% | **0.02632**|
- | Reintubation | 0.00% | 0.00% | -|**1.96**% | **25.00**% | **0.002889**|
- | Urinary Infection | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
- | Deep Vein Thrombosis | 0.00% | 0.00% | -|0.98% | 0.00% | 0.8423|
- | Renal Insufficiency | 0.28% | 0.00% | 0.9401|0.00% | 0.00% | -|
- | Pulmonary Embolism | 0.28% | 0.00% | 0.9401|0.49% | 0.00% | 0.8884|
- | Ventilator | 0.00% | 0.00% | -|**1.96**% | **25.00**% | **0.002889**|
- | Acute Renal Failure | 0.00% | 0.00% | -|0.49% | 0.00% | 0.8884|
- | CVA with Neurologic Deficit | 0.00% | 0.00% | -|0.00% | 0.00% | -|
+ | Superficial SSI | 0.17% | 0.00% | 0.9439|0.33% | 0.00% | 0.8794|
+ | Deep SSI | 0.00% | 0.00% | -|0.33% | 0.00% | 0.8794|
+ | Organ/Space SSI | 0.33% | 0.00% | 0.9206|**1.97**% | **14.29**% | **0.02956**|
+ | Wound Disruption | 0.17% | 0.00% | 0.9439|**0.00**% | **14.29**% | **3.805e-11**|
+ | Pneumonia | 0.00% | 0.00% | -|**2.95**% | **28.57**% | **0.0002791**|
+ | Reintubation | 0.00% | 0.00% | -|**2.95**% | **28.57**% | **0.0002791**|
+ | Urinary Infection | 0.17% | 0.00% | 0.9439|0.98% | 0.00% | 0.792|
+ | Deep Vein Thrombosis | 0.00% | 0.00% | -|**0.98**% | **14.29**% | **0.001981**|
+ | Renal Insufficiency | 0.17% | 0.00% | 0.9439|0.33% | 0.00% | 0.8794|
+ | Pulmonary Embolism | 0.17% | 0.00% | 0.9439|0.98% | 0.00% | 0.792|
+ | Ventilator | 0.00% | 0.00% | -|**3.28**% | **28.57**% | **0.0005807**|
+ | Acute Renal Failure | 0.00% | 0.00% | -|0.33% | 0.00% | 0.8794|
+ | CVA with Neurologic Deficit | 0.17% | 0.00% | 0.9439|0.33% | 0.00% | 0.8794|
  | Myocardial Infarction | 0.00% | 0.00% | -|0.00% | 0.00% | -|
- | Sepsis | 0.28% | 0.00% | 0.9401|1.96% | 0.00% | 0.7773|
- | Readmission | 3.66% | 0.00% | 0.7828|5.88% | 0.00% | 0.6173|
- | Unplanned Readmission | 3.66% | 0.00% | 0.7828|4.90% | 0.00% | 0.6499|
+ | Sepsis | 0.17% | 0.00% | 0.9439|**1.97**% | **14.29**% | **0.02956**|
+ | Readmission | 2.81% | 0.00% | 0.7686|5.57% | 0.00% | 0.5206|
+ | Unplanned Readmission | 2.64% | 0.00% | 0.7755|4.59% | 0.00% | 0.5619|
  
- In the inpatient setting, patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (25.00% vs 2.94%, p < 0.05), postoperative reintubation (25.00% vs 1.96%, p < 0.05), postoperative ventilator (25.00% vs 1.96%, p < 0.05).
+ In the inpatient setting, patients with a totally or partially dependent functional health status had a statistically significant higher incidence of postoperative organ/space surgical site infection (SSI) (14.29% vs 1.97%, p < 0.05), postoperative wound disruption (14.29% vs 0.00%, p < 0.05), postoperative pneumonia (28.57% vs 2.95%, p < 0.05), postoperative reintubation (28.57% vs 2.95%, p < 0.05), postoperative deep vein thrombosis (14.29% vs 0.98%, p < 0.05), postoperative ventilator use (28.57% vs 3.28%, p < 0.05), and postoperative sepsis (14.29% vs 1.97%, p < 0.05).
 
  ## Multivariate Logistic Regression 
-Further analysis was done on specific outcomes (organ/space surgical site infection and pulmonary embolism) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
+Further analysis was done on specific outcome (organ/space surgical site) that had statistically significant higher incidences rate for patients that smoked <1 year prior to surgery. Significant comorbidities dyspnea, COPD, hypertension, and ventilator dependence were included in these calculations. 
 
 ##### Multivariate Logistic Regression for Patients who Reported Smoking <1 Year Prior to Surgery
-|   | Odds ratio (data) | 95% Confidence Interval | P-Value |
+|   | Odds ratio | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 4.125 | (0.990 - 17.202) | 0.0513 |
-| Pulmonary Embolism  | 80.627 | (0.077 - 84254.00) | 0.2178 |
+| Organ/Space SSI  | 4.495039 | (1.111729  - 18.174734) | **0.0346842001437** |
 
-Neither organ/space surgical site infection nor pulmonary embolism had statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
+Organ/space surgical site infection had a statistically significant increased odds ratios for patients that smoked <1 year prior to surgery.
 
-Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of postoperative pulmonary embolism, but due to small sample size (N = 1), further analysis was not performed for this outcome.
+Analysis was also done for specific outcomes that had statistically significant higher incidence rates for patients that smoked <1 year prior to surgery in the inpatient and outpatient settings. In the inpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of organ/space surgical site infection. In the outpatient setting, patients that smoked <1 year prior to surgery had statistically significant higher incidence rates of pulmonary embolism. 
 
 ##### Multivariate Logistic Regression for Patients in Inpatient Setting who Reported Smoking <1 Year Prior to Surgery
-|   | Odds ratio (data) | 95% Confidence Interval | P-Value |
+|   | Odds ratio | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Organ/Space SSI  | 2.082 | (0.3792 - 11.43) | 0.406 |
+| Organ/Space SSI  | 2.956319 | (0.564183 - 15.491114) | 0.201067500253 |
 
-Patients that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for the postoperative outcome organ/space surgical site infection.
+Patients in the inpatient setting that smoked <1 year prior to surgery did not have a statistically significant higher odds ratio for postoperative organ/space surgical site infection.
 
-#### Conclusion
-Since this analysis used data only from the years 2014-2016 in the NSQIP database, there were certain outcomes and comorbidities with 10 or less patients in the inpatient or outpatient setting (for example: postoperative ventilator use, actue renal failure, and ascites) which did not allow for robust analysis. Further research could be done using a larger sample of the NSQIP dataset to both validate the results shown in this paper as well as analyze less common comorbidities and postoperative complications.
+##### Multivariate Logistic Regression for Patients with Diabetes
+|   | Odds ratio | 95% Confidence Interval | P-Value |
+| -------------  | ------------- | ------------- | ------------- | 
+| Pneumonia  | 5.099366 | (1.499659  - 17.339631 ) | **0.00907490818779** |
+| Reintubation | 6.708556 | (2.024886 - 22.225800) | **0.00189607247038** |
+| Urinary Infection | 3.301819 | (0.573425 - 19.012083) | 0.182154618972 |
+| Deep Vein Thrombosis | 2.141577 | (0.219202 - 20.922976) | 0.523126753887 | 
+| Ventilator | 7.849483 | (2.329067 - 26.454533) | **0.0009309077341** |
+| Unplanned Readmission | 1.508599 | (0.619145 - 3.675829) | 0.371771557097 |
+
+Significant comorbidities COPD, hypertension, and independent functional health status were included in the above calculations. 
+
+##### Multivariate Logistic Regression for Patients with Hypertension
+|   | Odds ratio | 95% Confidence Interval | P-Value |
+| -------------  | ------------- | ------------- | ------------- | 
+| Superficial SSI  | 1.763195 | (0.227438  - 1.366902e+01) | 0.599472753998 |
+| Renal Insuffiency | 441.327867 | (2.059598e-10 - 9.456714e+14) | 0.687336865238 |
+| Sepsis | 9.131794 | (1.606241 - 51.916037) | **0.0125624136473** |
+| Readmission | 3.169530 | (1.581287 - 6.353002) | **0.00119461424888** |
+| Unplanned Readmission | 2.538959 | (1.123517 - 5.737622) | **0.0248881831285** |
+
+Significant comorbidities diabetes, COPD, smoking <1 year prior to surgery, dyspnea, and ventilator dependence were included in the above calculations.
 
 #### Sources
 (1) NSQIP User Guide  
