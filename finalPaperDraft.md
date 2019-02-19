@@ -741,23 +741,23 @@ Patients in the inpatient setting that smoked <1 year prior to surgery did not h
 ##### Multivariate Logistic Regression for Patients with Diabetes
 |   | Odds ratio | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Pneumonia  | 10.567476 | (2.548475  - 43.818967) | **0.00120483037749** |
-| Reintubation | 5.807587 | (1.465882 - 23.008712) | **0.0122149774841** |
-| Urinary Infection | 8.860938 | (8.434066e-01 - 93.094152) | 0.0686587650707 |
-| Deep Vein Thrombosis | 2.934356 | (0.289600 - 29.732181) | 0.289600 | 
-| Ventilator | 11.754673 | (2.812848 - 49.121868) | **0.000771627735559** |
-| Unplanned Readmission | 1.235400 | (0.486742 - 3.135570) | 0.669467527008 |
+| Pneumonia  | 5.099366 | (1.499659  - 17.339631 ) | **0.00907490818779** |
+| Reintubation | 6.708556 | (2.024886 - 22.225800) | **0.00189607247038** |
+| Urinary Infection | 3.301819 | (0.573425 - 19.012083) | 0.182154618972 |
+| Deep Vein Thrombosis | 2.141577 | (0.219202 - 20.922976) | 0.523126753887 | 
+| Ventilator | 7.849483 | (2.329067 - 26.454533) | **0.0009309077341** |
+| Unplanned Readmission | 1.508599 | (0.619145 - 3.675829) | 0.371771557097 |
 
 Significant comorbidities COPD, hypertension, and independent functional health status were included in the above calculations. 
 
 ##### Multivariate Logistic Regression for Patients with Hypertension
 |   | Odds ratio | 95% Confidence Interval | P-Value |
 | -------------  | ------------- | ------------- | ------------- | 
-| Superficial SSI  | 33.943539 | (7.796004e-02  - 1.477890e+04) | 0.258479203527 |
-| Renal Insuffiency | 34.167179 | (1.450050e-02 - 8.050730e+04) | 0.37922358841 |
-| Sepsis | 6.716250 | (1.170379 - 38.541371) | **0.0323632941052** |
-| Readmission | 2.606849 | (1.258310 - 5.400625) | **0.00991170574051** |
-| Unplanned Readmission | 2.451024 | (1.075180 - 5.587453) | **0.0326932839153** |
+| Superficial SSI  | 1.763195 | (0.227438  - 1.366902e+01) | 0.599472753998 |
+| Renal Insuffiency | 441.327867 | (2.059598e-10 - 9.456714e+14) | 0.687336865238 |
+| Sepsis | 9.131794 | (1.606241 - 51.916037) | **0.0125624136473** |
+| Readmission | 3.169530 | (1.581287 - 6.353002) | **0.00119461424888** |
+| Unplanned Readmission | 2.538959 | (1.123517 - 5.737622) | **0.0248881831285** |
 
 Significant comorbidities diabetes, COPD, smoking <1 year prior to surgery, dyspnea, and ventilator dependence were included in the above calculations.
 
